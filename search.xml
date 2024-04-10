@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>learning tree</title>
+      <link href="/2024/04/10/learning-tree/"/>
+      <url>/2024/04/10/learning-tree/</url>
+      
+        <content type="html"><![CDATA[<h1 id="sequence-for-learning"><a href="#sequence-for-learning" class="headerlink" title="sequence for learning"></a>sequence for learning</h1><h2 id="tool"><a href="#tool" class="headerlink" title="tool"></a>tool</h2><p>vscode</p><ol><li>source control [ ] </li><li>debugging tool [ ]</li></ol><h2 id="language"><a href="#language" class="headerlink" title="language"></a>language</h2><h3 id="1-latex"><a href="#1-latex" class="headerlink" title="1. latex"></a>1. latex</h3><p>1.<a href="https://blog.csdn.net/m0_55746113/article/details/122695383">LateX环境安装与配置–包括常见安装失败错误更正</a><br>2. <a href="https://zhuanlan.zhihu.com/p/166523064">(vscode)配置LaTeX</a><br>3. </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> general </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>building blog</title>
       <link href="/2024/04/10/My-New-Post/"/>
       <url>/2024/04/10/My-New-Post/</url>
