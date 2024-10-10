@@ -4,16 +4,20 @@
   <meta charset="utf-8">
   
   
-  <title>标签: prose | LIke&#39;s blog</title>
+  <title>git_tutorial | LIke&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Knowledege is not free, you have to pay attention.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="LIke&#39;s blog">
-<meta property="og:url" content="http://example.com/tags/prose/index.html">
+  <meta name="description" content="git 教程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git_tutorial">
+<meta property="og:url" content="http://example.com/2024/10/10/git-tutorial/index.html">
 <meta property="og:site_name" content="LIke&#39;s blog">
-<meta property="og:description" content="Knowledege is not free, you have to pay attention.">
+<meta property="og:description" content="git 教程">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-10-10T04:32:38.000Z">
+<meta property="article:modified_time" content="2024-10-10T05:01:56.245Z">
 <meta property="article:author" content="Like Cai">
+<meta property="article:tag" content="help">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="LIke's blog" type="application/atom+xml">
@@ -73,58 +77,67 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/04/28/Record-around-the-final-for-second-term/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-04-28T01:55:04.000Z" itemprop="datePublished">4月 28</time>
+        <section id="main"><article id="post-git-tutorial" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/10/git-tutorial/" class="article-date">
+  <time class="dt-published" datetime="2024-10-10T04:32:38.000Z" itemprop="datePublished">2024-10-10</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/school/">school</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/04/28/Record-around-the-final-for-second-term/">Around the final for second term</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      git_tutorial
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/04/13/Record-reflection-on-RMUL/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-04-13T14:02:59.000Z" itemprop="datePublished">4月 13</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/04/13/Record-reflection-on-RMUL/">reflection of RMUL</a>
-    </h1>
-  
+        <h1 id="git-教程"><a href="#git-教程" class="headerlink" title="git 教程"></a>git 教程</h1><span id="more"></span>
+<h2 id="push操作流程"><a href="#push操作流程" class="headerlink" title="push操作流程"></a>push操作流程</h2><p>确保这是一个仓库<code>.git</code>文件存在</p>
+<ul>
+<li><code>git status</code> 查看当前状态，记得查看branch</li>
+<li><code>git add *</code> 添加所有要更改的文件到暂存区（stage）<br><code>git commit -m &quot;&lt;message&gt;&quot;</code> 提交暂存区到仓库区（commit）<br><code>git push origin main</code> 把本地库的内容推送到远程<br>你可以参考<a target="_blank" rel="noopener" href="https://sp21.datastructur.es/materials/lab/lab1/lab1">cs61b lab1 section 1</a>十分好的教程</li>
+</ul>
+<h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><p><code>git branch</code> 查看分支<br><code>git log</code> 查看提交历史<br><code>git status</code> 查看当前状态<br><code>git diff</code> 查看修改内容<br><code>git add</code> 添加文件到暂存区<br><code>git add *</code> 添加所有文件到暂存区<br><code>git commit -m &quot;&lt;message&gt;&quot;</code> 提交暂存区到仓库区<br><code>git reset HEAD</code> 把暂存区的修改撤销掉（unstage），重新放回工作区<br><code>git remote -v</code> 查看远程库信息<br><code>git push origin main</code> 把本地库的内容推送到远程</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push origin main</span><br><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
+<p><code>git push -u origin main</code> 以后的推送或者拉取就可以简化命令<br><code>-u</code> stands for upstream<br>you can use <code>--set-upstream</code> set upstrea (same function as <code>-u</code>)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/10/10/git-tutorial/" data-id="cm22u1ej50000bkvzhayv945r" data-title="git_tutorial" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/help/" rel="tag">help</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2024/10/10/pointer/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">pointer</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
