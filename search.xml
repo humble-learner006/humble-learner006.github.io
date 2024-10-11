@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>qt_tutorial</title>
+    <url>/2024/10/09/Qt_tutorial/</url>
+    <content><![CDATA[<h1 id="Qt版本：Qt-6-7-2-项目配置"><a href="#Qt版本：Qt-6-7-2-项目配置" class="headerlink" title="Qt版本：Qt 6.7.2 项目配置"></a>Qt版本：Qt 6.7.2 项目配置</h1><span id="more"></span>
+<p>本教程参考哔哩哔哩系列<a href="https://www.bilibili.com/video/BV1km4y1k7CW/?p=6&spm_id_from=pageDriver&vd_source=113cb04caaabeca910d6d5580d23d578">视频</a><br><code>help -&gt; about qt creater</code>查看版本<br><img src="https://s2.loli.net/2024/10/10/ujXJRtxQGUE9c2N.png"></p>
+<h2 id="在Qt中创建一个GUI项目"><a href="#在Qt中创建一个GUI项目" class="headerlink" title="在Qt中创建一个GUI项目"></a>在Qt中创建一个GUI项目</h2><h3 id="step-1-choose-a-template"><a href="#step-1-choose-a-template" class="headerlink" title="step 1: choose a template"></a>step 1: choose a template</h3><p><img src="https://s2.loli.net/2024/10/10/1cUm6pMF2vZCOys.png"></p>
+<p>选择一个模板，这里选择一个空的模板<br><code>Qt widgets application</code></p>
+<ul>
+<li>可以看到有图标，根据图标大概能知道这个模板是什么模板</li>
+<li>右边也会有对模板的描述</li>
+</ul>
+<h3 id="step-2-Project-location"><a href="#step-2-Project-location" class="headerlink" title="step 2: Project location"></a>step 2: Project location</h3><p><img src="https://s2.loli.net/2024/10/10/jBR2MHCDKpc8yYg.png"></p>
+<p>选择你的文件位置，命名的你文件名字</p>
+<h3 id="step-3-Define-Build-System"><a href="#step-3-Define-Build-System" class="headerlink" title="step 3: Define Build System"></a>step 3: Define Build System</h3><p><img src="https://s2.loli.net/2024/10/10/cXmviKfrLSExnpR.png"></p>
+<ul>
+<li>选择CMake，可以参考<a href="https://slaptijack.com/programming/cmake-for-cpp.html">这里</a></li>
+<li>什么是[[CSC3002&#x2F;01_CSC3002_note&#x2F;Build system|Build system]]</li>
+<li>我跟教程走，选择qmake</li>
+<li>项目管理文件qmake -&gt; .pro文件; cmake -&gt; CMakeLists.txt文件</li>
+</ul>
+<h3 id="step-4-class-information"><a href="#step-4-class-information" class="headerlink" title="step 4: class information"></a>step 4: class information</h3><p><img src="https://s2.loli.net/2024/10/10/RT6dwcZ98DtyVSO.png"></p>
+<p>widget: used to refer to any small device that you do not know the name of（不知名的）小器物，小装置，小玩意儿( informal ) <em>from oxford</em></p>
+<ul>
+<li>widget空窗口（只有窗口标题）<ul>
+<li>mianWindow主窗口（菜单栏等）</li>
+<li>dialog对话框（有Yes or no的选项)</li>
+</ul>
+</li>
+<li>建议类名选择大写开头</li>
+<li>勾选后有widget.ui的文件，这个文件会有ui的信息<br>选择翻译后的语言，存储在zh_CN.qm文件中，我们用英文开发，有中文的语言包<br><img src="https://s2.loli.net/2024/10/10/EPra8uAYgikH7dS.png"></li>
+</ul>
+<h3 id="step-5-Kit-selection"><a href="#step-5-Kit-selection" class="headerlink" title="step 5: Kit selection"></a>step 5: Kit selection</h3><p>编译套件的选择，选择Qt自带的编译器 MinGW 64-bit<br><img src="https://s2.loli.net/2024/10/10/rEuBatbvcfyRWI5.png"></p>
+<h3 id="step-6-版本控制系统选择"><a href="#step-6-版本控制系统选择" class="headerlink" title="step 6: 版本控制系统选择"></a>step 6: 版本控制系统选择</h3><p>代码同步工具</p>
+<ul>
+<li>SVN</li>
+<li>GIT</li>
+</ul>
+<h3 id="finish"><a href="#finish" class="headerlink" title="finish"></a>finish</h3><p>完成！<br>如果高版本的Qt可能出现<strong>报错和警告</strong>，尝试：<code>help -- about plugins -- c++ -- ClangCodeModle</code>取消勾选，重启软件。<br><img src="https://s2.loli.net/2024/10/10/miBu3RPaWjdvzlS.png"></p>
+<p><img src="https://s2.loli.net/2024/10/10/gTeIA1pixdWRbNu.png"></p>
+<h2 id="效果展示：Hello-world-in-Window"><a href="#效果展示：Hello-world-in-Window" class="headerlink" title="效果展示：Hello world in Window"></a>效果展示：Hello world in Window</h2><p>in <code>widget.ui </code>design中的窗口设计, 选择一个<code>label</code>和一个<code>push button</code>(the advantage of qt is that you can drag and drop to design the window))<br><img src="https://s2.loli.net/2024/10/10/jUvFDIQn24WE8rx.png"></p>
+<h2 id="trouble-shooting"><a href="#trouble-shooting" class="headerlink" title="trouble shooting"></a>trouble shooting</h2><h3 id="点击-pro多数能打开项目，因为qmake是默认的构建系统"><a href="#点击-pro多数能打开项目，因为qmake是默认的构建系统" class="headerlink" title="点击.pro多数能打开项目，因为qmake是默认的构建系统"></a>点击<code>.pro</code>多数能打开项目，因为<code>qmake</code>是默认的构建系统</h3><h3 id="点击CMakeLists-txt无法正常打开项目"><a href="#点击CMakeLists-txt无法正常打开项目" class="headerlink" title="点击CMakeLists.txt无法正常打开项目"></a>点击<code>CMakeLists.txt</code>无法正常打开项目</h3><h4 id="确认cmake是否安装"><a href="#确认cmake是否安装" class="headerlink" title="确认cmake是否安装"></a>确认cmake是否安装</h4><ol>
+<li>type <code>cmake --version</code> in cmd， 你会得到cmake的版本号</li>
+<li>else安装cmake from <a href="https://cmake.org/download/">here</a></li>
+</ol>
+<h4 id="确认环境变量是否配置正确"><a href="#确认环境变量是否配置正确" class="headerlink" title="确认环境变量是否配置正确"></a>确认环境变量是否配置正确</h4><ol start="2">
+<li>type <code>echo %PATH%</code> in cmd， 你会得到目前你所有的 PATH，检查qt是否在里面</li>
+<li><img src="https://s2.loli.net/2024/10/10/VT7t9nawDfiWXge.png"></li>
+<li><strong>注意</strong>：区分QtCreator 和 Qt，QtCreator是IDE，Qt是库</li>
+<li><strong>注意</strong>：Path在<em>用户变量</em>有时不会正常生效（Kimi的观点）设置在<em>系统变量</em></li>
+</ol>
+<h4 id="在issue查看configuration-fail的原因"><a href="#在issue查看configuration-fail的原因" class="headerlink" title="在issue查看configuration fail的原因"></a>在<code>issue</code>查看configuration fail的原因</h4><p>每个人的原因可能不一样<br><img src="https://s2.loli.net/2024/10/10/gHB8dAFYKXsZiDv.png"><br>我的是<code>build type</code>的问题，我选择了<code>debug</code>，但是我的<code>debug</code>没有配置</p>
+<ol>
+<li><strong>清理构建目录</strong><code>clear CMake configuration</code>：清理您的构建目录，以确保与构建缓存和配置无关的干净状态。您可以在 Qt Creator 中通过“构建”菜单中的“清理项目”选项清理构建目录。</li>
+<li><strong>重新配置项目</strong><code>run CMake</code>：重新配置项目</li>
+</ol>
+<h3 id="尝试Qt自带的案例examples，感受项目的效果"><a href="#尝试Qt自带的案例examples，感受项目的效果" class="headerlink" title="尝试Qt自带的案例examples，感受项目的效果"></a>尝试Qt自带的案例<code>examples</code>，感受项目的效果</h3><p><img src="https://s2.loli.net/2024/10/10/3fTwkE5tAyCJc7V.png"><br><em>p.s.</em></p>
+<ul>
+<li>in left sidebar <code>projects</code>you see the <code>calqlatre</code> is in bold font, that means it is the current <strong>active</strong> project</li>
+<li>you can see the compiling process in the <code>compile output</code> in the bottom</li>
+<li>you can see the <code>issues</code> in the bottom, if there is any error, you can see it here</li>
+<li>the calculator window will pop up after compiling</li>
+<li>先build （锤子）后 run （绿三角）</li>
+</ul>
+<h2 id="AI生成的回答（仅参考）"><a href="#AI生成的回答（仅参考）" class="headerlink" title="AI生成的回答（仅参考）"></a>AI生成的回答（仅参考）</h2><h3 id="build-debug-release-区别"><a href="#build-debug-release-区别" class="headerlink" title="build debug &#x2F;release 区别"></a>build debug &#x2F;release 区别</h3><h4 id="Debug-构建："><a href="#Debug-构建：" class="headerlink" title="Debug 构建："></a>Debug 构建：</h4><ol>
+<li><strong>编译优化</strong>：通常不进行优化或仅进行最小优化，以便于调试。</li>
+<li><strong>调试信息</strong>：包含完整的调试信息，如符号信息，这有助于调试器定位代码中的问题。</li>
+<li><strong>执行速度</strong>：由于没有优化，执行速度通常较慢。</li>
+<li><strong>错误检查</strong>：包含额外的错误检查和断言，有助于在开发过程中发现问题。</li>
+<li><strong>内存使用</strong>：可能会使用更多的内存，因为优化较少。</li>
+<li><strong>日志记录</strong>：可能会包含更详细的日志记录，以帮助追踪问题。</li>
+<li><strong>符号名称</strong>：变量和函数名称不会被优化掉，保持源代码中的名称，便于调试。</li>
+</ol>
+<h4 id="Release-构建："><a href="#Release-构建：" class="headerlink" title="Release 构建："></a>Release 构建：</h4><ol>
+<li><strong>编译优化</strong>：进行高度优化，以提高应用程序的性能。</li>
+<li><strong>调试信息</strong>：通常不包含调试信息，或只包含非常有限的调试信息。</li>
+<li><strong>执行速度</strong>：由于进行了优化，执行速度较快。</li>
+<li><strong>错误检查</strong>：错误检查和断言可能会被禁用或减少，以避免影响性能。</li>
+<li><strong>内存使用</strong>：优化内存使用，以减少应用程序的内存占用。</li>
+<li><strong>日志记录</strong>：日志记录可能会被禁用或减少，以避免影响性能。</li>
+<li><strong>符号名称</strong>：变量和函数名称可能会被缩短，以减少二进制文件的大小。</li>
+</ol>
+<h4 id="为什么需要不同的构建方式？"><a href="#为什么需要不同的构建方式？" class="headerlink" title="为什么需要不同的构建方式？"></a>为什么需要不同的构建方式？</h4><ul>
+<li><strong>开发和调试</strong>：Debug 构建提供了必要的调试信息和工具，帮助开发者在开发过程中发现和修复错误。</li>
+<li><strong>性能测试</strong>：Release 构建通过优化提供了应用程序的最佳性能，这对于性能测试和最终用户是非常重要的。</li>
+<li><strong>部署</strong>：最终用户通常使用 Release 构建，因为它提供了更好的性能和更小的二进制文件大小。</li>
+</ul>
+<p>在实际开发过程中，开发者可能会在 Debug 模式下编写和测试代码，然后切换到 Release 模式进行性能测试和部署。</p>
+<h3 id="build和compile的区别"><a href="#build和compile的区别" class="headerlink" title="build和compile的区别"></a>build和compile的区别</h3><h4 id="编译（Compile）："><a href="#编译（Compile）：" class="headerlink" title="编译（Compile）："></a>编译（Compile）：</h4><ol>
+<li><strong>定义</strong>：编译是将源代码（通常是单个文件，如 <code>.c</code>、<code>.cpp</code> 文件等）转换成机器码的过程，生成的目标文件通常具有 <code>.obj</code> 或 <code>.o</code> 扩展名。</li>
+<li><strong>编译器</strong>：编译过程通常由编译器完成，如 GCC、Clang、MSVC 等。</li>
+<li><strong>单个文件</strong>：编译通常针对单个源文件，将其从高级语言转换为低级语言。</li>
+<li><strong>语法检查</strong>：编译过程中，编译器会检查语法错误。</li>
+<li><strong>优化</strong>：编译器可能会对代码进行优化，以提高性能或减少生成的机器代码的大小。</li>
+</ol>
+<h4 id="构建（Build）："><a href="#构建（Build）：" class="headerlink" title="构建（Build）："></a>构建（Build）：</h4><ol>
+<li><strong>定义</strong>：构建是一个更广泛的过程，它包括编译、链接等多个步骤，将多个源文件和资源（如库文件、资源文件等）组合成一个可执行文件或库文件。</li>
+<li><strong>构建系统</strong>：构建过程通常由构建系统或构建工具管理，如 Make、CMake、MSBuild、Ant 等。</li>
+<li><strong>多个文件</strong>：构建过程涉及多个源文件和可能的库文件。</li>
+<li><strong>依赖管理</strong>：构建系统会管理文件之间的依赖关系，并确定编译的顺序。</li>
+<li><strong>链接</strong>：构建过程包括链接步骤，将编译后的目标文件与库文件链接在一起，生成最终的可执行文件或库文件。</li>
+<li><strong>自动化</strong>：构建过程可以自动化，通常通过编写构建脚本来定义构建的规则和步骤。</li>
+</ol>
+<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><ul>
+<li><strong>范围</strong>：编译是构建过程中的一个步骤，构建是一个更全面的过程。</li>
+<li><strong>目标</strong>：编译的目标是生成目标文件，而构建的目标是生成可执行文件或库文件。</li>
+<li><strong>过程</strong>：编译过程关注单个源文件的转换，构建过程关注整个项目从源代码到可执行文件的完整流程。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>school</category>
+      </categories>
+      <tags>
+        <tag>help</tag>
+        <tag>C/C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>blog_building</title>
+    <url>/2024/10/09/blog_building/</url>
+    <content><![CDATA[<h1 id="记录博客配置过程"><a href="#记录博客配置过程" class="headerlink" title="记录博客配置过程"></a>记录博客配置过程</h1><span id="more"></span>
+<p>philosophy: use the default theme and record the change, to make sure the change is controllable. - that’s the reason why I choose landscape theme. </p>
+<h1 id="基础信息设置"><a href="#基础信息设置" class="headerlink" title="基础信息设置"></a>基础信息设置</h1><p><strong>why can’t I find landscape folder in theme folder</strong><br>landscape 主题是通过 npm 安装的，在 package.json 中可以看到</p>
+<h2 id="站点配置文件的-config-yml-配置"><a href="#站点配置文件的-config-yml-配置" class="headerlink" title="站点配置文件的_config.yml 配置"></a>站点配置文件的<code>_config.yml</code> 配置</h2><p>站点配置文件在站点根目录下，是整个博客的配置文件，用来配置整个博客的站点信息，如网站标题、副标题、作者、语言、时区等。</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">LIke&#x27;s</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;Write down my thoughts&#x27;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;Knowledege is not free, you have to pay attention.&#x27;</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Like</span> <span class="string">Cai</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">&#x27;Asia/Shanghai&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="会留意到改变description和keywords-网站的渲染效果没变化：作用是什么？"><a href="#会留意到改变description和keywords-网站的渲染效果没变化：作用是什么？" class="headerlink" title="会留意到改变description和keywords,网站的渲染效果没变化：作用是什么？"></a>会留意到改变<code>description</code>和<code>keywords</code>,网站的渲染效果没变化：作用是什么？</h3><p>it is used for search engine optimization(SEO)</p>
+<ul>
+<li><strong>description</strong>: This field provides a brief summary of the site’s content. It is often used in the meta description tag in the HTML head section, which search engines use to display a snippet of the page in search results.<ul>
+<li>in <code>next</code> tutorial, description is used for display sentence you like</li>
+</ul>
+</li>
+<li><strong>keywords</strong>: This field lists relevant keywords for the site. These keywords can be used in the meta keywords tag in the HTML head section, which some search engines use to understand the content of the page. <ul>
+<li>However, note that many modern search engines <strong>do not</strong> heavily rely on the meta keywords tag anymore.</li>
+</ul>
+</li>
+</ul>
+<h3 id="url-setting"><a href="#url-setting" class="headerlink" title="url setting"></a>url setting</h3><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://humble-learner006.github.io/</span></span><br></pre></td></tr></table></figure>
+<p>this makes the default share link become correct   </p>
+<h2 id="add-table-of-content-ToC"><a href="#add-table-of-content-ToC" class="headerlink" title="add table of content [ToC]"></a>add <em>table of content</em> [ToC]</h2><p>如何添加文章目录</p>
+<ul>
+<li><a href="https://fengzhenhua-vip.github.io/2021/05/20/%E5%BE%AE%E8%B0%83landscape%E4%B8%BB%E9%A2%98/">https://fengzhenhua-vip.github.io/2021/05/20/%E5%BE%AE%E8%B0%83landscape%E4%B8%BB%E9%A2%98/</a></li>
+<li><a href="https://jnnjiang.github.io/2019/01/14/hexo/hexo+config.html">https://jnnjiang.github.io/2019/01/14/hexo/hexo+config.html</a></li>
+<li><a href="https://mrcuijt.github.io/2019/06/04/hexo/hexo-customer/#%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95">https://mrcuijt.github.io/2019/06/04/hexo/hexo-customer/#%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95</a>  </li>
+<li><a href="https://blog.csdn.net/weixin_29304021/article/details/118232564">https://blog.csdn.net/weixin_29304021/article/details/118232564</a><br>I found that those who share landscape theme, they don’t use the theme now.</li>
+<li>The next 4 second header are my demand for the blog, landscape theme is <strong>too difficult</strong> to set up to meet my demand.<br>when I checking for this, I found that the landscape theme is just <strong>too basic</strong>, so I decide to change it to next theme.  </li>
+<li>The <a href="https://theme-next.iissnan.com/getting-started.html">previous tutorial</a> of NexT theme is too old, so I decide to use the <a href="https://theme-next.js.org/docs/getting-started/">new one.</a></li>
+<li>Don’t drink water from fire hose</li>
+<li><strong>一定要选择官方文档！</strong></li>
+</ul>
+<h1 id="next-主题设置"><a href="#next-主题设置" class="headerlink" title="next 主题设置"></a>next 主题设置</h1><h2 id="pin-rank-the-post-to-the-top-of-the-page"><a href="#pin-rank-the-post-to-the-top-of-the-page" class="headerlink" title="pin&#x2F;rank the post to the top of the page"></a>pin&#x2F;rank the post to the top of the page</h2><p><code>npm install hexo-generator-index-pin-top --save</code><br>在<a href="https://blog.csdn.net/as480133937/article/details/100138838">这里</a>解决</p>
+<h2 id="add-search-function"><a href="#add-search-function" class="headerlink" title="add search function"></a>add search function</h2><p><code>npm install hexo-generator-searchdb --save</code><br>在<a href="https://blog.csdn.net/as480133937/article/details/100138838">这里</a>解决</p>
+<h2 id="add-comment-function"><a href="#add-comment-function" class="headerlink" title="add comment function"></a>add comment function</h2><h2 id="add-RSS-function-to-the-theme-landscape"><a href="#add-RSS-function-to-the-theme-landscape" class="headerlink" title="add RSS function to the theme: landscape"></a>add RSS function to the theme: landscape</h2><h2 id="reference"><a href="#reference" class="headerlink" title="reference"></a>reference</h2><p>[from landscape to all](<a href="https://www.codeleading.com/article/4478454305/">教你定制Hexo的landscape打造自己的主题 - 代码先锋网 (codeleading.com)</a>)<br>[sample of fluid theme](<a href="https://zkqiang.cn/posts/5c980bc0/">认识 LLVM - zkqiang’s blog</a>)<br>[git tutorial from next builder](<a href="https://iissnan.com/progit/">Pro Git 简体中文版 (iissnan.com)</a>)<br><a href="https://git-scm.com/book/zh/v2">it is same as the book from official website</a><br>[Next startup](<a href="https://theme-next.iissnan.com/getting-started.html">开始使用 - NexT 使用文档 (iissnan.com)</a>)<br>[Hexo + GitHub &#x3D; Blog](<a href="https://zhuanlan.zhihu.com/p/60578464">使用 Hexo+GitHub 搭建个人免费博客教程（小白向） - 知乎 (zhihu.com)</a>)  </p>
+]]></content>
+      <categories>
+        <category>web</category>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>help</tag>
+        <tag>unfinished</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git_tutorial</title>
+    <url>/2024/10/10/git-tutorial/</url>
+    <content><![CDATA[<h1 id="git-教程"><a href="#git-教程" class="headerlink" title="git 教程"></a>git 教程</h1><span id="more"></span>
+<h2 id="push操作流程"><a href="#push操作流程" class="headerlink" title="push操作流程"></a>push操作流程</h2><p>确保这是一个仓库<code>.git</code>文件存在</p>
+<ul>
+<li><code>git status</code> 查看当前状态，记得查看branch</li>
+<li><code>git add *</code> 添加所有要更改的文件到暂存区（stage）</li>
+<li><code>git commit -m &quot;&lt;message&gt;&quot;</code> 提交暂存区到仓库区（commit）</li>
+<li><code>git push origin main</code> 把本地库的内容推送到远程<br>你可以参考 <a href="https://sp21.datastructur.es/materials/lab/lab1/lab1">cs61b lab1 section E</a> 十分好的 git 教程</li>
+</ul>
+<h2 id="fetch-pull操作流程"><a href="#fetch-pull操作流程" class="headerlink" title="fetch&#x2F;pull操作流程"></a>fetch&#x2F;pull操作流程</h2><ul>
+<li><code>git fetch origin main</code> 从远程获取最新版本到本地，不会自动merge</li>
+<li><code>git pull origin main</code> 把远程库的内容拉下来，然后与本地的文件合并</li>
+</ul>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>What is git:<br>**A system:**Git is a distributed version control system.<br><strong>Version Control:</strong> We can go back to previous version if something screw up in VCS(version control system).<br>One of the most widely distributed VCS is <a href="https://en.wikipedia.org/wiki/Revision_Control_System">RCS</a> ,work by adding patches&#x2F; delta between file, develop from its predecessor – SCCS (Source Code Control system)<br><strong>Branching</strong> means you diverge from the main line of development and continue to do work without messing with that main line.<br>兴趣阅读：<a href="https://zhuanlan.zhihu.com/p/95179354">版本管理系统的发展历史</a><br><strong>Git</strong> work by taking snapshot, not difference.</p>
+<h2 id="3-status-of-your-file-Modified-–-staged（in-the-middle）–-committed-git"><a href="#3-status-of-your-file-Modified-–-staged（in-the-middle）–-committed-git" class="headerlink" title="3 status of your file: Modified – staged（in the middle）– committed(.git)"></a>3 status of your file: Modified – staged（in the middle）– committed(.git)</h2><p>潜在的unchange data可以比喻为在家里的人。<br>modified可以被比喻为所有在车站的人，有可能不会上车<br>staged 可以被比喻为在月台的人，是即将上车的人，但是也可能不上车（日程取消）<br>committed 可以被比喻为在火车上的人，被送到目的地云端</p>
+<h2 id="基本操作（按照常用程度排序）"><a href="#基本操作（按照常用程度排序）" class="headerlink" title="基本操作（按照常用程度排序）"></a>基本操作（按照常用程度排序）</h2><p><code>cd + &lt;location&gt;</code>（change derectory）<br><code>git branch</code> 查看分支<br><code>git log</code> 查看提交历史<br><code>git status</code> 查看当前状态<br><code>git diff</code> 查看修改内容<br><code>git add</code> 添加文件到暂存区<br><code>git add *</code> 添加所有文件到暂存区<br><code>git commit -m &quot;&lt;message&gt;&quot;</code> 提交暂存区到仓库区<br><code>git reset HEAD</code> 把暂存区的修改撤销掉（unstage），重新放回工作区<br><code>git remote -v</code> 查看远程库信息<br><code>git push origin main</code> 把本地库的内容推送到远程</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push origin main</span><br><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
+<p><code>git push -u origin main</code> 以后的推送或者拉取就可以简化命令<br><code>-u</code> stands for upstream<br>you can use <code>--set-upstream</code> set upstrea (same function as <code>-u</code>)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<h3 id="Configure-your-git"><a href="#Configure-your-git" class="headerlink" title="Configure your git"></a>Configure your git</h3><p>Git branch, first set up then we discuss how it should be used<br><code>git config –h</code>（get the help of config command, show in editor）<br><code>git help config</code> （show in browser）<br><code>git init</code> （change it into git respository）<br><code>git status</code> （know what inside the file&#x2F; git repository）<br><code>git add &lt;name&gt;</code><br><code>git add –A</code> （add all）<code>git add .</code>&#x2F;<code>git add --all</code><br><code>git rm –cached &lt;name&gt;</code><br><code>git rm –f &lt;name&gt;</code><br><code>git mv &lt;name&gt; &lt;name&gt;</code><br><code>git log -oneline</code> -</p>
+<h2 id="Package-manager-（Linux系统必要了解）"><a href="#Package-manager-（Linux系统必要了解）" class="headerlink" title="Package manager （Linux系统必要了解）"></a>Package manager （Linux系统必要了解）</h2><p>软件包管理器：一种计算机程序，负责安装、更新和配置其他软件，维护已安装程序的索引并解决它们之间的依赖关系。</p>
+<ul>
+<li>Knowing your system’s package manager is essential for managing software effectively. </li>
+<li>It ensures you <strong>use the correct commands</strong> and syntax to install, update, and remove packages successfully.</li>
+</ul>
+<h2 id="two-type-of-package-manager"><a href="#two-type-of-package-manager" class="headerlink" title="two type of package manager"></a>two type of package manager</h2><p>dnf: This is the default package manager for Fedora and other Red Hat-based systems.<br>apt-get: This is the default package manager for Debian, Ubuntu, and other Debian-based systems. </p>
+]]></content>
+      <categories>
+        <category>school</category>
+      </categories>
+      <tags>
+        <tag>help</tag>
+        <tag>unfinished</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pointer</title>
+    <url>/2024/10/10/pointer/</url>
+    <content><![CDATA[<h1 id="C-指针-和-的使用"><a href="#C-指针-和-的使用" class="headerlink" title="C++指针&amp;和*的使用"></a>C++指针<code>&amp;</code>和<code>*</code>的使用</h1><span id="more"></span>
+<p>start from scratch, we already know what is variable. A variable store in memory have not only information of its value, but also its memory address. </p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> x = <span class="number">5</span>; <span class="comment">// declare and initializa a variable</span></span><br></pre></td></tr></table></figure>
+<p>then we can use “address-of operator” - <code>&amp;</code> to get the address of x!</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>* ptr = &amp;x <span class="comment">//get the x&#x27;s address and pass it to ptr</span></span><br></pre></td></tr></table></figure>
+<p>you may ask </p>
+<ul>
+<li>why <code>* ptr </code>is a <code>int</code> type data<ul>
+<li> you are saying that <code>ptr</code> is a pointer to an <code>int</code>.</li>
+</ul>
+</li>
+<li>where should I place the asteroid <code>*</code>? - Is that with end of <code>int</code>, or with beginning of <code>ptr</code><ul>
+<li>only matter of style</li>
+<li>However, the first style (<code>int* ptr</code>) is often preferred because it makes it clear that <code>ptr</code> is a pointer to an <code>int</code>. This can be especially helpful when declaring multiple pointers in a single statement:</li>
+<li><code>int* ptr1, ptr2; // Only ptr1 is a pointer, ptr2 is an int</code></li>
+<li>better declare one pointer per line</li>
+</ul>
+</li>
+<li>since the name of <code>&amp;</code> is “address-of operator”<strong>取地址符</strong>, what is the name of <code>*</code> as operator<ul>
+<li>it is called as “dereference operator”<strong>解引用符</strong></li>
+</ul>
+</li>
+<li>BEAWARE that <code>&amp;</code> also have another way to use, which is reference<ul>
+<li><code>int &amp;reference_value = value</code> means give it a new name, and all operations on <code>reference_value</code> is same as directly on <code>value</code><br>You can use the pointer to access the value of <code>x</code>:<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> value = *ptr; <span class="comment">// Dereferencing the pointer to get the value of x</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><h3 id="example-code"><a href="#example-code" class="headerlink" title="example code"></a>example code</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">10</span>;       <span class="comment">// Declare an integer variable x and initialize it to 10</span></span><br><span class="line">    <span class="type">int</span>* ptr = &amp;x;    <span class="comment">// Declare a pointer to an integer and initialize it with the address of x</span></span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Value of x: &quot;</span> &lt;&lt; x &lt;&lt; std::endl;           <span class="comment">// Output the value of x</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Address of x: &quot;</span> &lt;&lt; &amp;x &lt;&lt; std::endl;        <span class="comment">// Output the address of x</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Value of ptr: &quot;</span> &lt;&lt; ptr &lt;&lt; std::endl;       <span class="comment">// Output the value of ptr (address of x)</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Value pointed to by ptr: &quot;</span> &lt;&lt; *ptr &lt;&lt; std::endl; <span class="comment">// Output the value pointed to by ptr (value of x)</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="result"><a href="#result" class="headerlink" title="result"></a>result</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">Value of x: <span class="number">10</span></span><br><span class="line">Address of x: <span class="number">0x7ffee4b3c8ac</span></span><br><span class="line">Value of ptr: <span class="number">0x7ffee4b3c8ac</span> <span class="comment">//ptr = &amp;x</span></span><br><span class="line">Value pointed to by ptr: <span class="number">10</span> <span class="comment">//*ptr = x</span></span><br></pre></td></tr></table></figure>
+<p>p.s. about address on a 64-bit system, a memory address might look like <code>0x7ffee4b3c8ac</code>. Here’s why:</p>
+<ul>
+<li><strong>0x</strong>: This prefix indicates that the number is in hexadecimal format.</li>
+<li><strong>7ffee4b3c8ac</strong>: This is the actual address in hexadecimal. Each digit represents 4 bits, so a 64-bit address will have up to 16 hexadecimal digits.</li>
+</ul>
+<h3 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h3><ul>
+<li><code>x</code> is a variable that stores a value.</li>
+<li><code>&amp;x</code> is the address of the variable <code>x</code>.</li>
+<li><code>ptr</code> is a pointer that stores the address of <code>x</code>.</li>
+<li><code>*ptr</code> is the value stored at the address <code>ptr</code> points to.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>school</category>
+      </categories>
+      <tags>
+        <tag>help</tag>
+        <tag>C/C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>fail_log_NexT</title>
+    <url>/2024/10/09/fail-log-NexT/</url>
+    <content><![CDATA[<p>使用NexT主题时不报错但是显示错误（破案：不是最新的next官网）</p>
+<span id="more"></span>
+
+<p>follow the instructions from <a href="https://theme-next.iissnan.com/getting-started.html#theme-settings">official website</a><br><em>the version in the instructions is not the latest, and instruction is also not latest</em></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo g &amp;&amp; hexo s --debug</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">WARN  ===============================================================</span><br><span class="line">WARN  ========================= ATTENTION! ==========================</span><br><span class="line">WARN  ===============================================================</span><br><span class="line">WARN   NexT repository is moving here: https://github.com/theme-next</span><br><span class="line">WARN  ===============================================================</span><br><span class="line">WARN   It&#x27;s rebase to v6.0.0 and future maintenance will resume there</span><br><span class="line">WARN  ===============================================================</span><br><span class="line">INFO  Files loaded in 268 ms</span><br><span class="line">INFO  Generated: 2024/04/13/Record-reflection-on-RMUL/index.html</span><br><span class="line">INFO  Generated: tags/index.html</span><br><span class="line">INFO  Generated: categories/index.html</span><br><span class="line">INFO  Generated: 2024/10/09/hello-world/index.html</span><br><span class="line">INFO  Generated: 2024/04/28/Record-around-the-final-for-second-term/index.html</span><br><span class="line">INFO  Generated: 2024/10/09/delete_remaining_tags/index.html</span><br><span class="line">INFO  Generated: archives/2024/04/index.html</span><br><span class="line">INFO  Generated: archives/index.html</span><br><span class="line">INFO  Generated: categories/web/index.html</span><br><span class="line">INFO  Generated: archives/2024/index.html</span><br><span class="line">INFO  Generated: categories/RM/index.html</span><br><span class="line">INFO  Generated: images/algolia_logo.svg</span><br><span class="line">INFO  Generated: categories/school/index.html</span><br><span class="line">INFO  Generated: archives/2024/10/index.html</span><br><span class="line">INFO  Generated: tags/prose/index.html</span><br><span class="line">INFO  Generated: index.html</span><br><span class="line">INFO  Generated: tags/help/index.html</span><br><span class="line">INFO  Generated: images/apple-touch-icon-next.png</span><br><span class="line">INFO  Generated: images/cc-by-nc-sa.svg</span><br><span class="line">INFO  Generated: images/avatar.gif</span><br><span class="line">INFO  Generated: images/cc-by-nc-nd.svg</span><br><span class="line">INFO  Generated: images/cc-by-nd.svg</span><br><span class="line">INFO  Generated: js/src/affix.js</span><br><span class="line">INFO  Generated: images/cc-by-sa.svg</span><br><span class="line">INFO  Generated: images/cc-by-nc.svg</span><br><span class="line">INFO  Generated: images/favicon-16x16-next.png</span><br><span class="line">INFO  Generated: images/cc-by.svg</span><br><span class="line">INFO  Generated: images/logo.svg</span><br><span class="line">INFO  Generated: images/cc-zero.svg</span><br><span class="line">INFO  Generated: images/loading.gif</span><br><span class="line">INFO  Generated: images/placeholder.gif</span><br><span class="line">INFO  Generated: images/favicon-32x32-next.png</span><br><span class="line">INFO  Generated: images/quote-l.svg</span><br><span class="line">INFO  Generated: css/main.css</span><br><span class="line">INFO  Generated: js/src/exturl.js</span><br><span class="line">INFO  Generated: images/searchicon.png</span><br><span class="line">INFO  Generated: images/quote-r.svg</span><br><span class="line">INFO  Generated: js/src/bootstrap.js</span><br><span class="line">INFO  Generated: js/src/algolia-search.js</span><br><span class="line">INFO  Generated: js/src/hook-duoshuo.js</span><br><span class="line">INFO  Generated: js/src/js.cookie.js</span><br><span class="line">INFO  Generated: js/src/motion.js</span><br><span class="line">INFO  Generated: js/src/post-details.js</span><br><span class="line">INFO  Generated: js/src/scroll-cookie.js</span><br><span class="line">INFO  Generated: js/src/scrollspy.js</span><br><span class="line">INFO  Generated: js/src/utils.js</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-big-counter.min.css</span><br><span class="line">INFO  Generated: lib/velocity/bower.json</span><br><span class="line">INFO  Generated: lib/three/three-waves.min.js</span><br><span class="line">INFO  Generated: js/src/schemes/pisces.js</span><br><span class="line">INFO  Generated: lib/fastclick/LICENSE</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-bounce.min.css</span><br><span class="line">INFO  Generated: lib/font-awesome/fonts/FontAwesome.otf</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-center-atom.min.css</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-center-circle.min.css</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-barber-shop.min.css</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-center-radar.min.css</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-center-simple.min.css</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-corner-indicator.min.css</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-fill-left.min.css</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-mac-osx.min.css</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-minimal.min.css</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-flash.min.css</span><br><span class="line">INFO  Generated: lib/pace/pace.min.js</span><br><span class="line">INFO  Generated: lib/pace/pace-theme-loading-bar.min.css</span><br><span class="line">INFO  Generated: lib/three/canvas_sphere.min.js</span><br><span class="line">INFO  Generated: lib/three/canvas_lines.min.js</span><br><span class="line">INFO  Generated: lib/velocity/velocity.js</span><br><span class="line">INFO  Generated: lib/velocity/velocity.min.js</span><br><span class="line">INFO  Generated: lib/velocity/velocity.ui.min.js</span><br><span class="line">INFO  Generated: lib/three/three.min.js</span><br><span class="line">INFO  Generated: lib/velocity/velocity.ui.js</span><br><span class="line">INFO  Generated: lib/font-awesome/css/font-awesome.css.map</span><br><span class="line">INFO  Generated: lib/canvas-ribbon/canvas-ribbon.js</span><br><span class="line">INFO  Generated: lib/algolia-instant-search/instantsearch.min.css</span><br><span class="line">INFO  Generated: lib/fancybox/source/helpers/fancybox_buttons.png</span><br><span class="line">INFO  Generated: lib/canvas-nest/canvas-nest.min.js</span><br><span class="line">INFO  Generated: lib/jquery_lazyload/README.html</span><br><span class="line">INFO  Generated: lib/jquery/index.js</span><br><span class="line">INFO  Generated: lib/needsharebutton/font-embedded.css</span><br><span class="line">INFO  Generated: lib/font-awesome/fonts/fontawesome-webfont.eot</span><br><span class="line">INFO  Generated: lib/Han/dist/han.css</span><br><span class="line">INFO  Generated: lib/font-awesome/fonts/fontawesome-webfont.ttf</span><br><span class="line">INFO  Generated: lib/fancybox/source/blank.gif</span><br><span class="line">INFO  Generated: lib/ua-parser-js/dist/ua-parser.pack.js</span><br><span class="line">INFO  Generated: lib/font-awesome/HELP-US-OUT.txt</span><br><span class="line">INFO  Generated: lib/fastclick/bower.json</span><br><span class="line">INFO  Generated: lib/font-awesome/bower.json</span><br><span class="line">INFO  Generated: lib/fastclick/README.html</span><br><span class="line">INFO  Generated: lib/jquery_lazyload/CONTRIBUTING.html</span><br><span class="line">INFO  Generated: lib/jquery_lazyload/jquery.lazyload.js</span><br><span class="line">INFO  Generated: lib/jquery_lazyload/bower.json</span><br><span class="line">INFO  Generated: lib/needsharebutton/needsharebutton.js</span><br><span class="line">INFO  Generated: lib/needsharebutton/needsharebutton.css</span><br><span class="line">INFO  Generated: lib/jquery_lazyload/jquery.scrollstop.js</span><br><span class="line">INFO  Generated: lib/algolia-instant-search/instantsearch.min.js</span><br><span class="line">INFO  Generated: lib/fastclick/lib/fastclick.js</span><br><span class="line">INFO  Generated: lib/fancybox/source/fancybox_loading.gif</span><br><span class="line">INFO  Generated: lib/fancybox/source/fancybox_loading@2x.gif</span><br><span class="line">INFO  Generated: lib/fancybox/source/fancybox_overlay.png</span><br><span class="line">INFO  Generated: lib/fancybox/source/fancybox_sprite@2x.png</span><br><span class="line">INFO  Generated: lib/fancybox/source/fancybox_sprite.png</span><br><span class="line">INFO  Generated: lib/fastclick/lib/fastclick.min.js</span><br><span class="line">INFO  Generated: lib/Han/dist/han.min.css</span><br><span class="line">INFO  Generated: lib/Han/dist/han.js</span><br><span class="line">INFO  Generated: lib/Han/dist/han.min.js</span><br><span class="line">INFO  Generated: lib/fancybox/source/jquery.fancybox.pack.js</span><br><span class="line">INFO  Generated: lib/font-awesome/css/font-awesome.css</span><br><span class="line">INFO  Generated: lib/fancybox/source/jquery.fancybox.js</span><br><span class="line">INFO  Generated: lib/fancybox/source/helpers/jquery.fancybox-buttons.css</span><br><span class="line">INFO  Generated: lib/fancybox/source/jquery.fancybox.css</span><br><span class="line">INFO  Generated: lib/font-awesome/css/font-awesome.min.css</span><br><span class="line">INFO  Generated: lib/fancybox/source/helpers/jquery.fancybox-media.js</span><br><span class="line">INFO  Generated: lib/fancybox/source/helpers/jquery.fancybox-buttons.js</span><br><span class="line">INFO  Generated: lib/fancybox/source/helpers/jquery.fancybox-thumbs.css</span><br><span class="line">INFO  Generated: lib/ua-parser-js/dist/ua-parser.min.js</span><br><span class="line">INFO  Generated: lib/font-awesome/fonts/fontawesome-webfont.woff2</span><br><span class="line">INFO  Generated: lib/font-awesome/fonts/fontawesome-webfont.woff</span><br><span class="line">INFO  Generated: lib/fancybox/source/helpers/jquery.fancybox-thumbs.js</span><br><span class="line">INFO  Generated: lib/Han/dist/font/han-space.otf</span><br><span class="line">INFO  Generated: lib/Han/dist/font/han-space.woff</span><br><span class="line">INFO  Generated: lib/Han/dist/font/han.woff</span><br><span class="line">INFO  Generated: lib/Han/dist/font/han.otf</span><br><span class="line">INFO  Generated: lib/Han/dist/font/han.woff2</span><br><span class="line">INFO  Generated: lib/font-awesome/fonts/fontawesome-webfont.svg</span><br><span class="line">INFO  125 files generated in 399 ms</span><br><span class="line">04:31:05.194 DEBUG Writing database to D:\Desktop\hexo_blog\db.json</span><br><span class="line">04:31:05.202 DEBUG Hexo version: 7.3.0</span><br><span class="line">04:31:05.203 DEBUG Working directory: D:\Desktop\hexo_blog\</span><br><span class="line">04:31:05.375 DEBUG Config loaded: D:\Desktop\hexo_blog\_config.yml</span><br><span class="line">04:31:05.377 INFO  Validating config</span><br><span class="line">04:31:05.728 DEBUG Plugin loaded: hexo-deployer-git</span><br><span class="line">04:31:05.729 DEBUG Plugin loaded: hexo-generator-category</span><br><span class="line">04:31:05.730 DEBUG Plugin loaded: hexo-generator-archive</span><br><span class="line">04:31:05.730 DEBUG Plugin loaded: hexo-generator-tag</span><br><span class="line">04:31:06.014 DEBUG Plugin loaded: hexo-generator-index</span><br><span class="line">04:31:06.015 DEBUG Plugin loaded: hexo-renderer-ejs</span><br><span class="line">04:31:06.016 DEBUG Plugin loaded: hexo-renderer-marked</span><br><span class="line">04:31:06.016 DEBUG Plugin loaded: hexo-server</span><br><span class="line">04:31:06.017 DEBUG Plugin loaded: hexo-renderer-stylus</span><br><span class="line">04:31:06.026 DEBUG Script loaded: themes\next\scripts\merge-configs.js</span><br><span class="line">04:31:06.026 DEBUG Script loaded: themes\next\scripts\tags\center-quote.js</span><br><span class="line">04:31:06.027 DEBUG Script loaded: themes\next\scripts\tags\button.js</span><br><span class="line">04:31:06.028 DEBUG Script loaded: themes\next\scripts\merge.js</span><br><span class="line">04:31:06.030 DEBUG Script loaded: themes\next\scripts\tags\exturl.js</span><br><span class="line">04:31:06.031 DEBUG Script loaded: themes\next\scripts\tags\group-pictures.js</span><br><span class="line">04:31:06.032 DEBUG Script loaded: themes\next\scripts\tags\full-image.js</span><br><span class="line">04:31:06.032 DEBUG Script loaded: themes\next\scripts\tags\label.js</span><br><span class="line">04:31:06.033 DEBUG Script loaded: themes\next\scripts\tags\lazy-image.js</span><br><span class="line">04:31:06.034 DEBUG Script loaded: themes\next\scripts\tags\tabs.js</span><br><span class="line">04:31:06.034 DEBUG Script loaded: themes\next\scripts\tags\note.js</span><br><span class="line">04:31:06.039 DEBUG Loading database.</span><br><span class="line">04:31:06.106 INFO  Start processing</span><br><span class="line">04:31:06.143 DEBUG Processed: _posts/Record-around-the-final-for-second-term.md</span><br><span class="line">04:31:06.143 DEBUG Processed: _posts/Record-reflection-on-RMUL.md</span><br><span class="line">04:31:06.144 DEBUG Processed: _posts/delete_remaining_tags.md</span><br><span class="line">04:31:06.144 DEBUG Processed: _posts/hello-world.md</span><br><span class="line">04:31:06.145 DEBUG Processed: categories/index.md</span><br><span class="line">04:31:06.145 DEBUG Processed: tags/index.md</span><br><span class="line">04:31:06.259 DEBUG Processed: source/images/algolia_logo.svg</span><br><span class="line">04:31:06.260 DEBUG Processed: source/css/main.styl</span><br><span class="line">04:31:06.261 DEBUG Processed: source/images/apple-touch-icon-next.png</span><br><span class="line">04:31:06.261 DEBUG Processed: source/images/cc-by-nc-nd.svg</span><br><span class="line">04:31:06.262 DEBUG Processed: source/images/avatar.gif</span><br><span class="line">04:31:06.262 DEBUG Processed: source/images/cc-by-nc-sa.svg</span><br><span class="line">04:31:06.263 DEBUG Processed: source/images/cc-by-nc.svg</span><br><span class="line">04:31:06.263 DEBUG Processed: source/images/cc-by-nd.svg</span><br><span class="line">04:31:06.264 DEBUG Processed: source/images/cc-by-sa.svg</span><br><span class="line">04:31:06.265 DEBUG Processed: source/images/cc-by.svg</span><br><span class="line">04:31:06.265 DEBUG Processed: source/images/favicon-16x16-next.png</span><br><span class="line">04:31:06.266 DEBUG Processed: source/images/cc-zero.svg</span><br><span class="line">04:31:06.267 DEBUG Processed: source/images/favicon-32x32-next.png</span><br><span class="line">04:31:06.267 DEBUG Processed: source/images/loading.gif</span><br><span class="line">04:31:06.268 DEBUG Processed: source/images/logo.svg</span><br><span class="line">04:31:06.268 DEBUG Processed: source/images/placeholder.gif</span><br><span class="line">04:31:06.269 DEBUG Processed: source/images/quote-l.svg</span><br><span class="line">04:31:06.269 DEBUG Processed: source/images/quote-r.svg</span><br><span class="line">04:31:06.270 DEBUG Processed: source/images/searchicon.png</span><br><span class="line">04:31:06.270 DEBUG Processed: source/lib/algolia-instant-search/instantsearch.min.css</span><br><span class="line">04:31:06.271 DEBUG Processed: source/lib/algolia-instant-search/instantsearch.min.js</span><br><span class="line">04:31:06.271 DEBUG Processed: source/lib/canvas-ribbon/canvas-ribbon.js</span><br><span class="line">04:31:06.272 DEBUG Processed: source/lib/canvas-nest/canvas-nest.min.js</span><br><span class="line">04:31:06.272 DEBUG Processed: source/lib/fastclick/LICENSE</span><br><span class="line">04:31:06.273 DEBUG Processed: source/lib/fastclick/README.md</span><br><span class="line">04:31:06.273 DEBUG Processed: source/lib/fastclick/bower.json</span><br><span class="line">04:31:06.273 DEBUG Processed: source/lib/font-awesome/HELP-US-OUT.txt</span><br><span class="line">04:31:06.274 DEBUG Processed: source/lib/font-awesome/bower.json</span><br><span class="line">04:31:06.274 DEBUG Processed: source/lib/jquery/index.js</span><br><span class="line">04:31:06.275 DEBUG Processed: source/lib/jquery_lazyload/CONTRIBUTING.md</span><br><span class="line">04:31:06.275 DEBUG Processed: source/lib/jquery_lazyload/README.md</span><br><span class="line">04:31:06.276 DEBUG Processed: source/lib/needsharebutton/font-embedded.css</span><br><span class="line">04:31:06.276 DEBUG Processed: source/lib/needsharebutton/needsharebutton.css</span><br><span class="line">04:31:06.276 DEBUG Processed: source/lib/jquery_lazyload/bower.json</span><br><span class="line">04:31:06.277 DEBUG Processed: source/lib/needsharebutton/needsharebutton.js</span><br><span class="line">04:31:06.277 DEBUG Processed: source/lib/jquery_lazyload/jquery.scrollstop.js</span><br><span class="line">04:31:06.278 DEBUG Processed: source/lib/jquery_lazyload/jquery.lazyload.js</span><br><span class="line">04:31:06.278 DEBUG Processed: source/lib/pace/pace-theme-barber-shop.min.css</span><br><span class="line">04:31:06.279 DEBUG Processed: source/lib/pace/pace-theme-big-counter.min.css</span><br><span class="line">04:31:06.279 DEBUG Processed: source/lib/pace/pace-theme-bounce.min.css</span><br><span class="line">04:31:06.280 DEBUG Processed: source/lib/pace/pace-theme-center-atom.min.css</span><br><span class="line">04:31:06.280 DEBUG Processed: source/lib/pace/pace-theme-center-circle.min.css</span><br><span class="line">04:31:06.281 DEBUG Processed: source/lib/pace/pace-theme-center-radar.min.css</span><br><span class="line">04:31:06.282 DEBUG Processed: source/lib/pace/pace-theme-center-simple.min.css</span><br><span class="line">04:31:06.282 DEBUG Processed: source/lib/pace/pace-theme-corner-indicator.min.css</span><br><span class="line">04:31:06.283 DEBUG Processed: source/lib/pace/pace-theme-fill-left.min.css</span><br><span class="line">04:31:06.283 DEBUG Processed: source/lib/pace/pace-theme-flash.min.css</span><br><span class="line">04:31:06.284 DEBUG Processed: source/lib/pace/pace-theme-loading-bar.min.css</span><br><span class="line">04:31:06.285 DEBUG Processed: source/lib/pace/pace-theme-mac-osx.min.css</span><br><span class="line">04:31:06.285 DEBUG Processed: source/lib/three/canvas_lines.min.js</span><br><span class="line">04:31:06.286 DEBUG Processed: source/lib/pace/pace-theme-minimal.min.css</span><br><span class="line">04:31:06.286 DEBUG Processed: source/lib/pace/pace.min.js</span><br><span class="line">04:31:06.287 DEBUG Processed: source/lib/three/canvas_sphere.min.js</span><br><span class="line">04:31:06.288 DEBUG Processed: source/lib/three/three-waves.min.js</span><br><span class="line">04:31:06.288 DEBUG Processed: source/js/src/affix.js</span><br><span class="line">04:31:06.289 DEBUG Processed: source/lib/three/three.min.js</span><br><span class="line">04:31:06.290 DEBUG Processed: source/js/src/algolia-search.js</span><br><span class="line">04:31:06.290 DEBUG Processed: source/js/src/bootstrap.js</span><br><span class="line">04:31:06.291 DEBUG Processed: source/js/src/exturl.js</span><br><span class="line">04:31:06.292 DEBUG Processed: source/js/src/hook-duoshuo.js</span><br><span class="line">04:31:06.292 DEBUG Processed: source/js/src/js.cookie.js</span><br><span class="line">04:31:06.293 DEBUG Processed: source/js/src/motion.js</span><br><span class="line">04:31:06.294 DEBUG Processed: source/js/src/post-details.js</span><br><span class="line">04:31:06.295 DEBUG Processed: source/js/src/scroll-cookie.js</span><br><span class="line">04:31:06.295 DEBUG Processed: source/js/src/scrollspy.js</span><br><span class="line">04:31:06.296 DEBUG Processed: source/js/src/utils.js</span><br><span class="line">04:31:06.296 DEBUG Processed: source/lib/velocity/bower.json</span><br><span class="line">04:31:06.297 DEBUG Processed: source/lib/velocity/velocity.js</span><br><span class="line">04:31:06.298 DEBUG Processed: source/lib/velocity/velocity.min.js</span><br><span class="line">04:31:06.298 DEBUG Processed: source/lib/velocity/velocity.ui.min.js</span><br><span class="line">04:31:06.299 DEBUG Processed: source/lib/velocity/velocity.ui.js</span><br><span class="line">04:31:06.300 DEBUG Processed: source/lib/Han/dist/han.css</span><br><span class="line">04:31:06.300 DEBUG Processed: source/lib/fancybox/source/blank.gif</span><br><span class="line">04:31:06.301 DEBUG Processed: source/lib/Han/dist/han.js</span><br><span class="line">04:31:06.301 DEBUG Processed: source/lib/fancybox/source/fancybox_loading.gif</span><br><span class="line">04:31:06.302 DEBUG Processed: source/lib/Han/dist/han.min.css</span><br><span class="line">04:31:06.303 DEBUG Processed: source/lib/Han/dist/han.min.js</span><br><span class="line">04:31:06.303 DEBUG Processed: source/lib/fancybox/source/fancybox_loading@2x.gif</span><br><span class="line">04:31:06.304 DEBUG Processed: source/lib/fancybox/source/fancybox_overlay.png</span><br><span class="line">04:31:06.305 DEBUG Processed: source/lib/fancybox/source/fancybox_sprite.png</span><br><span class="line">04:31:06.305 DEBUG Processed: source/lib/fancybox/source/fancybox_sprite@2x.png</span><br><span class="line">04:31:06.306 DEBUG Processed: source/lib/fancybox/source/jquery.fancybox.css</span><br><span class="line">04:31:06.306 DEBUG Processed: source/lib/fancybox/source/jquery.fancybox.pack.js</span><br><span class="line">04:31:06.307 DEBUG Processed: source/lib/fancybox/source/jquery.fancybox.js</span><br><span class="line">04:31:06.307 DEBUG Processed: source/lib/fastclick/lib/fastclick.min.js</span><br><span class="line">04:31:06.308 DEBUG Processed: source/lib/fastclick/lib/fastclick.js</span><br><span class="line">04:31:06.308 DEBUG Processed: source/lib/font-awesome/fonts/FontAwesome.otf</span><br><span class="line">04:31:06.309 DEBUG Processed: source/lib/font-awesome/fonts/fontawesome-webfont.eot</span><br><span class="line">04:31:06.309 DEBUG Processed: source/lib/font-awesome/fonts/fontawesome-webfont.ttf</span><br><span class="line">04:31:06.310 DEBUG Processed: source/lib/font-awesome/fonts/fontawesome-webfont.svg</span><br><span class="line">04:31:06.310 DEBUG Processed: source/lib/font-awesome/fonts/fontawesome-webfont.woff</span><br><span class="line">04:31:06.311 DEBUG Processed: source/lib/font-awesome/fonts/fontawesome-webfont.woff2</span><br><span class="line">04:31:06.311 DEBUG Processed: source/lib/font-awesome/css/font-awesome.css</span><br><span class="line">04:31:06.311 DEBUG Processed: source/lib/font-awesome/css/font-awesome.css.map</span><br><span class="line">04:31:06.312 DEBUG Processed: source/lib/font-awesome/css/font-awesome.min.css</span><br><span class="line">04:31:06.312 DEBUG Processed: source/lib/ua-parser-js/dist/ua-parser.min.js</span><br><span class="line">04:31:06.313 DEBUG Processed: source/lib/ua-parser-js/dist/ua-parser.pack.js</span><br><span class="line">04:31:06.313 DEBUG Processed: source/js/src/schemes/pisces.js</span><br><span class="line">04:31:06.314 DEBUG Processed: source/lib/Han/dist/font/han-space.otf</span><br><span class="line">04:31:06.314 DEBUG Processed: source/lib/Han/dist/font/han-space.woff</span><br><span class="line">04:31:06.315 DEBUG Processed: source/lib/Han/dist/font/han.otf</span><br><span class="line">04:31:06.315 DEBUG Processed: source/lib/Han/dist/font/han.woff</span><br><span class="line">04:31:06.316 DEBUG Processed: source/lib/Han/dist/font/han.woff2</span><br><span class="line">04:31:06.316 DEBUG Processed: source/lib/fancybox/source/helpers/jquery.fancybox-buttons.css</span><br><span class="line">04:31:06.317 DEBUG Processed: source/lib/fancybox/source/helpers/fancybox_buttons.png</span><br><span class="line">04:31:06.317 DEBUG Processed: source/lib/fancybox/source/helpers/jquery.fancybox-buttons.js</span><br><span class="line">04:31:06.317 DEBUG Processed: source/lib/fancybox/source/helpers/jquery.fancybox-media.js</span><br><span class="line">04:31:06.318 DEBUG Processed: source/lib/fancybox/source/helpers/jquery.fancybox-thumbs.css</span><br><span class="line">04:31:06.318 DEBUG Processed: source/lib/fancybox/source/helpers/jquery.fancybox-thumbs.js</span><br><span class="line">04:31:06.346 DEBUG Theme config loaded.</span><br><span class="line">04:31:06.348 DEBUG Processed: layout/_layout.swig</span><br><span class="line">04:31:06.350 DEBUG Processed: layout/archive.swig</span><br><span class="line">04:31:06.350 DEBUG Processed: layout/category.swig</span><br><span class="line">04:31:06.351 DEBUG Processed: layout/index.swig</span><br><span class="line">04:31:06.351 DEBUG Processed: layout/page.swig</span><br><span class="line">04:31:06.352 DEBUG Processed: layout/post.swig</span><br><span class="line">04:31:06.352 DEBUG Processed: layout/schedule.swig</span><br><span class="line">04:31:06.353 DEBUG Processed: layout/_custom/sidebar.swig</span><br><span class="line">04:31:06.354 DEBUG Processed: layout/_custom/header.swig</span><br><span class="line">04:31:06.354 DEBUG Processed: layout/_partials/comments.swig</span><br><span class="line">04:31:06.355 DEBUG Processed: layout/tag.swig</span><br><span class="line">04:31:06.355 DEBUG Processed: layout/_partials/footer.swig</span><br><span class="line">04:31:06.356 DEBUG Processed: layout/_partials/head.swig</span><br><span class="line">04:31:06.356 DEBUG Processed: layout/_partials/header.swig</span><br><span class="line">04:31:06.357 DEBUG Processed: layout/_partials/pagination.swig</span><br><span class="line">04:31:06.357 DEBUG Processed: layout/_partials/page-header.swig</span><br><span class="line">04:31:06.358 DEBUG Processed: layout/_macro/post-copyright.swig</span><br><span class="line">04:31:06.358 DEBUG Processed: layout/_partials/search.swig</span><br><span class="line">04:31:06.359 DEBUG Processed: layout/_macro/post-collapse.swig</span><br><span class="line">04:31:06.359 DEBUG Processed: layout/_macro/post.swig</span><br><span class="line">04:31:06.360 DEBUG Processed: layout/_scripts/boostrap.swig</span><br><span class="line">04:31:06.360 DEBUG Processed: layout/_scripts/commons.swig</span><br><span class="line">04:31:06.360 DEBUG Processed: layout/_macro/reward.swig</span><br><span class="line">04:31:06.361 DEBUG Processed: layout/_macro/sidebar.swig</span><br><span class="line">04:31:06.361 DEBUG Processed: layout/_scripts/vendors.swig</span><br><span class="line">04:31:06.362 DEBUG Processed: layout/_third-party/duoshuo-hot-articles.swig</span><br><span class="line">04:31:06.362 DEBUG Processed: layout/_macro/wechat-subscriber.swig</span><br><span class="line">04:31:06.363 DEBUG Processed: layout/_third-party/exturl.swig</span><br><span class="line">04:31:06.363 DEBUG Processed: layout/_third-party/mathjax.swig</span><br><span class="line">04:31:06.363 DEBUG Processed: layout/_third-party/needsharebutton.swig</span><br><span class="line">04:31:06.364 DEBUG Processed: layout/_partials/head/custom-head.swig</span><br><span class="line">04:31:06.364 DEBUG Processed: layout/_third-party/rating.swig</span><br><span class="line">04:31:06.365 DEBUG Processed: layout/_third-party/schedule.swig</span><br><span class="line">04:31:06.365 DEBUG Processed: layout/_third-party/scroll-cookie.swig</span><br><span class="line">04:31:06.365 DEBUG Processed: layout/_partials/search/localsearch.swig</span><br><span class="line">04:31:06.366 DEBUG Processed: layout/_partials/head/external-fonts.swig</span><br><span class="line">04:31:06.366 DEBUG Processed: layout/_partials/search/swiftype.swig</span><br><span class="line">04:31:06.367 DEBUG Processed: layout/_partials/share/add-this.swig</span><br><span class="line">04:31:06.367 DEBUG Processed: layout/_partials/search/tinysou.swig</span><br><span class="line">04:31:06.368 DEBUG Processed: layout/_partials/share/duoshuo_share.swig</span><br><span class="line">04:31:06.368 DEBUG Processed: layout/_partials/share/baidushare.swig</span><br><span class="line">04:31:06.368 DEBUG Processed: layout/_scripts/pages/post-details.swig</span><br><span class="line">04:31:06.369 DEBUG Processed: layout/_partials/share/jiathis.swig</span><br><span class="line">04:31:06.369 DEBUG Processed: layout/_third-party/analytics/busuanzi-counter.swig</span><br><span class="line">04:31:06.370 DEBUG Processed: layout/_third-party/analytics/analytics-with-widget.swig</span><br><span class="line">04:31:06.370 DEBUG Processed: layout/_third-party/analytics/application-insights.swig</span><br><span class="line">04:31:06.370 DEBUG Processed: layout/_third-party/analytics/baidu-analytics.swig</span><br><span class="line">04:31:06.371 DEBUG Processed: layout/_third-party/analytics/facebook-sdk.swig</span><br><span class="line">04:31:06.371 DEBUG Processed: layout/_third-party/analytics/cnzz-analytics.swig</span><br><span class="line">04:31:06.371 DEBUG Processed: layout/_third-party/analytics/firestore.swig</span><br><span class="line">04:31:06.372 DEBUG Processed: layout/_third-party/analytics/google-analytics.swig</span><br><span class="line">04:31:06.372 DEBUG Processed: layout/_third-party/analytics/tencent-analytics.swig</span><br><span class="line">04:31:06.372 DEBUG Processed: layout/_third-party/analytics/index.swig</span><br><span class="line">04:31:06.373 DEBUG Processed: layout/_scripts/schemes/gemini.swig</span><br><span class="line">04:31:06.373 DEBUG Processed: layout/_third-party/analytics/lean-analytics.swig</span><br><span class="line">04:31:06.373 DEBUG Processed: layout/_third-party/analytics/tencent-mta.swig</span><br><span class="line">04:31:06.374 DEBUG Processed: layout/_third-party/analytics/vkontakte-api.swig</span><br><span class="line">04:31:06.374 DEBUG Processed: layout/_scripts/schemes/mist.swig</span><br><span class="line">04:31:06.374 DEBUG Processed: layout/_third-party/comments/changyan.swig</span><br><span class="line">04:31:06.375 DEBUG Processed: layout/_scripts/schemes/muse.swig</span><br><span class="line">04:31:06.375 DEBUG Processed: layout/_scripts/schemes/pisces.swig</span><br><span class="line">04:31:06.375 DEBUG Processed: layout/_third-party/comments/duoshuo.swig</span><br><span class="line">04:31:06.376 DEBUG Processed: layout/_third-party/comments/disqus.swig</span><br><span class="line">04:31:06.376 DEBUG Processed: layout/_third-party/comments/gitment.swig</span><br><span class="line">04:31:06.376 DEBUG Processed: layout/_third-party/comments/hypercomments.swig</span><br><span class="line">04:31:06.377 DEBUG Processed: layout/_third-party/comments/index.swig</span><br><span class="line">04:31:06.377 DEBUG Processed: layout/_third-party/comments/livere.swig</span><br><span class="line">04:31:06.377 DEBUG Processed: layout/_third-party/comments/youyan.swig</span><br><span class="line">04:31:06.378 DEBUG Processed: layout/_third-party/comments/valine.swig</span><br><span class="line">04:31:06.378 DEBUG Processed: layout/_third-party/seo/baidu-push.swig</span><br><span class="line">04:31:06.379 DEBUG Processed: layout/_third-party/search/index.swig</span><br><span class="line">04:31:06.379 DEBUG Processed: layout/_third-party/search/tinysou.swig</span><br><span class="line">04:31:06.379 DEBUG Processed: languages/de.yml</span><br><span class="line">04:31:06.380 DEBUG Processed: languages/en.yml</span><br><span class="line">04:31:06.380 DEBUG Processed: languages/default.yml</span><br><span class="line">04:31:06.381 DEBUG Processed: languages/fr-FR.yml</span><br><span class="line">04:31:06.381 DEBUG Processed: languages/id.yml</span><br><span class="line">04:31:06.381 DEBUG Processed: languages/it.yml</span><br><span class="line">04:31:06.382 DEBUG Processed: languages/nl-NL.yml</span><br><span class="line">04:31:06.382 DEBUG Processed: languages/ja.yml</span><br><span class="line">04:31:06.383 DEBUG Processed: languages/ko.yml</span><br><span class="line">04:31:06.383 DEBUG Processed: languages/vi.yml</span><br><span class="line">04:31:06.383 DEBUG Processed: languages/pt.yml</span><br><span class="line">04:31:06.384 DEBUG Processed: languages/pt-BR.yml</span><br><span class="line">04:31:06.384 DEBUG Processed: languages/zh-Hans.yml</span><br><span class="line">04:31:06.385 DEBUG Processed: languages/ru.yml</span><br><span class="line">04:31:06.385 DEBUG Processed: languages/zh-hk.yml</span><br><span class="line">04:31:06.385 DEBUG Processed: languages/zh-tw.yml</span><br><span class="line">04:31:06.386 DEBUG Processed: _config.yml</span><br><span class="line">04:31:06.386 DEBUG Processed: layout/_third-party/search/localsearch.swig</span><br><span class="line">04:31:06.387 DEBUG Processed: layout/_third-party/search/algolia-search/assets.swig</span><br><span class="line">04:31:06.387 DEBUG Processed: layout/_third-party/search/algolia-search/dom.swig</span><br><span class="line">04:31:06.388 DEBUG Processed: layout/tag-color.swig</span><br><span class="line">04:31:06.388 DEBUG Processed: source/images/avatar_1.gif</span><br><span class="line">04:31:06.389 DEBUG Processed: source/images/favicon.ico</span><br><span class="line">04:31:06.389 DEBUG Processed: source/images/avata.gif</span><br><span class="line">04:31:06.792 DEBUG Generator: asset</span><br><span class="line">04:31:06.793 DEBUG Generator: page</span><br><span class="line">04:31:06.794 DEBUG Generator: post</span><br><span class="line">04:31:06.798 DEBUG Generator: category</span><br><span class="line">04:31:06.799 DEBUG Generator: archive</span><br><span class="line">04:31:06.801 DEBUG Generator: tag</span><br><span class="line">04:31:06.802 DEBUG Generator: index</span><br><span class="line">04:31:06.815 WARN  ===============================================================</span><br><span class="line">04:31:06.816 WARN  ========================= ATTENTION! ==========================</span><br><span class="line">04:31:06.817 WARN  ===============================================================</span><br><span class="line">04:31:06.817 WARN   NexT repository is moving here: https://github.com/theme-next</span><br><span class="line">04:31:06.818 WARN  ===============================================================</span><br><span class="line">04:31:06.818 WARN   It&#x27;s rebase to v6.0.0 and future maintenance will resume there</span><br><span class="line">04:31:06.819 WARN  ===============================================================</span><br><span class="line">04:31:06.821 INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br><span class="line">04:31:06.829 DEBUG Database saved</span><br><span class="line">04:31:25.938 DEBUG Rendering HTML index: index.html</span><br><span class="line">GET / 200 4.076 ms - -</span><br><span class="line">04:32:28.476 INFO  Good bye</span><br><span class="line">04:32:28.491 DEBUG Database saved</span><br></pre></td></tr></table></figure>
+<p>the only thing appear on the localhost is pure text as follow</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% extends &#x27;_layout.swig&#x27; %&#125; &#123;% import &#x27;_macro/post.swig&#x27; as post_template %&#125; &#123;% import &#x27;_macro/sidebar.swig&#x27; as sidebar_template %&#125; &#123;% block title %&#125;&#123;&#123; config.title &#125;&#125;&#123;% if theme.index_with_subtitle and config.subtitle %&#125; - &#123;&#123;config.subtitle &#125;&#125;&#123;% endif %&#125;&#123;% endblock %&#125; &#123;% block page_class %&#125; &#123;% if is_home() %&#125;page-home&#123;% endif -%&#125; &#123;% endblock %&#125; &#123;% block content %&#125;</span><br><span class="line">&#123;% for post in page.posts %&#125; &#123;&#123; post_template.render(post, true) &#125;&#125; &#123;% endfor %&#125;</span><br><span class="line">&#123;% include &#x27;_partials/pagination.swig&#x27; %&#125; &#123;% endblock %&#125; &#123;% block sidebar %&#125; &#123;&#123; sidebar_template.render(false) &#125;&#125; &#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
+<p>it is some problem relate to swig<br>few steps to troubleshoot:</p>
+<p>Check Data Availability: Ensure that page.posts contains the expected data. If page.posts is empty or not defined, the loop will not render any posts.</p>
+<p>Verify Template Paths: Make sure the paths to _layout.swig, _macro&#x2F;post.swig, and _macro&#x2F;sidebar.swig are correct and the files exist.</p>
+<p>Debugging Output: Add some debugging output to check if the blocks are being executed correctly. For example, you can add some static text inside the blocks to see if they are rendered.</p>
+<p>Check Swig Configuration: Ensure that Swig is configured correctly in your project. Sometimes, issues can arise from incorrect Swig settings.</p>
+<p>Give up the theme and use the default theme</p>
+]]></content>
+      <categories>
+        <category>web</category>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>help</tag>
+        <tag>waste</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/10/09/hello-world/</url>
+    <content><![CDATA[<p>新的開始！</p>
+<span id="more"></span>
+<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>delete_remaining_tags</title>
+    <url>/2024/10/09/delete_remaining_tags/</url>
+    <content><![CDATA[<h1 id="删除旧博客残留tags"><a href="#删除旧博客残留tags" class="headerlink" title="删除旧博客残留tags"></a>删除旧博客残留tags</h1><span id="more"></span>
+<p>recently I start to write new blogs, due to the inspiration of Ruan Yifeng.<br>And I want to change my theme from butterfly to NexT. </p>
+<p>I start the work on the night of October 8th. What I did is </p>
+<ol>
+<li>download <code>NexT</code> from github</li>
+<li>change the <code>_config.yml</code> file in root path, from <code>butterfly</code> to <code>NexT</code><br> and it works after I use <code>hexo clean</code> and <code>hexo g</code></li>
+<li>copy the <code>_config.yml</code> file in <code>themes/NexT</code> to <code>_config.next.yml</code> in root path.</li>
+</ol>
+<p>However, I found that the old tags <strong>are still there</strong>. Tags are suppose to be deleted after the blog is deleted. But things are not that simple. </p>
+<p>I check all the customized setting in my folder.</p>
+<ol>
+<li>not every blog writter create a <code>_config.&lt;theme_name&gt;.yml</code> file in the root path.</li>
+<li>I change the theme, maybe it is relate to existing theme config in butterfly.</li>
+<li>If the remaining_tags have something to do with the source code, searching the tags name in the workspace is a good way.</li>
+</ol>
+<p>For first, it is irrelevant influencing factors. For second nothing changed after I switch back to butterfly<br>for third, I could not find the tags name in the workspace.</p>
+<p>So I think it maybe something relate to website cache.</p>
+<ol>
+<li>delete most of the post in <code>source/_posts</code></li>
+<li>delete folder <code>public</code></li>
+<li>delete all files on GitHub repository</li>
+<li>delete <code>db.json</code> as GPT suggested.</li>
+<li>delete <code>node_modules</code></li>
+<li>regenerate the tags and categories by <code>hexo new page tags</code> and <code>hexo new page categories</code></li>
+<li>delete all the tags and categories in <code>source/_posts</code></li>
+<li>create this post to test.</li>
+</ol>
+<p>日期：2024年10月10日16点33分更新，可能清除<code>public</code> folder and <code>.deploy</code>即可</p>
+<p>It occurred a problem that the tags and categories and tags change from 6 to 7 due to my new tag prose. And both categories and tags are unclicable button on the website.</p>
+<blockquote>
+<p>在 Hexo 博客的 Next 主题中，分类和标签按钮不可点击的可能原因有以下几种：<br><br>主题配置错误：检查 _config.yml 文件中的相关配置，确保分类和标签的设置正确。<br><br>数据源问题：确保你的文章确实有分类和标签。没有任何分类或标签的文章可能导致按钮无法显示。</p>
+</blockquote>
+<p>A rediculous mistake: all the <code>hexo clean</code> have been typed as <code>hexo clear</code> make it no use<br>After revice that I checked <code>hexo --config</code> as instruction it gave.<br>it gave me error message as follow</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">62589@DESKTOP-OQLQ1BU MINGW64 /d/Desktop/hexo_blog</span><br><span class="line">$ hexo --config</span><br><span class="line">ERROR configPaths.includes is not a function</span><br><span class="line">ERROR Local hexo loading failed in D:\Desktop\hexo_blog</span><br><span class="line">ERROR Try running: &#x27;rm -rf node_modules &amp;&amp; npm install --force&#x27;</span><br></pre></td></tr></table></figure>
+<p>So I tried to delete <code>node_modules</code> and <code>npm install --force</code><br>then the error message changed to some render mistake<br><code>$ npm uninstall hexo-renderer-swig</code> seems that swig is not supported anymore and as Copilot suggested I tried to change to nunjucks <code>npm install hexo-renderer-nunjucks --save</code><br>no use, then as terminal message said, I tried to run<br><code>npm audit fix --force</code><br>It worked to a certain degree. And the number of categories and tags are correct now. But it is still not clickable.<br>Then as Copilot suggested, I reinstall the theme NexT. And my website finally - broken. It have some problem with <code>_config.next.yml</code> because some costomized setting in various file.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.htm</span><br><span class="line">l</span><br><span class="line">TypeError: Cannot read properties of undefined (reading &#x27;enable&#x27;)</span><br><span class="line">    at D:\Desktop\my CSC\Hexo_blog\themes\next\scripts\filters\comment\gitalk.js:10:21</span><br><span class="line">    at Filter.execSync (D:\Desktop\my CSC\Hexo_blog\node_modules\hexo\dist\extend\filter.js:72:36)</span><br><span class="line">    at Hexo.execFilterSync (D:\Desktop\my CSC\Hexo_blog\node_modules\hexo\dist\hexo\index.js:397:35)</span><br><span class="line">    at module.exports (D:\Desktop\my CSC\Hexo_blog\themes\next\scripts\events\lib\injects.js:58:8)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (D:\Desktop\my CSC\Hexo_blog\themes\next\scripts\events\index.js:9:27)</span><br><span class="line">    at Hexo.emit (node:events:530:35)</span><br><span class="line">    at Hexo._generate (D:\Desktop\my CSC\Hexo_blog\node_modules\hexo\dist\hexo\index.js:374:14)</span><br><span class="line">    at D:\Desktop\my CSC\Hexo_blog\node_modules\hexo\dist\hexo\index.js:265:25</span><br><span class="line">    at tryCatcher (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\</span><br><span class="line">promise.js:547:31)</span><br><span class="line">    at Promise._settlePromise (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:</span><br><span class="line">604:18)</span><br><span class="line">    at Promise._settlePromise0 (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:649:10)</span><br><span class="line">    at Promise._settlePromises (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:729:18)</span><br><span class="line">    at Promise._fulfill (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:673:18</span><br><span class="line">)</span><br><span class="line">    at PromiseArray._resolve (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise_arra</span><br><span class="line">y.js:127:19)</span><br><span class="line">    at PromiseArray._promiseFulfilled (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\pro</span><br><span class="line">mise_array.js:145:14)</span><br><span class="line">    at Promise._settlePromise (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:</span><br><span class="line">609:26)</span><br><span class="line">    at Promise._settlePromise0 (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:649:10)</span><br><span class="line">    at Promise._settlePromises (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:729:18)</span><br><span class="line">    at Promise._fulfill (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:673:18</span><br><span class="line">)</span><br><span class="line">    at Promise._settlePromise (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:</span><br><span class="line">617:21)</span><br><span class="line">    at Promise._settlePromise0 (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:649:10)</span><br></pre></td></tr></table></figure>
+<p>What I learn is that never getting too deep into something you do not know.</p>
+<p>I reinstall Hexo to make sure the <code>_config.yml</code> is not polluted, and not planing to make any costomized setting if not neccessary.<br>After it is a blog, I will frist focus on the <strong>content</strong>.</p>
+]]></content>
+      <categories>
+        <category>web</category>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>help</tag>
+        <tag>waste</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Around the final for second term</title>
+    <url>/2024/04/28/Record-around-the-final-for-second-term/</url>
+    <content><![CDATA[<h1 id="暮春落雨"><a href="#暮春落雨" class="headerlink" title="暮春落雨"></a>暮春落雨</h1><span id="more"></span>
+<p>At the end of spring, rain keeps falling<br>All things happend so fast.</p>
+<p>I am now sitting in lib, with a cop of cotti coffee. thinking about how to write the term paper for GFN and argumented essay. recall and enjoy the leisure feeling until 5am yesterday for talking with my friend. Though sometimes life seems like a messy thread that you can not unravel. But you can still enjoying it. So beatiful.<br>CSC1002 is lab. class for CSC1001, for all term we practice how to use turtle graphic, seems useless, but do have some harvest. In this course, the part I like most is the farewell letter from the lectureer kinly. I would like to quote here.</p>
+<pre><code>Dear students,
+
+This morning, while sitting in my office with a steaming cup of coffee, preparing to write a goodbye message on BB, I frequently caught myself staring at the screen with my mind at a standstill. I acknowledged that numerous individuals could encounter a similar predicament while tackling the assignments, each with subtle differences.
+
+I believe that programming can be quite challenging, with individuals sometimes struggling for hours to finish an assignment. You manage to complete the logic, eagerly click the “Run” button, encounter a single error, quickly apply the fix with confidence, and click the “Run” again, only to be faced with another error. More errors continue to appear as you repeatedly click “Run”.
+
+At the same time, you might get distracted by the constant &quot;Ding&quot; &quot;Ding&quot; notifications on your cell phone, only to discover that your friends are sharing photos on WeChat, having a great dinner with other friends, while you are alone having a quick snack as a meal.  You continue to focus on your logic, trying to fix all the errors that pop up, not realizing that midnight is approaching.
+
+At just a few hours before midnight, your level of adrenaline surges as the clock ticks, yet you continue to stare at your program cluelessly.
+
+With perseverance and determination, you diligently work to identify the root cause of the problems, addressing them one by one. Gradually, the program works better and better, covering all the necessary functionalities. However, you notice that some parts of the logic appear lengthy and complex, and some with repetitive logic. Glancing at the clock once more, you realize it&#39;s only an hour away from midnight. With extraordinary confidence, you persist in enhancing the program, leading to a final product with cleaner logic and improved structural design.
+
+You look at the clock one more time, the clock strikes 11:50 pm, and with a sense of great satisfaction and pride, you submit the assignment. Programming offers a sense of accomplishment as you create something unique from your own inspiration. Developing software enhances creativity and problem-solving skills, and witnessing a bug-free program come to life is truly rewarding and captivating. I hope you have felt the same sense of achievement.
+
+CSC1002 is a unique course designed to enhance overall programming skills by emphasizing that “Working Code Is Not Enough” and that students are introduced to two very crucial concepts in the software development process, “Clean Logic” and “Problem Decomposition”, along with live-coding demonstrations, to further enhance your programming abilities.  I believe that many of you have gained better skills in programming. 
+
+I appreciate your remarkable patience in reading this lengthy message. The school office kindly requests your participation in the CTE survey. Your feedback is greatly appreciated!
+
+Have a wonderful summer break!!! Goodbye all!
+
+Kinley
+</code></pre>
+<p>Living a super busy but still cozy life. Time and focus and sleeping time need to be well controlled. In recent two days, I’ve been drinking coffee daily, and sleep for 4 hours, but didn’t feel any uncomfortable. Now I found pursuing a healthy life is ok, but it shouldn’t be one of my fundamental rule. Sometime I do need more time, so it is ok. No need to give extra pressure, feeling guity about damaging personal health.<br><img src="https://s2.loli.net/2024/10/09/uAqwNSW436VnCIc.jpg"></p>
+]]></content>
+      <categories>
+        <category>school</category>
+      </categories>
+      <tags>
+        <tag>prose</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>reflection of RMUL</title>
+    <url>/2024/04/13/Record-reflection-on-RMUL/</url>
+    <content><![CDATA[<h1 id="福建賽區RMUL比赛"><a href="#福建賽區RMUL比赛" class="headerlink" title="福建賽區RMUL比赛"></a>福建賽區RMUL比赛</h1><span id="more"></span> 
+<h1 id="Time-line"><a href="#Time-line" class="headerlink" title="Time line"></a>Time line</h1><h2 id="April-11th-Thr"><a href="#April-11th-Thr" class="headerlink" title="April 11th (Thr)"></a>April 11th (Thr)</h2><p>早上是六点二十分在乐天集合的，在那之前我们加急完成了三辆车的机械部分的任务，十号的安装我没有参与，有人是通宵的，任务是十分紧的</p>
+<font size = 1>
+p.s. 我是九号参与安装，熬到了凌晨一点多，然后同一天，这个hexo的博客诞生了———一个极端情况下的疯狂想法
+</font>
+
+<p>看着66*66*70的航空箱，校徽与过岗龙(dragopass)被装上了货拉拉的车，去往福建福州的RMUL比赛打响了</p>
+<p>早餐吃的肯德基，吃完后四辆网约车到坪山站。周边看到了云巴这种类轻轨的交通方式，坪山站可能在扩建。打印报销凭条后过完安检——睡觉。上了D388——睡觉，试图写turtle，不清醒，无果。</p>
+<p>一点半多准时到福州南。体验了类似于探鱼的那种店作为午餐，入住木兰澜苑（MLLY），名字莫名其妙的旅店，但是住的是舒服的。柔和的灯光布景，大面积，我喜欢。<br>晚上去福建理工大学报道，我们的车调了挺久才去裁判区进行检录，那时我们是最后一个队伍而且超时了，但是遇到一个很好的referee，耐心的检测我们的车辆是否符合规则。检录时候遇到许多问题，一一记下，熬夜修改，今天晚上xyf 13号五点才回MLLY，底盘ID改进，侧面反光修改，图传垫高拆装和理线，分类撞翻的螺丝。我赶完了02的hw9due。吃着塔斯汀两个辣的，吃东西时看着视频，时间就过去了。睡得时间还是太短了，第二天六点四十起的</p>
+<p>福州的天气和深圳还是有差异的，比较冷。短袖短裤的，吹得我发颤。</p>
+<h2 id="April-12th-Fri"><a href="#April-12th-Fri" class="headerlink" title="April 12th (Fri)"></a>April 12th (Fri)</h2><p>今天是第一天比赛日，我是六点四十五起的，然后我和mani和陈lp指导是第一批到的，尝试了学校的早餐，很接地气，MLLY2车第二，然后是zsh和coli一众人，我递给他们参赛牌子。核心五人看来是没怎么睡的。</p>
+<p>被裁判组催着做了适应赛的检录——我们知道最后一刻都在调车。打了3v3适应赛，结果很糟，爆出了一系列问题，卡弹是最严重的。哨兵直接过载自杀，步兵也是超限程序没发挥作用，射速也被判定过快，但是实际上是卡弹的，这样子3v3不可能进行。</p>
+<p>当然，糟糕的不知有我们</p>
+<p>下午要打步兵的1v1<em>还好没有3v3</em>，队长说优先把卡弹解决掉——确实，如果没有解决这个下午比赛照样不行<br>我们把车运到coli，然后在里面开始找为什么会卡弹</p>
+<ul>
+<li>两台步兵的弹舱不一样，一个有分层，一个没有，有分层的那个有些时候子弹的中心会在0.75D的位置，然后被分层零件卡住。</li>
+<li>有些时候是两颗子弹被拨弹轮抵住，和右侧面发生巨大的摩擦力（我们是右旋供弹）</li>
+<li>这是我们在当日中午的判定</li>
+</ul>
+<p>修了一中午，以为解决了，实际上没有<br>下午的1v1据说是对方步兵一直超限判罚致死，然后我们赢了（？ 我没看</p>
+<p>晚上吃了顿好的，在一个拥挤的购物广场，类似于绿茶。</p>
+<p>一小时后又回到了福建理工。我去等待调车步兵，他们在调试哨兵的过程中，<br>哨兵转转，失控了，鼠标，键盘，屏幕等连在NUC上的硬件被扯着旋转。wjb用手把1.2$\pi$rad&#x2F;s的哨兵停下来了，的手被划破了。鉴于生化楼晚上会关。<br>收拾好东西回coli继续调</p>
+<ul>
+<li>此处晚上排查问题到凌晨1点，鉴定为爪形导轨，3D打印的零件和发射集成件，由于打印件短了一点，导致形成“凹”字形的结构，弹丸卡进<br>然后用特氟龙胶带把三个零件平滑连接起来，有一台的效果变好了，我们就把这个运用到另外一台上面<br>凌晨两点多，如释重负的的回去睡了。</li>
+</ul>
+<h2 id="April-13th-Sat"><a href="#April-13th-Sat" class="headerlink" title="April 13th (Sat)"></a>April 13th (Sat)</h2><p>今天才是真正的3v3<br>9：50-10：10分对战深北莫（sbm），两场均负，<br>15：40-16：00对战闽江学院，11平<br>一个F小组，三个学校，取两个。遗憾的没有晋级</p>
+<p>卡弹，超功率与避免超是两个问题<br>中午wyx和zdy把哨兵机械结构修复<br>今天没早起，虽然群里说是7点在南校区北门集合，但是机械组由于在目前情况中能做出的贡献有限，于是自己被默许睡到九点</p>
+<p>今天状态不太行，由于熬夜失活<br>没怎么干事，出去接了潘潘，他到了北校区北门，于是多等15min，介绍着目前的情况，走到了赛场</p>
+<h3 id="1v1"><a href="#1v1" class="headerlink" title="1v1"></a>1v1</h3><p>11：50 - 12：00 对战浙江大学城市学院<br>14：30 - 14：40 对战厦门大学</p>
+<h3 id="3v3"><a href="#3v3" class="headerlink" title="3v3"></a>3v3</h3><ol>
+<li>过去刚好看第一场sbm的3v3。0&#x2F;2负于深北莫<br>见wjb的作文<br></li>
+</ol>
+<blockquote>
+<p>首场港中深 0:2憾负深北莫<br></p>
+<ul>
+<li>第一场<br>我们的哨兵机器人开局超功率阵亡，我方基地无敌以及护盾开局归零。<br><br>我们的 3号步兵出现卡弹问题，全场比赛无法射出一发子弹；4号步兵尽力防守，<em>卡弹步兵用尽三次冲撞机会</em>。将对方哨兵打残；可惜无法<br>逆转颓势，港中深0:1负于深北莫</li>
+<li>第二场<br>我方哨兵开局超功率，及时自主降低<br>功率避免了过早阵亡，但仍然到了残<br>血(我们电控只有一个人，他让我们三部机器人正常运转就已经非常厉害了)；<em>缓缓地转</em> <br><br>3号步兵虽然经过场间调试，但仍然未能避免卡弹问题，整场比赛无法进行攻击，并且也会超功率扣血并阵亡，无法参与正面对抗；<br>4号步兵在以一敌二的情况下，打残对方步兵，哨兵；逼退对方英雄机器人；对方有精度优势，在中场吊射摧毁了基地，港中深0:2憾负深北莫。<br><br>我们出线的唯一途径，就是在下午<br>2:0闽江学院：这并不简单，但并不是不能做到。<br>3号步兵在赛后，通过机械组的抢救，已经可以顺畅攻击，哨兵功率的问题也在紧锣密鼓地进行调整。<br><br>深圳北理莫斯科大学 北极熊战队在<br>战场上极其凶狠，但是赛后仍然帮助我们调整机器人，解決了非常多的问题。<br>感谢他们。<br><br>每一把都当最后一把，然后也就不要怕输。希望我们能以全盛姿态，打好之后的每一场比费。</li>
+</ul>
+</blockquote>
+<ol start="2">
+<li>和闽江学院的，见wjb小作文<br></li>
+</ol>
+<blockquote>
+<p>时运不济 港中深1:1闽江学院<br></p>
+<ul>
+<li>第一局<br>发现闽江学院没有上英雄；我们分工，一人对峙对方步兵，一人打对面哨兵；起初我方优势，敌方步兵，哨兵相继被击杀；我们前往击打基地；可惜我们步兵相继再现卡弹问题，<em>站在对方基地面前一发子弹没打出去</em>，优势葬送，惜败闽江学<br>院</li>
+<li>第二局<br>吸取教训，第二局我们双步兵利用人数优势集火对面步兵，先击杀步兵再打哨兵；并轮流封堵对方步兵走位空问，将其成功压制在泉水中。另一方占领中央增益区，并击杀对方哨兵。<br>对方基地护盾消失后，我方并无松懈，轮流封堵对方步兵走位，轮流击打对方基地。虽然在最后关头4<br>号步兵再次发生卡弹，但优势已经确立，顺利拿下3<br>v3队史首胜。<br><br>但是，我们的积分并不足够将我们送进16强，我们3v3的步伐到此为止了。<br><br>但是，我们1v1赛道，已经晋级16强，将于今晚或明天进行16进8比赛。<br><br>作为成立不满一年，视觉只有三人，电控只有一人，整队11人左右，初次参加该类赛事的新队伍来讲，走到这里已经非常不容易。我们在这里，向深北莫北极熊战队道谢，祝他们16进8好运；向仲恺农业工程学院道谢;以上两支队伍，以及我校许多研究生学长学姐给予了我们巨大的帮助，没有他们，我们甚至没办法站在这里。<br>感谢各位的关注和支持；也欢迎咨询加入香港中文大学（深圳）过岗龙战队；（视觉组和电控组的四位同学这三天没睡够八小时qwa)<br>*对方步兵精度并不足够对我们处于“小陀螺”状态的步兵造成任何伤害！</li>
+</ul>
+</blockquote>
+<p>晚上打完比赛，我们就聊天，看别人比赛</p>
+<p>在coli吃的豪华晚饭，1388吃的不保，味道一般般，亏亏的<br>然后回来慢慢码字</p>
+<h2 id="April-14th-Sun"><a href="#April-14th-Sun" class="headerlink" title="April 14th(Sun)"></a>April 14th(Sun)</h2><p>今天不必早起，七点半起后在MLLY S8不紧不慢的和教授一起吃完早餐，然后不紧不慢的打车去到北门，其间我和xyf和教授了解ECE是怎么样的东西，教授设计了ECE的课程。xyf展示了他想让人工智能和机器人结合在一起的想法，这种机器人记得特斯拉已经在做。他表达他想法时在发光呢，一个扎实的松弛沉稳有奇思的男大（bushi）</p>
+<font size = 1>
+沉稳是问题会想明白，松弛奇思是因为到今天他也没分清楚三种轮子，麦轮的工作原理，哨兵雷达长什么样，以及保持一定看手机的频率但是错过群里消息和PM，我有点看不清楚他的认知方式
+</font>
+
+<p>今天过去主要看深北莫对战3v3，可惜输了，也是因为技术故障。<br>然后强队之间的对战，哨兵功能都十分完整，可以开局单杀对面哨兵说明导航和自瞄识别，决策树都很强<br>然后是我们的1v1，晋级八强，晋级四强<br>在四强中遇到CSGO的s哥，开玩笑的，输了的原因是没有自瞄，手动在程序面前还是有大差距的<br>我们是殿军，就是季军后面那个（今天才知道这个词）<br>午餐的COTTI9.9，我们学校什么时候才能让学生喝得起咖啡。<br>下午两点，我们提前回去的一批人打车到了福州南站。动车上“写”完了物理，码完了字。回去休息了</p>
+<h1 id="Some-observation"><a href="#Some-observation" class="headerlink" title="Some observation"></a>Some observation</h1><h3 id="交流为主"><a href="#交流为主" class="headerlink" title="交流为主"></a>交流为主</h3><p>大家在技术上交流还是和平的，藏着掖着的可能也只是自己的核心机密。<br>* 赛前深北莫还来帮忙装车了<br>* 第一天第二天我们均有借入与借出工具。并不会因为是陌生，而见外<br>* 第一天比完赛，出问题，深北莫鼎立相助<br>* 最后一场与闽江的对抗，他们为我们喝彩，还是挺感动的。</p>
+<h3 id="能力决定责任"><a href="#能力决定责任" class="headerlink" title="能力决定责任"></a>能力决定责任</h3><p>几个会的最多的熬的最猛，单日预算完全用不完，因为一天只吃一顿，晚上也不怎么睡觉。。。<br>而我啥也不会，只能尽力打杂。这种感觉其实挺不好。但是确实见识到他们在做的是什么，以后应该去学一些什么<br>潘教授也是这么说的，现在是见习，以后才能成为主力</p>
+<h3 id="学习方向"><a href="#学习方向" class="headerlink" title="学习方向"></a>学习方向</h3><ul>
+<li>视觉的opencv自瞄真的很重要，哨兵的自瞄如果足够准，在战局中可以起到至关重要的作用</li>
+<li>电控组要求掌握ROS，如何去控制机器人的每部分也很重要</li>
+<li>唯有热情不灭才能前进</li>
+</ul>
+]]></content>
+      <categories>
+        <category>RM</category>
+      </categories>
+      <tags>
+        <tag>prose</tag>
+      </tags>
+  </entry>
+</search>
