@@ -19,15 +19,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"humble-learner006.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"输内容后点上方搜索","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="git 教程">
+    <meta name="description" content="git 教程push操作流程确保这是一个仓库.git文件存在  git status 查看当前状态，记得查看branch git add * 添加所有要更改的文件到暂存区（stage） git commit -m &quot;&lt;message&gt;&quot; 提交暂存区到仓库区（commit） git push origin main把本地库的内容推送到远程你可以参考 cs61b lab">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git_tutorial">
 <meta property="og:url" content="https://humble-learner006.github.io/2024/10/10/git-tutorial/index.html">
 <meta property="og:site_name" content="LIke&#39;s blog">
-<meta property="og:description" content="git 教程">
+<meta property="og:description" content="git 教程push操作流程确保这是一个仓库.git文件存在  git status 查看当前状态，记得查看branch git add * 添加所有要更改的文件到暂存区（stage） git commit -m &quot;&lt;message&gt;&quot; 提交暂存区到仓库区（commit） git push origin main把本地库的内容推送到远程你可以参考 cs61b lab">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-10-10T04:32:38.000Z">
-<meta property="article:modified_time" content="2024-10-11T06:06:07.069Z">
+<meta property="article:modified_time" content="2024-10-11T10:58:15.985Z">
 <meta property="article:author" content="Like Cai">
 <meta property="article:tag" content="help">
 <meta property="article:tag" content="unfinished">
@@ -92,7 +92,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">6</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">9</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">6</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">10</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"> <i class="fa fa-search fa-fw"></i> 搜索
         </a>
@@ -143,7 +143,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git-%E6%95%99%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">git 教程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#push%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="nav-number">1.1.</span> <span class="nav-text">push操作流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fetch-pull%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="nav-number">1.2.</span> <span class="nav-text">fetch&#x2F;pull操作流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git"><span class="nav-number">1.3.</span> <span class="nav-text">Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-status-of-your-file-Modified-%E2%80%93-staged%EF%BC%88in-the-middle%EF%BC%89%E2%80%93-committed-git"><span class="nav-number">1.4.</span> <span class="nav-text">3 status of your file: Modified – staged（in the middle）– committed(.git)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%EF%BC%88%E6%8C%89%E7%85%A7%E5%B8%B8%E7%94%A8%E7%A8%8B%E5%BA%A6%E6%8E%92%E5%BA%8F%EF%BC%89"><span class="nav-number">1.5.</span> <span class="nav-text">基本操作（按照常用程度排序）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Configure-your-git"><span class="nav-number">1.5.1.</span> <span class="nav-text">Configure your git</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Package-manager-%EF%BC%88Linux%E7%B3%BB%E7%BB%9F%E5%BF%85%E8%A6%81%E4%BA%86%E8%A7%A3%EF%BC%89"><span class="nav-number">1.6.</span> <span class="nav-text">Package manager （Linux系统必要了解）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#two-type-of-package-manager"><span class="nav-number">1.7.</span> <span class="nav-text">two type of package manager</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git-%E6%95%99%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">git 教程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#push%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="nav-number">1.1.</span> <span class="nav-text">push操作流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fetch-pull%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="nav-number">1.2.</span> <span class="nav-text">fetch&#x2F;pull操作流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#merge%EF%BC%88%E5%90%88%E5%B9%B6%EF%BC%89"><span class="nav-number">1.2.1.</span> <span class="nav-text">merge（合并）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%94%AFbranch"><span class="nav-number">1.3.</span> <span class="nav-text">分支branch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git"><span class="nav-number">1.4.</span> <span class="nav-text">Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-status-of-your-file-Modified-%E2%80%93-staged%EF%BC%88in-the-middle%EF%BC%89%E2%80%93-committed-git"><span class="nav-number">1.5.</span> <span class="nav-text">3 status of your file: Modified – staged（in the middle）– committed(.git)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%EF%BC%88%E6%8C%89%E7%85%A7%E5%B8%B8%E7%94%A8%E7%A8%8B%E5%BA%A6%E6%8E%92%E5%BA%8F%EF%BC%89"><span class="nav-number">1.6.</span> <span class="nav-text">基本操作（按照常用程度排序）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Configure-your-git"><span class="nav-number">1.6.1.</span> <span class="nav-text">Configure your git</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Package-manager-%EF%BC%88Linux%E7%B3%BB%E7%BB%9F%E5%BF%85%E8%A6%81%E4%BA%86%E8%A7%A3%EF%BC%89"><span class="nav-number">1.7.</span> <span class="nav-text">Package manager （Linux系统必要了解）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#two-type-of-package-manager"><span class="nav-number">1.8.</span> <span class="nav-text">two type of package manager</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -158,13 +158,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -243,7 +243,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-10-11 14:06:07" itemprop="dateModified" datetime="2024-10-11T14:06:07+08:00">2024-10-11</time>
+      <time title="修改时间：2024-10-11 18:58:15" itemprop="dateModified" datetime="2024-10-11T18:58:15+08:00">2024-10-11</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -264,19 +264,30 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="git-教程"><a href="#git-教程" class="headerlink" title="git 教程"></a>git 教程</h1><span id="more"></span>
-<h2 id="push操作流程"><a href="#push操作流程" class="headerlink" title="push操作流程"></a>push操作流程</h2><p>确保这是一个仓库<code>.git</code>文件存在</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="git-教程"><a href="#git-教程" class="headerlink" title="git 教程"></a>git 教程</h1><h2 id="push操作流程"><a href="#push操作流程" class="headerlink" title="push操作流程"></a>push操作流程</h2><p>确保这是一个仓库<code>.git</code>文件存在</p>
 <ul>
 <li><code>git status</code> 查看当前状态，记得查看branch</li>
 <li><code>git add *</code> 添加所有要更改的文件到暂存区（stage）</li>
 <li><code>git commit -m &quot;&lt;message&gt;&quot;</code> 提交暂存区到仓库区（commit）</li>
-<li><code>git push origin main</code> 把本地库的内容推送到远程<br>你可以参考 <a target="_blank" rel="noopener" href="https://sp21.datastructur.es/materials/lab/lab1/lab1">cs61b lab1 section E</a> 十分好的 git 教程</li>
+<li><code>git push origin main</code>把本地库的内容推送到远程<br>你可以参考 <a target="_blank" rel="noopener" href="https://sp21.datastructur.es/materials/lab/lab1/lab1">cs61b lab1 section E</a> 十分好的 git 教程</li>
 </ul>
-<h2 id="fetch-pull操作流程"><a href="#fetch-pull操作流程" class="headerlink" title="fetch&#x2F;pull操作流程"></a>fetch&#x2F;pull操作流程</h2><ul>
+<h2 id="fetch-pull操作流程"><a href="#fetch-pull操作流程" class="headerlink" title="fetch&#x2F;pull操作流程"></a>fetch&#x2F;pull操作流程</h2><p>如果你只是为了更新本地文件，可以使用 <code>git pull</code> 命令从远程仓库获取最新的更改并合并到你的本地分支。以下是步骤：<br><code>git checkout main</code><br>(checkout)切换到你想要更新的分支（通常是 main 或 master 分支）：<br><code>git pull origin main</code><br>拉取远程仓库的最新更改并合并到本地分支：</p>
+<ul>
 <li><code>git fetch origin main</code> 从远程获取最新版本到本地，不会自动merge</li>
-<li><code>git pull origin main</code> 把远程库的内容拉下来，然后与本地的文件合并</li>
+<li><code>git pull origin main</code> 把远程库(origin和远程库的URL等价)的内容拉下来，然后与本地的文件合并</li>
 </ul>
-<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>What is git:<br>**A system:**Git is a distributed version control system.<br><strong>Version Control:</strong> We can go back to previous version if something screw up in VCS(version control system).<br>One of the most widely distributed VCS is <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Revision_Control_System">RCS</a> ,work by adding patches&#x2F; delta between file, develop from its predecessor – SCCS (Source Code Control system)<br><strong>Branching</strong> means you diverge from the main line of development and continue to do work without messing with that main line.<br>兴趣阅读：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/95179354">版本管理系统的发展历史</a><br><strong>Git</strong> work by taking snapshot, not difference.</p>
+<h3 id="merge（合并）"><a href="#merge（合并）" class="headerlink" title="merge（合并）"></a>merge（合并）</h3><ol>
+<li>本地分支合并：你可以在本地将一个分支合并到另一个分支。<br>feature-branch 是你要合并的分支，main 是目标分支。一般在freture branch开发新功能或修复bug.<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout main</span><br><span class="line">git merge feature-branch</span><br></pre></td></tr></table></figure></li>
+<li>解决冲突：如果在合并过程中发生冲突，你需要在本地解决这些冲突，然后提交解决后的文件。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">give your resolved file to git</span><br><span class="line">git add &lt;resolved-files&gt;</span><br><span class="line">git commit -m &quot;Resolved merge conflicts&quot;</span><br></pre></td></tr></table></figure></li>
+<li>推送到远程：合并完成并解决冲突后，你可以将合并后的分支推送到远程仓库。<br><code>git push origin main</code></li>
+</ol>
+<h2 id="分支branch"><a href="#分支branch" class="headerlink" title="分支branch"></a>分支branch</h2><p>并行开发必备</p>
+<ul>
+<li><code>git branch</code> 查看分支，确认当前的分支信息<br>step 1： <code>git branch &lt;branch-name&gt;</code> 创建分支<br>step 2: 在新分支上开发功能<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add *</span><br><span class="line">git commit -m &quot;My new feature&quot;</span><br></pre></td></tr></table></figure>
+step 3: 推送新分支到远程仓库<code>git push origin &lt;feature-branch&gt;</code><br>step 4: 切换到主分支<code>git checkout main</code><br>step 5: 合并分支<code>git merge &lt;feature-branch&gt;</code><br>step 6: 删除分支<code>git branch -d &lt;feature-branch&gt;</code><br>step 7: 删除远程分支<code>git push origin --delete &lt;feature-branch&gt;</code></li>
+</ul>
+<span id="more"></span>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a><strong>Git</strong></h2><p>What is git?<br><strong>A system:</strong> Git is a distributed version control system.<br><strong>Version Control:</strong> We can go back to previous version if something screw up in VCS(version control system).<br>One of the most widely distributed VCS is <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Revision_Control_System">RCS</a> ,work by adding patches&#x2F; delta between file, develop from its predecessor – SCCS (Source Code Control system)<br><strong>Branching</strong> means you diverge from the main line of development and continue to do work without messing with that main line.<br>兴趣阅读：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/95179354">版本管理系统的发展历史</a><br><strong>Git</strong> work by taking snapshot, not difference.</p>
 <h2 id="3-status-of-your-file-Modified-–-staged（in-the-middle）–-committed-git"><a href="#3-status-of-your-file-Modified-–-staged（in-the-middle）–-committed-git" class="headerlink" title="3 status of your file: Modified – staged（in the middle）– committed(.git)"></a>3 status of your file: Modified – staged（in the middle）– committed(.git)</h2><p>潜在的unchange data可以比喻为在家里的人。<br>modified可以被比喻为所有在车站的人，有可能不会上车<br>staged 可以被比喻为在月台的人，是即将上车的人，但是也可能不上车（日程取消）<br>committed 可以被比喻为在火车上的人，被送到目的地云端</p>
 <h2 id="基本操作（按照常用程度排序）"><a href="#基本操作（按照常用程度排序）" class="headerlink" title="基本操作（按照常用程度排序）"></a>基本操作（按照常用程度排序）</h2><p><code>cd + &lt;location&gt;</code>（change derectory）<br><code>git branch</code> 查看分支<br><code>git log</code> 查看提交历史<br><code>git status</code> 查看当前状态<br><code>git diff</code> 查看修改内容<br><code>git add</code> 添加文件到暂存区<br><code>git add *</code> 添加所有文件到暂存区<br><code>git commit -m &quot;&lt;message&gt;&quot;</code> 提交暂存区到仓库区<br><code>git reset HEAD</code> 把暂存区的修改撤销掉（unstage），重新放回工作区<br><code>git remote -v</code> 查看远程库信息<br><code>git push origin main</code> 把本地库的内容推送到远程</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push origin main</span><br><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
@@ -329,6 +340,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2024/10/11/about/" rel="next" title="about">
+                  about <i class="fa fa-angle-right"></i>
+                </a>
             </div>
           </div>
     </footer>
