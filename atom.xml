@@ -6,7 +6,7 @@
   <link href="https://humble-learner006.github.io/atom.xml" rel="self"/>
   
   <link href="https://humble-learner006.github.io/"/>
-  <updated>2024-10-11T10:33:56.093Z</updated>
+  <updated>2024-10-11T12:26:28.083Z</updated>
   <id>https://humble-learner006.github.io/</id>
   
   <author>
@@ -17,18 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>about</title>
-    <link href="https://humble-learner006.github.io/2024/10/11/about/"/>
-    <id>https://humble-learner006.github.io/2024/10/11/about/</id>
+    <title>navigator</title>
+    <link href="https://humble-learner006.github.io/2024/10/11/navigator/"/>
+    <id>https://humble-learner006.github.io/2024/10/11/navigator/</id>
     <published>2024-10-11T10:31:25.000Z</published>
-    <updated>2024-10-11T10:33:56.093Z</updated>
+    <updated>2024-10-11T12:26:28.083Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;写点东西&quot;&gt;&lt;a href=&quot;#写点东西&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;近期&quot;&gt;&lt;a href=&quot;#近期&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -46,7 +46,7 @@
     <link href="https://humble-learner006.github.io/2024/10/10/git-tutorial/"/>
     <id>https://humble-learner006.github.io/2024/10/10/git-tutorial/</id>
     <published>2024-10-10T04:32:38.000Z</published>
-    <updated>2024-10-11T10:58:15.985Z</updated>
+    <updated>2024-10-11T12:26:03.136Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;git-教程&quot;&gt;&lt;a href=&quot;#git-教程&quot; class=&quot;headerlink&quot; title=&quot;git 教程&quot;&gt;&lt;/a&gt;git 教程&lt;/h1&gt;&lt;h2 id=&quot;push操作流程&quot;&gt;&lt;a href=&quot;#push操作流程&quot; class=&quot;headerlink&quot; title=&quot;push操作流程&quot;&gt;&lt;/a&gt;push操作流程&lt;/h2&gt;&lt;p&gt;确保这是一个仓库&lt;code&gt;.git&lt;/code&gt;文件存在&lt;/p&gt;
@@ -74,7 +74,7 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
     
     
     
-    <category term="school" scheme="https://humble-learner006.github.io/categories/school/"/>
+    <category term="RM" scheme="https://humble-learner006.github.io/categories/RM/"/>
     
     
     <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
@@ -90,7 +90,7 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
     <link href="https://humble-learner006.github.io/2024/10/10/pointer/"/>
     <id>https://humble-learner006.github.io/2024/10/10/pointer/</id>
     <published>2024-10-10T02:22:29.000Z</published>
-    <updated>2024-10-11T10:35:45.957Z</updated>
+    <updated>2024-10-11T12:26:44.841Z</updated>
     
     
       
@@ -103,7 +103,7 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
     
     
     
-    <category term="school" scheme="https://humble-learner006.github.io/categories/school/"/>
+    <category term="C/C++" scheme="https://humble-learner006.github.io/categories/C-C/"/>
     
     
     <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
@@ -117,7 +117,7 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
     <link href="https://humble-learner006.github.io/2024/10/09/Qt_tutorial/"/>
     <id>https://humble-learner006.github.io/2024/10/09/Qt_tutorial/</id>
     <published>2024-10-09T15:00:00.000Z</published>
-    <updated>2024-10-11T10:35:27.128Z</updated>
+    <updated>2024-10-11T12:27:10.562Z</updated>
     
     
       
@@ -130,12 +130,12 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
     
     
     
-    <category term="school" scheme="https://humble-learner006.github.io/categories/school/"/>
+    <category term="C/C++" scheme="https://humble-learner006.github.io/categories/C-C/"/>
     
     
     <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
     
-    <category term="C/C++" scheme="https://humble-learner006.github.io/tags/C-C/"/>
+    <category term="config" scheme="https://humble-learner006.github.io/tags/config/"/>
     
   </entry>
   
@@ -228,14 +228,14 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
     <link href="https://humble-learner006.github.io/2024/04/28/Record-around-the-final-for-second-term/"/>
     <id>https://humble-learner006.github.io/2024/04/28/Record-around-the-final-for-second-term/</id>
     <published>2024-04-28T01:55:04.000Z</published>
-    <updated>2024-10-10T09:41:47.913Z</updated>
+    <updated>2024-10-11T12:27:48.241Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;暮春落雨&quot;&gt;&lt;a href=&quot;#暮春落雨&quot; class=&quot;headerlink&quot; title=&quot;暮春落雨&quot;&gt;&lt;/a&gt;暮春落雨&lt;/h1&gt;</summary>
     
     
     
-    <category term="school" scheme="https://humble-learner006.github.io/categories/school/"/>
+    <category term="daily" scheme="https://humble-learner006.github.io/categories/daily/"/>
     
     
     <category term="prose" scheme="https://humble-learner006.github.io/tags/prose/"/>
