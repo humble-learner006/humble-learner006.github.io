@@ -6,7 +6,7 @@
   <link href="https://humble-learner006.github.io/atom.xml" rel="self"/>
   
   <link href="https://humble-learner006.github.io/"/>
-  <updated>2024-10-11T12:26:28.083Z</updated>
+  <updated>2024-10-11T12:29:18.797Z</updated>
   <id>https://humble-learner006.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://humble-learner006.github.io/2024/10/11/navigator/"/>
     <id>https://humble-learner006.github.io/2024/10/11/navigator/</id>
     <published>2024-10-11T10:31:25.000Z</published>
-    <updated>2024-10-11T12:26:28.083Z</updated>
+    <updated>2024-10-11T12:29:18.797Z</updated>
     
     
       
@@ -178,29 +178,6 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
   </entry>
   
   <entry>
-    <title>delete_remaining_tags</title>
-    <link href="https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/"/>
-    <id>https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/</id>
-    <published>2024-10-09T01:33:52.000Z</published>
-    <updated>2024-10-11T05:21:10.161Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;删除旧博客残留tags&quot;&gt;&lt;a href=&quot;#删除旧博客残留tags&quot; class=&quot;headerlink&quot; title=&quot;删除旧博客残留tags&quot;&gt;&lt;/a&gt;删除旧博客残留tags&lt;/h1&gt;</summary>
-    
-    
-    
-    <category term="web" scheme="https://humble-learner006.github.io/categories/web/"/>
-    
-    <category term="blog" scheme="https://humble-learner006.github.io/categories/web/blog/"/>
-    
-    
-    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
-    
-    <category term="waste" scheme="https://humble-learner006.github.io/tags/waste/"/>
-    
-  </entry>
-  
-  <entry>
     <title>blog_building</title>
     <link href="https://humble-learner006.github.io/2024/10/09/blog_building/"/>
     <id>https://humble-learner006.github.io/2024/10/09/blog_building/</id>
@@ -220,6 +197,29 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
     <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
     
     <category term="unfinished" scheme="https://humble-learner006.github.io/tags/unfinished/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>delete_remaining_tags</title>
+    <link href="https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/"/>
+    <id>https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/</id>
+    <published>2024-10-09T01:33:52.000Z</published>
+    <updated>2024-10-11T05:21:10.161Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;删除旧博客残留tags&quot;&gt;&lt;a href=&quot;#删除旧博客残留tags&quot; class=&quot;headerlink&quot; title=&quot;删除旧博客残留tags&quot;&gt;&lt;/a&gt;删除旧博客残留tags&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="web" scheme="https://humble-learner006.github.io/categories/web/"/>
+    
+    <category term="blog" scheme="https://humble-learner006.github.io/categories/web/blog/"/>
+    
+    
+    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
+    
+    <category term="waste" scheme="https://humble-learner006.github.io/tags/waste/"/>
     
   </entry>
   
