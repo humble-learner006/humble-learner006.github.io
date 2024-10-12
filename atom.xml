@@ -6,7 +6,7 @@
   <link href="https://humble-learner006.github.io/atom.xml" rel="self"/>
   
   <link href="https://humble-learner006.github.io/"/>
-  <updated>2024-10-11T12:29:18.797Z</updated>
+  <updated>2024-10-12T09:47:43.813Z</updated>
   <id>https://humble-learner006.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Qt_setup_SDL2</title>
+    <link href="https://humble-learner006.github.io/2024/10/12/Qt_setup_SDL2/"/>
+    <id>https://humble-learner006.github.io/2024/10/12/Qt_setup_SDL2/</id>
+    <published>2024-10-12T09:28:30.000Z</published>
+    <updated>2024-10-12T09:47:43.813Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;教程&quot;&gt;&lt;a href=&quot;#教程&quot; class=&quot;headerlink&quot; title=&quot;教程&quot;&gt;&lt;/a&gt;教程&lt;/h1&gt;&lt;h2 id=&quot;检查版本&quot;&gt;&lt;a href=&quot;#检查版本&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="school" scheme="https://humble-learner006.github.io/categories/school/"/>
+    
+    
+    <category term="C/C++" scheme="https://humble-learner006.github.io/tags/C-C/"/>
+    
+    <category term="Qt" scheme="https://humble-learner006.github.io/tags/Qt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub discovery</title>
+    <link href="https://humble-learner006.github.io/2024/10/12/GitHub_note/"/>
+    <id>https://humble-learner006.github.io/2024/10/12/GitHub_note/</id>
+    <published>2024-10-12T04:19:19.000Z</published>
+    <updated>2024-10-12T10:03:56.873Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;intro&quot;&gt;&lt;a href=&quot;#intro&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="RM" scheme="https://humble-learner006.github.io/categories/RM/"/>
+    
+    
+    <category term="C/C++" scheme="https://humble-learner006.github.io/tags/C-C/"/>
+    
+    <category term="git" scheme="https://humble-learner006.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>navigator</title>
@@ -178,29 +232,6 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
   </entry>
   
   <entry>
-    <title>blog_building</title>
-    <link href="https://humble-learner006.github.io/2024/10/09/blog_building/"/>
-    <id>https://humble-learner006.github.io/2024/10/09/blog_building/</id>
-    <published>2024-10-09T01:33:52.000Z</published>
-    <updated>2024-10-11T10:38:54.476Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;记录博客配置过程&quot;&gt;&lt;a href=&quot;#记录博客配置过程&quot; class=&quot;headerlink&quot; title=&quot;记录博客配置过程&quot;&gt;&lt;/a&gt;记录博客配置过程&lt;/h1&gt;</summary>
-    
-    
-    
-    <category term="web" scheme="https://humble-learner006.github.io/categories/web/"/>
-    
-    <category term="blog" scheme="https://humble-learner006.github.io/categories/web/blog/"/>
-    
-    
-    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
-    
-    <category term="unfinished" scheme="https://humble-learner006.github.io/tags/unfinished/"/>
-    
-  </entry>
-  
-  <entry>
     <title>delete_remaining_tags</title>
     <link href="https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/"/>
     <id>https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/</id>
@@ -220,6 +251,29 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
     <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
     
     <category term="waste" scheme="https://humble-learner006.github.io/tags/waste/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>blog_building</title>
+    <link href="https://humble-learner006.github.io/2024/10/09/blog_building/"/>
+    <id>https://humble-learner006.github.io/2024/10/09/blog_building/</id>
+    <published>2024-10-09T01:33:52.000Z</published>
+    <updated>2024-10-11T10:38:54.476Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;记录博客配置过程&quot;&gt;&lt;a href=&quot;#记录博客配置过程&quot; class=&quot;headerlink&quot; title=&quot;记录博客配置过程&quot;&gt;&lt;/a&gt;记录博客配置过程&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="web" scheme="https://humble-learner006.github.io/categories/web/"/>
+    
+    <category term="blog" scheme="https://humble-learner006.github.io/categories/web/blog/"/>
+    
+    
+    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
+    
+    <category term="unfinished" scheme="https://humble-learner006.github.io/tags/unfinished/"/>
     
   </entry>
   

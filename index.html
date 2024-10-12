@@ -87,7 +87,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">7</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">10</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">8</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"> <i class="fa fa-search fa-fw"></i> Search
         </a>
@@ -152,18 +152,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -709,6 +709,323 @@ step 3: 推送新分支到远程仓库<code>git push origin &lt;feature-branch&g
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://humble-learner006.github.io/2024/10/12/Qt_setup_SDL2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Like Cai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LIke's blog">
+      <meta itemprop="description" content="悟已往之不谏 知来者之可追">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | LIke's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/12/Qt_setup_SDL2/" class="post-title-link" itemprop="url">Qt_setup_SDL2</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-10-12 17:28:30 / Modified: 17:47:43" itemprop="dateCreated datePublished" datetime="2024-10-12T17:28:30+08:00">2024-10-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/school/" itemprop="url" rel="index"><span itemprop="name">school</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><h2 id="检查版本"><a href="#检查版本" class="headerlink" title="检查版本"></a>检查版本</h2><p>Qt use MINGW, so download SDL2 in correspond version<br><img src="https://s2.loli.net/2024/10/12/LHwEiYXK2pksUT5.png"><br>主要参考的<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_58311374/article/details/133410449">教程</a>是<br>次要参考的<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_46028171/article/details/134967027">教程</a>是<br>比较全面的<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_72157449/article/details/130490332">教程</a>是，不过介绍用的是VS，导出模板，CMake配置也教了<br>环境路径设置好，对库的链接在<code>pro</code>文件中配置好，主程序中<code>include</code>即可。</p>
+<h1 id="个人疑问和AI回答"><a href="#个人疑问和AI回答" class="headerlink" title="个人疑问和AI回答"></a>个人疑问和AI回答</h1><p>以下图片是下载下来的目录。<br>里面有<code>lib</code> ，mingw相关的有<code>i686...</code>和<code>x86_64-w64</code>他们之间有什么不同吗？<br><img src="https://s2.loli.net/2024/10/12/ozKtsdLMHuxNZhX.png"></p>
+<h4 id="动态库和静态库的使用场景"><a href="#动态库和静态库的使用场景" class="headerlink" title="动态库和静态库的使用场景"></a>动态库和静态库的使用场景</h4><p><code>lib</code>文件夹通常包含编译好的库文件，这些库文件是用于链接到你的应用程序中的，而不是直接用于运行时的。在Windows系统中，库文件通常是静态库（.lib）或动态库（.dll）<em><strong>dynamic link library</strong></em>，其中：</p>
+<ul>
+<li><code>.lib</code>文件是静态库文件，它们在编译时被链接到你的应用程序中，使得库的代码成为应用程序的一部分。</li>
+<li><code>.dll</code>文件是动态链接库文件，它们在运行时被应用程序加载，允许多个程序共享同一份库代码。</li>
+</ul>
+<p>对于SDL（Simple DirectMedia Layer）这样的库，如果你需要在运行时动态加载库（比如在不支持静态链接的环境中），你应该使用<code>.dll</code>文件。在<code>x86_64-w64-mingw32</code>这样的目录下，通常会提供编译好的<code>.dll</code>文件，用于64位的Windows系统。</p>
+<p>直接选择<code>lib</code>文件夹<strong>可能不会给你正确的文件类型或架构版本的库文件</strong>。你需要根据你的应用程序的需要（静态或动态链接）以及目标平台（32位或64位）来选择正确的文件。对于64位系统，确保选择的是64位的<code>.dll</code>文件，这样可以保证最佳的性能和兼容性。</p>
+<h4 id="两个mingw前缀的区别"><a href="#两个mingw前缀的区别" class="headerlink" title="两个mingw前缀的区别"></a>两个mingw前缀的区别</h4><p><code>i686</code>是一个指令集架构，它是Intel 80686微处理器的简称，属于x86架构的32位版本。在Linux系统中，<code>i686</code>通常用来表示32位的Intel或AMD处理器。这个架构的名称来源于最初的80686处理器，尽管现代的处理器已经远远超出了最初的686型号的性能。</p>
+<p>在编译软件或库时，如果你的目标是为32位的x86系统编译：</p>
+<ul>
+<li>在Linux发行版中，32位的库文件通常位于以<code>i686</code>命名的文件夹中。</li>
+<li>在Windows系统中，32位的库文件通常位于以<code>x86</code>命名的文件夹中。</li>
+</ul>
+<p>对于64位系统，你应该选择64位的库文件（例如<code>x86_64-w64-mingw32</code>中的文件）</p>
+<h4 id="在发行版中tar和gz是什么"><a href="#在发行版中tar和gz是什么" class="headerlink" title="在发行版中tar和gz是什么"></a>在发行版中tar和gz是什么</h4><p><code>mingw.tar.gz</code> 文件名中的 <code>tar</code> 和 <code>gz</code> 分别代表两种不同的压缩和归档技术：</p>
+<ol>
+<li><strong>tar</strong>：这是一个用于将多个文件和目录打包成一个单独文件的工具，通常用于在 Unix 和类 Unix 系统中。<code>tar</code> 本身并不压缩文件，它只将文件和目录归档。</li>
+<li><strong>gz</strong>：这是 Gzip（GNU Zip）的文件扩展名，表示该文件经过压缩以减少其大小。Gzip 是一种常见的压缩算法，通常用于压缩 <code>tar</code> 归档文件。</li>
+</ol>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>跟着教程配置环境不难，但是相关的信息对我这种新手而言还是有许多不懂的。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://humble-learner006.github.io/2024/10/12/GitHub_note/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Like Cai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LIke's blog">
+      <meta itemprop="description" content="悟已往之不谏 知来者之可追">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | LIke's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/12/GitHub_note/" class="post-title-link" itemprop="url">GitHub discovery</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-10-12 12:19:19 / Modified: 18:03:56" itemprop="dateCreated datePublished" datetime="2024-10-12T12:19:19+08:00">2024-10-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/RM/" itemprop="url" rel="index"><span itemprop="name">RM</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="intro"><a href="#intro" class="headerlink" title="intro"></a>intro</h1><blockquote>
+<p>于我个人而言GitHub是上大学才开始用的，在广东省的义务教育阶段，计算机相关的教育是欠缺的。我身边有同校高排名同学大一一整年没接触GitHub，也有内地名牌985同学依然使用微信传输文件进行项目开发。</p>
+</blockquote>
+<blockquote>
+<p>整个大一GitHub我只会clone，push，pull的基础操作。但是GitHub的功能很多，诸如issue, project, release 都很让我好奇，也相应的有各自不可或缺的功能。所以趁着CSC3002 C++ 项目的机会，我决定系统的学习一下GitHub的功能。</p>
+</blockquote>
+<blockquote>
+<p>在抄教程部署我的静态博客时意识到参考官方文档的重要性，本次教程主要材料是 <a target="_blank" rel="noopener" href="https://www.github-zh.com/getting-started/introduction-to-github">GitHub官方教程</a>。文内未标注出处默认来自官网。<br>在这个教程中，我会把我认为重要的部分记录下来，以便日后查阅。你有不懂的应该上官网查阅</p>
+</blockquote>
+<p>Note that: all the posts with “note” in their title are notes based on some materials (tutorial, lecture, etc.)  I once working on.</p>
+<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><h2 id="repo创建"><a href="#repo创建" class="headerlink" title="repo创建"></a>repo创建</h2><h3 id="repo是什么"><a href="#repo是什么" class="headerlink" title="repo是什么"></a>repo是什么</h3><ul>
+<li>repo就是一个云端的文件夹，可以用来存放代码，文档，图片等等。是repository（仓库）的缩写。</li>
+<li>see more <a target="_blank" rel="noopener" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">repo</a></li>
+</ul>
+<h3 id="repo的作用"><a href="#repo的作用" class="headerlink" title="repo的作用"></a>repo的作用</h3><ul>
+<li>最基本：管理项目的文件</li>
+<li>你可以用GitHub Pages的服务创建个人网站</li>
+<li>你可以用创建和你用户名一样的repo来展示你的<code>profile README</code>，这回显示在你的个人主页上</li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/103695781">GitHub右上角Watch、Star和Fork详解</a></li>
+</ul>
+<h3 id="repo的类型"><a href="#repo的类型" class="headerlink" title="repo的类型"></a>repo的类型</h3><ul>
+<li>repo 分为public和private两种，public是公开的，private是私有的。private会消耗action minutes<ul>
+<li>Action minute 是GitHub Actions服务 的计算单位（就像话费用时间计算），是用来运行自动化任务的。</li>
+</ul>
+</li>
+<li>![[image&#x2F;GitHub_note.png]]</li>
+<li>上方图片是自动填写好的字段直接创建默认repo<code>skills-introduction-to-github</code>，我就不放图床了，你自己实践。</li>
+<li>README.md 在20s会刷新一次，直接进入到教程的第二阶段 - branch，这个是GitHub Action实现的</li>
+</ul>
+<h2 id="branch创建"><a href="#branch创建" class="headerlink" title="branch创建"></a>branch创建</h2><ul>
+<li><strong>Fork</strong> 是在远程创建一个仓库副本，适合独立开发和对外部项目的贡献。</li>
+<li><strong>Branch</strong> 是在同一个仓库内创建的开发线，适合组织和管理团队内部的开发工作。</li>
+</ul>
+<h3 id="什么是branch"><a href="#什么是branch" class="headerlink" title="什么是branch"></a>什么是branch</h3><ul>
+<li>把main看作是项目的主线，branch是在主线上的一个分支，可以用来开发新功能，修复bug等等。创建branch的目的是为了不影响main的稳定性。</li>
+<li>see more <a target="_blank" rel="noopener" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches">branch</a></li>
+<li>The <strong>main</strong> branch drop-down bar（下拉栏） will reflect your new branch and display the new branch name.</li>
+<li>![[image&#x2F;GitHub_note-1.png]]</li>
+<li>确保名字是<code>my-first-branch</code>，会触发GitHub Action去推进教程 </li>
+<li>![[image&#x2F;GitHub_note-2.png]]</li>
+</ul>
+<h2 id="commit-在branch里面"><a href="#commit-在branch里面" class="headerlink" title="commit - 在branch里面"></a>commit - 在branch里面</h2><h3 id="commit是什么"><a href="#commit是什么" class="headerlink" title="commit是什么"></a>commit是什么</h3><blockquote>
+<p><strong>What is a commit?</strong>: A <em><a target="_blank" rel="noopener" href="https://docs.github.com/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits">commit</a></em> is a set of changes to the files and folders in your project. A commit exists in a branch. For more information, see “<a target="_blank" rel="noopener" href="https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits">About commits</a>“. </p>
+</blockquote>
+<ul>
+<li>commit一个<code>PROFILE.md</code>文件</li>
+<li>commit一个<code>PROFILE.md</code>文件的更新<br>以上都是commit的操作</li>
+</ul>
+<h2 id="pull-request-创建并完成"><a href="#pull-request-创建并完成" class="headerlink" title="pull request - 创建并完成"></a>pull request - 创建并完成</h2><blockquote>
+<p><strong>What is a pull request?</strong>: <strong>Collaboration</strong> happens on a <em><a target="_blank" rel="noopener" href="https://docs.github.com/en/get-started/quickstart/github-glossary#pull-request">pull request</a></em>. The pull request <strong>shows the changes in your branch to other people</strong> and allows people to accept, reject, or suggest additional changes to your branch. In a side by side comparison, this pull request is going to keep the changes you just made on your branch and propose applying them to the <code>main</code> project branch. For more information about pull requests, see “<a target="_blank" rel="noopener" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">About pull requests</a>“.</p>
+</blockquote>
+<p>pull request是为了让别人看到你在branch上的变动，然后别人可以接受，拒绝或者建议更改你的branch。这个pull request是为了把你在branch上的变动应用到<code>main</code>项目分支上。</p>
+<ul>
+<li><strong>独立开发</strong>：通常的工作流程是先<code>fork</code>一个仓库，然后<code>clone</code>你自己的fork到本地进行开发。开发完成后，你可以提交<code>pull request</code>到原仓库，请求合并你的代码。</li>
+<li><strong>团队开发</strong>：在一个团队中，通常会有<strong>一个主仓库</strong>，团队成员会在主仓库的<code>main</code>分支上创建自己的分支进行开发。开发完成后，他们会提交<code>pull request</code>到<code>main</code>分支，请求合并他们的代码。</li>
+</ul>
+<h3 id="主窗口元素"><a href="#主窗口元素" class="headerlink" title="主窗口元素"></a>主窗口元素</h3><h4 id="时间线"><a href="#时间线" class="headerlink" title="时间线"></a>时间线</h4><p>[[image&#x2F;GitHub_note-3.png]]<br><img src="https://s2.loli.net/2024/10/12/avyVprsbjUhTHwX.png"><br>[[image&#x2F;GitHub_note-6.png]]<br><img src="https://s2.loli.net/2024/10/12/KD1HhNJnp2Fe7qj.png"><br>所有的变动都会被记录在主窗口中，你可以看到每次commit的变动（时间，作者），然后对于pull request的变动也会在时间线里面体现。</p>
+<h4 id="管理者可以修改评论"><a href="#管理者可以修改评论" class="headerlink" title="管理者可以修改评论"></a>管理者可以修改评论</h4><p>在一些版本控制平台上，特别是GitHub，用户可以编辑或修改他人的评论通常是出于以下几种原因：</p>
+<ol>
+<li><strong>权限设置</strong>：项目的权限可能设置为允许特定角色（例如维护者或项目管理员）编辑任何人的评论。这有助于团队维护清晰和一致的讨论。</li>
+<li><strong>修正错误</strong>：有时评论可能包含拼写错误或错误的信息，允许编辑可以确保讨论的准确性。</li>
+<li><strong>更新信息</strong>：在持续的讨论中，信息可能会过时或需要补充，编辑评论可以让讨论更加连贯。</li>
+<li><strong>审查和维护</strong>：在大型项目中，维护者可能需要编辑评论以整理讨论，确保重要信息突出显示。<br>如果你在一个项目中发现可以修改他人的评论，确保在这样做之前获得相关人员的同意，以维护良好的合作氛围和信任。</li>
+</ol>
+<h4 id="完成merge后删除branch"><a href="#完成merge后删除branch" class="headerlink" title="完成merge后删除branch"></a>完成merge后删除branch</h4><p>[[image&#x2F;GitHub_note-8.png]]<br><img src="https://s2.loli.net/2024/10/12/bn96VK7MLrCvwBX.png"></p>
+<h3 id="边栏元素"><a href="#边栏元素" class="headerlink" title="边栏元素"></a>边栏元素</h3><h4 id="reviewer（审查人）和-assignees（指定人）"><a href="#reviewer（审查人）和-assignees（指定人）" class="headerlink" title="reviewer（审查人）和 assignees（指定人）"></a>reviewer（审查人）和 assignees（指定人）</h4><p>审查就是设置reviewer在merge前审查，减少错误。assignees被指定完成接下来的任务<br>CSDN疑似AI的<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39460032/article/details/134589700">详细解答</a></p>
+<h4 id="labels（标签）"><a href="#labels（标签）" class="headerlink" title="labels（标签）"></a>labels（标签）</h4><p>标签的作用是标记issue和pull request的状态，比如这次pull requst的目的是什么。<br>打开下拉菜单<code>Apply lables to this pull request</code> 你会看到</p>
+<ul>
+<li>bug</li>
+<li>documentation</li>
+<li>duplicate</li>
+<li>enhancement</li>
+<li>good first issue：鼓励新手参与</li>
+<li>help wanted</li>
+<li>invalid</li>
+<li>question</li>
+<li>wontfix：描述的问题是一个bug但是将永远不会被修复</li>
+<li><a target="_blank" rel="noopener" href="https://docs.github.com/zh/issues/using-labels-and-milestones-to-track-work/managing-labels">管理标签 - GitHub 文档</a></li>
+</ul>
+<h4 id="projects（项目）和-milestone（里程碑）"><a href="#projects（项目）和-milestone（里程碑）" class="headerlink" title="projects（项目）和 milestone（里程碑）"></a>projects（项目）和 milestone（里程碑）</h4><ul>
+<li>把pull request加入到项目中，可以更好的管理项目</li>
+<li>把pull request加入到里程碑中，可以更好的管理项目，你可以理解为这次pull request是项目的一个阶段的结束。</li>
+</ul>
+<h4 id="lock-conversation（锁定对话）"><a href="#lock-conversation（锁定对话）" class="headerlink" title="lock conversation（锁定对话）"></a>lock conversation（锁定对话）</h4><p>![[image&#x2F;GitHub_note-7.png]]<br><img src="https://s2.loli.net/2024/10/12/tTeMUV8dBIEbmqr.png"><br>重要信息能被看到</p>
+<h3 id="完成教程"><a href="#完成教程" class="headerlink" title="完成教程"></a>完成教程</h3><p>(<a target="_blank" rel="noopener" href="https://github.com/humble-learner006/skills-introduction-to-github?tab=readme-ov-file#finish)%E8%BF%99%E6%98%AFGitHub%E9%87%8C%E9%9D%A2%E6%A0%87%E9%A2%98%E9%94%9A%E7%82%B9%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95">https://github.com/humble-learner006/skills-introduction-to-github?tab=readme-ov-file#finish)这是GitHub里面标题锚点设置方法</a></p>
+<h3 id="Finish存档"><a href="#Finish存档" class="headerlink" title="Finish存档"></a>Finish存档</h3><p><em>Congratulations, you’ve completed this course and joined the world of developers!</em><br>Here’s a recap of your accomplishments:</p>
+<ul>
+<li>You learned about GitHub, repositories, branches, commits, and pull requests.</li>
+<li>You created a branch, a commit, and a pull request.</li>
+<li>You merged a pull request.</li>
+<li>You made your first <strong>contribution</strong>! 🎉<br>所以说contribution是被接受的pull request。那那个改了一个空行能被接受的小红书用户真是牛逼。</li>
+</ul>
+<h4 id="What’s-next-给出了接下来可以学什么"><a href="#What’s-next-给出了接下来可以学什么" class="headerlink" title="What’s next? 给出了接下来可以学什么"></a>What’s next? 给出了接下来可以学什么</h4><h5 id="profile-README是一个在你个人主页的readme"><a href="#profile-README是一个在你个人主页的readme" class="headerlink" title="profile README是一个在你个人主页的readme"></a>profile README是一个在你个人主页的readme</h5><p>If you’d like to make a profile README, use the quickstart instructions below or follow the instructions in the <a target="_blank" rel="noopener" href="https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme">Managing your profile README</a> article.</p>
+<ol>
+<li>Make a new public repository with a name that matches your GitHub username.</li>
+<li>Create a file named <code>README.md</code> in its root. The “root” means not inside any folder in your repository.</li>
+<li>Edit the contents of the <code>README.md</code> file.</li>
+<li>If you created a new branch for your file, open and merge a pull request on your branch.</li>
+<li>Lastly, we’d love to hear what you thought of this course <a target="_blank" rel="noopener" href="https://github.com/orgs/skills/discussions/categories/introduction-to-github">in our discussion board</a>.</li>
+</ol>
+<h5 id="Check-out-these-resources-to-learn-more-or-get-involved"><a href="#Check-out-these-resources-to-learn-more-or-get-involved" class="headerlink" title="Check out these resources to learn more or get involved:"></a>Check out these resources to learn more or get involved:</h5><ul>
+<li>Are you a student? Check out the <a target="_blank" rel="noopener" href="https://education.github.com/pack">Student Developer Pack</a>.</li>
+<li>onboarding preferences for student<a target="_blank" rel="noopener" href="https://education.github.com/learner/learn">教程网址</a><br>![[image&#x2F;GitHub_note-13.png]]</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/skills">Take another GitHub Skills course</a>.</li>
+<li><a target="_blank" rel="noopener" href="https://docs.github.com/en/get-started">Read the GitHub Getting Started docs</a>.</li>
+<li>To find projects to contribute to, check out <a target="_blank" rel="noopener" href="https://github.com/explore">GitHub Explore</a>.</li>
+</ul>
+<h1 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h1><h2 id="GitHub-Issue：提出议题，想法"><a href="#GitHub-Issue：提出议题，想法" class="headerlink" title="GitHub Issue：提出议题，想法"></a>GitHub Issue：提出议题，想法</h2><p><a target="_blank" rel="noopener" href="https://docs.github.com/zh/issues/tracking-your-work-with-issues/about-issues">关于议题 - GitHub 文档</a></p>
+<h2 id="GitHub-Project：管理进度"><a href="#GitHub-Project：管理进度" class="headerlink" title="GitHub Project：管理进度"></a>GitHub Project：管理进度</h2><p><a target="_blank" rel="noopener" href="https://docs.github.com/zh/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">关于 Projects - GitHub 文档</a><br>此处的project是指GitHub的项目管理功能，可以用来管理任务，协作等等。与其说是project，不如说是dashboard或者kanban更合适。<br>[[image&#x2F;GitHub_note-12.png]]<br><img src="https://s2.loli.net/2024/10/12/9Jx5PitcnNpz8RT.png"><br><em>Kanban originate from Japanese 看板 # Japanese influences on industry</em></p>
+<ul>
+<li>是一个和issue，pull request，milestone等等一起工作的工具，可以用来管理任务，协作等等。</li>
+<li>高级todo list</li>
+</ul>
+<h2 id="GitHub-release：发行程序"><a href="#GitHub-release：发行程序" class="headerlink" title="GitHub release：发行程序"></a>GitHub release：发行程序</h2><h3 id="什么是release-（发行版）"><a href="#什么是release-（发行版）" class="headerlink" title="什么是release （发行版）"></a>什么是release （发行版）</h3><ul>
+<li><p>release是一个软件的发布版本，可以包含软件的源代码，二进制文件，文档等等。</p>
+</li>
+<li><p>你可以在release里面发布软件的更新。</p>
+</li>
+<li><p>更新时候一定要标注好版本</p>
+</li>
+<li><p>[[image&#x2F;GitHub_note-9.png]]</p>
+</li>
+<li><p><img src="https://s2.loli.net/2024/10/12/MiSReLwFGOmHJAl.png"></p>
+</li>
+<li><p>在截图中右边你可以看到tagging suggestion，让你注意版本号要写清楚</p>
+</li>
+<li><p>在Semantic versioning（语义化的版本控制）中，版本号的格式是<code>MAJOR.MINOR.PATCH</code>，这个版本号是根据你的软件的变动来决定的。详情请看<a target="_blank" rel="noopener" href="https://semver.org/lang/zh-CN/">Semantic versioning</a></p>
+</li>
+<li><p>![[image&#x2F;GitHub_note-10.png]]</p>
+</li>
+<li><p>发布即可</p>
+</li>
+</ul>
+<h2 id="Package：发布npm等类型的包"><a href="#Package：发布npm等类型的包" class="headerlink" title="Package：发布npm等类型的包"></a>Package：发布npm等类型的包</h2><p>![[image&#x2F;GitHub_note-11.png]]<br><a target="_blank" rel="noopener" href="https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry">Working with the npm registry - GitHub Docs</a><br>发布npm包，使得你的项目可以被其他人直接通过npm下载使用。<br>这是release之后考虑的事情</p>
+<h2 id="GitHub-Guide"><a href="#GitHub-Guide" class="headerlink" title="GitHub Guide"></a>GitHub Guide</h2><p><a target="_blank" rel="noopener" href="https://docs.github.com/zh/issues/guides">问题指南 - GitHub 文档</a><br>这里面有issue和project互动教程</p>
+<ul>
+<li>跟着实操了一遍，感觉还是有点抽象。这种东西需要老带新，多用才会。</li>
+</ul>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>GitHub强大全面的功能不愧是最好的项目开发网站</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://humble-learner006.github.io/2024/10/10/pointer/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1093,245 +1410,9 @@ step 3: 推送新分支到远程仓库<code>git push origin &lt;feature-branch&g
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://humble-learner006.github.io/2024/04/28/Record-around-the-final-for-second-term/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Like Cai">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LIke's blog">
-      <meta itemprop="description" content="悟已往之不谏 知来者之可追">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | LIke's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/04/28/Record-around-the-final-for-second-term/" class="post-title-link" itemprop="url">Around the final for second term</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2024-04-28 09:55:04" itemprop="dateCreated datePublished" datetime="2024-04-28T09:55:04+08:00">2024-04-28</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-10-11 20:27:48" itemprop="dateModified" datetime="2024-10-11T20:27:48+08:00">2024-10-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/daily/" itemprop="url" rel="index"><span itemprop="name">daily</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="暮春落雨"><a href="#暮春落雨" class="headerlink" title="暮春落雨"></a>暮春落雨</h1>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/04/28/Record-around-the-final-for-second-term/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://humble-learner006.github.io/2024/04/13/Record-reflection-on-RMUL/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Like Cai">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LIke's blog">
-      <meta itemprop="description" content="悟已往之不谏 知来者之可追">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | LIke's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/04/13/Record-reflection-on-RMUL/" class="post-title-link" itemprop="url">reflection of RMUL</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2024-04-13 22:02:59" itemprop="dateCreated datePublished" datetime="2024-04-13T22:02:59+08:00">2024-04-13</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-10-11 18:36:03" itemprop="dateModified" datetime="2024-10-11T18:36:03+08:00">2024-10-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/RM/" itemprop="url" rel="index"><span itemprop="name">RM</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="福建賽區RMUL比赛"><a href="#福建賽區RMUL比赛" class="headerlink" title="福建賽區RMUL比赛"></a>福建賽區RMUL比赛</h1><h1 id="Time-line"><a href="#Time-line" class="headerlink" title="Time line"></a>Time line</h1><h2 id="April-11th-Thr"><a href="#April-11th-Thr" class="headerlink" title="April 11th (Thr)"></a>April 11th (Thr)</h2><p>早上是六点二十分在乐天集合的，在那之前我们加急完成了三辆车的机械部分的任务，十号的安装我没有参与，有人是通宵的，任务是十分紧的</p>
-<font size = 1>
-p.s. 我是九号参与安装，熬到了凌晨一点多，然后同一天，这个hexo的博客诞生了———一个极端情况下的疯狂想法
-</font>
-
-<p>看着66*66*70的航空箱，校徽与过岗龙(dragopass)被装上了货拉拉的车，去往福建福州的RMUL比赛打响了</p>
-<p>早餐吃的肯德基，吃完后四辆网约车到坪山站。周边看到了云巴这种类轻轨的交通方式，坪山站可能在扩建。打印报销凭条后过完安检——睡觉。上了D388——睡觉，试图写turtle，不清醒，无果。</p>
-<p>一点半多准时到福州南。体验了类似于探鱼的那种店作为午餐，入住木兰澜苑（MLLY），名字莫名其妙的旅店，但是住的是舒服的。柔和的灯光布景，大面积，我喜欢。<br>晚上去福建理工大学报道，我们的车调了挺久才去裁判区进行检录，那时我们是最后一个队伍而且超时了，但是遇到一个很好的referee，耐心的检测我们的车辆是否符合规则。检录时候遇到许多问题，一一记下，熬夜修改，今天晚上xyf 13号五点才回MLLY，底盘ID改进，侧面反光修改，图传垫高拆装和理线，分类撞翻的螺丝。我赶完了02的hw9due。吃着塔斯汀两个辣的，吃东西时看着视频，时间就过去了。睡得时间还是太短了，第二天六点四十起的</p>
-<p>福州的天气和深圳还是有差异的，比较冷。短袖短裤的，吹得我发颤。</p>
-<h2 id="April-12th-Fri"><a href="#April-12th-Fri" class="headerlink" title="April 12th (Fri)"></a>April 12th (Fri)</h2><p>今天是第一天比赛日，我是六点四十五起的，然后我和mani和陈lp指导是第一批到的，尝试了学校的早餐，很接地气，MLLY2车第二，然后是zsh和coli一众人，我递给他们参赛牌子。核心五人看来是没怎么睡的。</p>
-<p>被裁判组催着做了适应赛的检录——我们知道最后一刻都在调车。打了3v3适应赛，结果很糟，爆出了一系列问题，卡弹是最严重的。哨兵直接过载自杀，步兵也是超限程序没发挥作用，射速也被判定过快，但是实际上是卡弹的，这样子3v3不可能进行。</p>
-<p>当然，糟糕的不知有我们</p>
-<p>下午要打步兵的1v1<em>还好没有3v3</em>，队长说优先把卡弹解决掉——确实，如果没有解决这个下午比赛照样不行<br>我们把车运到coli，然后在里面开始找为什么会卡弹</p>
-<ul>
-<li>两台步兵的弹舱不一样，一个有分层，一个没有，有分层的那个有些时候子弹的中心会在0.75D的位置，然后被分层零件卡住。</li>
-<li>有些时候是两颗子弹被拨弹轮抵住，和右侧面发生巨大的摩擦力（我们是右旋供弹）</li>
-<li>这是我们在当日中午的判定</li>
-</ul>
-<p>修了一中午，以为解决了，实际上没有<br>下午的1v1据说是对方步兵一直超限判罚致死，然后我们赢了（？ 我没看</p>
-<p>晚上吃了顿好的，在一个拥挤的购物广场，类似于绿茶。</p>
-<p>一小时后又回到了福建理工。我去等待调车步兵，他们在调试哨兵的过程中，<br>哨兵转转，失控了，鼠标，键盘，屏幕等连在NUC上的硬件被扯着旋转。wjb用手把1.2$\pi$rad&#x2F;s的哨兵停下来了，的手被划破了。鉴于生化楼晚上会关。<br>收拾好东西回coli继续调</p>
-<ul>
-<li>此处晚上排查问题到凌晨1点，鉴定为爪形导轨，3D打印的零件和发射集成件，由于打印件短了一点，导致形成“凹”字形的结构，弹丸卡进<br>然后用特氟龙胶带把三个零件平滑连接起来，有一台的效果变好了，我们就把这个运用到另外一台上面<br>凌晨两点多，如释重负的的回去睡了。</li>
-</ul>
-<h2 id="April-13th-Sat"><a href="#April-13th-Sat" class="headerlink" title="April 13th (Sat)"></a>April 13th (Sat)</h2><p>今天才是真正的3v3<br>9：50-10：10分对战深北莫（sbm），两场均负，<br>15：40-16：00对战闽江学院，11平<br>一个F小组，三个学校，取两个。遗憾的没有晋级</p>
-<p>卡弹，超功率与避免超是两个问题<br>中午wyx和zdy把哨兵机械结构修复<br>今天没早起，虽然群里说是7点在南校区北门集合，但是机械组由于在目前情况中能做出的贡献有限，于是自己被默许睡到九点</p>
-<p>今天状态不太行，由于熬夜失活<br>没怎么干事，出去接了潘潘，他到了北校区北门，于是多等15min，介绍着目前的情况，走到了赛场</p>
-<h3 id="1v1"><a href="#1v1" class="headerlink" title="1v1"></a>1v1</h3><p>11：50 - 12：00 对战浙江大学城市学院<br>14：30 - 14：40 对战厦门大学</p>
-<h3 id="3v3"><a href="#3v3" class="headerlink" title="3v3"></a>3v3</h3><ol>
-<li>过去刚好看第一场sbm的3v3。0&#x2F;2负于深北莫<br>见wjb的作文<br></li>
-</ol>
-<blockquote>
-<p>首场港中深 0:2憾负深北莫<br></p>
-<ul>
-<li>第一场<br>我们的哨兵机器人开局超功率阵亡，我方基地无敌以及护盾开局归零。<br><br>我们的 3号步兵出现卡弹问题，全场比赛无法射出一发子弹；4号步兵尽力防守，<em>卡弹步兵用尽三次冲撞机会</em>。将对方哨兵打残；可惜无法<br>逆转颓势，港中深0:1负于深北莫</li>
-<li>第二场<br>我方哨兵开局超功率，及时自主降低<br>功率避免了过早阵亡，但仍然到了残<br>血(我们电控只有一个人，他让我们三部机器人正常运转就已经非常厉害了)；<em>缓缓地转</em> <br><br>3号步兵虽然经过场间调试，但仍然未能避免卡弹问题，整场比赛无法进行攻击，并且也会超功率扣血并阵亡，无法参与正面对抗；<br>4号步兵在以一敌二的情况下，打残对方步兵，哨兵；逼退对方英雄机器人；对方有精度优势，在中场吊射摧毁了基地，港中深0:2憾负深北莫。<br><br>我们出线的唯一途径，就是在下午<br>2:0闽江学院：这并不简单，但并不是不能做到。<br>3号步兵在赛后，通过机械组的抢救，已经可以顺畅攻击，哨兵功率的问题也在紧锣密鼓地进行调整。<br><br>深圳北理莫斯科大学 北极熊战队在<br>战场上极其凶狠，但是赛后仍然帮助我们调整机器人，解決了非常多的问题。<br>感谢他们。<br><br>每一把都当最后一把，然后也就不要怕输。希望我们能以全盛姿态，打好之后的每一场比费。</li>
-</ul>
-</blockquote>
-<ol start="2">
-<li>和闽江学院的，见wjb小作文<br></li>
-</ol>
-<blockquote>
-<p>时运不济 港中深1:1闽江学院<br></p>
-<ul>
-<li>第一局<br>发现闽江学院没有上英雄；我们分工，一人对峙对方步兵，一人打对面哨兵；起初我方优势，敌方步兵，哨兵相继被击杀；我们前往击打基地；可惜我们步兵相继再现卡弹问题，<em>站在对方基地面前一发子弹没打出去</em>，优势葬送，惜败闽江学<br>院</li>
-<li>第二局<br>吸取教训，第二局我们双步兵利用人数优势集火对面步兵，先击杀步兵再打哨兵；并轮流封堵对方步兵走位空问，将其成功压制在泉水中。另一方占领中央增益区，并击杀对方哨兵。<br>对方基地护盾消失后，我方并无松懈，轮流封堵对方步兵走位，轮流击打对方基地。虽然在最后关头4<br>号步兵再次发生卡弹，但优势已经确立，顺利拿下3<br>v3队史首胜。<br><br>但是，我们的积分并不足够将我们送进16强，我们3v3的步伐到此为止了。<br><br>但是，我们1v1赛道，已经晋级16强，将于今晚或明天进行16进8比赛。<br><br>作为成立不满一年，视觉只有三人，电控只有一人，整队11人左右，初次参加该类赛事的新队伍来讲，走到这里已经非常不容易。我们在这里，向深北莫北极熊战队道谢，祝他们16进8好运；向仲恺农业工程学院道谢;以上两支队伍，以及我校许多研究生学长学姐给予了我们巨大的帮助，没有他们，我们甚至没办法站在这里。<br>感谢各位的关注和支持；也欢迎咨询加入香港中文大学（深圳）过岗龙战队；（视觉组和电控组的四位同学这三天没睡够八小时qwa)<br>*对方步兵精度并不足够对我们处于“小陀螺”状态的步兵造成任何伤害！</li>
-</ul>
-</blockquote>
-<p>晚上打完比赛，我们就聊天，看别人比赛</p>
-<p>在coli吃的豪华晚饭，1388吃的不保，味道一般般，亏亏的<br>然后回来慢慢码字</p>
-<h2 id="April-14th-Sun"><a href="#April-14th-Sun" class="headerlink" title="April 14th(Sun)"></a>April 14th(Sun)</h2><p>今天不必早起，七点半起后在MLLY S8不紧不慢的和教授一起吃完早餐，然后不紧不慢的打车去到北门，其间我和xyf和教授了解ECE是怎么样的东西，教授设计了ECE的课程。xyf展示了他想让人工智能和机器人结合在一起的想法，这种机器人记得特斯拉已经在做。他表达他想法时在发光呢，一个扎实的松弛沉稳有奇思的男大（bushi）</p>
-<font size = 1>
-沉稳是问题会想明白，松弛奇思是因为到今天他也没分清楚三种轮子，麦轮的工作原理，哨兵雷达长什么样，以及保持一定看手机的频率但是错过群里消息和PM，我有点看不清楚他的认知方式
-</font>
-
-<p>今天过去主要看深北莫对战3v3，可惜输了，也是因为技术故障。<br>然后强队之间的对战，哨兵功能都十分完整，可以开局单杀对面哨兵说明导航和自瞄识别，决策树都很强<br>然后是我们的1v1，晋级八强，晋级四强<br>在四强中遇到CSGO的s哥，开玩笑的，输了的原因是没有自瞄，手动在程序面前还是有大差距的<br>我们是殿军，就是季军后面那个（今天才知道这个词）<br>午餐的COTTI9.9，我们学校什么时候才能让学生喝得起咖啡。<br>下午两点，我们提前回去的一批人打车到了福州南站。动车上“写”完了物理，码完了字。回去休息了</p>
-<h1 id="Some-observation"><a href="#Some-observation" class="headerlink" title="Some observation"></a>Some observation</h1><h3 id="交流为主"><a href="#交流为主" class="headerlink" title="交流为主"></a>交流为主</h3><p>大家在技术上交流还是和平的，藏着掖着的可能也只是自己的核心机密。<br>* 赛前深北莫还来帮忙装车了<br>* 第一天第二天我们均有借入与借出工具。并不会因为是陌生，而见外<br>* 第一天比完赛，出问题，深北莫鼎立相助<br>* 最后一场与闽江的对抗，他们为我们喝彩，还是挺感动的。</p>
-<h3 id="能力决定责任"><a href="#能力决定责任" class="headerlink" title="能力决定责任"></a>能力决定责任</h3><p>几个会的最多的熬的最猛，单日预算完全用不完，因为一天只吃一顿，晚上也不怎么睡觉。。。<br>而我啥也不会，只能尽力打杂。这种感觉其实挺不好。但是确实见识到他们在做的是什么，以后应该去学一些什么<br>潘教授也是这么说的，现在是见习，以后才能成为主力</p>
-<h3 id="学习方向"><a href="#学习方向" class="headerlink" title="学习方向"></a>学习方向</h3><ul>
-<li>视觉的opencv自瞄真的很重要，哨兵的自瞄如果足够准，在战局中可以起到至关重要的作用</li>
-<li>电控组要求掌握ROS，如何去控制机器人的每部分也很重要</li>
-<li>唯有热情不灭才能前进</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
 
 </div>
   </main>
