@@ -6,7 +6,7 @@
   <link href="https://humble-learner006.github.io/atom.xml" rel="self"/>
   
   <link href="https://humble-learner006.github.io/"/>
-  <updated>2024-10-12T09:47:43.813Z</updated>
+  <updated>2024-10-16T14:50:28.129Z</updated>
   <id>https://humble-learner006.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>distribution_in_statistic</title>
+    <link href="https://humble-learner006.github.io/2024/10/16/distribution-in-statistic/"/>
+    <id>https://humble-learner006.github.io/2024/10/16/distribution-in-statistic/</id>
+    <published>2024-10-16T12:07:29.000Z</published>
+    <updated>2024-10-16T14:50:28.129Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#bernoulli-distribution&quot;&gt;Bernoulli Distribution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#n-bernoulli-trials&quot;&gt;n Bernoulli</summary>
+        
+      
+    
+    
+    
+    <category term="school" scheme="https://humble-learner006.github.io/categories/school/"/>
+    
+    
+    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
+    
+    <category term="statistic" scheme="https://humble-learner006.github.io/tags/statistic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>around_national_holiday</title>
+    <link href="https://humble-learner006.github.io/2024/10/14/around-national-holiday/"/>
+    <id>https://humble-learner006.github.io/2024/10/14/around-national-holiday/</id>
+    <published>2024-10-14T00:52:30.000Z</published>
+    <updated>2024-10-14T05:06:36.086Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;配置linux-to-go&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#配置linux-to-go&quot;&gt;&lt;/a&gt; 配置Linux to</summary>
+        
+      
+    
+    
+    
+    <category term="daily" scheme="https://humble-learner006.github.io/categories/daily/"/>
+    
+    
+    <category term="prose" scheme="https://humble-learner006.github.io/tags/prose/"/>
+    
+  </entry>
   
   <entry>
     <title>Qt_setup_SDL2</title>
@@ -28,7 +82,8 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;教程&quot;&gt;&lt;a href=&quot;#教程&quot; class=&quot;headerlink&quot; title=&quot;教程&quot;&gt;&lt;/a&gt;教程&lt;/h1&gt;&lt;h2 id=&quot;检查版本&quot;&gt;&lt;a href=&quot;#检查版本&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;教程&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#教程&quot;&gt;&lt;/a&gt; 教程&lt;/h1&gt;
+&lt;h2 id=&quot;检查版本&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#检查版本&quot;&gt;&lt;/a&gt;</summary>
         
       
     
@@ -55,7 +110,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Intro&quot;&gt;&lt;a href=&quot;#Intro&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;intro&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#intro&quot;&gt;&lt;/a&gt;</summary>
         
       
     
@@ -64,11 +119,11 @@
     <category term="RM" scheme="https://humble-learner006.github.io/categories/RM/"/>
     
     
-    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
+    <category term="git" scheme="https://humble-learner006.github.io/tags/git/"/>
     
     <category term="C/C++" scheme="https://humble-learner006.github.io/tags/C-C/"/>
     
-    <category term="git" scheme="https://humble-learner006.github.io/tags/git/"/>
+    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
     
   </entry>
   
@@ -77,14 +132,15 @@
     <link href="https://humble-learner006.github.io/2024/10/11/navigator/"/>
     <id>https://humble-learner006.github.io/2024/10/11/navigator/</id>
     <published>2024-10-11T10:31:25.000Z</published>
-    <updated>2024-10-12T10:11:17.627Z</updated>
+    <updated>2024-10-13T04:22:55.747Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;近期&quot;&gt;&lt;a href=&quot;#近期&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;近期&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#近期&quot;&gt;&lt;/a&gt; 近期&lt;/h1&gt;
+&lt;p&gt;2024年10月11日&lt;br</summary>
         
       
     
@@ -105,39 +161,64 @@
     <updated>2024-10-11T12:26:03.136Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;git-教程&quot;&gt;&lt;a href=&quot;#git-教程&quot; class=&quot;headerlink&quot; title=&quot;git 教程&quot;&gt;&lt;/a&gt;git 教程&lt;/h1&gt;&lt;h2 id=&quot;push操作流程&quot;&gt;&lt;a href=&quot;#push操作流程&quot; class=&quot;headerlink&quot; title=&quot;push操作流程&quot;&gt;&lt;/a&gt;push操作流程&lt;/h2&gt;&lt;p&gt;确保这是一个仓库&lt;code&gt;.git&lt;/code&gt;文件存在&lt;/p&gt;
+    <summary type="html">&lt;h1 id=&quot;git-教程&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#git-教程&quot;&gt;&lt;/a&gt; git 教程&lt;/h1&gt;
+&lt;h2 id=&quot;push操作流程&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#push操作流程&quot;&gt;&lt;/a&gt; push操作流程&lt;/h2&gt;
+&lt;p&gt;确保这是一个仓库&lt;code&gt;.git&lt;/code&gt;文件存在&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;git status&lt;/code&gt; 查看当前状态，记得查看branch&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git add *&lt;/code&gt; 添加所有要更改的文件到暂存区（stage）&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git commit -m &amp;quot;&amp;lt;message&amp;gt;&amp;quot;&lt;/code&gt; 提交暂存区到仓库区（commit）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git push origin main&lt;/code&gt;把本地库的内容推送到远程&lt;br&gt;你可以参考 &lt;a href=&quot;https://sp21.datastructur.es/materials/lab/lab1/lab1&quot;&gt;cs61b lab1 section E&lt;/a&gt; 十分好的 git 教程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push origin main&lt;/code&gt;把本地库的内容推送到远程&lt;br /&gt;
+你可以参考 &lt;a href=&quot;https://sp21.datastructur.es/materials/lab/lab1/lab1&quot;&gt;cs61b lab1 section E&lt;/a&gt; 十分好的 git 教程&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;fetch-pull操作流程&quot;&gt;&lt;a href=&quot;#fetch-pull操作流程&quot; class=&quot;headerlink&quot; title=&quot;fetch&amp;#x2F;pull操作流程&quot;&gt;&lt;/a&gt;fetch&amp;#x2F;pull操作流程&lt;/h2&gt;&lt;p&gt;如果你只是为了更新本地文件，可以使用 &lt;code&gt;git pull&lt;/code&gt; 命令从远程仓库获取最新的更改并合并到你的本地分支。以下是步骤：&lt;br&gt;&lt;code&gt;git checkout main&lt;/code&gt;&lt;br&gt;(checkout)切换到你想要更新的分支（通常是 main 或 master 分支）：&lt;br&gt;&lt;code&gt;git pull origin main&lt;/code&gt;&lt;br&gt;拉取远程仓库的最新更改并合并到本地分支：&lt;/p&gt;
+&lt;h2 id=&quot;fetchpull操作流程&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#fetchpull操作流程&quot;&gt;&lt;/a&gt; fetch/pull操作流程&lt;/h2&gt;
+&lt;p&gt;如果你只是为了更新本地文件，可以使用 &lt;code&gt;git pull&lt;/code&gt; 命令从远程仓库获取最新的更改并合并到你的本地分支。以下是步骤：&lt;br /&gt;
+&lt;code&gt;git checkout main&lt;/code&gt;&lt;br /&gt;
+(checkout)切换到你想要更新的分支（通常是 main 或 master 分支）：&lt;br /&gt;
+&lt;code&gt;git pull origin main&lt;/code&gt;&lt;br /&gt;
+拉取远程仓库的最新更改并合并到本地分支：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;git fetch origin main&lt;/code&gt; 从远程获取最新版本到本地，不会自动merge&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git pull origin main&lt;/code&gt; 把远程库(origin和远程库的URL等价)的内容拉下来，然后与本地的文件合并&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;merge（合并）&quot;&gt;&lt;a href=&quot;#merge（合并）&quot; class=&quot;headerlink&quot; title=&quot;merge（合并）&quot;&gt;&lt;/a&gt;merge（合并）&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;本地分支合并：你可以在本地将一个分支合并到另一个分支。&lt;br&gt;feature-branch 是你要合并的分支，main 是目标分支。一般在freture branch开发新功能或修复bug.&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout main&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git merge feature-branch&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;解决冲突：如果在合并过程中发生冲突，你需要在本地解决这些冲突，然后提交解决后的文件。&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;give your resolved file to git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git add &amp;lt;resolved-files&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &amp;quot;Resolved merge conflicts&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;推送到远程：合并完成并解决冲突后，你可以将合并后的分支推送到远程仓库。&lt;br&gt;&lt;code&gt;git push origin main&lt;/code&gt;&lt;/li&gt;
+&lt;h3 id=&quot;merge合并&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#merge合并&quot;&gt;&lt;/a&gt; merge（合并）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;本地分支合并：你可以在本地将一个分支合并到另一个分支。&lt;br /&gt;
+feature-branch 是你要合并的分支，main 是目标分支。一般在freture branch开发新功能或修复bug.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;分支branch&quot;&gt;&lt;a href=&quot;#分支branch&quot; class=&quot;headerlink&quot; title=&quot;分支branch&quot;&gt;&lt;/a&gt;分支branch&lt;/h2&gt;&lt;p&gt;并行开发必备&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout main&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git merge feature-branch&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;解决冲突：如果在合并过程中发生冲突，你需要在本地解决这些冲突，然后提交解决后的文件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;give your resolved file to git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git add &amp;lt;resolved-files&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &amp;quot;Resolved merge conflicts&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;推送到远程：合并完成并解决冲突后，你可以将合并后的分支推送到远程仓库。&lt;br /&gt;
+&lt;code&gt;git push origin main&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;分支branch&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#分支branch&quot;&gt;&lt;/a&gt; 分支branch&lt;/h2&gt;
+&lt;p&gt;并行开发必备&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;git branch&lt;/code&gt; 查看分支，确认当前的分支信息&lt;br&gt;step 1： &lt;code&gt;git branch &amp;lt;branch-name&amp;gt;&lt;/code&gt; 创建分支&lt;br&gt;step 2: 在新分支上开发功能&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git add *&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &amp;quot;My new feature&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;feature-branch&amp;gt;&lt;/code&gt;&lt;br&gt;step 4: 切换到主分支&lt;code&gt;git checkout main&lt;/code&gt;&lt;br&gt;step 5: 合并分支&lt;code&gt;git merge &amp;lt;feature-branch&amp;gt;&lt;/code&gt;&lt;br&gt;step 6: 删除分支&lt;code&gt;git branch -d &amp;lt;feature-branch&amp;gt;&lt;/code&gt;&lt;br&gt;step 7: 删除远程分支&lt;code&gt;git push origin --delete &amp;lt;feature-branch&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
+&lt;li&gt;&lt;code&gt;git branch&lt;/code&gt; 查看分支，确认当前的分支信息&lt;br /&gt;
+step 1： &lt;code&gt;git branch &amp;lt;branch-name&amp;gt;&lt;/code&gt; 创建分支&lt;br /&gt;
+step 2: 在新分支上开发功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git add *&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &amp;quot;My new feature&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;feature-branch&amp;gt;&lt;/code&gt;&lt;br /&gt;
+step 4: 切换到主分支&lt;code&gt;git checkout main&lt;/code&gt;&lt;br /&gt;
+step 5: 合并分支&lt;code&gt;git merge &amp;lt;feature-branch&amp;gt;&lt;/code&gt;&lt;br /&gt;
+step 6: 删除分支&lt;code&gt;git branch -d &amp;lt;feature-branch&amp;gt;&lt;/code&gt;&lt;br /&gt;
+step 7: 删除远程分支&lt;code&gt;git push origin --delete &amp;lt;feature-branch&amp;gt;&lt;/code&gt;&lt;/p&gt;</summary>
     
     
     
     <category term="RM" scheme="https://humble-learner006.github.io/categories/RM/"/>
     
     
+    <category term="git" scheme="https://humble-learner006.github.io/tags/git/"/>
+    
     <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
     
     <category term="unfinished" scheme="https://humble-learner006.github.io/tags/unfinished/"/>
-    
-    <category term="git" scheme="https://humble-learner006.github.io/tags/git/"/>
     
   </entry>
   
@@ -153,7 +234,8 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
       
         
         
-    <summary type="html">&lt;h1 id=&quot;C-指针-和-的使用&quot;&gt;&lt;a href=&quot;#C-指针-和-的使用&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;c指针和的使用&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#c指针和的使用&quot;&gt;&lt;/a&gt; C++指针&lt;code&gt;&amp;amp;&lt;/code&gt;和&lt;code&gt;*&lt;/code&gt;的使用&lt;/h1&gt;
+&lt;p&gt;start from scratch, we</summary>
         
       
     
@@ -162,9 +244,9 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
     <category term="C/C++" scheme="https://humble-learner006.github.io/categories/C-C/"/>
     
     
-    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
-    
     <category term="C/C++" scheme="https://humble-learner006.github.io/tags/C-C/"/>
+    
+    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
     
   </entry>
   
@@ -180,7 +262,8 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Qt版本：Qt-6-7-2-项目配置&quot;&gt;&lt;a href=&quot;#Qt版本：Qt-6-7-2-项目配置&quot; class=&quot;headerlink&quot; title=&quot;Qt版本：Qt 6.7.2 项目配置&quot;&gt;&lt;/a&gt;Qt版本：Qt 6.7.2</summary>
+    <summary type="html">&lt;h1 id=&quot;qt版本qt-672-项目配置&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#qt版本qt-672-项目配置&quot;&gt;&lt;/a&gt; Qt版本：Qt 6.7.2 项目配置&lt;/h1&gt;
+&lt;p&gt;本教程参考哔哩哔哩系列&lt;a</summary>
         
       
     
@@ -234,29 +317,6 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
   </entry>
   
   <entry>
-    <title>delete_remaining_tags</title>
-    <link href="https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/"/>
-    <id>https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/</id>
-    <published>2024-10-09T01:33:52.000Z</published>
-    <updated>2024-10-11T05:21:10.161Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;删除旧博客残留tags&quot;&gt;&lt;a href=&quot;#删除旧博客残留tags&quot; class=&quot;headerlink&quot; title=&quot;删除旧博客残留tags&quot;&gt;&lt;/a&gt;删除旧博客残留tags&lt;/h1&gt;</summary>
-    
-    
-    
-    <category term="web" scheme="https://humble-learner006.github.io/categories/web/"/>
-    
-    <category term="blog" scheme="https://humble-learner006.github.io/categories/web/blog/"/>
-    
-    
-    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
-    
-    <category term="waste" scheme="https://humble-learner006.github.io/tags/waste/"/>
-    
-  </entry>
-  
-  <entry>
     <title>blog_building</title>
     <link href="https://humble-learner006.github.io/2024/10/09/blog_building/"/>
     <id>https://humble-learner006.github.io/2024/10/09/blog_building/</id>
@@ -264,7 +324,7 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
     <updated>2024-10-11T10:38:54.476Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;记录博客配置过程&quot;&gt;&lt;a href=&quot;#记录博客配置过程&quot; class=&quot;headerlink&quot; title=&quot;记录博客配置过程&quot;&gt;&lt;/a&gt;记录博客配置过程&lt;/h1&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;记录博客配置过程&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#记录博客配置过程&quot;&gt;&lt;/a&gt; 记录博客配置过程&lt;/h1&gt;</summary>
     
     
     
@@ -280,6 +340,29 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
   </entry>
   
   <entry>
+    <title>delete_remaining_tags</title>
+    <link href="https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/"/>
+    <id>https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/</id>
+    <published>2024-10-09T01:33:52.000Z</published>
+    <updated>2024-10-11T05:21:10.161Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;删除旧博客残留tags&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#删除旧博客残留tags&quot;&gt;&lt;/a&gt; 删除旧博客残留tags&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="web" scheme="https://humble-learner006.github.io/categories/web/"/>
+    
+    <category term="blog" scheme="https://humble-learner006.github.io/categories/web/blog/"/>
+    
+    
+    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
+    
+    <category term="waste" scheme="https://humble-learner006.github.io/tags/waste/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Around the final for second term</title>
     <link href="https://humble-learner006.github.io/2024/04/28/Record-around-the-final-for-second-term/"/>
     <id>https://humble-learner006.github.io/2024/04/28/Record-around-the-final-for-second-term/</id>
@@ -287,7 +370,7 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
     <updated>2024-10-11T12:27:48.241Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;暮春落雨&quot;&gt;&lt;a href=&quot;#暮春落雨&quot; class=&quot;headerlink&quot; title=&quot;暮春落雨&quot;&gt;&lt;/a&gt;暮春落雨&lt;/h1&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;暮春落雨&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#暮春落雨&quot;&gt;&lt;/a&gt; 暮春落雨&lt;/h1&gt;</summary>
     
     
     
@@ -310,7 +393,8 @@ step 3: 推送新分支到远程仓库&lt;code&gt;git push origin &amp;lt;featur
       
         
         
-    <summary type="html">&lt;h1 id=&quot;福建賽區RMUL比赛&quot;&gt;&lt;a href=&quot;#福建賽區RMUL比赛&quot; class=&quot;headerlink&quot; title=&quot;福建賽區RMUL比赛&quot;&gt;&lt;/a&gt;福建賽區RMUL比赛&lt;/h1&gt;&lt;h1 id=&quot;Time-line&quot;&gt;&lt;a href=&quot;#Time-line&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;福建賽區rmul比赛&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#福建賽區rmul比赛&quot;&gt;&lt;/a&gt; 福建賽區RMUL比赛&lt;/h1&gt;
+&lt;h1 id=&quot;time-line&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
         
       
     

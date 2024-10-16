@@ -17,20 +17,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"humble-learner006.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"humble-learner006.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":400,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="C++指针&amp;和*的使用start from scratch, we already know what is variable. A variable store in memory have not only information of its value, but also its memory address.  1int x &#x3D; 5; &#x2F;&#x2F; declare and initial">
+    <meta name="description" content="C++指针&amp;和*的使用 start from scratch, we already know what is variable. A variable store in memory have not only information of its value, but also its memory address. 1int x &#x3D; 5; &#x2F;&#x2F; declare and initia">
 <meta property="og:type" content="article">
 <meta property="og:title" content="pointer">
 <meta property="og:url" content="https://humble-learner006.github.io/2024/10/10/pointer/index.html">
 <meta property="og:site_name" content="LIke&#39;s blog">
-<meta property="og:description" content="C++指针&amp;和*的使用start from scratch, we already know what is variable. A variable store in memory have not only information of its value, but also its memory address.  1int x &#x3D; 5; &#x2F;&#x2F; declare and initial">
+<meta property="og:description" content="C++指针&amp;和*的使用 start from scratch, we already know what is variable. A variable store in memory have not only information of its value, but also its memory address. 1int x &#x3D; 5; &#x2F;&#x2F; declare and initia">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-10-10T02:22:29.000Z">
 <meta property="article:modified_time" content="2024-10-11T12:26:44.841Z">
 <meta property="article:author" content="Like Cai">
-<meta property="article:tag" content="help">
 <meta property="article:tag" content="C&#x2F;C++">
+<meta property="article:tag" content="help">
 <meta name="twitter:card" content="summary">
 
 
@@ -91,7 +91,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">8</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">9</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">14</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"> <i class="fa fa-search fa-fw"></i> Search
         </a>
@@ -142,7 +142,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-%E6%8C%87%E9%92%88-%E5%92%8C-%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">C++指针&amp;和*的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Example"><span class="nav-number">1.1.</span> <span class="nav-text">Example</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#example-code"><span class="nav-number">1.1.1.</span> <span class="nav-text">example code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#result"><span class="nav-number">1.1.2.</span> <span class="nav-text">result</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#summary"><span class="nav-number">1.1.3.</span> <span class="nav-text">summary</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#c%E6%8C%87%E9%92%88%E5%92%8C%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text"> C++指针&amp;和*的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#example"><span class="nav-number">1.1.</span> <span class="nav-text"> Example</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#example-code"><span class="nav-number">1.1.1.</span> <span class="nav-text"> example code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#result"><span class="nav-number">1.1.2.</span> <span class="nav-text"> result</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#summary"><span class="nav-number">1.1.3.</span> <span class="nav-text"> summary</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -157,7 +157,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -168,7 +168,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -190,6 +190,27 @@
     </div>
 
     
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://humble-learner006.github.io/" title="https:&#x2F;&#x2F;humble-learner006.github.io&#x2F;">My Blog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://skyswordx.github.io/" title="https:&#x2F;&#x2F;skyswordx.github.io&#x2F;" rel="noopener" target="_blank">My Friend's blog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://github.com/humble-learner006/Cpp_project/tree/main" title="https:&#x2F;&#x2F;github.com&#x2F;humble-learner006&#x2F;Cpp_project&#x2F;tree&#x2F;main" rel="noopener" target="_blank">Current working on</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://doocs.github.io/leetcode/lc/1/" title="https:&#x2F;&#x2F;doocs.github.io&#x2F;leetcode&#x2F;lc&#x2F;1&#x2F;" rel="noopener" target="_blank">Algo</a>
+            </li>
+        </ul>
+      </div>
+    </div>
   </aside>
 
 
@@ -263,40 +284,51 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="C-指针-和-的使用"><a href="#C-指针-和-的使用" class="headerlink" title="C++指针&amp;和*的使用"></a>C++指针<code>&amp;</code>和<code>*</code>的使用</h1><p>start from scratch, we already know what is variable. A variable store in memory have not only information of its value, but also its memory address. </p>
+    <div class="post-body" itemprop="articleBody"><h1 id="c指针和的使用"><a class="markdownIt-Anchor" href="#c指针和的使用"></a> C++指针<code>&amp;</code>和<code>*</code>的使用</h1>
+<p>start from scratch, we already know what is variable. A variable store in memory have not only information of its value, but also its memory address.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> x = <span class="number">5</span>; <span class="comment">// declare and initializa a variable</span></span><br></pre></td></tr></table></figure>
 <p>then we can use “address-of operator” - <code>&amp;</code> to get the address of x!</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span>* ptr = &amp;x <span class="comment">//get the x&#x27;s address and pass it to ptr</span></span><br></pre></td></tr></table></figure>
-<p>you may ask </p>
+<p>you may ask</p>
 <ul>
-<li>why <code>* ptr </code>is a <code>int</code> type data<ul>
-<li> you are saying that <code>ptr</code> is a pointer to an <code>int</code>.</li>
+<li>why <code>* ptr </code>is a <code>int</code> type data
+<ul>
+<li>you are saying that <code>ptr</code> is a pointer to an <code>int</code>.</li>
 </ul>
 </li>
-<li>where should I place the asteroid <code>*</code>? - Is that with end of <code>int</code>, or with beginning of <code>ptr</code><ul>
+<li>where should I place the asteroid <code>*</code>? - Is that with end of <code>int</code>, or with beginning of <code>ptr</code>
+<ul>
 <li>only matter of style</li>
 <li>However, the first style (<code>int* ptr</code>) is often preferred because it makes it clear that <code>ptr</code> is a pointer to an <code>int</code>. This can be especially helpful when declaring multiple pointers in a single statement:</li>
 <li><code>int* ptr1, ptr2; // Only ptr1 is a pointer, ptr2 is an int</code></li>
 <li>better declare one pointer per line</li>
 </ul>
 </li>
-<li>since the name of <code>&amp;</code> is “address-of operator”<strong>取地址符</strong>, what is the name of <code>*</code> as operator<ul>
-<li>it is called as “dereference operator”<strong>解引用符</strong></li>
+<li>since the name of <code>&amp;</code> is &quot;address-of operator&quot;<strong>取地址符</strong>, what is the name of <code>*</code> as operator
+<ul>
+<li>it is called as &quot;dereference operator&quot;<strong>解引用符</strong></li>
 </ul>
 </li>
-<li>BEAWARE that <code>&amp;</code> also have another way to use, which is reference<ul>
-<li><code>int &amp;reference_value = value</code> means give it a new name, and all operations on <code>reference_value</code> is same as directly on <code>value</code><br>You can use the pointer to access the value of <code>x</code>:<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> value = *ptr; <span class="comment">// Dereferencing the pointer to get the value of x</span></span><br></pre></td></tr></table></figure></li>
+<li>BEAWARE that <code>&amp;</code> also have another way to use, which is reference
+<ul>
+<li><code>int &amp;reference_value = value</code> means give it a new name, and all operations on <code>reference_value</code> is same as directly on <code>value</code><br />
+You can use the pointer to access the value of <code>x</code>:</li>
 </ul>
 </li>
 </ul>
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><h3 id="example-code"><a href="#example-code" class="headerlink" title="example code"></a>example code</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">10</span>;       <span class="comment">// Declare an integer variable x and initialize it to 10</span></span><br><span class="line">    <span class="type">int</span>* ptr = &amp;x;    <span class="comment">// Declare a pointer to an integer and initialize it with the address of x</span></span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Value of x: &quot;</span> &lt;&lt; x &lt;&lt; std::endl;           <span class="comment">// Output the value of x</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Address of x: &quot;</span> &lt;&lt; &amp;x &lt;&lt; std::endl;        <span class="comment">// Output the address of x</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Value of ptr: &quot;</span> &lt;&lt; ptr &lt;&lt; std::endl;       <span class="comment">// Output the value of ptr (address of x)</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Value pointed to by ptr: &quot;</span> &lt;&lt; *ptr &lt;&lt; std::endl; <span class="comment">// Output the value pointed to by ptr (value of x)</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="result"><a href="#result" class="headerlink" title="result"></a>result</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Value of x: <span class="number">10</span></span><br><span class="line">Address of x: <span class="number">0x7ffee4b3c8ac</span></span><br><span class="line">Value of ptr: <span class="number">0x7ffee4b3c8ac</span> <span class="comment">//ptr = &amp;x</span></span><br><span class="line">Value pointed to by ptr: <span class="number">10</span> <span class="comment">//*ptr = x</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> value = *ptr; <span class="comment">// Dereferencing the pointer to get the value of x</span></span><br></pre></td></tr></table></figure>
+<h2 id="example"><a class="markdownIt-Anchor" href="#example"></a> Example</h2>
+<h3 id="example-code"><a class="markdownIt-Anchor" href="#example-code"></a> example code</h3>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">10</span>;       <span class="comment">// Declare an integer variable x and initialize it to 10</span></span><br><span class="line">    <span class="type">int</span>* ptr = &amp;x;    <span class="comment">// Declare a pointer to an integer and initialize it with the address of x</span></span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Value of x: &quot;</span> &lt;&lt; x &lt;&lt; std::endl;           <span class="comment">// Output the value of x</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Address of x: &quot;</span> &lt;&lt; &amp;x &lt;&lt; std::endl;        <span class="comment">// Output the address of x</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Value of ptr: &quot;</span> &lt;&lt; ptr &lt;&lt; std::endl;       <span class="comment">// Output the value of ptr (address of x)</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Value pointed to by ptr: &quot;</span> &lt;&lt; *ptr &lt;&lt; std::endl; <span class="comment">// Output the value pointed to by ptr (value of x)</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="result"><a class="markdownIt-Anchor" href="#result"></a> result</h3>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Value of x: <span class="number">10</span></span><br><span class="line">Address of x: <span class="number">0x7ffee4b3c8ac</span></span><br><span class="line">Value of ptr: <span class="number">0x7ffee4b3c8ac</span> <span class="comment">//ptr = &amp;x</span></span><br><span class="line">Value pointed to by ptr: <span class="number">10</span> <span class="comment">//*ptr = x</span></span><br></pre></td></tr></table></figure>
 <p>p.s. about address on a 64-bit system, a memory address might look like <code>0x7ffee4b3c8ac</code>. Here’s why:</p>
 <ul>
 <li><strong>0x</strong>: This prefix indicates that the number is in hexadecimal format.</li>
 <li><strong>7ffee4b3c8ac</strong>: This is the actual address in hexadecimal. Each digit represents 4 bits, so a 64-bit address will have up to 16 hexadecimal digits.</li>
 </ul>
-<h3 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h3><ul>
+<h3 id="summary"><a class="markdownIt-Anchor" href="#summary"></a> summary</h3>
+<ul>
 <li><code>x</code> is a variable that stores a value.</li>
 <li><code>&amp;x</code> is the address of the variable <code>x</code>.</li>
 <li><code>ptr</code> is a pointer that stores the address of <code>x</code>.</li>
@@ -328,8 +360,8 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/help/" rel="tag"># help</a>
               <a href="/tags/C-C/" rel="tag"># C/C++</a>
+              <a href="/tags/help/" rel="tag"># help</a>
           </div>
 
         
@@ -408,6 +440,13 @@
   
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
 
 
 
