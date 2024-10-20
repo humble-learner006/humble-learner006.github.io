@@ -6,7 +6,7 @@
   <link href="https://humble-learner006.github.io/atom.xml" rel="self"/>
   
   <link href="https://humble-learner006.github.io/"/>
-  <updated>2024-10-16T14:50:28.129Z</updated>
+  <updated>2024-10-20T04:19:37.162Z</updated>
   <id>https://humble-learner006.github.io/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>build_system</title>
+    <link href="https://humble-learner006.github.io/2024/10/20/build-system/"/>
+    <id>https://humble-learner006.github.io/2024/10/20/build-system/</id>
+    <published>2024-10-20T03:41:24.000Z</published>
+    <updated>2024-10-20T04:19:37.162Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;什么是build-system构建系统&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#什么是build-system构建系统&quot;&gt;&lt;/a&gt; 什么是build system（构建系统）？&lt;/h1&gt;
+&lt;p&gt;翻译自：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="school" scheme="https://humble-learner006.github.io/categories/school/"/>
+    
+    
+    <category term="C/C++" scheme="https://humble-learner006.github.io/tags/C-C/"/>
+    
+    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>average_and_mean</title>
+    <link href="https://humble-learner006.github.io/2024/10/20/average-and-mean/"/>
+    <id>https://humble-learner006.github.io/2024/10/20/average-and-mean/</id>
+    <published>2024-10-20T02:55:07.000Z</published>
+    <updated>2024-10-20T04:21:33.909Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;平均值(average)&lt;/strong&gt;：是算数均值，属于均值一种。&lt;br /&gt;
+&lt;strong&gt;均值(mean)&lt;/strong&gt;：用来描述数据集中趋势的统计量。因此统计学上众数(mode),中位数(median)&lt;br</summary>
+        
+      
+    
+    
+    
+    <category term="school" scheme="https://humble-learner006.github.io/categories/school/"/>
+    
+    
+    <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
+    
+    <category term="statistics" scheme="https://humble-learner006.github.io/tags/statistics/"/>
+    
+  </entry>
+  
+  <entry>
     <title>distribution_in_statistic</title>
     <link href="https://humble-learner006.github.io/2024/10/16/distribution-in-statistic/"/>
     <id>https://humble-learner006.github.io/2024/10/16/distribution-in-statistic/</id>
     <published>2024-10-16T12:07:29.000Z</published>
-    <updated>2024-10-16T14:50:28.129Z</updated>
+    <updated>2024-10-20T02:57:57.584Z</updated>
     
     
       
@@ -41,7 +97,7 @@
     
     <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
     
-    <category term="statistic" scheme="https://humble-learner006.github.io/tags/statistic/"/>
+    <category term="statistics" scheme="https://humble-learner006.github.io/tags/statistics/"/>
     
   </entry>
   
@@ -132,15 +188,14 @@
     <link href="https://humble-learner006.github.io/2024/10/11/navigator/"/>
     <id>https://humble-learner006.github.io/2024/10/11/navigator/</id>
     <published>2024-10-11T10:31:25.000Z</published>
-    <updated>2024-10-13T04:22:55.747Z</updated>
+    <updated>2024-10-20T03:25:52.573Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;近期&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#近期&quot;&gt;&lt;/a&gt; 近期&lt;/h1&gt;
-&lt;p&gt;2024年10月11日&lt;br</summary>
+    <summary type="html">&lt;h1 id=&quot;近期-2024-10-20-111432&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#近期-2024-10-20-111432&quot;&gt;&lt;/a&gt; 近期 2024-10-20</summary>
         
       
     
@@ -255,7 +310,7 @@ step 7: 删除远程分支&lt;code&gt;git push origin --delete &amp;lt;feature-b
     <link href="https://humble-learner006.github.io/2024/10/09/Qt_tutorial/"/>
     <id>https://humble-learner006.github.io/2024/10/09/Qt_tutorial/</id>
     <published>2024-10-09T15:00:00.000Z</published>
-    <updated>2024-10-11T12:27:10.562Z</updated>
+    <updated>2024-10-20T04:14:14.240Z</updated>
     
     
       
@@ -321,7 +376,7 @@ step 7: 删除远程分支&lt;code&gt;git push origin --delete &amp;lt;feature-b
     <link href="https://humble-learner006.github.io/2024/10/09/blog_building/"/>
     <id>https://humble-learner006.github.io/2024/10/09/blog_building/</id>
     <published>2024-10-09T01:33:52.000Z</published>
-    <updated>2024-10-11T10:38:54.476Z</updated>
+    <updated>2024-10-20T03:25:38.311Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;记录博客配置过程&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#记录博客配置过程&quot;&gt;&lt;/a&gt; 记录博客配置过程&lt;/h1&gt;</summary>
@@ -334,8 +389,6 @@ step 7: 删除远程分支&lt;code&gt;git push origin --delete &amp;lt;feature-b
     
     
     <category term="help" scheme="https://humble-learner006.github.io/tags/help/"/>
-    
-    <category term="unfinished" scheme="https://humble-learner006.github.io/tags/unfinished/"/>
     
   </entry>
   
