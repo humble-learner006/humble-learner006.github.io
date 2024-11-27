@@ -6,7 +6,7 @@
   <link href="https://humble-learner006.github.io/atom.xml" rel="self"/>
   
   <link href="https://humble-learner006.github.io/"/>
-  <updated>2024-10-20T04:19:37.162Z</updated>
+  <updated>2024-11-27T05:51:10.142Z</updated>
   <id>https://humble-learner006.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>types_of_distance</title>
+    <link href="https://humble-learner006.github.io/2024/11/27/types-of-distance/"/>
+    <id>https://humble-learner006.github.io/2024/11/27/types-of-distance/</id>
+    <published>2024-11-27T05:50:59.000Z</published>
+    <updated>2024-11-27T05:51:10.142Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;距离是度量两个点之间差异或分离程度的一种度量标准。在数学和统计学中，有多种不同的距离度量方式，每种方式都有其特定的应用场景和特点。除了曼哈顿距离和欧几里得距离外，还有其他几种常见的距离度量。以下是对这些距离及其与Lp范数之间关系的介绍：&lt;/p&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>build_system</title>
     <link href="https://humble-learner006.github.io/2024/10/20/build-system/"/>
     <id>https://humble-learner006.github.io/2024/10/20/build-system/</id>
     <published>2024-10-20T03:41:24.000Z</published>
-    <updated>2024-10-20T04:19:37.162Z</updated>
+    <updated>2024-10-20T04:24:20.950Z</updated>
     
     
       

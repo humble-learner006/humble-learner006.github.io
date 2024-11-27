@@ -170,6 +170,42 @@ apt-get: This is the default package manager for Debian, Ubuntu, and other Debia
       </tags>
   </entry>
   <entry>
+    <title>types_of_distance</title>
+    <url>/2024/11/27/types-of-distance/</url>
+    <content><![CDATA[<p>距离是度量两个点之间差异或分离程度的一种度量标准。在数学和统计学中，有多种不同的距离度量方式，每种方式都有其特定的应用场景和特点。除了曼哈顿距离和欧几里得距离外，还有其他几种常见的距离度量。以下是对这些距离及其与Lp范数之间关系的介绍：</p>
+<h3 id="1-曼哈顿距离manhattan-distance"><a class="markdownIt-Anchor" href="#1-曼哈顿距离manhattan-distance"></a> 1. 曼哈顿距离（Manhattan Distance）</h3>
+<p>曼哈顿距离也称为L1距离或城市街区距离，它是两个点在标准坐标系上各坐标轴上差值的绝对值之和。公式如下：</p>
+<p>[ d_{\text{Manhattan}}(\mathbf{x}, \mathbf{y}) = \sum_{i=1}^{n} |x_i - y_i| ]</p>
+<h3 id="2-欧几里得距离euclidean-distance"><a class="markdownIt-Anchor" href="#2-欧几里得距离euclidean-distance"></a> 2. 欧几里得距离（Euclidean Distance）</h3>
+<p>欧几里得距离也称为L2距离，是我们最常见的距离度量，它是两个点之间的直线距离。公式如下：</p>
+<p>[ d_{\text{Euclidean}}(\mathbf{x}, \mathbf{y}) = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2} ]</p>
+<h3 id="3-闵可夫斯基距离minkowski-distance"><a class="markdownIt-Anchor" href="#3-闵可夫斯基距离minkowski-distance"></a> 3. 闵可夫斯基距离（Minkowski Distance）</h3>
+<p>曼哈顿距离和欧几里得距离都是闵可夫斯基距离的特例。闵可夫斯基距离是Lp范数的一种泛化形式，其公式为：</p>
+<p>[ d_{\text{Minkowski}}(\mathbf{x}, \mathbf{y}) = \left( \sum_{i=1}^{n} |x_i - y_i|^p \right)^{\frac{1}{p}} ]</p>
+<p>其中，p是一个参数，当p取不同值时，闵可夫斯基距离可以表示不同的距离度量：</p>
+<ul>
+<li>当 ( p = 1 ) 时，闵可夫斯基距离就是曼哈顿距离。</li>
+<li>当 ( p = 2 ) 时，闵可夫斯基距离就是欧几里得距离。</li>
+<li>当 ( p \to \infty ) 时，闵可夫斯基距离趋近于切比雪夫距离。</li>
+</ul>
+<h3 id="4-切比雪夫距离chebyshev-distance"><a class="markdownIt-Anchor" href="#4-切比雪夫距离chebyshev-distance"></a> 4. 切比雪夫距离（Chebyshev Distance）</h3>
+<p>切比雪夫距离是曼哈顿距离和欧几里得距离的另一种极限形式，它是两个点在所有坐标轴上差值的最大值。公式如下：</p>
+<p>[ d_{\text{Chebyshev}}(\mathbf{x}, \mathbf{y}) = \max_{i} |x_i - y_i| ]</p>
+<h3 id="lp范数lp-norm"><a class="markdownIt-Anchor" href="#lp范数lp-norm"></a> Lp范数（Lp Norm）</h3>
+<p>Lp范数是一个广义的范数概念，用于度量向量空间中的向量大小。其定义如下：</p>
+<p>[ | \mathbf{x} |<em>p = \left( \sum</em>{i=1}^{n} |x_i|^p \right)^{\frac{1}{p}} ]</p>
+<p>根据Lp范数，可以定义不同的距离度量：</p>
+<ul>
+<li>当 ( p = 1 ) 时，是L1范数，对应于曼哈顿距离。</li>
+<li>当 ( p = 2 ) 时，是L2范数，对应于欧几里得距离。</li>
+<li>当 ( p \to \infty ) 时，是L∞范数，对应于切比雪夫距离。</li>
+</ul>
+<h3 id="关系总结"><a class="markdownIt-Anchor" href="#关系总结"></a> 关系总结</h3>
+<p>曼哈顿距离和欧几里得距离都是闵可夫斯基距离的特例，而闵可夫斯基距离则是Lp范数的一种应用形式。因此，Lp范数是一个非常通用的框架，可以用来定义不同的距离度量，通过调整参数p，可以获得不同的距离度量标准。</p>
+<p>理解这些距离度量及其相互关系，对于数据分析、机器学习和统计学中的距离计算和相似度度量都有非常重要的意义。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>build_system</title>
     <url>/2024/10/20/build-system/</url>
     <content><![CDATA[<h1 id="什么是build-system构建系统"><a class="markdownIt-Anchor" href="#什么是build-system构建系统"></a> 什么是build system（构建系统）？</h1>
@@ -185,6 +221,7 @@ SCons：基于Python脚本的构建工具，提供了更多的灵活性</p>
 <p>当使用构建系统时，需要自己写一个<code>makefile</code>文件<br />
 这个文件定义了构建规则。构建系统会读取这个文件，并根据规则构建项目。<br />
 <em>文件要放在项目的根目录<code>root directory</code>下</em></p>
+<p>ref:<a href="https://cognitivewaves.wordpress.com/makefiles/">https://cognitivewaves.wordpress.com/makefiles/</a></p>
 <p>以下由AI生成</p>
 <h1 id="c-project结构参考"><a class="markdownIt-Anchor" href="#c-project结构参考"></a> C++ project结构参考</h1>
 <p>通常会有多个目录和文件，每个目录和文件都有其特定的作用。示例如下</p>

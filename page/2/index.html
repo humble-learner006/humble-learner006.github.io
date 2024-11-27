@@ -87,7 +87,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">9</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">16</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">9</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">17</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"> <i class="fa fa-search fa-fw"></i> Search
         </a>
@@ -152,7 +152,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -212,6 +212,232 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://humble-learner006.github.io/2024/10/09/Qt_tutorial/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Like Cai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LIke's blog">
+      <meta itemprop="description" content="悟已往之不谏 知来者之可追">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | LIke's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/09/Qt_tutorial/" class="post-title-link" itemprop="url">qt_tutorial</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-10-09 23:00:00" itemprop="dateCreated datePublished" datetime="2024-10-09T23:00:00+08:00">2024-10-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-20 12:14:14" itemprop="dateModified" datetime="2024-10-20T12:14:14+08:00">2024-10-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/C-C/" itemprop="url" rel="index"><span itemprop="name">C/C++</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="qt版本qt-672-项目配置"><a class="markdownIt-Anchor" href="#qt版本qt-672-项目配置"></a> Qt版本：Qt 6.7.2 项目配置</h1>
+<p>本教程参考哔哩哔哩系列<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1km4y1k7CW/?p=6&amp;spm_id_from=pageDriver&amp;vd_source=113cb04caaabeca910d6d5580d23d578">视频</a><br />
+<code>help -&gt; about qt creater</code>查看版本<br />
+<img src="https://s2.loli.net/2024/10/10/ujXJRtxQGUE9c2N.png" alt="" /></p>
+<h2 id="在qt中创建一个gui项目"><a class="markdownIt-Anchor" href="#在qt中创建一个gui项目"></a> 在Qt中创建一个GUI项目</h2>
+<h3 id="step-1-choose-a-template"><a class="markdownIt-Anchor" href="#step-1-choose-a-template"></a> step 1: choose a template</h3>
+<p><img src="https://s2.loli.net/2024/10/10/1cUm6pMF2vZCOys.png" alt="" /></p>
+<p>选择一个模板，这里选择一个空的模板<br />
+<code>Qt widgets application</code></p>
+<ul>
+<li>可以看到有图标，根据图标大概能知道这个模板是什么模板</li>
+<li>右边也会有对模板的描述</li>
+</ul>
+<h3 id="step-2-project-location"><a class="markdownIt-Anchor" href="#step-2-project-location"></a> step 2: Project location</h3>
+<p><img src="https://s2.loli.net/2024/10/10/jBR2MHCDKpc8yYg.png" alt="" /></p>
+<p>选择你的文件位置，命名的你文件名字</p>
+<h3 id="step-3-define-build-system"><a class="markdownIt-Anchor" href="#step-3-define-build-system"></a> step 3: Define Build System</h3>
+<p><img src="https://s2.loli.net/2024/10/10/cXmviKfrLSExnpR.png" alt="" /></p>
+<ul>
+<li>选择CMake，可以参考<a target="_blank" rel="noopener" href="https://slaptijack.com/programming/cmake-for-cpp.html">这里</a></li>
+<li>什么是[[CSC3002/01_CSC3002_note/Build system|Build system]]</li>
+<li>我跟教程走，选择qmake</li>
+<li>项目管理文件qmake -&gt; .pro文件; cmake -&gt; CMakeLists.txt文件</li>
+</ul>
+<h3 id="step-4-class-information"><a class="markdownIt-Anchor" href="#step-4-class-information"></a> step 4: class information</h3>
+<p><img src="https://s2.loli.net/2024/10/10/RT6dwcZ98DtyVSO.png" alt="" /></p>
+<p>widget: used to refer to any small device that you do not know the name of（不知名的）小器物，小装置，小玩意儿( informal ) <em>from oxford</em></p>
+<ul>
+<li>widget空窗口（只有窗口标题）
+<ul>
+<li>mianWindow主窗口（菜单栏等）</li>
+<li>dialog对话框（有Yes or no的选项)</li>
+</ul>
+</li>
+<li>建议类名选择大写开头</li>
+<li>勾选后有widget.ui的文件，这个文件会有ui的信息<br />
+选择翻译后的语言，存储在zh_CN.qm文件中，我们用英文开发，有中文的语言包<br />
+<img src="https://s2.loli.net/2024/10/10/EPra8uAYgikH7dS.png" alt="" /></li>
+</ul>
+<h3 id="step-5-kit-selection"><a class="markdownIt-Anchor" href="#step-5-kit-selection"></a> step 5: Kit selection</h3>
+<p>编译套件的选择，选择Qt自带的编译器 MinGW 64-bit<br />
+<img src="https://s2.loli.net/2024/10/10/rEuBatbvcfyRWI5.png" alt="" /></p>
+<h3 id="step-6-版本控制系统选择"><a class="markdownIt-Anchor" href="#step-6-版本控制系统选择"></a> step 6: 版本控制系统选择</h3>
+<p>代码同步工具</p>
+<ul>
+<li>SVN</li>
+<li>GIT</li>
+</ul>
+<h3 id="finish"><a class="markdownIt-Anchor" href="#finish"></a> finish</h3>
+<p>完成！<br />
+如果高版本的Qt可能出现<strong>报错和警告</strong>，尝试：<code>help -- about plugins -- c++ -- ClangCodeModle</code>取消勾选，重启软件。<br />
+<img src="https://s2.loli.net/2024/10/10/miBu3RPaWjdvzlS.png" alt="" /></p>
+<p><img src="https://s2.loli.net/2024/10/10/gTeIA1pixdWRbNu.png" alt="" /></p>
+<h2 id="效果展示hello-world-in-window"><a class="markdownIt-Anchor" href="#效果展示hello-world-in-window"></a> 效果展示：Hello world in Window</h2>
+<p>in <code>widget.ui </code>design中的窗口设计, 选择一个<code>label</code>和一个<code>push button</code>(the advantage of qt is that you can drag and drop to design the window))<br />
+<img src="https://s2.loli.net/2024/10/10/jUvFDIQn24WE8rx.png" alt="" /></p>
+<h2 id="trouble-shooting"><a class="markdownIt-Anchor" href="#trouble-shooting"></a> trouble shooting</h2>
+<h3 id="点击pro多数能打开项目因为qmake是默认的构建系统"><a class="markdownIt-Anchor" href="#点击pro多数能打开项目因为qmake是默认的构建系统"></a> 点击<code>.pro</code>多数能打开项目，因为<code>qmake</code>是默认的构建系统</h3>
+<h3 id="点击cmakeliststxt无法正常打开项目"><a class="markdownIt-Anchor" href="#点击cmakeliststxt无法正常打开项目"></a> 点击<code>CMakeLists.txt</code>无法正常打开项目</h3>
+<h4 id="确认cmake是否安装"><a class="markdownIt-Anchor" href="#确认cmake是否安装"></a> 确认cmake是否安装</h4>
+<ol>
+<li>type <code>cmake --version</code> in cmd， 你会得到cmake的版本号</li>
+<li>else安装cmake from <a target="_blank" rel="noopener" href="https://cmake.org/download/">here</a></li>
+</ol>
+<h4 id="确认环境变量是否配置正确"><a class="markdownIt-Anchor" href="#确认环境变量是否配置正确"></a> 确认环境变量是否配置正确</h4>
+<ol start="2">
+<li>type <code>echo %PATH%</code> in cmd， 你会得到目前你所有的 PATH，检查qt是否在里面</li>
+<li><img src="https://s2.loli.net/2024/10/10/VT7t9nawDfiWXge.png" alt="" /></li>
+<li><strong>注意</strong>：区分QtCreator 和 Qt，QtCreator是IDE，Qt是库</li>
+<li><strong>注意</strong>：Path在<em>用户变量</em>有时不会正常生效（Kimi的观点）设置在<em>系统变量</em></li>
+</ol>
+<h4 id="在issue查看configuration-fail的原因"><a class="markdownIt-Anchor" href="#在issue查看configuration-fail的原因"></a> 在<code>issue</code>查看configuration fail的原因</h4>
+<p>每个人的原因可能不一样<br />
+<img src="https://s2.loli.net/2024/10/10/gHB8dAFYKXsZiDv.png" alt="" /><br />
+我的是<code>build type</code>的问题，我选择了<code>debug</code>，但是我的<code>debug</code>没有配置</p>
+<ol>
+<li><strong>清理构建目录</strong><code>clear CMake configuration</code>：清理您的构建目录，以确保与构建缓存和配置无关的干净状态。您可以在 Qt Creator 中通过“构建”菜单中的“清理项目”选项清理构建目录。</li>
+<li><strong>重新配置项目</strong><code>run CMake</code>：重新配置项目</li>
+</ol>
+<h3 id="尝试qt自带的案例examples感受项目的效果"><a class="markdownIt-Anchor" href="#尝试qt自带的案例examples感受项目的效果"></a> 尝试Qt自带的案例<code>examples</code>，感受项目的效果</h3>
+<p><img src="https://s2.loli.net/2024/10/10/3fTwkE5tAyCJc7V.png" alt="" /><br />
+<em>p.s.</em></p>
+<ul>
+<li>in left sidebar <code>projects</code>you see the <code>calqlatre</code> is in bold font, that means it is the current <strong>active</strong> project</li>
+<li>you can see the compiling process in the <code>compile output</code> in the bottom</li>
+<li>you can see the <code>issues</code> in the bottom, if there is any error, you can see it here</li>
+<li>the calculator window will pop up after compiling</li>
+<li>先build （锤子）后 run （绿三角）</li>
+</ul>
+<h2 id="ai生成的回答仅参考"><a class="markdownIt-Anchor" href="#ai生成的回答仅参考"></a> AI生成的回答（仅参考）</h2>
+<h3 id="build-debug-release-区别"><a class="markdownIt-Anchor" href="#build-debug-release-区别"></a> build debug /release 区别</h3>
+<h4 id="debug-构建"><a class="markdownIt-Anchor" href="#debug-构建"></a> Debug 构建：</h4>
+<ol>
+<li><strong>编译优化</strong>：通常不进行优化或仅进行最小优化，以便于调试。</li>
+<li><strong>调试信息</strong>：包含完整的调试信息，如符号信息，这有助于调试器定位代码中的问题。</li>
+<li><strong>执行速度</strong>：由于没有优化，执行速度通常较慢。</li>
+<li><strong>错误检查</strong>：包含额外的错误检查和断言，有助于在开发过程中发现问题。</li>
+<li><strong>内存使用</strong>：可能会使用更多的内存，因为优化较少。</li>
+<li><strong>日志记录</strong>：可能会包含更详细的日志记录，以帮助追踪问题。</li>
+<li><strong>符号名称</strong>：变量和函数名称不会被优化掉，保持源代码中的名称，便于调试。</li>
+</ol>
+<h4 id="release-构建"><a class="markdownIt-Anchor" href="#release-构建"></a> Release 构建：</h4>
+<ol>
+<li><strong>编译优化</strong>：进行高度优化，以提高应用程序的性能。</li>
+<li><strong>调试信息</strong>：通常不包含调试信息，或只包含非常有限的调试信息。</li>
+<li><strong>执行速度</strong>：由于进行了优化，执行速度较快。</li>
+<li><strong>错误检查</strong>：错误检查和断言可能会被禁用或减少，以避免影响性能。</li>
+<li><strong>内存使用</strong>：优化内存使用，以减少应用程序的内存占用。</li>
+<li><strong>日志记录</strong>：日志记录可能会被禁用或减少，以避免影响性能。</li>
+<li><strong>符号名称</strong>：变量和函数名称可能会被缩短，以减少二进制文件的大小。</li>
+</ol>
+<h4 id="为什么需要不同的构建方式"><a class="markdownIt-Anchor" href="#为什么需要不同的构建方式"></a> 为什么需要不同的构建方式？</h4>
+<ul>
+<li><strong>开发和调试</strong>：Debug 构建提供了必要的调试信息和工具，帮助开发者在开发过程中发现和修复错误。</li>
+<li><strong>性能测试</strong>：Release 构建通过优化提供了应用程序的最佳性能，这对于性能测试和最终用户是非常重要的。</li>
+<li><strong>部署</strong>：最终用户通常使用 Release 构建，因为它提供了更好的性能和更小的二进制文件大小。</li>
+</ul>
+<p>在实际开发过程中，开发者可能会在 Debug 模式下编写和测试代码，然后切换到 Release 模式进行性能测试和部署。</p>
+<h3 id="build和compile的区别"><a class="markdownIt-Anchor" href="#build和compile的区别"></a> build和compile的区别</h3>
+<h4 id="编译compile"><a class="markdownIt-Anchor" href="#编译compile"></a> 编译（Compile）：</h4>
+<ol>
+<li><strong>定义</strong>：编译是将源代码（通常是单个文件，如 <code>.c</code>、<code>.cpp</code> 文件等）转换成机器码的过程，生成的目标文件通常具有 <code>.obj</code> 或 <code>.o</code> 扩展名。</li>
+<li><strong>编译器</strong>：编译过程通常由编译器完成，如 GCC、Clang、MSVC 等。</li>
+<li><strong>单个文件</strong>：编译通常针对单个源文件，将其从高级语言转换为低级语言。</li>
+<li><strong>语法检查</strong>：编译过程中，编译器会检查语法错误。</li>
+<li><strong>优化</strong>：编译器可能会对代码进行优化，以提高性能或减少生成的机器代码的大小。</li>
+</ol>
+<h4 id="构建build"><a class="markdownIt-Anchor" href="#构建build"></a> 构建（Build）：</h4>
+<ol>
+<li><strong>定义</strong>：构建是一个更广泛的过程，它包括编译、链接等多个步骤，将多个源文件和资源（如库文件、资源文件等）组合成一个可执行文件或库文件。</li>
+<li><strong>构建系统</strong>：构建过程通常由构建系统或构建工具管理，如 Make、CMake、MSBuild、Ant 等。</li>
+<li><strong>多个文件</strong>：构建过程涉及多个源文件和可能的库文件。</li>
+<li><strong>依赖管理</strong>：构建系统会管理文件之间的依赖关系，并确定编译的顺序。</li>
+<li><strong>链接</strong>：构建过程包括链接步骤，将编译后的目标文件与库文件链接在一起，生成最终的可执行文件或库文件。</li>
+<li><strong>自动化</strong>：构建过程可以自动化，通常通过编写构建脚本来定义构建的规则和步骤。</li>
+</ol>
+<h4 id="区别"><a class="markdownIt-Anchor" href="#区别"></a> 区别：</h4>
+<ul>
+<li><strong>范围</strong>：编译是构建过程中的一个步骤，构建是一个更全面的过程。</li>
+<li><strong>目标</strong>：编译的目标是生成目标文件，而构建的目标是生成可执行文件或库文件。</li>
+<li><strong>过程</strong>：编译过程关注单个源文件的转换，构建过程关注整个项目从源代码到可执行文件的完整流程。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
