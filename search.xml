@@ -4,31 +4,14 @@
     <title>NAVIGATOR</title>
     <url>/2024/10/11/navigator/</url>
     <content><![CDATA[<h1 id="近期-2024-10-20-111432"><a class="markdownIt-Anchor" href="#近期-2024-10-20-111432"></a> 近期 2024-10-20 11:14:32</h1>
+<p>太忙啦！</p>
 <ul>
-<li>统计学STA2001
-<ul>
-<li>还有一篇关于mgf的post</li>
-</ul>
-</li>
-<li>最优化MAT3007
-<ul>
-<li>求解inverse matrix</li>
-<li>整理一篇Simplex method作为post发出来（预计用时6h）</li>
-</ul>
-</li>
+<li>统计学STA2001</li>
+<li>最优化MAT3007</li>
 <li>CSC3002 C++</li>
-<li>CSC3100 算法
-<ul>
-<li>整理一篇时间复杂度计算作为post发出来</li>
-</ul>
-</li>
+<li>CSC3100 算</li>
 </ul>
 <h1 id="本博客推荐"><a class="markdownIt-Anchor" href="#本博客推荐"></a> 本博客推荐</h1>
-<ul>
-<li><a href="https://humble-learner006.github.io/2024/10/12/GitHub_note/">GitHub Discovery</a></li>
-<li><a href="https://humble-learner006.github.io/2024/10/20/average_and_mean/">统计学</a></li>
-<li><a href="https://humble-learner006.github.io/2024/10/10/pointer/">指针基础概念</a></li>
-</ul>
 <h1 id="本博客分类categories介绍"><a class="markdownIt-Anchor" href="#本博客分类categories介绍"></a> 本博客分类(categories)介绍</h1>
 <ul>
 <li>RM 记录robomaster相关知识（其实就是杂项）</li>
@@ -167,6 +150,73 @@ apt-get: This is the default package manager for Debian, Ubuntu, and other Debia
         <tag>git</tag>
         <tag>help</tag>
         <tag>unfinished</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>report of hw4</title>
+    <url>/2024/12/05/report-of-hw4/</url>
+    <content><![CDATA[<h1 id="report"><a class="markdownIt-Anchor" href="#report"></a> Report</h1>
+<h1 id="problem-1"><a class="markdownIt-Anchor" href="#problem-1"></a> Problem 1</h1>
+<h2 id="possible-solution"><a class="markdownIt-Anchor" href="#possible-solution"></a> Possible solution</h2>
+<ul>
+<li>brute force: find all possible route from start to end, but this will case large runtime. (find all route cause lots of time)</li>
+<li>improved brute force: using Dijkstra algorithm to find the shortest distance between any two point, and only focus on the edges I have to pass, permutate them and get all possible solution of passing necessary edges. Then connect them with start and end node. using Dijkstra algorithms to calculate the minimal distance between each part’s head and tail</li>
+<li>I try to using Bellman-ford algorithm, making necessary edges weight very large negative numbers so passing them will have large bonus. However I fail to deal with negative cycle case</li>
+<li>Base on Bellman-ford algorithm, I try to using layered graph to solve this, but fail during I was debugging. Maybe it is possible, but due to limited time I give it up.</li>
+<li></li>
+</ul>
+<h2 id="idea"><a class="markdownIt-Anchor" href="#idea"></a> Idea</h2>
+<p>This problem has nothing to do with mirror. The core of this problem is finding the best route<br />
+with <strong>given start and terminal points</strong> under the constrain of <strong>passing specific edges</strong>.</p>
+<p>As the first part is what Dijkstra do, I only focus on how to make sure it pass specific edges. Mentioned in <em>Possible solution</em> I give up negative number as bonus, and large number as penalty (since they always positive). After I discuss with my friends, here comes the solution.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">(start) ~ [ necessary nodes] ~ (end)</span><br></pre></td></tr></table></figure>
+<p>this show the structure of this problem, I use matrix to store the shortest distance (calculated by Dijkstra) between any two node. It is very memory inefficient but reduce runtime, a n nodes problem will create a n*n matrix. I use <code>~</code> to imply getting value from the Dijkstra matrix.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">(start) ~ &#123; [head1, tail1] ~ [head2, tail2] ... &#125; ~ (end)</span><br></pre></td></tr></table></figure>
+<p>here <code>[head, tail]</code> means the nodes of the edges you have to pass. Permutate all pairs in <code>&#123;&#125;</code>, you get all possible cases of passing necessary node. with <code>n</code> pairs of node, you should get <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>∗</mo><mi>n</mi><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">2^{n} * n!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">n</span><span class="mclose">!</span></span></span></span> cases. (as head and tail can exchange).<br />
+I calculate all possible cases and update the minimum value. After all permutation, I get the best solution under constrain.</p>
+<h2 id="advantage"><a class="markdownIt-Anchor" href="#advantage"></a> Advantage</h2>
+<ul>
+<li>no need to calculate distance between any two node every time I need it, it is all in dijkstra matrix. Also in this problem the graph do not change, so only need one calculation of minimal distance using dijkstra.</li>
+<li>relatively clear algorithm</li>
+</ul>
+<h3 id="about-debugging"><a class="markdownIt-Anchor" href="#about-debugging"></a> About debugging</h3>
+<p>I test sample 2 and get WA</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">30   30</span><br><span class="line">26   23 x</span><br><span class="line">13   13 </span><br><span class="line">13   13</span><br><span class="line">37   34 x</span><br><span class="line">27   27</span><br><span class="line">35   35</span><br><span class="line">24   19 x</span><br><span class="line">28   25 x</span><br><span class="line">33   32 x</span><br></pre></td></tr></table></figure>
+<p>all WA are smaller than right one. So I check if the calculation part is wrong.<br />
+I take <code>26 23</code> (the second WA in sample 2) to test</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#x27;&#x27;&#x27;input</span><br><span class="line">10 20 1</span><br><span class="line">5 3 4</span><br><span class="line">8 4 8</span><br><span class="line">4 10 10</span><br><span class="line">10 1 3</span><br><span class="line">9 5 6</span><br><span class="line">10 3 9 第六个</span><br><span class="line">3 8 10</span><br><span class="line">10 8 6</span><br><span class="line">7 8 3</span><br><span class="line">2 10 4</span><br><span class="line">9 3 5</span><br><span class="line">7 3 3</span><br><span class="line">5 7 4</span><br><span class="line">6 4 6 第十四个</span><br><span class="line">5 8 1</span><br><span class="line">3 6 6</span><br><span class="line">7 6 2</span><br><span class="line">10 9 1</span><br><span class="line">4 3 6</span><br><span class="line">5 10 6</span><br><span class="line">2       </span><br><span class="line">6 14</span><br><span class="line">10 8</span><br><span class="line">&#x27;&#x27;&#x27;</span><br></pre></td></tr></table></figure>
+<p>finally find out that for constrained edges <code>[head, tail]</code>, the value have to be w in <code>(u,v,w)</code>, but not the value from dijkstra matrix. This cost me lots of time.<br />
+![[image/Figure_1.png]]</p>
+<h1 id="problem-2"><a class="markdownIt-Anchor" href="#problem-2"></a> Problem 2</h1>
+<h2 id="possible-solution-2"><a class="markdownIt-Anchor" href="#possible-solution-2"></a> Possible solution</h2>
+<ul>
+<li>update graph every day and deal with them as sub-task of this problem. In the sub-task, traverse all possible case and update the minimal weight on this case. Then update the max weight among those minimal weight in this sub-task.</li>
+<li>the above is brute force, I can not come up with another</li>
+</ul>
+<h2 id="idea-2"><a class="markdownIt-Anchor" href="#idea-2"></a> Idea</h2>
+<p>Do problem decomposition.<br />
+A garden with many path with violets (weight), and violet number changes every day. Then it is a max min problem for every day (sub-task)</p>
+<ul>
+<li>input handle</li>
+<li>deal with update of graph</li>
+<li>deal with maxmin
+<ul>
+<li>find all possible path and their minimal edges</li>
+<li>compare this edges with previous largest and update it.</li>
+<li>return the maxmin value</li>
+</ul>
+</li>
+</ul>
+<h2 id="advantage-2"><a class="markdownIt-Anchor" href="#advantage-2"></a> Advantage</h2>
+<ul>
+<li>intuitive, the solution is doing problem decomposition and have no abstract advance trick.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>school</category>
+      </categories>
+      <tags>
+        <tag>algorithm</tag>
       </tags>
   </entry>
   <entry>
