@@ -87,7 +87,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">10</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">18</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">10</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">20</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"> <i class="fa fa-search fa-fw"></i> Search
         </a>
@@ -152,7 +152,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -212,6 +212,403 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://humble-learner006.github.io/2024/10/12/Qt_setup_SDL2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Like Cai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LIke's blog">
+      <meta itemprop="description" content="悟已往之不谏 知来者之可追">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | LIke's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/12/Qt_setup_SDL2/" class="post-title-link" itemprop="url">Qt_setup_SDL2</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-10-12 17:28:30 / Modified: 17:47:43" itemprop="dateCreated datePublished" datetime="2024-10-12T17:28:30+08:00">2024-10-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/school/" itemprop="url" rel="index"><span itemprop="name">school</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="教程"><a class="markdownIt-Anchor" href="#教程"></a> 教程</h1>
+<h2 id="检查版本"><a class="markdownIt-Anchor" href="#检查版本"></a> 检查版本</h2>
+<p>Qt use MINGW, so download SDL2 in correspond version<br />
+<img src="https://s2.loli.net/2024/10/12/LHwEiYXK2pksUT5.png" alt="" /><br />
+主要参考的<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_58311374/article/details/133410449">教程</a>是<br />
+次要参考的<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_46028171/article/details/134967027">教程</a>是<br />
+比较全面的<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_72157449/article/details/130490332">教程</a>是，不过介绍用的是VS，导出模板，CMake配置也教了<br />
+环境路径设置好，对库的链接在<code>pro</code>文件中配置好，主程序中<code>include</code>即可。</p>
+<h1 id="个人疑问和ai回答"><a class="markdownIt-Anchor" href="#个人疑问和ai回答"></a> 个人疑问和AI回答</h1>
+<p>以下图片是下载下来的目录。<br />
+里面有<code>lib</code> ，mingw相关的有<code>i686...</code>和<code>x86_64-w64</code>他们之间有什么不同吗？<br />
+<img src="https://s2.loli.net/2024/10/12/ozKtsdLMHuxNZhX.png" alt="" /></p>
+<h4 id="动态库和静态库的使用场景"><a class="markdownIt-Anchor" href="#动态库和静态库的使用场景"></a> 动态库和静态库的使用场景</h4>
+<p><code>lib</code>文件夹通常包含编译好的库文件，这些库文件是用于链接到你的应用程序中的，而不是直接用于运行时的。在Windows系统中，库文件通常是静态库（.lib）或动态库（.dll）<em><strong>dynamic link library</strong></em>，其中：</p>
+<ul>
+<li><code>.lib</code>文件是静态库文件，它们在编译时被链接到你的应用程序中，使得库的代码成为应用程序的一部分。</li>
+<li><code>.dll</code>文件是动态链接库文件，它们在运行时被应用程序加载，允许多个程序共享同一份库代码。</li>
+</ul>
+<p>对于SDL（Simple DirectMedia Layer）这样的库，如果你需要在运行时动态加载库（比如在不支持静态链接的环境中），你应该使用<code>.dll</code>文件。在<code>x86_64-w64-mingw32</code>这样的目录下，通常会提供编译好的<code>.dll</code>文件，用于64位的Windows系统。</p>
+<p>直接选择<code>lib</code>文件夹<strong>可能不会给你正确的文件类型或架构版本的库文件</strong>。你需要根据你的应用程序的需要（静态或动态链接）以及目标平台（32位或64位）来选择正确的文件。对于64位系统，确保选择的是64位的<code>.dll</code>文件，这样可以保证最佳的性能和兼容性。</p>
+<h4 id="两个mingw前缀的区别"><a class="markdownIt-Anchor" href="#两个mingw前缀的区别"></a> 两个mingw前缀的区别</h4>
+<p><code>i686</code>是一个指令集架构，它是Intel 80686微处理器的简称，属于x86架构的32位版本。在Linux系统中，<code>i686</code>通常用来表示32位的Intel或AMD处理器。这个架构的名称来源于最初的80686处理器，尽管现代的处理器已经远远超出了最初的686型号的性能。</p>
+<p>在编译软件或库时，如果你的目标是为32位的x86系统编译：</p>
+<ul>
+<li>在Linux发行版中，32位的库文件通常位于以<code>i686</code>命名的文件夹中。</li>
+<li>在Windows系统中，32位的库文件通常位于以<code>x86</code>命名的文件夹中。</li>
+</ul>
+<p>对于64位系统，你应该选择64位的库文件（例如<code>x86_64-w64-mingw32</code>中的文件）</p>
+<h4 id="在发行版中tar和gz是什么"><a class="markdownIt-Anchor" href="#在发行版中tar和gz是什么"></a> 在发行版中tar和gz是什么</h4>
+<p><code>mingw.tar.gz</code> 文件名中的 <code>tar</code> 和 <code>gz</code> 分别代表两种不同的压缩和归档技术：</p>
+<ol>
+<li><strong>tar</strong>：这是一个用于将多个文件和目录打包成一个单独文件的工具，通常用于在 Unix 和类 Unix 系统中。<code>tar</code> 本身并不压缩文件，它只将文件和目录归档。</li>
+<li><strong>gz</strong>：这是 Gzip（GNU Zip）的文件扩展名，表示该文件经过压缩以减少其大小。Gzip 是一种常见的压缩算法，通常用于压缩 <code>tar</code> 归档文件。</li>
+</ol>
+<h1 id="结语"><a class="markdownIt-Anchor" href="#结语"></a> 结语</h1>
+<p>跟着教程配置环境不难，但是相关的信息对我这种新手而言还是有许多不懂的。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://humble-learner006.github.io/2024/10/12/GitHub_note/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Like Cai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LIke's blog">
+      <meta itemprop="description" content="悟已往之不谏 知来者之可追">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | LIke's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/12/GitHub_note/" class="post-title-link" itemprop="url">GitHub discovery</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-10-12 12:19:19 / Modified: 18:11:29" itemprop="dateCreated datePublished" datetime="2024-10-12T12:19:19+08:00">2024-10-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/RM/" itemprop="url" rel="index"><span itemprop="name">RM</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="intro"><a class="markdownIt-Anchor" href="#intro"></a> Intro</h1>
+<blockquote>
+<p>于我个人而言GitHub是上大学才开始用的，在广东省的义务教育阶段，计算机相关的教育是欠缺的。我身边有同校高排名同学大一一整年没接触GitHub，也有内地名牌985同学依然使用微信传输文件进行项目开发。</p>
+</blockquote>
+<blockquote>
+<p>整个大一GitHub我只会clone，push，pull的基础操作。但是GitHub的功能很多，诸如issue, project, release 都很让我好奇，也相应的有各自不可或缺的功能。所以趁着CSC3002 C++ 项目的机会，我决定系统的学习一下GitHub的功能。</p>
+</blockquote>
+<blockquote>
+<p>在抄教程部署我的静态博客时意识到参考官方文档的重要性，本次教程主要材料是 <a target="_blank" rel="noopener" href="https://www.github-zh.com/getting-started/introduction-to-github">GitHub官方教程</a>。文内未标注出处默认来自官网。<br />
+在这个教程中，我会把我认为重要的部分记录下来，以便日后查阅。你有不懂的应该上官网查阅</p>
+</blockquote>
+<p>Note that: all the posts with “note” in their title are notes based on some materials (tutorial, lecture, etc.)  I once working on.</p>
+<h1 id="基础"><a class="markdownIt-Anchor" href="#基础"></a> 基础</h1>
+<h2 id="repo创建"><a class="markdownIt-Anchor" href="#repo创建"></a> repo创建</h2>
+<h3 id="repo是什么"><a class="markdownIt-Anchor" href="#repo是什么"></a> repo是什么</h3>
+<ul>
+<li>repo就是一个云端的文件夹，可以用来存放代码，文档，图片等等。是repository（仓库）的缩写。</li>
+<li>see more <a target="_blank" rel="noopener" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">repo</a></li>
+</ul>
+<h3 id="repo的作用"><a class="markdownIt-Anchor" href="#repo的作用"></a> repo的作用</h3>
+<ul>
+<li>最基本：管理项目的文件</li>
+<li>你可以用GitHub Pages的服务创建个人网站</li>
+<li>你可以用创建和你用户名一样的repo来展示你的<code>profile README</code>，这回显示在你的个人主页上</li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/103695781">GitHub右上角Watch、Star和Fork详解</a></li>
+</ul>
+<h3 id="repo的类型"><a class="markdownIt-Anchor" href="#repo的类型"></a> repo的类型</h3>
+<ul>
+<li>repo 分为public和private两种，public是公开的，private是私有的。private会消耗action minutes
+<ul>
+<li>Action minute 是GitHub Actions服务 的计算单位（就像话费用时间计算），是用来运行自动化任务的。</li>
+</ul>
+</li>
+<li>![[image/GitHub_note.png]]</li>
+<li>上方图片是自动填写好的字段直接创建默认repo<code>skills-introduction-to-github</code>，我就不放图床了，你自己实践。</li>
+<li><a target="_blank" rel="noopener" href="http://README.md">README.md</a> 在20s会刷新一次，直接进入到教程的第二阶段 - branch，这个是GitHub Action实现的</li>
+</ul>
+<h2 id="branch创建"><a class="markdownIt-Anchor" href="#branch创建"></a> branch创建</h2>
+<ul>
+<li><strong>Fork</strong> 是在远程创建一个仓库副本，适合独立开发和对外部项目的贡献。</li>
+<li><strong>Branch</strong> 是在同一个仓库内创建的开发线，适合组织和管理团队内部的开发工作。</li>
+</ul>
+<h3 id="什么是branch"><a class="markdownIt-Anchor" href="#什么是branch"></a> 什么是branch</h3>
+<ul>
+<li>把main看作是项目的主线，branch是在主线上的一个分支，可以用来开发新功能，修复bug等等。创建branch的目的是为了不影响main的稳定性。</li>
+<li>see more <a target="_blank" rel="noopener" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches">branch</a></li>
+<li>The <strong>main</strong> branch drop-down bar（下拉栏） will reflect your new branch and display the new branch name.</li>
+<li>![[image/GitHub_note-1.png]]</li>
+<li>确保名字是<code>my-first-branch</code>，会触发GitHub Action去推进教程</li>
+<li>![[image/GitHub_note-2.png]]</li>
+</ul>
+<h2 id="commit-在branch里面"><a class="markdownIt-Anchor" href="#commit-在branch里面"></a> commit - 在branch里面</h2>
+<h3 id="commit是什么"><a class="markdownIt-Anchor" href="#commit是什么"></a> commit是什么</h3>
+<blockquote>
+<p><strong>What is a commit?</strong>: A <em><a target="_blank" rel="noopener" href="https://docs.github.com/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits">commit</a></em> is a set of changes to the files and folders in your project. A commit exists in a branch. For more information, see “<a target="_blank" rel="noopener" href="https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits">About commits</a>”.</p>
+</blockquote>
+<ul>
+<li>commit一个<code>PROFILE.md</code>文件</li>
+<li>commit一个<code>PROFILE.md</code>文件的更新<br />
+以上都是commit的操作</li>
+</ul>
+<h2 id="pull-request-创建并完成"><a class="markdownIt-Anchor" href="#pull-request-创建并完成"></a> pull request - 创建并完成</h2>
+<blockquote>
+<p><strong>What is a pull request?</strong>: <strong>Collaboration</strong> happens on a <em><a target="_blank" rel="noopener" href="https://docs.github.com/en/get-started/quickstart/github-glossary#pull-request">pull request</a></em>. The pull request <strong>shows the changes in your branch to other people</strong> and allows people to accept, reject, or suggest additional changes to your branch. In a side by side comparison, this pull request is going to keep the changes you just made on your branch and propose applying them to the <code>main</code> project branch. For more information about pull requests, see “<a target="_blank" rel="noopener" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">About pull requests</a>”.</p>
+</blockquote>
+<p>pull request是为了让别人看到你在branch上的变动，然后别人可以接受，拒绝或者建议更改你的branch。这个pull request是为了把你在branch上的变动应用到<code>main</code>项目分支上。</p>
+<ul>
+<li><strong>独立开发</strong>：通常的工作流程是先<code>fork</code>一个仓库，然后<code>clone</code>你自己的fork到本地进行开发。开发完成后，你可以提交<code>pull request</code>到原仓库，请求合并你的代码。</li>
+<li><strong>团队开发</strong>：在一个团队中，通常会有<strong>一个主仓库</strong>，团队成员会在主仓库的<code>main</code>分支上创建自己的分支进行开发。开发完成后，他们会提交<code>pull request</code>到<code>main</code>分支，请求合并他们的代码。</li>
+</ul>
+<h3 id="主窗口元素"><a class="markdownIt-Anchor" href="#主窗口元素"></a> 主窗口元素</h3>
+<h4 id="时间线"><a class="markdownIt-Anchor" href="#时间线"></a> 时间线</h4>
+<p>[[image/GitHub_note-3.png]]<br />
+<img src="https://s2.loli.net/2024/10/12/avyVprsbjUhTHwX.png" alt="" /><br />
+[[image/GitHub_note-6.png]]<br />
+<img src="https://s2.loli.net/2024/10/12/KD1HhNJnp2Fe7qj.png" alt="" /><br />
+所有的变动都会被记录在主窗口中，你可以看到每次commit的变动（时间，作者），然后对于pull request的变动也会在时间线里面体现。</p>
+<h4 id="为什么管理者可以修改评论"><a class="markdownIt-Anchor" href="#为什么管理者可以修改评论"></a> 为什么管理者可以修改评论！？</h4>
+<p>在一些版本控制平台上，特别是GitHub，用户可以编辑或修改他人的评论通常是出于以下几种原因：</p>
+<ol>
+<li><strong>权限设置</strong>：项目的权限可能设置为允许特定角色（例如维护者或项目管理员）编辑任何人的评论。这有助于团队维护清晰和一致的讨论。</li>
+<li><strong>修正错误</strong>：有时评论可能包含拼写错误或错误的信息，允许编辑可以确保讨论的准确性。</li>
+<li><strong>更新信息</strong>：在持续的讨论中，信息可能会过时或需要补充，编辑评论可以让讨论更加连贯。</li>
+<li><strong>审查和维护</strong>：在大型项目中，维护者可能需要编辑评论以整理讨论，确保重要信息突出显示。<br />
+如果你在一个项目中发现可以修改他人的评论，确保在这样做之前获得相关人员的同意，以维护良好的合作氛围和信任。</li>
+</ol>
+<h4 id="完成merge后删除branch"><a class="markdownIt-Anchor" href="#完成merge后删除branch"></a> 完成merge后删除branch</h4>
+<p>[[image/GitHub_note-8.png]]<br />
+<img src="https://s2.loli.net/2024/10/12/bn96VK7MLrCvwBX.png" alt="" /></p>
+<h3 id="边栏元素"><a class="markdownIt-Anchor" href="#边栏元素"></a> 边栏元素</h3>
+<h4 id="reviewer审查人和-assignees指定人"><a class="markdownIt-Anchor" href="#reviewer审查人和-assignees指定人"></a> reviewer（审查人）和 assignees（指定人）</h4>
+<p>审查就是设置reviewer在merge前审查，减少错误。assignees被指定完成接下来的任务<br />
+CSDN疑似AI的<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39460032/article/details/134589700">详细解答</a></p>
+<h4 id="labels标签"><a class="markdownIt-Anchor" href="#labels标签"></a> labels（标签）</h4>
+<p>标签的作用是标记issue和pull request的状态，比如这次pull requst的目的是什么。<br />
+打开下拉菜单<code>Apply lables to this pull request</code> 你会看到</p>
+<ul>
+<li>bug</li>
+<li>documentation</li>
+<li>duplicate</li>
+<li>enhancement</li>
+<li>good first issue：鼓励新手参与</li>
+<li>help wanted</li>
+<li>invalid</li>
+<li>question</li>
+<li>wontfix：描述的问题是一个bug但是将永远不会被修复</li>
+<li><a target="_blank" rel="noopener" href="https://docs.github.com/zh/issues/using-labels-and-milestones-to-track-work/managing-labels">管理标签 - GitHub 文档</a></li>
+</ul>
+<h4 id="projects项目和-milestone里程碑"><a class="markdownIt-Anchor" href="#projects项目和-milestone里程碑"></a> projects（项目）和 milestone（里程碑）</h4>
+<ul>
+<li>把pull request加入到项目中，可以更好的管理项目</li>
+<li>把pull request加入到里程碑中，可以更好的管理项目，你可以理解为这次pull request是项目的一个阶段的结束。</li>
+</ul>
+<h4 id="lock-conversation锁定对话"><a class="markdownIt-Anchor" href="#lock-conversation锁定对话"></a> lock conversation（锁定对话）</h4>
+<p>![[image/GitHub_note-7.png]]<br />
+<img src="https://s2.loli.net/2024/10/12/tTeMUV8dBIEbmqr.png" alt="" /><br />
+重要信息能被看到</p>
+<h3 id="完成教程"><a class="markdownIt-Anchor" href="#完成教程"></a> 完成教程</h3>
+<p>(<a target="_blank" rel="noopener" href="https://github.com/humble-learner006/skills-introduction-to-github?tab=readme-ov-file#finish">https://github.com/humble-learner006/skills-introduction-to-github?tab=readme-ov-file#finish</a>)这是GitHub里面标题锚点设置方法</p>
+<h3 id="finish存档"><a class="markdownIt-Anchor" href="#finish存档"></a> Finish存档</h3>
+<p><em>Congratulations, you’ve completed this course and joined the world of developers!</em><br />
+Here’s a recap of your accomplishments:</p>
+<ul>
+<li>You learned about GitHub, repositories, branches, commits, and pull requests.</li>
+<li>You created a branch, a commit, and a pull request.</li>
+<li>You merged a pull request.</li>
+<li>You made your first <strong>contribution</strong>! 🎉<br />
+所以说contribution是被接受的pull request。那那个改了一个空行能被接受的小红书用户真是牛逼。</li>
+</ul>
+<h4 id="whats-next-给出了接下来可以学什么"><a class="markdownIt-Anchor" href="#whats-next-给出了接下来可以学什么"></a> What’s next? 给出了接下来可以学什么</h4>
+<h4 id="profile-readme是一个在你个人主页的readme"><a class="markdownIt-Anchor" href="#profile-readme是一个在你个人主页的readme"></a> profile README是一个在你个人主页的readme</h4>
+<p>If you’d like to make a profile README, use the quickstart instructions below or follow the instructions in the <a target="_blank" rel="noopener" href="https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme">Managing your profile README</a> article.</p>
+<ol>
+<li>Make a new public repository with a name that matches your GitHub username.</li>
+<li>Create a file named <code>README.md</code> in its root. The “root” means not inside any folder in your repository.</li>
+<li>Edit the contents of the <code>README.md</code> file.</li>
+<li>If you created a new branch for your file, open and merge a pull request on your branch.</li>
+<li>Lastly, we’d love to hear what you thought of this course <a target="_blank" rel="noopener" href="https://github.com/orgs/skills/discussions/categories/introduction-to-github">in our discussion board</a>.</li>
+</ol>
+<h5 id="check-out-these-resources-to-learn-more-or-get-involved"><a class="markdownIt-Anchor" href="#check-out-these-resources-to-learn-more-or-get-involved"></a> Check out these resources to learn more or get involved:</h5>
+<ul>
+<li>Are you a student? Check out the <a target="_blank" rel="noopener" href="https://education.github.com/pack">Student Developer Pack</a>.</li>
+<li>onboarding preferences for student<a target="_blank" rel="noopener" href="https://education.github.com/learner/learn">教程网址</a><br />
+![[image/GitHub_note-13.png]]</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/skills">Take another GitHub Skills course</a>.</li>
+<li><a target="_blank" rel="noopener" href="https://docs.github.com/en/get-started">Read the GitHub Getting Started docs</a>.</li>
+<li>To find projects to contribute to, check out <a target="_blank" rel="noopener" href="https://github.com/explore">GitHub Explore</a>.</li>
+</ul>
+<h1 id="进阶"><a class="markdownIt-Anchor" href="#进阶"></a> 进阶</h1>
+<h2 id="github-issue提出议题想法"><a class="markdownIt-Anchor" href="#github-issue提出议题想法"></a> GitHub Issue：提出议题，想法</h2>
+<p><a target="_blank" rel="noopener" href="https://docs.github.com/zh/issues/tracking-your-work-with-issues/about-issues">关于议题 - GitHub 文档</a></p>
+<h2 id="github-project管理进度"><a class="markdownIt-Anchor" href="#github-project管理进度"></a> GitHub Project：管理进度</h2>
+<p><a target="_blank" rel="noopener" href="https://docs.github.com/zh/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">关于 Projects - GitHub 文档</a><br />
+此处的project是指GitHub的项目管理功能，可以用来管理任务，协作等等。与其说是project，不如说是dashboard或者kanban更合适。<br />
+[[image/GitHub_note-12.png]]<br />
+<img src="https://s2.loli.net/2024/10/12/9Jx5PitcnNpz8RT.png" alt="" /><br />
+<em>Kanban originate from Japanese 看板 # Japanese influences on industry</em></p>
+<ul>
+<li>是一个和issue，pull request，milestone等等一起工作的工具，可以用来管理任务，协作等等。</li>
+<li>高级todo list</li>
+</ul>
+<h2 id="github-release发行程序"><a class="markdownIt-Anchor" href="#github-release发行程序"></a> GitHub release：发行程序</h2>
+<h3 id="什么是release-发行版"><a class="markdownIt-Anchor" href="#什么是release-发行版"></a> 什么是release （发行版）</h3>
+<ul>
+<li>
+<p>release是一个软件的发布版本，可以包含软件的源代码，二进制文件，文档等等。</p>
+</li>
+<li>
+<p>你可以在release里面发布软件的更新。</p>
+</li>
+<li>
+<p>更新时候一定要标注好版本</p>
+</li>
+<li>
+<p>[[image/GitHub_note-9.png]]</p>
+</li>
+<li>
+<p><img src="https://s2.loli.net/2024/10/12/MiSReLwFGOmHJAl.png" alt="" /></p>
+</li>
+<li>
+<p>在截图中右边你可以看到tagging suggestion，让你注意版本号要写清楚</p>
+</li>
+<li>
+<p>在Semantic versioning（语义化的版本控制）中，版本号的格式是<code>MAJOR.MINOR.PATCH</code>，这个版本号是根据你的软件的变动来决定的。详情请看<a target="_blank" rel="noopener" href="https://semver.org/lang/zh-CN/">Semantic versioning</a></p>
+</li>
+<li>
+<p>![[image/GitHub_note-10.png]]</p>
+</li>
+<li>
+<p>发布即可</p>
+</li>
+</ul>
+<h2 id="package发布npm等类型的包"><a class="markdownIt-Anchor" href="#package发布npm等类型的包"></a> Package：发布npm等类型的包</h2>
+<p>![[image/GitHub_note-11.png]]<br />
+<a target="_blank" rel="noopener" href="https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry">Working with the npm registry - GitHub Docs</a><br />
+发布npm包，使得你的项目可以被其他人直接通过npm下载使用。<br />
+这是release之后考虑的事情</p>
+<h2 id="github-guide"><a class="markdownIt-Anchor" href="#github-guide"></a> GitHub Guide</h2>
+<p><a target="_blank" rel="noopener" href="https://docs.github.com/zh/issues/guides">问题指南 - GitHub 文档</a><br />
+这里面有issue和project互动教程</p>
+<ul>
+<li>跟着实操了一遍，感觉还是有点抽象。这种东西需要老带新，多用才会。</li>
+</ul>
+<h1 id="结语"><a class="markdownIt-Anchor" href="#结语"></a> 结语</h1>
+<p>GitHub强大全面的功能不愧是最好的项目开发网站</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1247,7 +1644,7 @@ v3队史首胜。<br><br />
 
   <div class="copyright">
     &copy; 
-    <span itemprop="copyrightYear">2024</span>
+    <span itemprop="copyrightYear">2025</span>
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>
