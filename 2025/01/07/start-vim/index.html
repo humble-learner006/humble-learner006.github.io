@@ -19,25 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"humble-learner006.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":400,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="悟已往之不谏 知来者之可追">
-<meta property="og:type" content="website">
-<meta property="og:title" content="LIke&#39;s blog">
-<meta property="og:url" content="https://humble-learner006.github.io/archives/page/2/index.html">
+    <meta name="description" content="copy and paste from missing semester  how to learn vim Here’s how you learn a new editor:  Start with a tutorial (i.e. this lecture, plus resources that we point out) Stick with using the editor for a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="start_vim">
+<meta property="og:url" content="https://humble-learner006.github.io/2025/01/07/start-vim/index.html">
 <meta property="og:site_name" content="LIke&#39;s blog">
-<meta property="og:description" content="悟已往之不谏 知来者之可追">
+<meta property="og:description" content="copy and paste from missing semester  how to learn vim Here’s how you learn a new editor:  Start with a tutorial (i.e. this lecture, plus resources that we point out) Stick with using the editor for a">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-01-07T12:47:41.000Z">
+<meta property="article:modified_time" content="2025-01-08T08:37:46.440Z">
 <meta property="article:author" content="Like Cai">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://humble-learner006.github.io/archives/page/2/">
+<link rel="canonical" href="https://humble-learner006.github.io/2025/01/07/start-vim/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":"","permalink":"","path":"archives/page/2/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://humble-learner006.github.io/2025/01/07/start-vim/","path":"2025/01/07/start-vim/","title":"start_vim"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Archive | LIke's blog</title>
+<title>start_vim | LIke's blog</title>
   
 
 
@@ -71,7 +73,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">LIke's blog</h1>
+      <p class="site-title">LIke's blog</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">Write down my thoughts</p>
@@ -125,7 +127,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -138,6 +140,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#how-to-learn-vim"><span class="nav-number">1.</span> <span class="nav-text"> how to learn vim</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vim-modes"><span class="nav-number">2.</span> <span class="nav-text"> vim modes</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#i-for-insert-mode"><span class="nav-number">2.1.</span> <span class="nav-text"> i for insert mode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#esc-for-normal-mode-from-insert-mode"><span class="nav-number">2.2.</span> <span class="nav-text"> esc for normal mode (from insert mode)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#moving-around"><span class="nav-number">2.2.1.</span> <span class="nav-text"> moving around</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#editing"><span class="nav-number">2.2.2.</span> <span class="nav-text"> editing</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for-command-mode"><span class="nav-number">2.3.</span> <span class="nav-text"> : for command mode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#v-for-visual-mode"><span class="nav-number">2.4.</span> <span class="nav-text"> v for visual mode</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#set-up-your-vimrc-file"><span class="nav-number">3.</span> <span class="nav-text"> set up your vimrc file</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -211,232 +214,170 @@
 
     </div>
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 21 posts in total. Keep on posting.</span>
-      </div>
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2024<span class="collection-year-count">19</span></span>
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://humble-learner006.github.io/2025/01/07/start-vim/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Like Cai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LIke's blog">
+      <meta itemprop="description" content="悟已往之不谏 知来者之可追">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="start_vim | LIke's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          start_vim
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2025-01-07 20:47:41" itemprop="dateCreated datePublished" datetime="2025-01-07T20:47:41+08:00">2025-01-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2025-01-08 16:37:46" itemprop="dateModified" datetime="2025-01-08T16:37:46+08:00">2025-01-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>cop<strong>y</strong> and <strong>p</strong>aste from <a target="_blank" rel="noopener" href="https://missing.csail.mit.edu/2020/editors/">missing semester</a></p>
+<h1 id="how-to-learn-vim"><a class="markdownIt-Anchor" href="#how-to-learn-vim"></a> how to learn vim</h1>
+<p>Here’s how you learn a new editor:</p>
+<ul>
+<li>Start with a tutorial (i.e. this lecture, plus resources that we point out)</li>
+<li>Stick with using the editor for all your text editing needs (even if it slows you down initially)</li>
+<li>Look things up as you go: if it seems like there should be a better way to do something, there probably is</li>
+</ul>
+<h1 id="vim-modes"><a class="markdownIt-Anchor" href="#vim-modes"></a> vim modes</h1>
+<h2 id="i-for-insert-mode"><a class="markdownIt-Anchor" href="#i-for-insert-mode"></a> i for insert mode</h2>
+<p>from normal mode:</p>
+<ul>
+<li><code>i</code> to enter insert mode at the cursor</li>
+<li><code>o</code> to enter insert mode on the next line</li>
+</ul>
+<h2 id="esc-for-normal-mode-from-insert-mode"><a class="markdownIt-Anchor" href="#esc-for-normal-mode-from-insert-mode"></a> esc for normal mode (from insert mode)</h2>
+<ul>
+<li>normal mode is for <strong>viewing and editing</strong> text</li>
+</ul>
+<h3 id="moving-around"><a class="markdownIt-Anchor" href="#moving-around"></a> moving around</h3>
+<ul>
+<li>moving my cursor around using <code>h</code>, <code>j</code>, <code>k</code>, <code>l</code> (left, down, up, right)</li>
+<li><code>w</code> to move forward by word, <code>b</code> to move back by word</li>
+<li><code>e</code> for end of word.</li>
+<li><code>0</code> to move to the beginning of the line, <code>$</code> to move to the end of the line</li>
+<li><code>gg</code> to move to the beginning of the file, <code>G</code> to move to the end of the file</li>
+<li>line moves</li>
+<li>absolute distance from beginning <code>:10</code> to move to line 10</li>
+<li>reletive distance from current line <code>10j</code> to move down 10 lines, <code>10k</code> to move up 10 lines</li>
+<li>page moves</li>
+<li><code>ctrl + d</code> to move down half a page, <code>ctrl + u</code> to move up half a page</li>
+<li><code>ctrl + f</code> to move down a page, <code>ctrl + b</code> to move up a page</li>
+<li>find moves</li>
+<li><code>f</code> to find a character on the line, <code>;</code> to find the next instance of that character</li>
+<li>e.g. <code>f</code> then <code>a</code> to find the next <code>a</code> on the line</li>
+<li><code>F</code> is for backwards find</li>
+<li><code>t</code> is for find up to a character</li>
+<li><code>T</code> is for backwards find up to a character</li>
+<li></li>
+</ul>
+<h3 id="editing"><a class="markdownIt-Anchor" href="#editing"></a> editing</h3>
+<ul>
+<li><code>x</code> to delete a character (making small changes in normal mode)</li>
+<li><code>dd</code> to delete a line</li>
+</ul>
+<h2 id="for-command-mode"><a class="markdownIt-Anchor" href="#for-command-mode"></a> : for command mode</h2>
+<ul>
+<li><code>:q</code> to quit</li>
+</ul>
+<h2 id="v-for-visual-mode"><a class="markdownIt-Anchor" href="#v-for-visual-mode"></a> v for visual mode</h2>
+<ul>
+<li><code>v</code> to enter visual mode</li>
+<li>visual mode is for selecting text and then doing something (yp) with it</li>
+</ul>
+<h1 id="set-up-your-vimrc-file"><a class="markdownIt-Anchor" href="#set-up-your-vimrc-file"></a> set up your vimrc file</h1>
+<ul>
+<li><code>vim ~/.vimrc</code></li>
+<li><code>set number</code> to show line numbers</li>
+<li><code>set relativenumber</code> to show relative line numbers</li>
+</ul>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-12T12:19:19+08:00"
-              content="2024-10-12">
-          10-12
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/12/GitHub_note/" itemprop="url">
-            <span itemprop="name">GitHub discovery</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          
 
-      
-    </header>
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Like Cai
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://humble-learner006.github.io/2025/01/07/start-vim/" title="start_vim">https://humble-learner006.github.io/2025/01/07/start-vim/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/01/01/USB-ports/" rel="prev" title="USB_ports">
+                  <i class="fa fa-angle-left"></i> USB_ports
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-11T18:31:25+08:00"
-              content="2024-10-11">
-          10-11
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/11/navigator/" itemprop="url">
-            <span itemprop="name">NAVIGATOR</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-10T12:32:38+08:00"
-              content="2024-10-10">
-          10-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/10/git-tutorial/" itemprop="url">
-            <span itemprop="name">git_tutorial</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-10T10:22:29+08:00"
-              content="2024-10-10">
-          10-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/10/pointer/" itemprop="url">
-            <span itemprop="name">pointer</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-09T23:00:00+08:00"
-              content="2024-10-09">
-          10-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/09/Qt_tutorial/" itemprop="url">
-            <span itemprop="name">qt_tutorial</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-09T12:33:32+08:00"
-              content="2024-10-09">
-          10-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/09/fail-log-NexT/" itemprop="url">
-            <span itemprop="name">fail_log_NexT</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-09T11:42:11+08:00"
-              content="2024-10-09">
-          10-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/09/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-09T09:33:52+08:00"
-              content="2024-10-09">
-          10-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/09/blog_building/" itemprop="url">
-            <span itemprop="name">blog_building</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-09T09:33:52+08:00"
-              content="2024-10-09">
-          10-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/10/09/delete_remaining_tags/" itemprop="url">
-            <span itemprop="name">delete_remaining_tags</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-04-28T09:55:04+08:00"
-              content="2024-04-28">
-          04-28
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/04/28/Record-around-the-final-for-second-term/" itemprop="url">
-            <span itemprop="name">Around the final for second term</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/archives/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/archives/page/3/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+
+
+
 
 </div>
   </main>

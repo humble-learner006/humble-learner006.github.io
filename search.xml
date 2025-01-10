@@ -150,12 +150,83 @@ apt-get: This is the default package manager for Debian, Ubuntu, and other Debia
       </tags>
   </entry>
   <entry>
+    <title>start_vim</title>
+    <url>/2025/01/07/start-vim/</url>
+    <content><![CDATA[<p>cop<strong>y</strong> and <strong>p</strong>aste from <a href="https://missing.csail.mit.edu/2020/editors/">missing semester</a></p>
+<h1 id="how-to-learn-vim"><a class="markdownIt-Anchor" href="#how-to-learn-vim"></a> how to learn vim</h1>
+<p>Here’s how you learn a new editor:</p>
+<ul>
+<li>Start with a tutorial (i.e. this lecture, plus resources that we point out)</li>
+<li>Stick with using the editor for all your text editing needs (even if it slows you down initially)</li>
+<li>Look things up as you go: if it seems like there should be a better way to do something, there probably is</li>
+</ul>
+<h1 id="vim-modes"><a class="markdownIt-Anchor" href="#vim-modes"></a> vim modes</h1>
+<h2 id="i-for-insert-mode"><a class="markdownIt-Anchor" href="#i-for-insert-mode"></a> i for insert mode</h2>
+<p>from normal mode:</p>
+<ul>
+<li><code>i</code> to enter insert mode at the cursor</li>
+<li><code>o</code> to enter insert mode on the next line</li>
+</ul>
+<h2 id="esc-for-normal-mode-from-insert-mode"><a class="markdownIt-Anchor" href="#esc-for-normal-mode-from-insert-mode"></a> esc for normal mode (from insert mode)</h2>
+<ul>
+<li>normal mode is for <strong>viewing and editing</strong> text</li>
+</ul>
+<h3 id="moving-around"><a class="markdownIt-Anchor" href="#moving-around"></a> moving around</h3>
+<ul>
+<li>moving my cursor around using <code>h</code>, <code>j</code>, <code>k</code>, <code>l</code> (left, down, up, right)</li>
+<li><code>w</code> to move forward by word, <code>b</code> to move back by word</li>
+<li><code>e</code> for end of word.</li>
+<li><code>0</code> to move to the beginning of the line, <code>$</code> to move to the end of the line</li>
+<li><code>gg</code> to move to the beginning of the file, <code>G</code> to move to the end of the file</li>
+<li>line moves</li>
+<li>absolute distance from beginning <code>:10</code> to move to line 10</li>
+<li>reletive distance from current line <code>10j</code> to move down 10 lines, <code>10k</code> to move up 10 lines</li>
+<li>page moves</li>
+<li><code>ctrl + d</code> to move down half a page, <code>ctrl + u</code> to move up half a page</li>
+<li><code>ctrl + f</code> to move down a page, <code>ctrl + b</code> to move up a page</li>
+<li>find moves</li>
+<li><code>f</code> to find a character on the line, <code>;</code> to find the next instance of that character</li>
+<li>e.g. <code>f</code> then <code>a</code> to find the next <code>a</code> on the line</li>
+<li><code>F</code> is for backwards find</li>
+<li><code>t</code> is for find up to a character</li>
+<li><code>T</code> is for backwards find up to a character</li>
+<li></li>
+</ul>
+<h3 id="editing"><a class="markdownIt-Anchor" href="#editing"></a> editing</h3>
+<ul>
+<li><code>x</code> to delete a character (making small changes in normal mode)</li>
+<li><code>dd</code> to delete a line</li>
+</ul>
+<h2 id="for-command-mode"><a class="markdownIt-Anchor" href="#for-command-mode"></a> : for command mode</h2>
+<ul>
+<li><code>:q</code> to quit</li>
+</ul>
+<h2 id="v-for-visual-mode"><a class="markdownIt-Anchor" href="#v-for-visual-mode"></a> v for visual mode</h2>
+<ul>
+<li><code>v</code> to enter visual mode</li>
+<li>visual mode is for selecting text and then doing something (yp) with it</li>
+</ul>
+<h1 id="set-up-your-vimrc-file"><a class="markdownIt-Anchor" href="#set-up-your-vimrc-file"></a> set up your vimrc file</h1>
+<ul>
+<li><code>vim ~/.vimrc</code></li>
+<li><code>set number</code> to show line numbers</li>
+<li><code>set relativenumber</code> to show relative line numbers</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>USB_ports</title>
     <url>/2025/01/01/USB-ports/</url>
     <content><![CDATA[<p>时常搞不清USB接口，此处放超链接<br />
 <a href="https://zhuanlan.zhihu.com/p/447595295">表格图分类</a><br />
 <a href="https://zhuanlan.zhihu.com/p/141336123">思维导图树状分类</a><br />
 <a href="https://blog.51cto.com/u_16099280/10306169">202404标准</a></p>
+<h1 id="usb-c-接口"><a class="markdownIt-Anchor" href="#usb-c-接口"></a> USB-C 接口：</h1>
+<ul>
+<li>6pin - 仅供电</li>
+<li>16pin - USB2.0</li>
+<li>24pin - USB3.0</li>
+</ul>
 ]]></content>
       <tags>
         <tag>help</tag>

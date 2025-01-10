@@ -6,7 +6,7 @@
   <link href="https://humble-learner006.github.io/atom.xml" rel="self"/>
   
   <link href="https://humble-learner006.github.io/"/>
-  <updated>2025-01-01T08:47:55.267Z</updated>
+  <updated>2025-01-08T08:37:46.440Z</updated>
   <id>https://humble-learner006.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>start_vim</title>
+    <link href="https://humble-learner006.github.io/2025/01/07/start-vim/"/>
+    <id>https://humble-learner006.github.io/2025/01/07/start-vim/</id>
+    <published>2025-01-07T12:47:41.000Z</published>
+    <updated>2025-01-08T08:37:46.440Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;cop&lt;strong&gt;y&lt;/strong&gt; and &lt;strong&gt;p&lt;/strong&gt;aste from &lt;a href=&quot;https://missing.csail.mit.edu/2020/editors/&quot;&gt;missing semester&lt;/a&gt;&lt;/p&gt;
+&lt;h1</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>USB_ports</title>
     <link href="https://humble-learner006.github.io/2025/01/01/USB-ports/"/>
     <id>https://humble-learner006.github.io/2025/01/01/USB-ports/</id>
     <published>2025-01-01T08:35:10.000Z</published>
-    <updated>2025-01-01T08:47:55.267Z</updated>
+    <updated>2025-01-01T10:23:35.287Z</updated>
     
     
       
@@ -535,32 +557,6 @@ step 7: 删除远程分支&lt;code&gt;git push origin --delete &amp;lt;feature-b
     
     
     <category term="daily" scheme="https://humble-learner006.github.io/categories/daily/"/>
-    
-    
-    <category term="prose" scheme="https://humble-learner006.github.io/tags/prose/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>reflection of RMUL</title>
-    <link href="https://humble-learner006.github.io/2024/04/13/Record-reflection-on-RMUL/"/>
-    <id>https://humble-learner006.github.io/2024/04/13/Record-reflection-on-RMUL/</id>
-    <published>2024-04-13T14:02:59.000Z</published>
-    <updated>2024-10-11T10:36:03.242Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;福建賽區rmul比赛&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#福建賽區rmul比赛&quot;&gt;&lt;/a&gt; 福建賽區RMUL比赛&lt;/h1&gt;
-&lt;h1 id=&quot;time-line&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="RM" scheme="https://humble-learner006.github.io/categories/RM/"/>
     
     
     <category term="prose" scheme="https://humble-learner006.github.io/tags/prose/"/>

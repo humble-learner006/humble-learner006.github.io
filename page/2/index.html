@@ -87,7 +87,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">10</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">20</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">10</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">21</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"> <i class="fa fa-search fa-fw"></i> Search
         </a>
@@ -152,7 +152,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">21</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -212,6 +212,164 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://humble-learner006.github.io/2024/10/14/around-national-holiday/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Like Cai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LIke's blog">
+      <meta itemprop="description" content="悟已往之不谏 知来者之可追">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | LIke's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/14/around-national-holiday/" class="post-title-link" itemprop="url">around_national_holiday</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-10-14 08:52:30 / Modified: 13:06:36" itemprop="dateCreated datePublished" datetime="2024-10-14T08:52:30+08:00">2024-10-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/daily/" itemprop="url" rel="index"><span itemprop="name">daily</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="配置linux-to-go"><a class="markdownIt-Anchor" href="#配置linux-to-go"></a> 配置Linux to go</h1>
+<p>本人是Linux技术小白，参考了几篇帖子，在新买的WD-SN580固态硬盘上安装了可移动的Linux系统，即插即用很方便。<br />
+十月三号从早上九点到下午三点，一共6小时搞定了Linux to go, 测试了两台电脑均没有问题。算是大获成功。——15点08分<br />
+<img src="https://s2.loli.net/2024/10/14/kTYN537mVqSovnW.png" alt="ubuntu logo" /></p>
+<h2 id="问题记录"><a class="markdownIt-Anchor" href="#问题记录"></a> 问题记录</h2>
+<p>我正在尝试在我的移动硬盘上安装Linux to go</p>
+<ol>
+<li>跟着教程走下来。Linux系统选完时区，弹出一个窗口，点击后自动重启，然后在重启还没有进入到系统的时候提示&quot;remove the install media&quot;,我拔掉U盘后就自动进入Windows系统了。（教程中是安装完成ubuntu后会停留在Ubuntu的桌面，手动重启安装。）</li>
+<li>接着我重启，进入BIOS，选择boot Ubuntu的时候电脑BIOS界面发出蜂鸣器的beep声音。貌似无法成功boot</li>
+<li>电脑的时间是错乱的</li>
+<li>安装时遇到的问题是显卡驱动安装失败。我从NVidia的官网上找到了驱动<code>.run</code>文件，但是安装失败。</li>
+<li><img src="https://s2.loli.net/2024/10/14/OVkHrTXu6lCegJq.png" alt="ru sure to install?" /></li>
+<li><img src="https://s2.loli.net/2024/10/14/dURMlHhoyJV7IYv.png" alt="intallation fail" /><br />
+吃饭时候跟着教程走，把图形化界面关掉了，回来看有点后怕。<br />
+<img src="https://s2.loli.net/2024/10/14/4wHX61mvgOA9GlB.jpg" alt="no GUI" /><br />
+午饭前后的阶段，一直是开机进入grub页面，BIOS也没有作用，只能通过插上硬盘，Linux启动界面选择Windows才能进入系统<br />
+出过蓝屏的问题，用recovery修复，界面还挺好看<img src="https://s2.loli.net/2024/10/14/zk9m5XI7CDn8drx.jpg" alt="紫色命令行" /></li>
+</ol>
+<h3 id="参考教程"><a class="markdownIt-Anchor" href="#参考教程"></a> 参考教程</h3>
+<p>硬盘扇区对齐，4k对齐是什么<br />
+<a target="_blank" rel="noopener" href="https://blog.csdn.net/u012052268/article/details/77145427">安装Ubuntu Linux系统时硬盘分区最合理的方法_Ubuntu 系统分区-CSDN博客</a><br />
+<a target="_blank" rel="noopener" href="https://post.smzdm.com/p/a07nx4z8/">PE系统</a>选择是什么<br />
+<a target="_blank" rel="noopener" href="https://blog.csdn.net/windson_f/article/details/124932523">how to type Chinese in Ubuntu</a><br />
+<a target="_blank" rel="noopener" href="https://askubuntu.com/questions/1408873/ubuntu-22-04-chinese-simplified-pinyin-input-support/1408874">官方解答如何设置拼音</a><br />
+<a target="_blank" rel="noopener" href="https://www.howtogeek.com/508993/how-to-check-which-gpu-is-installed-on-linux/">How to check my graphic card in Linux system</a><br />
+<a target="_blank" rel="noopener" href="https://www.nvidia.cn/drivers/details/232742/">The driver from NVIDIA for Linux system</a><br />
+Drivers from Ubuntu official, and it is also recommended by NVIDIA official see <a target="_blank" rel="noopener" href="https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia">link</a><br />
+<a target="_blank" rel="noopener" href="https://askubuntu.com/questions/1261722/llvmpipe-llvm-10-0-0-256-bits-is-getting-detected-instead-of-nvidia">llvmpipe (LLVM 256 bits)</a> means all your graphic section not work, both integrated and dedicated graphic card</p>
+<h1 id="以美工的身份参加ludum-dare-56"><a class="markdownIt-Anchor" href="#以美工的身份参加ludum-dare-56"></a> 以美工的身份参加ludum dare 56</h1>
+<h2 id="我干了什么"><a class="markdownIt-Anchor" href="#我干了什么"></a> 我干了什么</h2>
+<p>在五六七三天每天画画。</p>
+<ul>
+<li>第一天
+<ul>
+<li>提交了角色草稿，以及第一张案例图的草稿</li>
+<li>搞定了角色设定，角色走步五张图片</li>
+</ul>
+</li>
+<li>第二天
+<ul>
+<li>提交了开始界面的设计以及缩略图</li>
+<li>提交了第三关关卡贴图</li>
+<li>完成了开头故事板草稿</li>
+</ul>
+</li>
+<li>第三天
+<ul>
+<li>两小时完成在地上画画的JK</li>
+<li>接下来的三小时完成了漫画设计</li>
+</ul>
+</li>
+</ul>
+<h2 id="什么是ludum-dare"><a class="markdownIt-Anchor" href="#什么是ludum-dare"></a> 什么是ludum dare</h2>
+<p>国庆时候跟着大佬参加了ludum dare 56的game jam，这是一个72小时的游戏开发活动。本次的主题是tiny creatures。<br />
+我在 <a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/creatures-cory">https://ldjam.com/events/ludum-dare/56/creatures-cory</a> 这个游戏中当美工<br />
+今天抽空把我们学校所有组的游戏都体验了一下<br />
+以玩家的视角去看，操作手感不好和卡bug真的很扫兴，除了tiny-elevator是类似于日结算有一个自动触发的结尾，我只通关了tiny spiders adventure。第一次直观感受到引导的重要性：制作者认为显而易见的玩法，玩家get不到。但是从开发者视角去看，3天开发游戏真的很困难。</p>
+<ul>
+<li>附上链接，欢迎大家来体验和评论*</li>
+</ul>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/luca">https://ldjam.com/events/ludum-dare/56/luca</a></li>
+<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/tiny-elevator">https://ldjam.com/events/ludum-dare/56/tiny-elevator</a></li>
+<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/night-at-the-8th-warehouse">https://ldjam.com/events/ludum-dare/56/night-at-the-8th-warehouse</a></li>
+<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/tiny-spiders-adventure">https://ldjam.com/events/ludum-dare/56/tiny-spiders-adventure</a></li>
+<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/creatures-cory">https://ldjam.com/events/ludum-dare/56/creatures-cory</a></li>
+<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/regenesis-bacteria-king">https://ldjam.com/events/ludum-dare/56/regenesis-bacteria-king</a> （半成品）</li>
+</ol>
+<p>luca是细胞演变类型的游戏，但是这个游戏缺少游戏内指引。<br />
+tiny elevator是电梯把员工送出去的模拟类游戏<br />
+night at the 8th warehouse是一个恐怖游戏，横板过关<br />
+tiny spiders adventure是一个横板过关游戏，玩家需要控制蜘蛛击败boss<br />
+creatures cory是一个类似画中世界+华容道的解谜类游戏</p>
+<p>ludum dare是一个游戏制作比赛，competition组别在48小时内制作一个游戏。gamejam组别在72小时内制作一个游戏。后面可以以修复bug的名义一直修改迭代。<br />
+RM+1这个队伍没有明显的策划来管控进度，导致任务推进没有保证，这就是松散的技术团队。<br />
+不过他们对于制作这个游戏的热情是远远高于我的，感觉我一直缺乏一些激情。游戏做出来了。</p>
+<h2 id="抱石初体验"><a class="markdownIt-Anchor" href="#抱石初体验"></a> 抱石初体验</h2>
+<p>交了一下怎么摔，怎么起步，怎么爬。尝试后对于掌心和小臂的刺激是不同寻常的强烈的。攀在墙上的紧张感，小腿肌肉的战栗，下来后怦怦跳的心脏，充血膨胀的小臂，都让我感到兴奋。</p>
+<h2 id="豹ii模型制作"><a class="markdownIt-Anchor" href="#豹ii模型制作"></a> 豹II模型制作</h2>
+<p>参加了模型社的MOD1001，制作豹II模型，素组两小时。一个个粘上去太艰难。但是确实精美。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1427,213 +1585,8 @@ You can use the pointer to access the value of <code>x</code>:</li>
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://humble-learner006.github.io/2024/04/13/Record-reflection-on-RMUL/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Like Cai">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LIke's blog">
-      <meta itemprop="description" content="悟已往之不谏 知来者之可追">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | LIke's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/04/13/Record-reflection-on-RMUL/" class="post-title-link" itemprop="url">reflection of RMUL</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2024-04-13 22:02:59" itemprop="dateCreated datePublished" datetime="2024-04-13T22:02:59+08:00">2024-04-13</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-10-11 18:36:03" itemprop="dateModified" datetime="2024-10-11T18:36:03+08:00">2024-10-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/RM/" itemprop="url" rel="index"><span itemprop="name">RM</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="福建賽區rmul比赛"><a class="markdownIt-Anchor" href="#福建賽區rmul比赛"></a> 福建賽區RMUL比赛</h1>
-<h1 id="time-line"><a class="markdownIt-Anchor" href="#time-line"></a> Time line</h1>
-<h2 id="april-11th-thr"><a class="markdownIt-Anchor" href="#april-11th-thr"></a> April 11th (Thr)</h2>
-<p>早上是六点二十分在乐天集合的，在那之前我们加急完成了三辆车的机械部分的任务，十号的安装我没有参与，有人是通宵的，任务是十分紧的</p>
-<font size = 1>
-p.s. 我是九号参与安装，熬到了凌晨一点多，然后同一天，这个hexo的博客诞生了———一个极端情况下的疯狂想法
-</font>
-<p>看着66*66*70的航空箱，校徽与过岗龙(dragopass)被装上了货拉拉的车，去往福建福州的RMUL比赛打响了</p>
-<p>早餐吃的肯德基，吃完后四辆网约车到坪山站。周边看到了云巴这种类轻轨的交通方式，坪山站可能在扩建。打印报销凭条后过完安检——睡觉。上了D388——睡觉，试图写turtle，不清醒，无果。</p>
-<p>一点半多准时到福州南。体验了类似于探鱼的那种店作为午餐，入住木兰澜苑（MLLY），名字莫名其妙的旅店，但是住的是舒服的。柔和的灯光布景，大面积，我喜欢。<br />
-晚上去福建理工大学报道，我们的车调了挺久才去裁判区进行检录，那时我们是最后一个队伍而且超时了，但是遇到一个很好的referee，耐心的检测我们的车辆是否符合规则。检录时候遇到许多问题，一一记下，熬夜修改，今天晚上xyf 13号五点才回MLLY，底盘ID改进，侧面反光修改，图传垫高拆装和理线，分类撞翻的螺丝。我赶完了02的hw9due。吃着塔斯汀两个辣的，吃东西时看着视频，时间就过去了。睡得时间还是太短了，第二天六点四十起的</p>
-<p>福州的天气和深圳还是有差异的，比较冷。短袖短裤的，吹得我发颤。</p>
-<h2 id="april-12th-fri"><a class="markdownIt-Anchor" href="#april-12th-fri"></a> April 12th (Fri)</h2>
-<p>今天是第一天比赛日，我是六点四十五起的，然后我和mani和陈lp指导是第一批到的，尝试了学校的早餐，很接地气，MLLY2车第二，然后是zsh和coli一众人，我递给他们参赛牌子。核心五人看来是没怎么睡的。</p>
-<p>被裁判组催着做了适应赛的检录——我们知道最后一刻都在调车。打了3v3适应赛，结果很糟，爆出了一系列问题，卡弹是最严重的。哨兵直接过载自杀，步兵也是超限程序没发挥作用，射速也被判定过快，但是实际上是卡弹的，这样子3v3不可能进行。</p>
-<p>当然，糟糕的不知有我们</p>
-<p>下午要打步兵的1v1<em>还好没有3v3</em>，队长说优先把卡弹解决掉——确实，如果没有解决这个下午比赛照样不行<br />
-我们把车运到coli，然后在里面开始找为什么会卡弹</p>
-<ul>
-<li>两台步兵的弹舱不一样，一个有分层，一个没有，有分层的那个有些时候子弹的中心会在0.75D的位置，然后被分层零件卡住。</li>
-<li>有些时候是两颗子弹被拨弹轮抵住，和右侧面发生巨大的摩擦力（我们是右旋供弹）</li>
-<li>这是我们在当日中午的判定</li>
-</ul>
-<p>修了一中午，以为解决了，实际上没有<br />
-下午的1v1据说是对方步兵一直超限判罚致死，然后我们赢了（？ 我没看</p>
-<p>晚上吃了顿好的，在一个拥挤的购物广场，类似于绿茶。</p>
-<p>一小时后又回到了福建理工。我去等待调车步兵，他们在调试哨兵的过程中，<br />
-哨兵转转，失控了，鼠标，键盘，屏幕等连在NUC上的硬件被扯着旋转。wjb用手把1.2<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span>rad/s的哨兵停下来了，的手被划破了。鉴于生化楼晚上会关。<br />
-收拾好东西回coli继续调</p>
-<ul>
-<li>此处晚上排查问题到凌晨1点，鉴定为爪形导轨，3D打印的零件和发射集成件，由于打印件短了一点，导致形成“凹”字形的结构，弹丸卡进<br />
-然后用特氟龙胶带把三个零件平滑连接起来，有一台的效果变好了，我们就把这个运用到另外一台上面<br />
-凌晨两点多，如释重负的的回去睡了。</li>
-</ul>
-<h2 id="april-13th-sat"><a class="markdownIt-Anchor" href="#april-13th-sat"></a> April 13th (Sat)</h2>
-<p>今天才是真正的3v3<br />
-9：50-10：10分对战深北莫（sbm），两场均负，<br />
-15：40-16：00对战闽江学院，11平<br />
-一个F小组，三个学校，取两个。遗憾的没有晋级</p>
-<p>卡弹，超功率与避免超是两个问题<br />
-中午wyx和zdy把哨兵机械结构修复<br />
-今天没早起，虽然群里说是7点在南校区北门集合，但是机械组由于在目前情况中能做出的贡献有限，于是自己被默许睡到九点</p>
-<p>今天状态不太行，由于熬夜失活<br />
-没怎么干事，出去接了潘潘，他到了北校区北门，于是多等15min，介绍着目前的情况，走到了赛场</p>
-<h3 id="1v1"><a class="markdownIt-Anchor" href="#1v1"></a> 1v1</h3>
-<p>11：50 - 12：00 对战浙江大学城市学院<br />
-14：30 - 14：40 对战厦门大学</p>
-<h3 id="3v3"><a class="markdownIt-Anchor" href="#3v3"></a> 3v3</h3>
-<ol>
-<li>过去刚好看第一场sbm的3v3。0/2负于深北莫<br />
-见wjb的作文<br></li>
-</ol>
-<blockquote>
-<p>首场港中深 0:2憾负深北莫<br></p>
-<ul>
-<li>第一场<br />
-我们的哨兵机器人开局超功率阵亡，我方基地无敌以及护盾开局归零。<br><br />
-我们的 3号步兵出现卡弹问题，全场比赛无法射出一发子弹；4号步兵尽力防守，<em>卡弹步兵用尽三次冲撞机会</em>。将对方哨兵打残；可惜无法<br />
-逆转颓势，港中深0:1负于深北莫</li>
-<li>第二场<br />
-我方哨兵开局超功率，及时自主降低<br />
-功率避免了过早阵亡，但仍然到了残<br />
-血(我们电控只有一个人，他让我们三部机器人正常运转就已经非常厉害了)；<em>缓缓地转</em> <br><br />
-3号步兵虽然经过场间调试，但仍然未能避免卡弹问题，整场比赛无法进行攻击，并且也会超功率扣血并阵亡，无法参与正面对抗；<br />
-4号步兵在以一敌二的情况下，打残对方步兵，哨兵；逼退对方英雄机器人；对方有精度优势，在中场吊射摧毁了基地，港中深0:2憾负深北莫。<br><br />
-我们出线的唯一途径，就是在下午<br />
-2:0闽江学院：这并不简单，但并不是不能做到。<br />
-3号步兵在赛后，通过机械组的抢救，已经可以顺畅攻击，哨兵功率的问题也在紧锣密鼓地进行调整。<br><br />
-深圳北理莫斯科大学 北极熊战队在<br />
-战场上极其凶狠，但是赛后仍然帮助我们调整机器人，解決了非常多的问题。<br />
-感谢他们。<br><br />
-每一把都当最后一把，然后也就不要怕输。希望我们能以全盛姿态，打好之后的每一场比费。</li>
-</ul>
-</blockquote>
-<ol start="2">
-<li>和闽江学院的，见wjb小作文<br></li>
-</ol>
-<blockquote>
-<p>时运不济 港中深1:1闽江学院<br></p>
-<ul>
-<li>第一局<br />
-发现闽江学院没有上英雄；我们分工，一人对峙对方步兵，一人打对面哨兵；起初我方优势，敌方步兵，哨兵相继被击杀；我们前往击打基地；可惜我们步兵相继再现卡弹问题，<em>站在对方基地面前一发子弹没打出去</em>，优势葬送，惜败闽江学<br />
-院</li>
-<li>第二局<br />
-吸取教训，第二局我们双步兵利用人数优势集火对面步兵，先击杀步兵再打哨兵；并轮流封堵对方步兵走位空问，将其成功压制在泉水中。另一方占领中央增益区，并击杀对方哨兵。<br />
-对方基地护盾消失后，我方并无松懈，轮流封堵对方步兵走位，轮流击打对方基地。虽然在最后关头4<br />
-号步兵再次发生卡弹，但优势已经确立，顺利拿下3<br />
-v3队史首胜。<br><br />
-但是，我们的积分并不足够将我们送进16强，我们3v3的步伐到此为止了。<br><br />
-但是，我们1v1赛道，已经晋级16强，将于今晚或明天进行16进8比赛。<br><br />
-作为成立不满一年，视觉只有三人，电控只有一人，整队11人左右，初次参加该类赛事的新队伍来讲，走到这里已经非常不容易。我们在这里，向深北莫北极熊战队道谢，祝他们16进8好运；向仲恺农业工程学院道谢;以上两支队伍，以及我校许多研究生学长学姐给予了我们巨大的帮助，没有他们，我们甚至没办法站在这里。<br />
-感谢各位的关注和支持；也欢迎咨询加入香港中文大学（深圳）过岗龙战队；（视觉组和电控组的四位同学这三天没睡够八小时qwa)<br />
-*对方步兵精度并不足够对我们处于“小陀螺”状态的步兵造成任何伤害！</li>
-</ul>
-</blockquote>
-<p>晚上打完比赛，我们就聊天，看别人比赛</p>
-<p>在coli吃的豪华晚饭，1388吃的不保，味道一般般，亏亏的<br />
-然后回来慢慢码字</p>
-<h2 id="april-14thsun"><a class="markdownIt-Anchor" href="#april-14thsun"></a> April 14th(Sun)</h2>
-<p>今天不必早起，七点半起后在MLLY S8不紧不慢的和教授一起吃完早餐，然后不紧不慢的打车去到北门，其间我和xyf和教授了解ECE是怎么样的东西，教授设计了ECE的课程。xyf展示了他想让人工智能和机器人结合在一起的想法，这种机器人记得特斯拉已经在做。他表达他想法时在发光呢，一个扎实的松弛沉稳有奇思的男大（bushi）</p>
-<font size = 1>
-沉稳是问题会想明白，松弛奇思是因为到今天他也没分清楚三种轮子，麦轮的工作原理，哨兵雷达长什么样，以及保持一定看手机的频率但是错过群里消息和PM，我有点看不清楚他的认知方式
-</font>
-<p>今天过去主要看深北莫对战3v3，可惜输了，也是因为技术故障。<br />
-然后强队之间的对战，哨兵功能都十分完整，可以开局单杀对面哨兵说明导航和自瞄识别，决策树都很强<br />
-然后是我们的1v1，晋级八强，晋级四强<br />
-在四强中遇到CSGO的s哥，开玩笑的，输了的原因是没有自瞄，手动在程序面前还是有大差距的<br />
-我们是殿军，就是季军后面那个（今天才知道这个词）<br />
-午餐的COTTI9.9，我们学校什么时候才能让学生喝得起咖啡。<br />
-下午两点，我们提前回去的一批人打车到了福州南站。动车上“写”完了物理，码完了字。回去休息了</p>
-<h1 id="some-observation"><a class="markdownIt-Anchor" href="#some-observation"></a> Some observation</h1>
-<h3 id="交流为主"><a class="markdownIt-Anchor" href="#交流为主"></a> 交流为主</h3>
-<p>大家在技术上交流还是和平的，藏着掖着的可能也只是自己的核心机密。<br>* 赛前深北莫还来帮忙装车了<br>* 第一天第二天我们均有借入与借出工具。并不会因为是陌生，而见外<br>* 第一天比完赛，出问题，深北莫鼎立相助<br>* 最后一场与闽江的对抗，他们为我们喝彩，还是挺感动的。</p>
-<h3 id="能力决定责任"><a class="markdownIt-Anchor" href="#能力决定责任"></a> 能力决定责任</h3>
-<p>几个会的最多的熬的最猛，单日预算完全用不完，因为一天只吃一顿，晚上也不怎么睡觉。。。<br>而我啥也不会，只能尽力打杂。这种感觉其实挺不好。但是确实见识到他们在做的是什么，以后应该去学一些什么<br>潘教授也是这么说的，现在是见习，以后才能成为主力</p>
-<h3 id="学习方向"><a class="markdownIt-Anchor" href="#学习方向"></a> 学习方向</h3>
-<ul>
-<li>视觉的opencv自瞄真的很重要，哨兵的自瞄如果足够准，在战局中可以起到至关重要的作用</li>
-<li>电控组要求掌握ROS，如何去控制机器人的每部分也很重要</li>
-<li>唯有热情不灭才能前进</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
