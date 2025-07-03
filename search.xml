@@ -150,6 +150,12 @@ apt-get: This is the default package manager for Debian, Ubuntu, and other Debia
       </tags>
   </entry>
   <entry>
+    <title>new bank card</title>
+    <url>/2025/07/03/new-bank-card/</url>
+    <content><![CDATA[<p>测试</p>
+]]></content>
+  </entry>
+  <entry>
     <title>start_vim</title>
     <url>/2025/01/07/start-vim/</url>
     <content><![CDATA[<p>cop<strong>y</strong> and <strong>p</strong>aste from <a href="https://missing.csail.mit.edu/2020/editors/">missing semester</a></p>
