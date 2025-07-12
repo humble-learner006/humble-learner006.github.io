@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Archives | Like&#39;s Blog</title>
+  <title>start_vim | Like&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Like&#39;s Blog">
-<meta property="og:url" content="https://humble-learner006.github.io/archives/index.html">
+  <meta name="description" content="copy and paste from missing semester how to learn vimHere’s how you learn a new editor:  Start with a tutorial (i.e. this lecture, plus resources that we point out)   Stick with using the editor for a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="start_vim">
+<meta property="og:url" content="https://humble-learner006.github.io/2025/01/07/start-vim/index.html">
 <meta property="og:site_name" content="Like&#39;s Blog">
+<meta property="og:description" content="copy and paste from missing semester how to learn vimHere’s how you learn a new editor:  Start with a tutorial (i.e. this lecture, plus resources that we point out)   Stick with using the editor for a">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-01-07T12:47:41.000Z">
+<meta property="article:modified_time" content="2025-01-08T08:37:46.000Z">
 <meta property="article:author" content="Like CAI">
 <meta name="twitter:card" content="summary">
   
@@ -69,226 +73,113 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2025" class="archive-year">2025</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2025/07/13/hello-world/" class="archive-article-date">
-  <time class="dt-published" datetime="2025-07-12T20:59:16.403Z" itemprop="datePublished">Jul 13</time>
+        <section id="main"><article id="post-start-vim" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/01/07/start-vim/" class="article-date">
+  <time class="dt-published" datetime="2025-01-07T12:47:41.000Z" itemprop="datePublished">2025-01-07</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2025/07/13/hello-world/">Hello World</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      start_vim
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>cop<strong>y</strong> and <strong>p</strong>aste from <a target="_blank" rel="noopener" href="https://missing.csail.mit.edu/2020/editors/">missing semester</a></p>
+<h1 id="how-to-learn-vim"><a href="#how-to-learn-vim" class="headerlink" title="how to learn vim"></a>how to learn vim</h1><p>Here’s how you learn a new editor:</p>
+<ul>
+<li>Start with a tutorial (i.e. this lecture, plus resources that we point out)  </li>
+<li>Stick with using the editor for all your text editing needs (even if it slows you down initially)  </li>
+<li>Look things up as you go: if it seems like there should be a better way to do something, there probably is</li>
+</ul>
+<h1 id="vim-modes"><a href="#vim-modes" class="headerlink" title="vim modes"></a>vim modes</h1><h2 id="i-for-insert-mode"><a href="#i-for-insert-mode" class="headerlink" title="i for insert mode"></a>i for insert mode</h2><p>from normal mode:</p>
+<ul>
+<li><code>i</code> to enter insert mode at the cursor</li>
+<li><code>o</code> to enter insert mode on the next line</li>
+</ul>
+<h2 id="esc-for-normal-mode-from-insert-mode"><a href="#esc-for-normal-mode-from-insert-mode" class="headerlink" title="esc for normal mode (from insert mode)"></a>esc for normal mode (from insert mode)</h2><ul>
+<li>normal mode is for <strong>viewing and editing</strong> text</li>
+</ul>
+<h3 id="moving-around"><a href="#moving-around" class="headerlink" title="moving around"></a>moving around</h3><ul>
+<li>moving my cursor around using <code>h</code>, <code>j</code>, <code>k</code>, <code>l</code> (left, down, up, right)</li>
+<li><code>w</code> to move forward by word, <code>b</code> to move back by word</li>
+<li><code>e</code> for end of word. </li>
+<li><code>0</code> to move to the beginning of the line, <code>$</code> to move to the end of the line</li>
+<li><code>gg</code> to move to the beginning of the file, <code>G</code> to move to the end of the file</li>
+<li>line moves</li>
+<li>absolute distance from beginning <code>:10</code> to move to line 10</li>
+<li>reletive distance from current line <code>10j</code> to move down 10 lines, <code>10k</code> to move up 10 lines</li>
+<li>page moves</li>
+<li><code>ctrl + d</code> to move down half a page, <code>ctrl + u</code> to move up half a page</li>
+<li><code>ctrl + f</code> to move down a page, <code>ctrl + b</code> to move up a page</li>
+<li>find moves</li>
+<li><code>f</code> to find a character on the line, <code>;</code> to find the next instance of that character</li>
+<li>e.g. <code>f</code> then <code>a</code> to find the next <code>a</code> on the line</li>
+<li><code>F</code> is for backwards find</li>
+<li><code>t</code> is for find up to a character</li>
+<li><code>T</code> is for backwards find up to a character</li>
+<li></li>
+</ul>
+<h3 id="editing"><a href="#editing" class="headerlink" title="editing"></a>editing</h3><ul>
+<li><code>x</code> to delete a character (making small changes in normal mode)</li>
+<li><code>dd</code> to delete a line</li>
+</ul>
+<h2 id="for-command-mode"><a href="#for-command-mode" class="headerlink" title=": for command mode"></a>: for command mode</h2><ul>
+<li><code>:q</code> to quit</li>
+</ul>
+<h2 id="v-for-visual-mode"><a href="#v-for-visual-mode" class="headerlink" title="v for visual mode"></a>v for visual mode</h2><ul>
+<li><code>v</code> to enter visual mode</li>
+<li>visual mode is for selecting text and then doing something (yp) with it</li>
+</ul>
+<h1 id="set-up-your-vimrc-file"><a href="#set-up-your-vimrc-file" class="headerlink" title="set up your vimrc file"></a>set up your vimrc file</h1><ul>
+<li><code>vim ~/.vimrc</code></li>
+<li><code>set number</code> to show line numbers</li>
+<li><code>set relativenumber</code> to show relative line numbers</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2025/01/07/start-vim/" data-id="cmd0rzke80024jkrzbwv478d8" data-title="start_vim" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2025/07/03/new-bank-card/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          new bank card
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2025/01/01/USB-ports/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">USB_ports</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2025/07/10/demand-aided-product-design/" class="archive-article-date">
-  <time class="dt-published" datetime="2025-07-10T07:55:49.000Z" itemprop="datePublished">Jul 10</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2025/07/10/demand-aided-product-design/">demand aided product design</a>
-    </h1>
-  
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2025/07/05/curiosity-project/" class="archive-article-date">
-  <time class="dt-published" datetime="2025-07-05T02:07:21.000Z" itemprop="datePublished">Jul 5</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2025/07/05/curiosity-project/">curiosity project</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2025/07/03/new-bank-card/" class="archive-article-date">
-  <time class="dt-published" datetime="2025-07-03T07:29:33.000Z" itemprop="datePublished">Jul 3</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2025/07/03/new-bank-card/">new bank card</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2025/01/07/start-vim/" class="archive-article-date">
-  <time class="dt-published" datetime="2025-01-07T12:47:41.000Z" itemprop="datePublished">Jan 7</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2025/01/07/start-vim/">start_vim</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2025/01/01/USB-ports/" class="archive-article-date">
-  <time class="dt-published" datetime="2025-01-01T08:35:10.000Z" itemprop="datePublished">Jan 1</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2025/01/01/USB-ports/">USB_ports</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/12/07/gardening-BOM/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-12-07T03:01:14.000Z" itemprop="datePublished">Dec 7</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/12/07/gardening-BOM/">gardening_BOM</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/12/05/new-laptop-demand/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-12-05T09:04:00.000Z" itemprop="datePublished">Dec 5</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/12/05/new-laptop-demand/">new_laptop_demand</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/11/27/types-of-distance/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-11-27T05:50:59.000Z" itemprop="datePublished">Nov 27</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/11/27/types-of-distance/">types_of_distance</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/10/20/build-system/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-10-20T03:41:24.000Z" itemprop="datePublished">Oct 20</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/10/20/build-system/">build_system</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-  </nav>
 
 </section>
         

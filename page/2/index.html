@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Like&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Like&#39;s Blog">
+<meta property="og:url" content="https://humble-learner006.github.io/page/2/index.html">
+<meta property="og:site_name" content="Like&#39;s Blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Like CAI">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Like's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Like&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://humble-learner006.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-average-and-mean" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/20/average-and-mean/" class="article-date">
+  <time class="dt-published" datetime="2024-10-20T02:55:07.000Z" itemprop="datePublished">2024-10-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/school/">school</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/20/average-and-mean/">average_and_mean</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><strong>平均值(average)</strong>：是算数均值，属于均值一种。<br><strong>均值(mean)</strong>：用来描述数据集中趋势的统计量。因此统计学上众数(mode),中位数(median)<br>在统计学和数学中，有几种常见的均值（平均值）计算方法，分别用于不同的应用场景和数据特征。以下是H（调和均值）、G（几何均值）、A（算术均值）、S（平方均值）四种均值算法的介绍：</p>
+<h2 id="四种常见均值"><a href="#四种常见均值" class="headerlink" title="四种常见均值"></a>四种常见均值</h2><h3 id="1-算术均值（Arithmetic-Mean-A）"><a href="#1-算术均值（Arithmetic-Mean-A）" class="headerlink" title="1. 算术均值（Arithmetic Mean, A）"></a>1. 算术均值（Arithmetic Mean, A）</h3><p>算术均值是最常用的均值计算方法，通常被称为“平均值(average)”。</p>
+<p>对于一组数据$x_1, x_2, \ldots, x_n$，算术均值的公式为：</p>
+<p>$A &#x3D; \frac{1}{n} \sum_{i&#x3D;1}^{n} x_i$</p>
+<ul>
+<li>简单易计算。</li>
+<li>对极端值（即非常大或非常小的值）敏感。</li>
+</ul>
+<p>广泛用于各种统计分析、经济学、日常计算等场景。</p>
+<h3 id="2-几何均值（Geometric-Mean-G）"><a href="#2-几何均值（Geometric-Mean-G）" class="headerlink" title="2. 几何均值（Geometric Mean, G）"></a>2. 几何均值（Geometric Mean, G）</h3><p>几何均值是用于计算数据集在乘法上具有对称性的中心值。</p>
+<p>对于一组数据$x_1, x_2, \ldots, x_n$，几何均值的公式为：</p>
+<p>$G &#x3D; \left( \prod_{i&#x3D;1}^{n} x_i \right)^{\frac{1}{n}}$</p>
+<p>或者：</p>
+<p>$G &#x3D; \exp \left( \frac{1}{n} \sum_{i&#x3D;1}^{n} \ln x_i \right)$</p>
+<ul>
+<li>适用于处理比例、百分比和指数增长的数据。</li>
+<li>对极端值不敏感，但要求数据为正值。</li>
+</ul>
+<p>常用于金融、科学和工程领域，例如计算投资的平均增长率。</p>
+<h3 id="3-调和均值（Harmonic-Mean-H）"><a href="#3-调和均值（Harmonic-Mean-H）" class="headerlink" title="3. 调和均值（Harmonic Mean, H）"></a>3. 调和均值（Harmonic Mean, H）</h3><p>调和均值是倒数均值的倒数，适用于处理速率或比例数据。</p>
+<p>对于一组数据$x_1, x_2, \ldots, x_n$，调和均值的公式为：</p>
+<p>$H &#x3D; \frac{n}{\sum_{i&#x3D;1}^{n} \frac{1}{x_i}}$</p>
+<ul>
+<li>适用于处理速率、效率等数据。</li>
+<li>对极端小值非常敏感。</li>
+</ul>
+<p>常用于交通、工程和经济学领域，例如计算平均速度、每单位时间的产出等。</p>
+<h3 id="4-平方均值（Quadratic-Mean-S）"><a href="#4-平方均值（Quadratic-Mean-S）" class="headerlink" title="4. 平方均值（Quadratic Mean, S）"></a>4. 平方均值（Quadratic Mean, S）</h3><p>平方均值，又称均方根（Root Mean Square, RMS），用于计算数据的平方和的均值的平方根。</p>
+<p>对于一组数据$x_1, x_2, \ldots, x_n$，平方均值的公式为：</p>
+<p>$S &#x3D; \sqrt{\frac{1}{n} \sum_{i&#x3D;1}^{n} x_i^2}$</p>
+<ul>
+<li>适用于处理振幅、功率等数据。</li>
+<li>对极端大值敏感。</li>
+</ul>
+<p>常用于物理学和工程学，例如计算电压、电流的有效值。</p>
+<h3 id="总结对比"><a href="#总结对比" class="headerlink" title="总结对比"></a>总结对比</h3><table>
+<thead>
+<tr>
+<th>均值类型</th>
+<th>公式</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>算术均值（A）</td>
+<td>$A &#x3D; \frac{1}{n} \sum_{i&#x3D;1}^{n} x_i$</td>
+<td>对极端值敏感</td>
+</tr>
+<tr>
+<td>几何均值（G）</td>
+<td>$G &#x3D; \left( \prod_{i&#x3D;1}^{n} x_i \right)^{\frac{1}{n}}$</td>
+<td>适用于正值，对极端值不敏感</td>
+</tr>
+<tr>
+<td>调和均值（H）</td>
+<td>$H &#x3D; \frac{n}{\sum_{i&#x3D;1}^{n} \frac{1}{x_i}}$</td>
+<td>对极端小值敏感</td>
+</tr>
+<tr>
+<td>平方均值（S）</td>
+<td>$S &#x3D; \sqrt{\frac{1}{n} \sum_{i&#x3D;1}^{n} x_i^2}$</td>
+<td>对极端大值敏感</td>
+</tr>
+</tbody></table>
+<br>
+<br>
+<br>
+
+<hr>
+<hr>
+<br>
+<br>
+<br>
+
+<h2 id="不常见均值（非当前学习目标）"><a href="#不常见均值（非当前学习目标）" class="headerlink" title="不常见均值（非当前学习目标）"></a>不常见均值（非当前学习目标）</h2><p>除了算术均值、几何均值、调和均值和平方均值外，还有许多其他类型的均值。</p>
+<h3 id="5-中位数（Median）"><a href="#5-中位数（Median）" class="headerlink" title="5. 中位数（Median）"></a>5. 中位数（Median）</h3><h4 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h4><p>中位数是数据集按升序或降序排列后位于中间的值。</p>
+<h4 id="计算方法："><a href="#计算方法：" class="headerlink" title="计算方法："></a>计算方法：</h4><ul>
+<li>如果数据集有奇数个数据点，中位数是中间那个数据点。</li>
+<li>如果数据集有偶数个数据点，中位数是中间两个数据点的平均值。</li>
+</ul>
+<h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4><ul>
+<li>不受极端值影响。</li>
+<li>适用于描述非对称分布的数据。</li>
+</ul>
+<h4 id="应用："><a href="#应用：" class="headerlink" title="应用："></a>应用：</h4><p>广泛用于经济学、社会科学、医学等领域。</p>
+<h3 id="6-众数（Mode）"><a href="#6-众数（Mode）" class="headerlink" title="6. 众数（Mode）"></a>6. 众数（Mode）</h3><h4 id="概述：-1"><a href="#概述：-1" class="headerlink" title="概述："></a>概述：</h4><p>众数是数据集中出现频率最高的值。</p>
+<h4 id="特点：-1"><a href="#特点：-1" class="headerlink" title="特点："></a>特点：</h4><ul>
+<li>可以有多个众数（多众数）或没有众数。</li>
+<li>适用于分类数据和离散数据。</li>
+</ul>
+<h4 id="应用：-1"><a href="#应用：-1" class="headerlink" title="应用："></a>应用：</h4><p>常用于统计分析、市场研究等。</p>
+<h3 id="7-加权均值（Weighted-Mean）"><a href="#7-加权均值（Weighted-Mean）" class="headerlink" title="7. 加权均值（Weighted Mean）"></a>7. 加权均值（Weighted Mean）</h3><h4 id="概述：-2"><a href="#概述：-2" class="headerlink" title="概述："></a>概述：</h4><p>加权均值考虑了每个数据点的权重，对不同的重要性进行加权。</p>
+<h4 id="公式："><a href="#公式：" class="headerlink" title="公式："></a>公式：</h4><p>对于一组数据 $x_1, x_2, \ldots, x_n$ 和相应的权重 $w_1, w_2, \ldots, w_n$，加权均值的公式为：</p>
+<p>$\text{Weighted Mean} &#x3D; \frac{\sum_{i&#x3D;1}^{n} w_i x_i}{\sum_{i&#x3D;1}^{n} w_i}$</p>
+<h4 id="特点：-2"><a href="#特点：-2" class="headerlink" title="特点："></a>特点：</h4><ul>
+<li>权重越高的数据点对均值的影响越大。</li>
+<li>适用于数据点具有不同重要性或频率的情况。</li>
+</ul>
+<h4 id="应用：-2"><a href="#应用：-2" class="headerlink" title="应用："></a>应用：</h4><p>经济学、统计学、决策分析等。</p>
+<h3 id="8-截断均值（Truncated-Mean）"><a href="#8-截断均值（Truncated-Mean）" class="headerlink" title="8. 截断均值（Truncated Mean）"></a>8. 截断均值（Truncated Mean）</h3><h4 id="概述：-3"><a href="#概述：-3" class="headerlink" title="概述："></a>概述：</h4><p>截断均值通过去除数据集中的极端值后计算算术均值。</p>
+<h4 id="计算方法：-1"><a href="#计算方法：-1" class="headerlink" title="计算方法："></a>计算方法：</h4><ul>
+<li>去掉数据集中最小和最大的某些百分比（如10%）。</li>
+<li>对剩下的数据计算算术均值。</li>
+</ul>
+<h4 id="特点：-3"><a href="#特点：-3" class="headerlink" title="特点："></a>特点：</h4><ul>
+<li>减少极端值对均值的影响。</li>
+<li>适用于包含噪声或离群值的数据。</li>
+</ul>
+<h4 id="应用：-3"><a href="#应用：-3" class="headerlink" title="应用："></a>应用：</h4><p>金融分析、质量控制等。</p>
+<h3 id="9-其他常见均值类型"><a href="#9-其他常见均值类型" class="headerlink" title="9. 其他常见均值类型"></a>9. 其他常见均值类型</h3><h4 id="四分位数均值（Quartile-Mean）"><a href="#四分位数均值（Quartile-Mean）" class="headerlink" title="四分位数均值（Quartile Mean）"></a>四分位数均值（Quartile Mean）</h4><p>计算数据集的第一和第三四分位数之间数据的均值。</p>
+<h4 id="三次方均值（Cubic-Mean）"><a href="#三次方均值（Cubic-Mean）" class="headerlink" title="三次方均值（Cubic Mean）"></a>三次方均值（Cubic Mean）</h4><p>对数据的三次方取均值后开三次方根。</p>
+<h4 id="平均绝对偏差（Mean-Absolute-Deviation-MAD）"><a href="#平均绝对偏差（Mean-Absolute-Deviation-MAD）" class="headerlink" title="平均绝对偏差（Mean Absolute Deviation, MAD）"></a>平均绝对偏差（Mean Absolute Deviation, MAD）</h4><p>计算每个数据点与均值的绝对差的平均值，用于描述数据的离散程度。</p>
+<h3 id="10-特殊均值类型"><a href="#10-特殊均值类型" class="headerlink" title="10. 特殊均值类型"></a>10. 特殊均值类型</h3><h4 id="伽玛均值（Gamma-Mean）"><a href="#伽玛均值（Gamma-Mean）" class="headerlink" title="伽玛均值（Gamma Mean）"></a>伽玛均值（Gamma Mean）</h4><p>使用伽玛函数定义的一种均值，应用于特定的统计分布。</p>
+<h4 id="贝塔均值（Beta-Mean）"><a href="#贝塔均值（Beta-Mean）" class="headerlink" title="贝塔均值（Beta Mean）"></a>贝塔均值（Beta Mean）</h4><p>使用贝塔函数定义的一种均值，应用于特定的统计分布。</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/362578100">均值不等式</a>引起的一些思考</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/20/average-and-mean/" data-id="cmd0rzke0000zjkrzcam2f6rm" data-title="average_and_mean" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/help/" rel="tag">help</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-distribution-in-statistic" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/16/distribution-in-statistic/" class="article-date">
+  <time class="dt-published" datetime="2024-10-16T12:07:29.000Z" itemprop="datePublished">2024-10-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/school/">school</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/16/distribution-in-statistic/">distribution_in_statistic</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><a href="#bernoulli-distribution">Bernoulli Distribution</a></li>
+<li><a href="#n-bernoulli-trials">n Bernoulli trials</a></li>
+<li><a href="#binomial-distribution">Binomial Distribution</a></li>
+<li><a href="#hypergeometric-distribution">Hypergeometric Distribution</a></li>
+<li><a href="#geometric-distribution">Geometric Distribution</a></li>
+<li><a href="#negative-binomial-distribution">Negative Binomial Distribution</a></li>
+<li><a href="#poisson-distribution">Poisson Distribution</a></li>
+<li><a href="#uniform-distribution">Uniform Distribution</a></li>
+<li><a href="#exponential-distribution">Exponential Distribution</a></li>
+<li><a href="#normal-distribution">Normal Distribution</a></li>
+</ul>
+<h1 id="L-7-Distribution-1"><a href="#L-7-Distribution-1" class="headerlink" title="L 7 - Distribution 1"></a>L 7 - Distribution 1</h1><h2 id="Bernoulli-Distribution"><a href="#Bernoulli-Distribution" class="headerlink" title="Bernoulli Distribution"></a>Bernoulli Distribution</h2><h3 id="Definition"><a href="#Definition" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have a Bernoulli distribution with parameter p, where 0 ≤ p ≤ 1, if its probability mass function is given by </p>
+<ul>
+<li>pmf.: $f_{X}(x) &#x3D; p^x(1 − p)^{(1−x)}$ for x &#x3D; 0, 1</li>
+<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; p$</li>
+<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; p(1-p)$</li>
+<li>mgf: $M_{X}(t) &#x3D; E[e^{tX}] &#x3D; e^{t}p + (1 - p), t \in (-\infty ,\infty)$</li>
+</ul>
+<h3 id="n-Bernoulli-trials"><a href="#n-Bernoulli-trials" class="headerlink" title="n Bernoulli trials"></a>n Bernoulli trials</h3><p>Definition: a Bernoulli experiment performed n times:</p>
+<ul>
+<li>$X_{1}, X_{2}, \dots, X_{n}$ are independent Bernoulli random variables (all trials are independent)</li>
+<li>with same parameter p</li>
+</ul>
+<h2 id="Binomial-Distribution"><a href="#Binomial-Distribution" class="headerlink" title="Binomial Distribution"></a>Binomial Distribution</h2><h3 id="Definition-1"><a href="#Definition-1" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have a binomial distribution if its probability mass function is given by </p>
+<ul>
+<li>pmf: $f_{X}(x) &#x3D; \binom{n}{x}p^x(1 − p)^(n−x)$</li>
+<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; np$</li>
+<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; np(1-p)$</li>
+<li>mgf: $M_{X}(t) &#x3D; (pe^t + 1 - p)^n$</li>
+</ul>
+<h3 id="deviation"><a href="#deviation" class="headerlink" title="deviation"></a>deviation</h3><p>if random variables $X_{1}, X_{2}, \dots, X_{n}$ are independent, then </p>
+<p>$$<br>E[X_{1} + X_{2} + \dots + X_{n}] &#x3D; E[X_{1}] + E[X_{2}] + \dots + E[X_{n}]<br>$$</p>
+<p>$$<br>Var[X_{1} + X_{2} + \dots + X_{n}] &#x3D; Var[X_{1}] + Var[X_{2}] + \dots + Var[X_{n}]<br>$$</p>
+<p>$$<br> M’(t) &#x3D; n\left[(1-p) + p e^t\right]^{n-1} p e^t \Rightarrow M’(0) &#x3D; E[X] &#x3D; np<br>$$</p>
+<p>$$<br> M’’(t) &#x3D; n(n-1)\left[(1-p) + p e^t\right]^{n-2} p^2 e^{2t} + n\left[(1-p) + p e^t\right]^{n-1} p e^t<br>$$</p>
+<p>$$<br> M’’(0) &#x3D; E[X^2] &#x3D; n(n-1)p^2 + np<br>$$</p>
+<p>$$<br> \operatorname{Var}[X] &#x3D; E[X^2] - (E[X])^2 &#x3D; n^2 p^2 - n p^2 + n p - n^2 p^2 &#x3D; np(1-p)<br>$$</p>
+<h2 id="Hypergeometric-Distribution"><a href="#Hypergeometric-Distribution" class="headerlink" title="Hypergeometric Distribution"></a>Hypergeometric Distribution</h2><h3 id="Definition-2"><a href="#Definition-2" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have a hypergeometric distribution if its probability mass function is given by </p>
+<ul>
+<li>pmf: $f_{X}(x) &#x3D; \frac{\binom{K}{x}\binom{N-K}{n-x}}{\binom{N}{n}}$</li>
+<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; \frac{nK}{N}$</li>
+<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; n\frac{K}{N}\frac{N-K}{N}\frac{N-n}{N-1}$</li>
+<li>mgf: $M_{X}(t) &#x3D; \left(\frac{K}{N}e^t + 1 - \frac{K}{N}\right)^n$</li>
+</ul>
+<h1 id="L-8-Distribution-2"><a href="#L-8-Distribution-2" class="headerlink" title="L 8 - Distribution 2"></a>L 8 - Distribution 2</h1><h2 id="Geometric-Distribution"><a href="#Geometric-Distribution" class="headerlink" title="Geometric Distribution"></a>Geometric Distribution</h2><h3 id="Definition-3"><a href="#Definition-3" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have a geometric distribution if its probability mass function is given by </p>
+<ul>
+<li>pmf: $f_{X}(x) &#x3D; p(1-p)^{x-1}$</li>
+<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; \frac{1}{p}$</li>
+<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; \frac{1-p}{p^2}$</li>
+<li>mgf: $M_{X}(t) &#x3D; \frac{pe^t}{1-(1-p)e^t}$</li>
+</ul>
+<h2 id="Negative-Binomial-Distribution"><a href="#Negative-Binomial-Distribution" class="headerlink" title="Negative Binomial Distribution"></a>Negative Binomial Distribution</h2><p>Definition:<br>A random variable X is said to have a negative binomial distribution if its probability mass function is given by </p>
+<ul>
+<li>pmf: $f_{X}(x) &#x3D; \binom{x-1}{r-1}p^r(1-p)^{x-r}$</li>
+<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; \frac{r}{p}$</li>
+<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; \frac{r(1-p)}{p^2}$</li>
+<li>mgf: $M_{X}(t) &#x3D; \left(\frac{p}{1-(1-p)e^t}\right)^r$</li>
+<li>negative binomial distribution is a generalization of the geometric distribution</li>
+</ul>
+<h2 id="Poisson-Distribution"><a href="#Poisson-Distribution" class="headerlink" title="Poisson Distribution"></a>Poisson Distribution</h2><p>Definition:<br>A random variable X is said to have a Poisson distribution if its probability mass function is given by </p>
+<ul>
+<li>pmf: $f_{X}(x) &#x3D; \frac{e^{-\lambda}\lambda^x}{x!}$</li>
+<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; \lambda$</li>
+<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; \lambda$</li>
+<li>mgf: $M_{X}(t) &#x3D; e^{\lambda(e^t-1)}$</li>
+<li>Poisson distribution is a limiting case of the binomial distribution when n is large and p is small</li>
+</ul>
+<h1 id="L-9-10-Continuous-Random-Variable-2"><a href="#L-9-10-Continuous-Random-Variable-2" class="headerlink" title="L 9 &amp; 10 - Continuous Random Variable 2"></a>L 9 &amp; 10 - Continuous Random Variable 2</h1><p>第九讲引入了连续随机变量，接着介绍了连续随机变量的分布</p>
+<h2 id="Uniform-Distribution"><a href="#Uniform-Distribution" class="headerlink" title="Uniform Distribution"></a>Uniform Distribution</h2><h3 id="Definition-4"><a href="#Definition-4" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have a uniform distribution if its probability density function is given by </p>
+<ul>
+<li>pdf: $f_{X}(x) &#x3D; \frac{1}{b-a}$</li>
+<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; \frac{a+b}{2}$</li>
+<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; \frac{(b-a)^2}{12}$</li>
+<li>mgf: $M_{X}(t) &#x3D; \frac{e^{tb}-e^{ta}}{t(b-a)}$</li>
+<li>The uniform distribution is often used to model situations where all outcomes are equally likely</li>
+</ul>
+<h2 id="Exponential-Distribution"><a href="#Exponential-Distribution" class="headerlink" title="Exponential Distribution"></a>Exponential Distribution</h2><h3 id="Definition-5"><a href="#Definition-5" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have an exponential distribution if its probability density function is given by </p>
+<ul>
+<li>pdf: $f_{X}(x) &#x3D; \lambda e^{-\lambda x}$</li>
+<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; \frac{1}{\lambda}$</li>
+<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; \frac{1}{\lambda^2}$</li>
+<li>mgf: $M_{X}(t) &#x3D; \frac{\lambda}{\lambda - t}$</li>
+</ul>
+<h2 id="Normal-Distribution"><a href="#Normal-Distribution" class="headerlink" title="Normal Distribution"></a>Normal Distribution</h2><h3 id="Definition-6"><a href="#Definition-6" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have a normal distribution if its probability density function is given by </p>
+<ul>
+<li>pdf: $f_{X}(x) &#x3D; \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$</li>
+<li>mean &amp; expectation: $\mu &#x3D; E[X]$</li>
+<li>variance: $\sigma^2 &#x3D; Var[X]$</li>
+<li>mgf: $M_{X}(t) &#x3D; e^{\mu t + \frac{1}{2}\sigma^2 t^2}$</li>
+<li>The normal distribution is the most important continuous distribution in probability and statistics</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/16/distribution-in-statistic/" data-id="cmd0rzke3001gjkrz8anu296e" data-title="distribution_in_statistic" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/help/" rel="tag">help</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-around-national-holiday" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/14/around-national-holiday/" class="article-date">
+  <time class="dt-published" datetime="2024-10-14T00:52:30.000Z" itemprop="datePublished">2024-10-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/daily/">daily</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/14/around-national-holiday/">around_national_holiday</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="配置Linux-to-go"><a href="#配置Linux-to-go" class="headerlink" title="配置Linux to go"></a>配置Linux to go</h1><p>本人是Linux技术小白，参考了几篇帖子，在新买的WD-SN580固态硬盘上安装了可移动的Linux系统，即插即用很方便。<br>十月三号从早上九点到下午三点，一共6小时搞定了Linux to go, 测试了两台电脑均没有问题。算是大获成功。——15点08分<br><img src="https://s2.loli.net/2024/10/14/kTYN537mVqSovnW.png" alt="ubuntu logo"></p>
+<h2 id="问题记录"><a href="#问题记录" class="headerlink" title="问题记录"></a>问题记录</h2><p>我正在尝试在我的移动硬盘上安装Linux to go</p>
+<ol>
+<li>跟着教程走下来。Linux系统选完时区，弹出一个窗口，点击后自动重启，然后在重启还没有进入到系统的时候提示”remove the install media”,我拔掉U盘后就自动进入Windows系统了。（教程中是安装完成ubuntu后会停留在Ubuntu的桌面，手动重启安装。）</li>
+<li>接着我重启，进入BIOS，选择boot Ubuntu的时候电脑BIOS界面发出蜂鸣器的beep声音。貌似无法成功boot </li>
+<li>电脑的时间是错乱的</li>
+<li>安装时遇到的问题是显卡驱动安装失败。我从NVidia的官网上找到了驱动<code>.run</code>文件，但是安装失败。</li>
+<li><img src="https://s2.loli.net/2024/10/14/OVkHrTXu6lCegJq.png" alt="ru sure to install?"></li>
+<li><img src="https://s2.loli.net/2024/10/14/dURMlHhoyJV7IYv.png" alt="intallation fail"><br>吃饭时候跟着教程走，把图形化界面关掉了，回来看有点后怕。<br><img src="https://s2.loli.net/2024/10/14/4wHX61mvgOA9GlB.jpg" alt="no GUI"><br>午饭前后的阶段，一直是开机进入grub页面，BIOS也没有作用，只能通过插上硬盘，Linux启动界面选择Windows才能进入系统<br>出过蓝屏的问题，用recovery修复，界面还挺好看<img src="https://s2.loli.net/2024/10/14/zk9m5XI7CDn8drx.jpg" alt="紫色命令行"></li>
+</ol>
+<h3 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h3><p>硬盘扇区对齐，4k对齐是什么<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/u012052268/article/details/77145427">安装Ubuntu Linux系统时硬盘分区最合理的方法_Ubuntu 系统分区-CSDN博客</a><br><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/a07nx4z8/">PE系统</a>选择是什么<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/windson_f/article/details/124932523">how to type Chinese in Ubuntu</a><br><a target="_blank" rel="noopener" href="https://askubuntu.com/questions/1408873/ubuntu-22-04-chinese-simplified-pinyin-input-support/1408874">官方解答如何设置拼音</a><br><a target="_blank" rel="noopener" href="https://www.howtogeek.com/508993/how-to-check-which-gpu-is-installed-on-linux/">How to check my graphic card in Linux system</a><br><a target="_blank" rel="noopener" href="https://www.nvidia.cn/drivers/details/232742/">The driver from NVIDIA for Linux system</a><br>Drivers from Ubuntu official, and it is also recommended by NVIDIA official see <a target="_blank" rel="noopener" href="https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia">link</a><br><a target="_blank" rel="noopener" href="https://askubuntu.com/questions/1261722/llvmpipe-llvm-10-0-0-256-bits-is-getting-detected-instead-of-nvidia">llvmpipe (LLVM 256 bits)</a> means all your graphic section not work, both integrated and dedicated graphic card</p>
+<h1 id="以美工的身份参加ludum-dare-56"><a href="#以美工的身份参加ludum-dare-56" class="headerlink" title="以美工的身份参加ludum dare 56"></a>以美工的身份参加ludum dare 56</h1><h2 id="我干了什么"><a href="#我干了什么" class="headerlink" title="我干了什么"></a>我干了什么</h2><p>在五六七三天每天画画。</p>
+<ul>
+<li>第一天<ul>
+<li>提交了角色草稿，以及第一张案例图的草稿</li>
+<li>搞定了角色设定，角色走步五张图片</li>
+</ul>
+</li>
+<li>第二天<ul>
+<li>提交了开始界面的设计以及缩略图</li>
+<li>提交了第三关关卡贴图</li>
+<li>完成了开头故事板草稿</li>
+</ul>
+</li>
+<li>第三天<ul>
+<li>两小时完成在地上画画的JK</li>
+<li>接下来的三小时完成了漫画设计</li>
+</ul>
+</li>
+</ul>
+<h2 id="什么是ludum-dare"><a href="#什么是ludum-dare" class="headerlink" title="什么是ludum dare"></a>什么是ludum dare</h2><p>国庆时候跟着大佬参加了ludum dare 56的game jam，这是一个72小时的游戏开发活动。本次的主题是tiny creatures。<br>我在 <a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/creatures-cory">https://ldjam.com/events/ludum-dare/56/creatures-cory</a> 这个游戏中当美工<br>今天抽空把我们学校所有组的游戏都体验了一下<br>以玩家的视角去看，操作手感不好和卡bug真的很扫兴，除了tiny-elevator是类似于日结算有一个自动触发的结尾，我只通关了tiny spiders adventure。第一次直观感受到引导的重要性：制作者认为显而易见的玩法，玩家get不到。但是从开发者视角去看，3天开发游戏真的很困难。</p>
+<ul>
+<li>附上链接，欢迎大家来体验和评论*</li>
+</ul>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/luca">https://ldjam.com/events/ludum-dare/56/luca</a></li>
+<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/tiny-elevator">https://ldjam.com/events/ludum-dare/56/tiny-elevator</a></li>
+<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/night-at-the-8th-warehouse">https://ldjam.com/events/ludum-dare/56/night-at-the-8th-warehouse</a></li>
+<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/tiny-spiders-adventure">https://ldjam.com/events/ludum-dare/56/tiny-spiders-adventure</a></li>
+<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/creatures-cory">https://ldjam.com/events/ludum-dare/56/creatures-cory</a></li>
+<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/regenesis-bacteria-king">https://ldjam.com/events/ludum-dare/56/regenesis-bacteria-king</a> （半成品）</li>
+</ol>
+<p>luca是细胞演变类型的游戏，但是这个游戏缺少游戏内指引。<br>tiny elevator是电梯把员工送出去的模拟类游戏<br>night at the 8th warehouse是一个恐怖游戏，横板过关<br>tiny spiders adventure是一个横板过关游戏，玩家需要控制蜘蛛击败boss<br>creatures cory是一个类似画中世界+华容道的解谜类游戏</p>
+<p>ludum dare是一个游戏制作比赛，competition组别在48小时内制作一个游戏。gamejam组别在72小时内制作一个游戏。后面可以以修复bug的名义一直修改迭代。<br>RM+1这个队伍没有明显的策划来管控进度，导致任务推进没有保证，这就是松散的技术团队。<br>不过他们对于制作这个游戏的热情是远远高于我的，感觉我一直缺乏一些激情。游戏做出来了。</p>
+<h2 id="抱石初体验"><a href="#抱石初体验" class="headerlink" title="抱石初体验"></a>抱石初体验</h2><p>交了一下怎么摔，怎么起步，怎么爬。尝试后对于掌心和小臂的刺激是不同寻常的强烈的。攀在墙上的紧张感，小腿肌肉的战栗，下来后怦怦跳的心脏，充血膨胀的小臂，都让我感到兴奋。</p>
+<h2 id="豹II模型制作"><a href="#豹II模型制作" class="headerlink" title="豹II模型制作"></a>豹II模型制作</h2><p>参加了模型社的MOD1001，制作豹II模型，素组两小时。一个个粘上去太艰难。但是确实精美。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/14/around-national-holiday/" data-id="cmd0rzkdz000xjkrzbl664c8i" data-title="around_national_holiday" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/prose/" rel="tag">prose</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Qt_setup_SDL2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/12/Qt_setup_SDL2/" class="article-date">
+  <time class="dt-published" datetime="2024-10-12T09:28:30.000Z" itemprop="datePublished">2024-10-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/school/">school</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/12/Qt_setup_SDL2/">Qt_setup_SDL2</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><h2 id="检查版本"><a href="#检查版本" class="headerlink" title="检查版本"></a>检查版本</h2><p>Qt use MINGW, so download SDL2 in correspond version<br><img src="https://s2.loli.net/2024/10/12/LHwEiYXK2pksUT5.png"><br>主要参考的<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_58311374/article/details/133410449">教程</a>是<br>次要参考的<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_46028171/article/details/134967027">教程</a>是<br>比较全面的<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_72157449/article/details/130490332">教程</a>是，不过介绍用的是VS，导出模板，CMake配置也教了<br>环境路径设置好，对库的链接在<code>pro</code>文件中配置好，主程序中<code>include</code>即可。</p>
+<h1 id="个人疑问和AI回答"><a href="#个人疑问和AI回答" class="headerlink" title="个人疑问和AI回答"></a>个人疑问和AI回答</h1><p>以下图片是下载下来的目录。<br>里面有<code>lib</code> ，mingw相关的有<code>i686...</code>和<code>x86_64-w64</code>他们之间有什么不同吗？<br><img src="https://s2.loli.net/2024/10/12/ozKtsdLMHuxNZhX.png"></p>
+<h4 id="动态库和静态库的使用场景"><a href="#动态库和静态库的使用场景" class="headerlink" title="动态库和静态库的使用场景"></a>动态库和静态库的使用场景</h4><p><code>lib</code>文件夹通常包含编译好的库文件，这些库文件是用于链接到你的应用程序中的，而不是直接用于运行时的。在Windows系统中，库文件通常是静态库（.lib）或动态库（.dll）<em><strong>dynamic link library</strong></em>，其中：</p>
+<ul>
+<li><code>.lib</code>文件是静态库文件，它们在编译时被链接到你的应用程序中，使得库的代码成为应用程序的一部分。</li>
+<li><code>.dll</code>文件是动态链接库文件，它们在运行时被应用程序加载，允许多个程序共享同一份库代码。</li>
+</ul>
+<p>对于SDL（Simple DirectMedia Layer）这样的库，如果你需要在运行时动态加载库（比如在不支持静态链接的环境中），你应该使用<code>.dll</code>文件。在<code>x86_64-w64-mingw32</code>这样的目录下，通常会提供编译好的<code>.dll</code>文件，用于64位的Windows系统。</p>
+<p>直接选择<code>lib</code>文件夹<strong>可能不会给你正确的文件类型或架构版本的库文件</strong>。你需要根据你的应用程序的需要（静态或动态链接）以及目标平台（32位或64位）来选择正确的文件。对于64位系统，确保选择的是64位的<code>.dll</code>文件，这样可以保证最佳的性能和兼容性。</p>
+<h4 id="两个mingw前缀的区别"><a href="#两个mingw前缀的区别" class="headerlink" title="两个mingw前缀的区别"></a>两个mingw前缀的区别</h4><p><code>i686</code>是一个指令集架构，它是Intel 80686微处理器的简称，属于x86架构的32位版本。在Linux系统中，<code>i686</code>通常用来表示32位的Intel或AMD处理器。这个架构的名称来源于最初的80686处理器，尽管现代的处理器已经远远超出了最初的686型号的性能。</p>
+<p>在编译软件或库时，如果你的目标是为32位的x86系统编译：</p>
+<ul>
+<li>在Linux发行版中，32位的库文件通常位于以<code>i686</code>命名的文件夹中。</li>
+<li>在Windows系统中，32位的库文件通常位于以<code>x86</code>命名的文件夹中。</li>
+</ul>
+<p>对于64位系统，你应该选择64位的库文件（例如<code>x86_64-w64-mingw32</code>中的文件）</p>
+<h4 id="在发行版中tar和gz是什么"><a href="#在发行版中tar和gz是什么" class="headerlink" title="在发行版中tar和gz是什么"></a>在发行版中tar和gz是什么</h4><p><code>mingw.tar.gz</code> 文件名中的 <code>tar</code> 和 <code>gz</code> 分别代表两种不同的压缩和归档技术：</p>
+<ol>
+<li><strong>tar</strong>：这是一个用于将多个文件和目录打包成一个单独文件的工具，通常用于在 Unix 和类 Unix 系统中。<code>tar</code> 本身并不压缩文件，它只将文件和目录归档。</li>
+<li><strong>gz</strong>：这是 Gzip（GNU Zip）的文件扩展名，表示该文件经过压缩以减少其大小。Gzip 是一种常见的压缩算法，通常用于压缩 <code>tar</code> 归档文件。</li>
+</ol>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>跟着教程配置环境不难，但是相关的信息对我这种新手而言还是有许多不懂的。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/12/Qt_setup_SDL2/" data-id="cmd0rzkdm0001jkrzervu3h9u" data-title="Qt_setup_SDL2" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-GitHub_note" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/12/GitHub_note/" class="article-date">
+  <time class="dt-published" datetime="2024-10-12T04:19:19.000Z" itemprop="datePublished">2024-10-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/RM/">RM</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/12/GitHub_note/">GitHub discovery</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h1><blockquote>
+<p>于我个人而言GitHub是上大学才开始用的，在广东省的义务教育阶段，计算机相关的教育是欠缺的。我身边有同校高排名同学大一一整年没接触GitHub，也有内地名牌985同学依然使用微信传输文件进行项目开发。</p>
+</blockquote>
+<blockquote>
+<p>整个大一GitHub我只会clone，push，pull的基础操作。但是GitHub的功能很多，诸如issue, project, release 都很让我好奇，也相应的有各自不可或缺的功能。所以趁着CSC3002 C++ 项目的机会，我决定系统的学习一下GitHub的功能。</p>
+</blockquote>
+<blockquote>
+<p>在抄教程部署我的静态博客时意识到参考官方文档的重要性，本次教程主要材料是 <a target="_blank" rel="noopener" href="https://www.github-zh.com/getting-started/introduction-to-github">GitHub官方教程</a>。文内未标注出处默认来自官网。<br>在这个教程中，我会把我认为重要的部分记录下来，以便日后查阅。你有不懂的应该上官网查阅</p>
+</blockquote>
+<p>Note that: all the posts with “note” in their title are notes based on some materials (tutorial, lecture, etc.)  I once working on.</p>
+<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><h2 id="repo创建"><a href="#repo创建" class="headerlink" title="repo创建"></a>repo创建</h2><h3 id="repo是什么"><a href="#repo是什么" class="headerlink" title="repo是什么"></a>repo是什么</h3><ul>
+<li>repo就是一个云端的文件夹，可以用来存放代码，文档，图片等等。是repository（仓库）的缩写。</li>
+<li>see more <a target="_blank" rel="noopener" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">repo</a></li>
+</ul>
+<h3 id="repo的作用"><a href="#repo的作用" class="headerlink" title="repo的作用"></a>repo的作用</h3><ul>
+<li>最基本：管理项目的文件</li>
+<li>你可以用GitHub Pages的服务创建个人网站</li>
+<li>你可以用创建和你用户名一样的repo来展示你的<code>profile README</code>，这回显示在你的个人主页上</li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/103695781">GitHub右上角Watch、Star和Fork详解</a></li>
+</ul>
+<h3 id="repo的类型"><a href="#repo的类型" class="headerlink" title="repo的类型"></a>repo的类型</h3><ul>
+<li>repo 分为public和private两种，public是公开的，private是私有的。private会消耗action minutes<ul>
+<li>Action minute 是GitHub Actions服务 的计算单位（就像话费用时间计算），是用来运行自动化任务的。</li>
+</ul>
+</li>
+<li>![[image&#x2F;GitHub_note.png]]</li>
+<li>上方图片是自动填写好的字段直接创建默认repo<code>skills-introduction-to-github</code>，我就不放图床了，你自己实践。</li>
+<li>README.md 在20s会刷新一次，直接进入到教程的第二阶段 - branch，这个是GitHub Action实现的</li>
+</ul>
+<h2 id="branch创建"><a href="#branch创建" class="headerlink" title="branch创建"></a>branch创建</h2><ul>
+<li><strong>Fork</strong> 是在远程创建一个仓库副本，适合独立开发和对外部项目的贡献。</li>
+<li><strong>Branch</strong> 是在同一个仓库内创建的开发线，适合组织和管理团队内部的开发工作。</li>
+</ul>
+<h3 id="什么是branch"><a href="#什么是branch" class="headerlink" title="什么是branch"></a>什么是branch</h3><ul>
+<li>把main看作是项目的主线，branch是在主线上的一个分支，可以用来开发新功能，修复bug等等。创建branch的目的是为了不影响main的稳定性。</li>
+<li>see more <a target="_blank" rel="noopener" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches">branch</a></li>
+<li>The <strong>main</strong> branch drop-down bar（下拉栏） will reflect your new branch and display the new branch name.</li>
+<li>![[image&#x2F;GitHub_note-1.png]]</li>
+<li>确保名字是<code>my-first-branch</code>，会触发GitHub Action去推进教程 </li>
+<li>![[image&#x2F;GitHub_note-2.png]]</li>
+</ul>
+<h2 id="commit-在branch里面"><a href="#commit-在branch里面" class="headerlink" title="commit - 在branch里面"></a>commit - 在branch里面</h2><h3 id="commit是什么"><a href="#commit是什么" class="headerlink" title="commit是什么"></a>commit是什么</h3><blockquote>
+<p><strong>What is a commit?</strong>: A <em><a target="_blank" rel="noopener" href="https://docs.github.com/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits">commit</a></em> is a set of changes to the files and folders in your project. A commit exists in a branch. For more information, see “<a target="_blank" rel="noopener" href="https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits">About commits</a>“. </p>
+</blockquote>
+<ul>
+<li>commit一个<code>PROFILE.md</code>文件</li>
+<li>commit一个<code>PROFILE.md</code>文件的更新<br>以上都是commit的操作</li>
+</ul>
+<h2 id="pull-request-创建并完成"><a href="#pull-request-创建并完成" class="headerlink" title="pull request - 创建并完成"></a>pull request - 创建并完成</h2><blockquote>
+<p><strong>What is a pull request?</strong>: <strong>Collaboration</strong> happens on a <em><a target="_blank" rel="noopener" href="https://docs.github.com/en/get-started/quickstart/github-glossary#pull-request">pull request</a></em>. The pull request <strong>shows the changes in your branch to other people</strong> and allows people to accept, reject, or suggest additional changes to your branch. In a side by side comparison, this pull request is going to keep the changes you just made on your branch and propose applying them to the <code>main</code> project branch. For more information about pull requests, see “<a target="_blank" rel="noopener" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">About pull requests</a>“.</p>
+</blockquote>
+<p>pull request是为了让别人看到你在branch上的变动，然后别人可以接受，拒绝或者建议更改你的branch。这个pull request是为了把你在branch上的变动应用到<code>main</code>项目分支上。</p>
+<ul>
+<li><strong>独立开发</strong>：通常的工作流程是先<code>fork</code>一个仓库，然后<code>clone</code>你自己的fork到本地进行开发。开发完成后，你可以提交<code>pull request</code>到原仓库，请求合并你的代码。</li>
+<li><strong>团队开发</strong>：在一个团队中，通常会有<strong>一个主仓库</strong>，团队成员会在主仓库的<code>main</code>分支上创建自己的分支进行开发。开发完成后，他们会提交<code>pull request</code>到<code>main</code>分支，请求合并他们的代码。</li>
+</ul>
+<h3 id="主窗口元素"><a href="#主窗口元素" class="headerlink" title="主窗口元素"></a>主窗口元素</h3><h4 id="时间线"><a href="#时间线" class="headerlink" title="时间线"></a>时间线</h4><p>[[image&#x2F;GitHub_note-3.png]]<br><img src="https://s2.loli.net/2024/10/12/avyVprsbjUhTHwX.png"><br>[[image&#x2F;GitHub_note-6.png]]<br><img src="https://s2.loli.net/2024/10/12/KD1HhNJnp2Fe7qj.png"><br>所有的变动都会被记录在主窗口中，你可以看到每次commit的变动（时间，作者），然后对于pull request的变动也会在时间线里面体现。</p>
+<h4 id="为什么管理者可以修改评论！？"><a href="#为什么管理者可以修改评论！？" class="headerlink" title="为什么管理者可以修改评论！？"></a>为什么管理者可以修改评论！？</h4><p>在一些版本控制平台上，特别是GitHub，用户可以编辑或修改他人的评论通常是出于以下几种原因：</p>
+<ol>
+<li><strong>权限设置</strong>：项目的权限可能设置为允许特定角色（例如维护者或项目管理员）编辑任何人的评论。这有助于团队维护清晰和一致的讨论。</li>
+<li><strong>修正错误</strong>：有时评论可能包含拼写错误或错误的信息，允许编辑可以确保讨论的准确性。</li>
+<li><strong>更新信息</strong>：在持续的讨论中，信息可能会过时或需要补充，编辑评论可以让讨论更加连贯。</li>
+<li><strong>审查和维护</strong>：在大型项目中，维护者可能需要编辑评论以整理讨论，确保重要信息突出显示。<br>如果你在一个项目中发现可以修改他人的评论，确保在这样做之前获得相关人员的同意，以维护良好的合作氛围和信任。</li>
+</ol>
+<h4 id="完成merge后删除branch"><a href="#完成merge后删除branch" class="headerlink" title="完成merge后删除branch"></a>完成merge后删除branch</h4><p>[[image&#x2F;GitHub_note-8.png]]<br><img src="https://s2.loli.net/2024/10/12/bn96VK7MLrCvwBX.png"></p>
+<h3 id="边栏元素"><a href="#边栏元素" class="headerlink" title="边栏元素"></a>边栏元素</h3><h4 id="reviewer（审查人）和-assignees（指定人）"><a href="#reviewer（审查人）和-assignees（指定人）" class="headerlink" title="reviewer（审查人）和 assignees（指定人）"></a>reviewer（审查人）和 assignees（指定人）</h4><p>审查就是设置reviewer在merge前审查，减少错误。assignees被指定完成接下来的任务<br>CSDN疑似AI的<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39460032/article/details/134589700">详细解答</a></p>
+<h4 id="labels（标签）"><a href="#labels（标签）" class="headerlink" title="labels（标签）"></a>labels（标签）</h4><p>标签的作用是标记issue和pull request的状态，比如这次pull requst的目的是什么。<br>打开下拉菜单<code>Apply lables to this pull request</code> 你会看到</p>
+<ul>
+<li>bug</li>
+<li>documentation</li>
+<li>duplicate</li>
+<li>enhancement</li>
+<li>good first issue：鼓励新手参与</li>
+<li>help wanted</li>
+<li>invalid</li>
+<li>question</li>
+<li>wontfix：描述的问题是一个bug但是将永远不会被修复</li>
+<li><a target="_blank" rel="noopener" href="https://docs.github.com/zh/issues/using-labels-and-milestones-to-track-work/managing-labels">管理标签 - GitHub 文档</a></li>
+</ul>
+<h4 id="projects（项目）和-milestone（里程碑）"><a href="#projects（项目）和-milestone（里程碑）" class="headerlink" title="projects（项目）和 milestone（里程碑）"></a>projects（项目）和 milestone（里程碑）</h4><ul>
+<li>把pull request加入到项目中，可以更好的管理项目</li>
+<li>把pull request加入到里程碑中，可以更好的管理项目，你可以理解为这次pull request是项目的一个阶段的结束。</li>
+</ul>
+<h4 id="lock-conversation（锁定对话）"><a href="#lock-conversation（锁定对话）" class="headerlink" title="lock conversation（锁定对话）"></a>lock conversation（锁定对话）</h4><p>![[image&#x2F;GitHub_note-7.png]]<br><img src="https://s2.loli.net/2024/10/12/tTeMUV8dBIEbmqr.png"><br>重要信息能被看到</p>
+<h3 id="完成教程"><a href="#完成教程" class="headerlink" title="完成教程"></a>完成教程</h3><p>(<a target="_blank" rel="noopener" href="https://github.com/humble-learner006/skills-introduction-to-github?tab=readme-ov-file#finish)%E8%BF%99%E6%98%AFGitHub%E9%87%8C%E9%9D%A2%E6%A0%87%E9%A2%98%E9%94%9A%E7%82%B9%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95">https://github.com/humble-learner006/skills-introduction-to-github?tab=readme-ov-file#finish)这是GitHub里面标题锚点设置方法</a></p>
+<h3 id="Finish存档"><a href="#Finish存档" class="headerlink" title="Finish存档"></a>Finish存档</h3><p><em>Congratulations, you’ve completed this course and joined the world of developers!</em><br>Here’s a recap of your accomplishments:</p>
+<ul>
+<li>You learned about GitHub, repositories, branches, commits, and pull requests.</li>
+<li>You created a branch, a commit, and a pull request.</li>
+<li>You merged a pull request.</li>
+<li>You made your first <strong>contribution</strong>! 🎉<br>所以说contribution是被接受的pull request。那那个改了一个空行能被接受的小红书用户真是牛逼。</li>
+</ul>
+<h4 id="What’s-next-给出了接下来可以学什么"><a href="#What’s-next-给出了接下来可以学什么" class="headerlink" title="What’s next? 给出了接下来可以学什么"></a>What’s next? 给出了接下来可以学什么</h4><h4 id="profile-README是一个在你个人主页的readme"><a href="#profile-README是一个在你个人主页的readme" class="headerlink" title="profile README是一个在你个人主页的readme"></a>profile README是一个在你个人主页的readme</h4><p>If you’d like to make a profile README, use the quickstart instructions below or follow the instructions in the <a target="_blank" rel="noopener" href="https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme">Managing your profile README</a> article.</p>
+<ol>
+<li>Make a new public repository with a name that matches your GitHub username.</li>
+<li>Create a file named <code>README.md</code> in its root. The “root” means not inside any folder in your repository.</li>
+<li>Edit the contents of the <code>README.md</code> file.</li>
+<li>If you created a new branch for your file, open and merge a pull request on your branch.</li>
+<li>Lastly, we’d love to hear what you thought of this course <a target="_blank" rel="noopener" href="https://github.com/orgs/skills/discussions/categories/introduction-to-github">in our discussion board</a>.</li>
+</ol>
+<h5 id="Check-out-these-resources-to-learn-more-or-get-involved"><a href="#Check-out-these-resources-to-learn-more-or-get-involved" class="headerlink" title="Check out these resources to learn more or get involved:"></a>Check out these resources to learn more or get involved:</h5><ul>
+<li>Are you a student? Check out the <a target="_blank" rel="noopener" href="https://education.github.com/pack">Student Developer Pack</a>.</li>
+<li>onboarding preferences for student<a target="_blank" rel="noopener" href="https://education.github.com/learner/learn">教程网址</a><br>![[image&#x2F;GitHub_note-13.png]]</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/skills">Take another GitHub Skills course</a>.</li>
+<li><a target="_blank" rel="noopener" href="https://docs.github.com/en/get-started">Read the GitHub Getting Started docs</a>.</li>
+<li>To find projects to contribute to, check out <a target="_blank" rel="noopener" href="https://github.com/explore">GitHub Explore</a>.</li>
+</ul>
+<h1 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h1><h2 id="GitHub-Issue：提出议题，想法"><a href="#GitHub-Issue：提出议题，想法" class="headerlink" title="GitHub Issue：提出议题，想法"></a>GitHub Issue：提出议题，想法</h2><p><a target="_blank" rel="noopener" href="https://docs.github.com/zh/issues/tracking-your-work-with-issues/about-issues">关于议题 - GitHub 文档</a></p>
+<h2 id="GitHub-Project：管理进度"><a href="#GitHub-Project：管理进度" class="headerlink" title="GitHub Project：管理进度"></a>GitHub Project：管理进度</h2><p><a target="_blank" rel="noopener" href="https://docs.github.com/zh/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">关于 Projects - GitHub 文档</a><br>此处的project是指GitHub的项目管理功能，可以用来管理任务，协作等等。与其说是project，不如说是dashboard或者kanban更合适。<br>[[image&#x2F;GitHub_note-12.png]]<br><img src="https://s2.loli.net/2024/10/12/9Jx5PitcnNpz8RT.png"><br><em>Kanban originate from Japanese 看板 # Japanese influences on industry</em></p>
+<ul>
+<li>是一个和issue，pull request，milestone等等一起工作的工具，可以用来管理任务，协作等等。</li>
+<li>高级todo list</li>
+</ul>
+<h2 id="GitHub-release：发行程序"><a href="#GitHub-release：发行程序" class="headerlink" title="GitHub release：发行程序"></a>GitHub release：发行程序</h2><h3 id="什么是release-（发行版）"><a href="#什么是release-（发行版）" class="headerlink" title="什么是release （发行版）"></a>什么是release （发行版）</h3><ul>
+<li><p>release是一个软件的发布版本，可以包含软件的源代码，二进制文件，文档等等。</p>
+</li>
+<li><p>你可以在release里面发布软件的更新。</p>
+</li>
+<li><p>更新时候一定要标注好版本</p>
+</li>
+<li><p>[[image&#x2F;GitHub_note-9.png]]</p>
+</li>
+<li><p><img src="https://s2.loli.net/2024/10/12/MiSReLwFGOmHJAl.png"></p>
+</li>
+<li><p>在截图中右边你可以看到tagging suggestion，让你注意版本号要写清楚</p>
+</li>
+<li><p>在Semantic versioning（语义化的版本控制）中，版本号的格式是<code>MAJOR.MINOR.PATCH</code>，这个版本号是根据你的软件的变动来决定的。详情请看<a target="_blank" rel="noopener" href="https://semver.org/lang/zh-CN/">Semantic versioning</a></p>
+</li>
+<li><p>![[image&#x2F;GitHub_note-10.png]]</p>
+</li>
+<li><p>发布即可</p>
+</li>
+</ul>
+<h2 id="Package：发布npm等类型的包"><a href="#Package：发布npm等类型的包" class="headerlink" title="Package：发布npm等类型的包"></a>Package：发布npm等类型的包</h2><p>![[image&#x2F;GitHub_note-11.png]]<br><a target="_blank" rel="noopener" href="https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry">Working with the npm registry - GitHub Docs</a><br>发布npm包，使得你的项目可以被其他人直接通过npm下载使用。<br>这是release之后考虑的事情</p>
+<h2 id="GitHub-Guide"><a href="#GitHub-Guide" class="headerlink" title="GitHub Guide"></a>GitHub Guide</h2><p><a target="_blank" rel="noopener" href="https://docs.github.com/zh/issues/guides">问题指南 - GitHub 文档</a><br>这里面有issue和project互动教程</p>
+<ul>
+<li>跟着实操了一遍，感觉还是有点抽象。这种东西需要老带新，多用才会。</li>
+</ul>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>GitHub强大全面的功能不愧是最好的项目开发网站</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/12/GitHub_note/" data-id="cmd0rzkdj0000jkrz2stehc26" data-title="GitHub discovery" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/help/" rel="tag">help</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-navigator" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/11/navigator/" class="article-date">
+  <time class="dt-published" datetime="2024-10-11T10:31:25.000Z" itemprop="datePublished">2024-10-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/daily/">daily</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/11/navigator/">NAVIGATOR</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="近期-2025-01-01-16-46-21"><a href="#近期-2025-01-01-16-46-21" class="headerlink" title="近期 2025-01-01 16:46:21"></a>近期 2025-01-01 16:46:21</h1><p>目前假期算是充实<br>了解一下shell和vim</p>
+<h1 id="本博客推荐"><a href="#本博客推荐" class="headerlink" title="本博客推荐"></a>本博客推荐</h1><h1 id="本博客分类-categories-介绍"><a href="#本博客分类-categories-介绍" class="headerlink" title="本博客分类(categories)介绍"></a>本博客分类(categories)介绍</h1><ul>
+<li>RM 记录robomaster相关知识（其实就是杂项）</li>
+<li>daily 记录日常</li>
+<li>school 记录学校上课相关</li>
+<li>web 记录网络相关<ul>
+<li>blog 记录与博客相关</li>
+</ul>
+</li>
+<li>C&#x2F;C++ 记录C&#x2F;C++语法相关</li>
+</ul>
+<h1 id="本博客标签-tags-介绍"><a href="#本博客标签-tags-介绍" class="headerlink" title="本博客标签(tags)介绍"></a>本博客标签(tags)介绍</h1><ul>
+<li>prose 杂文</li>
+<li>statistics 统计学</li>
+<li>help 帮助，类似于tutorial文档</li>
+<li>algorithm 算法</li>
+<li>C&#x2F;C++ 记录C&#x2F;C++语法相关</li>
+<li>chi 用中文写的文章</li>
+<li>eng 用英文写的文章</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/11/navigator/" data-id="cmd0rzke5001ojkrzc3hg5u2r" data-title="NAVIGATOR" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/prose/" rel="tag">prose</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-git-tutorial" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/10/git-tutorial/" class="article-date">
+  <time class="dt-published" datetime="2024-10-10T04:32:38.000Z" itemprop="datePublished">2024-10-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/RM/">RM</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/10/git-tutorial/">git_tutorial</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="git-教程"><a href="#git-教程" class="headerlink" title="git 教程"></a>git 教程</h1><h2 id="push操作流程"><a href="#push操作流程" class="headerlink" title="push操作流程"></a>push操作流程</h2><p>确保这是一个仓库<code>.git</code>文件存在</p>
+<ul>
+<li><code>git status</code> 查看当前状态，记得查看branch</li>
+<li><code>git add *</code> 添加所有要更改的文件到暂存区（stage）</li>
+<li><code>git commit -m &quot;&lt;message&gt;&quot;</code> 提交暂存区到仓库区（commit）</li>
+<li><code>git push origin main</code>把本地库的内容推送到远程<br>你可以参考 <a target="_blank" rel="noopener" href="https://sp21.datastructur.es/materials/lab/lab1/lab1">cs61b lab1 section E</a> 十分好的 git 教程</li>
+</ul>
+<h2 id="fetch-pull操作流程"><a href="#fetch-pull操作流程" class="headerlink" title="fetch&#x2F;pull操作流程"></a>fetch&#x2F;pull操作流程</h2><p>如果你只是为了更新本地文件，可以使用 <code>git pull</code> 命令从远程仓库获取最新的更改并合并到你的本地分支。以下是步骤：<br><code>git checkout main</code><br>(checkout)切换到你想要更新的分支（通常是 main 或 master 分支）：<br><code>git pull origin main</code><br>拉取远程仓库的最新更改并合并到本地分支：</p>
+<ul>
+<li><code>git fetch origin main</code> 从远程获取最新版本到本地，不会自动merge</li>
+<li><code>git pull origin main</code> 把远程库(origin和远程库的URL等价)的内容拉下来，然后与本地的文件合并</li>
+</ul>
+<h3 id="merge（合并）"><a href="#merge（合并）" class="headerlink" title="merge（合并）"></a>merge（合并）</h3><ol>
+<li>本地分支合并：你可以在本地将一个分支合并到另一个分支。<br>feature-branch 是你要合并的分支，main 是目标分支。一般在freture branch开发新功能或修复bug.</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout main</span><br><span class="line">git merge feature-branch</span><br></pre></td></tr></table></figure>
+<ol>
+<li>解决冲突：如果在合并过程中发生冲突，你需要在本地解决这些冲突，然后提交解决后的文件。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">give your resolved file to git</span><br><span class="line">git add &lt;resolved-files&gt;</span><br><span class="line">git commit -m &quot;Resolved merge conflicts&quot;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>推送到远程：合并完成并解决冲突后，你可以将合并后的分支推送到远程仓库。<br><code>git push origin main</code></li>
+</ol>
+<h2 id="分支branch"><a href="#分支branch" class="headerlink" title="分支branch"></a>分支branch</h2><p>并行开发必备</p>
+<ul>
+<li><code>git branch</code> 查看分支，确认当前的分支信息<br>step 1： <code>git branch &lt;branch-name&gt;</code> 创建分支<br>step 2: 在新分支上开发功能</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add *</span><br><span class="line">git commit -m &quot;My new feature&quot;</span><br></pre></td></tr></table></figure>
+<p>step 3: 推送新分支到远程仓库<code>git push origin &lt;feature-branch&gt;</code><br>step 4: 切换到主分支<code>git checkout main</code><br>step 5: 合并分支<code>git merge &lt;feature-branch&gt;</code><br>step 6: 删除分支<code>git branch -d &lt;feature-branch&gt;</code><br>step 7: 删除远程分支<code>git push origin --delete &lt;feature-branch&gt;</code></p>
+        
+          <p class="article-more-link">
+            <a href="/2024/10/10/git-tutorial/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/10/git-tutorial/" data-id="cmd0rzke6001rjkrzgaebcvv0" data-title="git_tutorial" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/help/" rel="tag">help</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-pointer" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/10/pointer/" class="article-date">
+  <time class="dt-published" datetime="2024-10-10T02:22:29.000Z" itemprop="datePublished">2024-10-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/C-C/">C/C++</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/10/pointer/">pointer</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="C-指针-和-的使用"><a href="#C-指针-和-的使用" class="headerlink" title="C++指针&amp;和*的使用"></a>C++指针<code>&amp;</code>和<code>*</code>的使用</h1><p>start from scratch, we already know what is variable. A variable store in memory have not only information of its value, but also its memory address. </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> x = <span class="number">5</span>; <span class="comment">// declare and initializa a variable</span></span><br></pre></td></tr></table></figure>
+<p>then we can use “address-of operator” - <code>&amp;</code> to get the address of x!</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span>* ptr = &amp;x <span class="comment">//get the x&#x27;s address and pass it to ptr</span></span><br></pre></td></tr></table></figure>
+<p>you may ask </p>
+<ul>
+<li>why <code>* ptr </code>is a <code>int</code> type data<ul>
+<li> you are saying that <code>ptr</code> is a pointer to an <code>int</code>.</li>
+</ul>
+</li>
+<li>where should I place the asteroid <code>*</code>? - Is that with end of <code>int</code>, or with beginning of <code>ptr</code><ul>
+<li>only matter of style</li>
+<li>However, the first style (<code>int* ptr</code>) is often preferred because it makes it clear that <code>ptr</code> is a pointer to an <code>int</code>. This can be especially helpful when declaring multiple pointers in a single statement:</li>
+<li><code>int* ptr1, ptr2; // Only ptr1 is a pointer, ptr2 is an int</code></li>
+<li>better declare one pointer per line</li>
+</ul>
+</li>
+<li>since the name of <code>&amp;</code> is “address-of operator”<strong>取地址符</strong>, what is the name of <code>*</code> as operator<ul>
+<li>it is called as “dereference operator”<strong>解引用符</strong></li>
+</ul>
+</li>
+<li>BEAWARE that <code>&amp;</code> also have another way to use, which is reference<ul>
+<li><code>int &amp;reference_value = value</code> means give it a new name, and all operations on <code>reference_value</code> is same as directly on <code>value</code><br>You can use the pointer to access the value of <code>x</code>:</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> value = *ptr; <span class="comment">// Dereferencing the pointer to get the value of x</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><h3 id="example-code"><a href="#example-code" class="headerlink" title="example code"></a>example code</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">10</span>;       <span class="comment">// Declare an integer variable x and initialize it to 10</span></span><br><span class="line">    <span class="type">int</span>* ptr = &amp;x;    <span class="comment">// Declare a pointer to an integer and initialize it with the address of x</span></span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Value of x: &quot;</span> &lt;&lt; x &lt;&lt; std::endl;           <span class="comment">// Output the value of x</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Address of x: &quot;</span> &lt;&lt; &amp;x &lt;&lt; std::endl;        <span class="comment">// Output the address of x</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Value of ptr: &quot;</span> &lt;&lt; ptr &lt;&lt; std::endl;       <span class="comment">// Output the value of ptr (address of x)</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Value pointed to by ptr: &quot;</span> &lt;&lt; *ptr &lt;&lt; std::endl; <span class="comment">// Output the value pointed to by ptr (value of x)</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="result"><a href="#result" class="headerlink" title="result"></a>result</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Value of x: <span class="number">10</span></span><br><span class="line">Address of x: <span class="number">0x7ffee4b3c8ac</span></span><br><span class="line">Value of ptr: <span class="number">0x7ffee4b3c8ac</span> <span class="comment">//ptr = &amp;x</span></span><br><span class="line">Value pointed to by ptr: <span class="number">10</span> <span class="comment">//*ptr = x</span></span><br></pre></td></tr></table></figure>
+<p>p.s. about address on a 64-bit system, a memory address might look like <code>0x7ffee4b3c8ac</code>. Here’s why:</p>
+<ul>
+<li><strong>0x</strong>: This prefix indicates that the number is in hexadecimal format.</li>
+<li><strong>7ffee4b3c8ac</strong>: This is the actual address in hexadecimal. Each digit represents 4 bits, so a 64-bit address will have up to 16 hexadecimal digits.</li>
+</ul>
+<h3 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h3><ul>
+<li><code>x</code> is a variable that stores a value.</li>
+<li><code>&amp;x</code> is the address of the variable <code>x</code>.</li>
+<li><code>ptr</code> is a pointer that stores the address of <code>x</code>.</li>
+<li><code>*ptr</code> is the value stored at the address <code>ptr</code> points to.</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/10/pointer/" data-id="cmd0rzke80021jkrzfmi64b63" data-title="pointer" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/help/" rel="tag">help</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Qt_tutorial" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/09/Qt_tutorial/" class="article-date">
+  <time class="dt-published" datetime="2024-10-09T15:00:00.000Z" itemprop="datePublished">2024-10-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/C-C/">C/C++</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/09/Qt_tutorial/">qt_tutorial</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Qt版本：Qt-6-7-2-项目配置"><a href="#Qt版本：Qt-6-7-2-项目配置" class="headerlink" title="Qt版本：Qt 6.7.2 项目配置"></a>Qt版本：Qt 6.7.2 项目配置</h1><p>本教程参考哔哩哔哩系列<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1km4y1k7CW/?p=6&spm_id_from=pageDriver&vd_source=113cb04caaabeca910d6d5580d23d578">视频</a><br><code>help -&gt; about qt creater</code>查看版本<br><img src="https://s2.loli.net/2024/10/10/ujXJRtxQGUE9c2N.png"></p>
+<h2 id="在Qt中创建一个GUI项目"><a href="#在Qt中创建一个GUI项目" class="headerlink" title="在Qt中创建一个GUI项目"></a>在Qt中创建一个GUI项目</h2><h3 id="step-1-choose-a-template"><a href="#step-1-choose-a-template" class="headerlink" title="step 1: choose a template"></a>step 1: choose a template</h3><p><img src="https://s2.loli.net/2024/10/10/1cUm6pMF2vZCOys.png"></p>
+<p>选择一个模板，这里选择一个空的模板<br><code>Qt widgets application</code></p>
+<ul>
+<li>可以看到有图标，根据图标大概能知道这个模板是什么模板</li>
+<li>右边也会有对模板的描述</li>
+</ul>
+<h3 id="step-2-Project-location"><a href="#step-2-Project-location" class="headerlink" title="step 2: Project location"></a>step 2: Project location</h3><p><img src="https://s2.loli.net/2024/10/10/jBR2MHCDKpc8yYg.png"></p>
+<p>选择你的文件位置，命名的你文件名字</p>
+<h3 id="step-3-Define-Build-System"><a href="#step-3-Define-Build-System" class="headerlink" title="step 3: Define Build System"></a>step 3: Define Build System</h3><p><img src="https://s2.loli.net/2024/10/10/cXmviKfrLSExnpR.png"></p>
+<ul>
+<li>选择CMake，可以参考<a target="_blank" rel="noopener" href="https://slaptijack.com/programming/cmake-for-cpp.html">这里</a></li>
+<li>什么是[[CSC3002&#x2F;01_CSC3002_note&#x2F;Build system|Build system]]</li>
+<li>我跟教程走，选择qmake</li>
+<li>项目管理文件qmake -&gt; .pro文件; cmake -&gt; CMakeLists.txt文件</li>
+</ul>
+<h3 id="step-4-class-information"><a href="#step-4-class-information" class="headerlink" title="step 4: class information"></a>step 4: class information</h3><p><img src="https://s2.loli.net/2024/10/10/RT6dwcZ98DtyVSO.png"></p>
+<p>widget: used to refer to any small device that you do not know the name of（不知名的）小器物，小装置，小玩意儿( informal ) <em>from oxford</em></p>
+<ul>
+<li>widget空窗口（只有窗口标题）<ul>
+<li>mianWindow主窗口（菜单栏等）</li>
+<li>dialog对话框（有Yes or no的选项)</li>
+</ul>
+</li>
+<li>建议类名选择大写开头</li>
+<li>勾选后有widget.ui的文件，这个文件会有ui的信息<br>选择翻译后的语言，存储在zh_CN.qm文件中，我们用英文开发，有中文的语言包<br><img src="https://s2.loli.net/2024/10/10/EPra8uAYgikH7dS.png"></li>
+</ul>
+<h3 id="step-5-Kit-selection"><a href="#step-5-Kit-selection" class="headerlink" title="step 5: Kit selection"></a>step 5: Kit selection</h3><p>编译套件的选择，选择Qt自带的编译器 MinGW 64-bit<br><img src="https://s2.loli.net/2024/10/10/rEuBatbvcfyRWI5.png"></p>
+<h3 id="step-6-版本控制系统选择"><a href="#step-6-版本控制系统选择" class="headerlink" title="step 6: 版本控制系统选择"></a>step 6: 版本控制系统选择</h3><p>代码同步工具</p>
+<ul>
+<li>SVN</li>
+<li>GIT</li>
+</ul>
+<h3 id="finish"><a href="#finish" class="headerlink" title="finish"></a>finish</h3><p>完成！<br>如果高版本的Qt可能出现<strong>报错和警告</strong>，尝试：<code>help -- about plugins -- c++ -- ClangCodeModle</code>取消勾选，重启软件。<br><img src="https://s2.loli.net/2024/10/10/miBu3RPaWjdvzlS.png"></p>
+<p><img src="https://s2.loli.net/2024/10/10/gTeIA1pixdWRbNu.png"></p>
+<h2 id="效果展示：Hello-world-in-Window"><a href="#效果展示：Hello-world-in-Window" class="headerlink" title="效果展示：Hello world in Window"></a>效果展示：Hello world in Window</h2><p>in <code>widget.ui </code>design中的窗口设计, 选择一个<code>label</code>和一个<code>push button</code>(the advantage of qt is that you can drag and drop to design the window))<br><img src="https://s2.loli.net/2024/10/10/jUvFDIQn24WE8rx.png"></p>
+<h2 id="trouble-shooting"><a href="#trouble-shooting" class="headerlink" title="trouble shooting"></a>trouble shooting</h2><h3 id="点击-pro多数能打开项目，因为qmake是默认的构建系统"><a href="#点击-pro多数能打开项目，因为qmake是默认的构建系统" class="headerlink" title="点击.pro多数能打开项目，因为qmake是默认的构建系统"></a>点击<code>.pro</code>多数能打开项目，因为<code>qmake</code>是默认的构建系统</h3><h3 id="点击CMakeLists-txt无法正常打开项目"><a href="#点击CMakeLists-txt无法正常打开项目" class="headerlink" title="点击CMakeLists.txt无法正常打开项目"></a>点击<code>CMakeLists.txt</code>无法正常打开项目</h3><h4 id="确认cmake是否安装"><a href="#确认cmake是否安装" class="headerlink" title="确认cmake是否安装"></a>确认cmake是否安装</h4><ol>
+<li>type <code>cmake --version</code> in cmd， 你会得到cmake的版本号</li>
+<li>else安装cmake from <a target="_blank" rel="noopener" href="https://cmake.org/download/">here</a></li>
+</ol>
+<h4 id="确认环境变量是否配置正确"><a href="#确认环境变量是否配置正确" class="headerlink" title="确认环境变量是否配置正确"></a>确认环境变量是否配置正确</h4><ol start="2">
+<li>type <code>echo %PATH%</code> in cmd， 你会得到目前你所有的 PATH，检查qt是否在里面</li>
+<li><img src="https://s2.loli.net/2024/10/10/VT7t9nawDfiWXge.png"></li>
+<li><strong>注意</strong>：区分QtCreator 和 Qt，QtCreator是IDE，Qt是库</li>
+<li><strong>注意</strong>：Path在<em>用户变量</em>有时不会正常生效（Kimi的观点）设置在<em>系统变量</em></li>
+</ol>
+<h4 id="在issue查看configuration-fail的原因"><a href="#在issue查看configuration-fail的原因" class="headerlink" title="在issue查看configuration fail的原因"></a>在<code>issue</code>查看configuration fail的原因</h4><p>每个人的原因可能不一样<br><img src="https://s2.loli.net/2024/10/10/gHB8dAFYKXsZiDv.png"><br>我的是<code>build type</code>的问题，我选择了<code>debug</code>，但是我的<code>debug</code>没有配置</p>
+<ol>
+<li><strong>清理构建目录</strong><code>clear CMake configuration</code>：清理您的构建目录，以确保与构建缓存和配置无关的干净状态。您可以在 Qt Creator 中通过“构建”菜单中的“清理项目”选项清理构建目录。</li>
+<li><strong>重新配置项目</strong><code>run CMake</code>：重新配置项目</li>
+</ol>
+<h3 id="尝试Qt自带的案例examples，感受项目的效果"><a href="#尝试Qt自带的案例examples，感受项目的效果" class="headerlink" title="尝试Qt自带的案例examples，感受项目的效果"></a>尝试Qt自带的案例<code>examples</code>，感受项目的效果</h3><p><img src="https://s2.loli.net/2024/10/10/3fTwkE5tAyCJc7V.png"><br><em>p.s.</em></p>
+<ul>
+<li>in left sidebar <code>projects</code>you see the <code>calqlatre</code> is in bold font, that means it is the current <strong>active</strong> project</li>
+<li>you can see the compiling process in the <code>compile output</code> in the bottom</li>
+<li>you can see the <code>issues</code> in the bottom, if there is any error, you can see it here</li>
+<li>the calculator window will pop up after compiling</li>
+<li>先build （锤子）后 run （绿三角）</li>
+</ul>
+<h2 id="AI生成的回答（仅参考）"><a href="#AI生成的回答（仅参考）" class="headerlink" title="AI生成的回答（仅参考）"></a>AI生成的回答（仅参考）</h2><h3 id="build-debug-release-区别"><a href="#build-debug-release-区别" class="headerlink" title="build debug &#x2F;release 区别"></a>build debug &#x2F;release 区别</h3><h4 id="Debug-构建："><a href="#Debug-构建：" class="headerlink" title="Debug 构建："></a>Debug 构建：</h4><ol>
+<li><strong>编译优化</strong>：通常不进行优化或仅进行最小优化，以便于调试。</li>
+<li><strong>调试信息</strong>：包含完整的调试信息，如符号信息，这有助于调试器定位代码中的问题。</li>
+<li><strong>执行速度</strong>：由于没有优化，执行速度通常较慢。</li>
+<li><strong>错误检查</strong>：包含额外的错误检查和断言，有助于在开发过程中发现问题。</li>
+<li><strong>内存使用</strong>：可能会使用更多的内存，因为优化较少。</li>
+<li><strong>日志记录</strong>：可能会包含更详细的日志记录，以帮助追踪问题。</li>
+<li><strong>符号名称</strong>：变量和函数名称不会被优化掉，保持源代码中的名称，便于调试。</li>
+</ol>
+<h4 id="Release-构建："><a href="#Release-构建：" class="headerlink" title="Release 构建："></a>Release 构建：</h4><ol>
+<li><strong>编译优化</strong>：进行高度优化，以提高应用程序的性能。</li>
+<li><strong>调试信息</strong>：通常不包含调试信息，或只包含非常有限的调试信息。</li>
+<li><strong>执行速度</strong>：由于进行了优化，执行速度较快。</li>
+<li><strong>错误检查</strong>：错误检查和断言可能会被禁用或减少，以避免影响性能。</li>
+<li><strong>内存使用</strong>：优化内存使用，以减少应用程序的内存占用。</li>
+<li><strong>日志记录</strong>：日志记录可能会被禁用或减少，以避免影响性能。</li>
+<li><strong>符号名称</strong>：变量和函数名称可能会被缩短，以减少二进制文件的大小。</li>
+</ol>
+<h4 id="为什么需要不同的构建方式？"><a href="#为什么需要不同的构建方式？" class="headerlink" title="为什么需要不同的构建方式？"></a>为什么需要不同的构建方式？</h4><ul>
+<li><strong>开发和调试</strong>：Debug 构建提供了必要的调试信息和工具，帮助开发者在开发过程中发现和修复错误。</li>
+<li><strong>性能测试</strong>：Release 构建通过优化提供了应用程序的最佳性能，这对于性能测试和最终用户是非常重要的。</li>
+<li><strong>部署</strong>：最终用户通常使用 Release 构建，因为它提供了更好的性能和更小的二进制文件大小。</li>
+</ul>
+<p>在实际开发过程中，开发者可能会在 Debug 模式下编写和测试代码，然后切换到 Release 模式进行性能测试和部署。</p>
+<h3 id="build和compile的区别"><a href="#build和compile的区别" class="headerlink" title="build和compile的区别"></a>build和compile的区别</h3><h4 id="编译（Compile）："><a href="#编译（Compile）：" class="headerlink" title="编译（Compile）："></a>编译（Compile）：</h4><ol>
+<li><strong>定义</strong>：编译是将源代码（通常是单个文件，如 <code>.c</code>、<code>.cpp</code> 文件等）转换成机器码的过程，生成的目标文件通常具有 <code>.obj</code> 或 <code>.o</code> 扩展名。</li>
+<li><strong>编译器</strong>：编译过程通常由编译器完成，如 GCC、Clang、MSVC 等。</li>
+<li><strong>单个文件</strong>：编译通常针对单个源文件，将其从高级语言转换为低级语言。</li>
+<li><strong>语法检查</strong>：编译过程中，编译器会检查语法错误。</li>
+<li><strong>优化</strong>：编译器可能会对代码进行优化，以提高性能或减少生成的机器代码的大小。</li>
+</ol>
+<h4 id="构建（Build）："><a href="#构建（Build）：" class="headerlink" title="构建（Build）："></a>构建（Build）：</h4><ol>
+<li><strong>定义</strong>：构建是一个更广泛的过程，它包括编译、链接等多个步骤，将多个源文件和资源（如库文件、资源文件等）组合成一个可执行文件或库文件。</li>
+<li><strong>构建系统</strong>：构建过程通常由构建系统或构建工具管理，如 Make、CMake、MSBuild、Ant 等。</li>
+<li><strong>多个文件</strong>：构建过程涉及多个源文件和可能的库文件。</li>
+<li><strong>依赖管理</strong>：构建系统会管理文件之间的依赖关系，并确定编译的顺序。</li>
+<li><strong>链接</strong>：构建过程包括链接步骤，将编译后的目标文件与库文件链接在一起，生成最终的可执行文件或库文件。</li>
+<li><strong>自动化</strong>：构建过程可以自动化，通常通过编写构建脚本来定义构建的规则和步骤。</li>
+</ol>
+<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><ul>
+<li><strong>范围</strong>：编译是构建过程中的一个步骤，构建是一个更全面的过程。</li>
+<li><strong>目标</strong>：编译的目标是生成目标文件，而构建的目标是生成可执行文件或库文件。</li>
+<li><strong>过程</strong>：编译过程关注单个源文件的转换，构建过程关注整个项目从源代码到可执行文件的完整流程。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/09/Qt_tutorial/" data-id="cmd0rzkdq0004jkrz98q2h4d9" data-title="qt_tutorial" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/config/" rel="tag">config</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/help/" rel="tag">help</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-fail-log-NexT" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/09/fail-log-NexT/" class="article-date">
+  <time class="dt-published" datetime="2024-10-09T04:33:32.000Z" itemprop="datePublished">2024-10-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/web/">web</a>►<a class="article-category-link" href="/categories/web/blog/">blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/09/fail-log-NexT/">fail_log_NexT</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>使用NexT主题时不报错但是显示错误（破案：不是最新的next官网）</p>
+        
+          <p class="article-more-link">
+            <a href="/2024/10/09/fail-log-NexT/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/09/fail-log-NexT/" data-id="cmd0rzke4001jjkrz1lzsbhgw" data-title="fail_log_NexT" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/help/" rel="tag">help</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/waste/" rel="tag">waste</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C-C/">C/C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/RM/">RM</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/daily/">daily</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/school/">school</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web/">web</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/web/blog/">blog</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chi/" rel="tag">chi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/config/" rel="tag">config</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/help/" rel="tag">help</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prose/" rel="tag">prose</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/waste/" rel="tag">waste</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C-C/" style="font-size: 16.67px;">C/C++</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/chi/" style="font-size: 10px;">chi</a> <a href="/tags/config/" style="font-size: 10px;">config</a> <a href="/tags/git/" style="font-size: 13.33px;">git</a> <a href="/tags/help/" style="font-size: 20px;">help</a> <a href="/tags/prose/" style="font-size: 16.67px;">prose</a> <a href="/tags/statistics/" style="font-size: 13.33px;">statistics</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/waste/" style="font-size: 13.33px;">waste</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">July 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/07/13/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/10/demand-aided-product-design/">demand aided product design</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/05/curiosity-project/">curiosity project</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/03/new-bank-card/">new bank card</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/07/start-vim/">start_vim</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 Like CAI<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

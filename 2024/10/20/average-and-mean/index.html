@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>average_and_mean | Like&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="平均值(average)：是算数均值，属于均值一种。均值(mean)：用来描述数据集中趋势的统计量。因此统计学上众数(mode),中位数(median)在统计学和数学中，有几种常见的均值（平均值）计算方法，分别用于不同的应用场景和数据特征。以下是H（调和均值）、G（几何均值）、A（算术均值）、S（平方均值）四种均值算法的介绍： 四种常见均值1. 算术均值（Arithmetic Mean, A）算术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="average_and_mean">
+<meta property="og:url" content="https://humble-learner006.github.io/2024/10/20/average-and-mean/index.html">
+<meta property="og:site_name" content="Like&#39;s Blog">
+<meta property="og:description" content="平均值(average)：是算数均值，属于均值一种。均值(mean)：用来描述数据集中趋势的统计量。因此统计学上众数(mode),中位数(median)在统计学和数学中，有几种常见的均值（平均值）计算方法，分别用于不同的应用场景和数据特征。以下是H（调和均值）、G（几何均值）、A（算术均值）、S（平方均值）四种均值算法的介绍： 四种常见均值1. 算术均值（Arithmetic Mean, A）算术">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-10-20T02:55:07.000Z">
+<meta property="article:modified_time" content="2024-10-20T04:21:34.000Z">
+<meta property="article:author" content="Like CAI">
+<meta property="article:tag" content="help">
+<meta property="article:tag" content="statistics">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Like's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Like&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://humble-learner006.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-average-and-mean" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/20/average-and-mean/" class="article-date">
+  <time class="dt-published" datetime="2024-10-20T02:55:07.000Z" itemprop="datePublished">2024-10-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/school/">school</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      average_and_mean
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><strong>平均值(average)</strong>：是算数均值，属于均值一种。<br><strong>均值(mean)</strong>：用来描述数据集中趋势的统计量。因此统计学上众数(mode),中位数(median)<br>在统计学和数学中，有几种常见的均值（平均值）计算方法，分别用于不同的应用场景和数据特征。以下是H（调和均值）、G（几何均值）、A（算术均值）、S（平方均值）四种均值算法的介绍：</p>
+<h2 id="四种常见均值"><a href="#四种常见均值" class="headerlink" title="四种常见均值"></a>四种常见均值</h2><h3 id="1-算术均值（Arithmetic-Mean-A）"><a href="#1-算术均值（Arithmetic-Mean-A）" class="headerlink" title="1. 算术均值（Arithmetic Mean, A）"></a>1. 算术均值（Arithmetic Mean, A）</h3><p>算术均值是最常用的均值计算方法，通常被称为“平均值(average)”。</p>
+<p>对于一组数据$x_1, x_2, \ldots, x_n$，算术均值的公式为：</p>
+<p>$A &#x3D; \frac{1}{n} \sum_{i&#x3D;1}^{n} x_i$</p>
+<ul>
+<li>简单易计算。</li>
+<li>对极端值（即非常大或非常小的值）敏感。</li>
+</ul>
+<p>广泛用于各种统计分析、经济学、日常计算等场景。</p>
+<h3 id="2-几何均值（Geometric-Mean-G）"><a href="#2-几何均值（Geometric-Mean-G）" class="headerlink" title="2. 几何均值（Geometric Mean, G）"></a>2. 几何均值（Geometric Mean, G）</h3><p>几何均值是用于计算数据集在乘法上具有对称性的中心值。</p>
+<p>对于一组数据$x_1, x_2, \ldots, x_n$，几何均值的公式为：</p>
+<p>$G &#x3D; \left( \prod_{i&#x3D;1}^{n} x_i \right)^{\frac{1}{n}}$</p>
+<p>或者：</p>
+<p>$G &#x3D; \exp \left( \frac{1}{n} \sum_{i&#x3D;1}^{n} \ln x_i \right)$</p>
+<ul>
+<li>适用于处理比例、百分比和指数增长的数据。</li>
+<li>对极端值不敏感，但要求数据为正值。</li>
+</ul>
+<p>常用于金融、科学和工程领域，例如计算投资的平均增长率。</p>
+<h3 id="3-调和均值（Harmonic-Mean-H）"><a href="#3-调和均值（Harmonic-Mean-H）" class="headerlink" title="3. 调和均值（Harmonic Mean, H）"></a>3. 调和均值（Harmonic Mean, H）</h3><p>调和均值是倒数均值的倒数，适用于处理速率或比例数据。</p>
+<p>对于一组数据$x_1, x_2, \ldots, x_n$，调和均值的公式为：</p>
+<p>$H &#x3D; \frac{n}{\sum_{i&#x3D;1}^{n} \frac{1}{x_i}}$</p>
+<ul>
+<li>适用于处理速率、效率等数据。</li>
+<li>对极端小值非常敏感。</li>
+</ul>
+<p>常用于交通、工程和经济学领域，例如计算平均速度、每单位时间的产出等。</p>
+<h3 id="4-平方均值（Quadratic-Mean-S）"><a href="#4-平方均值（Quadratic-Mean-S）" class="headerlink" title="4. 平方均值（Quadratic Mean, S）"></a>4. 平方均值（Quadratic Mean, S）</h3><p>平方均值，又称均方根（Root Mean Square, RMS），用于计算数据的平方和的均值的平方根。</p>
+<p>对于一组数据$x_1, x_2, \ldots, x_n$，平方均值的公式为：</p>
+<p>$S &#x3D; \sqrt{\frac{1}{n} \sum_{i&#x3D;1}^{n} x_i^2}$</p>
+<ul>
+<li>适用于处理振幅、功率等数据。</li>
+<li>对极端大值敏感。</li>
+</ul>
+<p>常用于物理学和工程学，例如计算电压、电流的有效值。</p>
+<h3 id="总结对比"><a href="#总结对比" class="headerlink" title="总结对比"></a>总结对比</h3><table>
+<thead>
+<tr>
+<th>均值类型</th>
+<th>公式</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>算术均值（A）</td>
+<td>$A &#x3D; \frac{1}{n} \sum_{i&#x3D;1}^{n} x_i$</td>
+<td>对极端值敏感</td>
+</tr>
+<tr>
+<td>几何均值（G）</td>
+<td>$G &#x3D; \left( \prod_{i&#x3D;1}^{n} x_i \right)^{\frac{1}{n}}$</td>
+<td>适用于正值，对极端值不敏感</td>
+</tr>
+<tr>
+<td>调和均值（H）</td>
+<td>$H &#x3D; \frac{n}{\sum_{i&#x3D;1}^{n} \frac{1}{x_i}}$</td>
+<td>对极端小值敏感</td>
+</tr>
+<tr>
+<td>平方均值（S）</td>
+<td>$S &#x3D; \sqrt{\frac{1}{n} \sum_{i&#x3D;1}^{n} x_i^2}$</td>
+<td>对极端大值敏感</td>
+</tr>
+</tbody></table>
+<br>
+<br>
+<br>
+
+<hr>
+<hr>
+<br>
+<br>
+<br>
+
+<h2 id="不常见均值（非当前学习目标）"><a href="#不常见均值（非当前学习目标）" class="headerlink" title="不常见均值（非当前学习目标）"></a>不常见均值（非当前学习目标）</h2><p>除了算术均值、几何均值、调和均值和平方均值外，还有许多其他类型的均值。</p>
+<h3 id="5-中位数（Median）"><a href="#5-中位数（Median）" class="headerlink" title="5. 中位数（Median）"></a>5. 中位数（Median）</h3><h4 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h4><p>中位数是数据集按升序或降序排列后位于中间的值。</p>
+<h4 id="计算方法："><a href="#计算方法：" class="headerlink" title="计算方法："></a>计算方法：</h4><ul>
+<li>如果数据集有奇数个数据点，中位数是中间那个数据点。</li>
+<li>如果数据集有偶数个数据点，中位数是中间两个数据点的平均值。</li>
+</ul>
+<h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4><ul>
+<li>不受极端值影响。</li>
+<li>适用于描述非对称分布的数据。</li>
+</ul>
+<h4 id="应用："><a href="#应用：" class="headerlink" title="应用："></a>应用：</h4><p>广泛用于经济学、社会科学、医学等领域。</p>
+<h3 id="6-众数（Mode）"><a href="#6-众数（Mode）" class="headerlink" title="6. 众数（Mode）"></a>6. 众数（Mode）</h3><h4 id="概述：-1"><a href="#概述：-1" class="headerlink" title="概述："></a>概述：</h4><p>众数是数据集中出现频率最高的值。</p>
+<h4 id="特点：-1"><a href="#特点：-1" class="headerlink" title="特点："></a>特点：</h4><ul>
+<li>可以有多个众数（多众数）或没有众数。</li>
+<li>适用于分类数据和离散数据。</li>
+</ul>
+<h4 id="应用：-1"><a href="#应用：-1" class="headerlink" title="应用："></a>应用：</h4><p>常用于统计分析、市场研究等。</p>
+<h3 id="7-加权均值（Weighted-Mean）"><a href="#7-加权均值（Weighted-Mean）" class="headerlink" title="7. 加权均值（Weighted Mean）"></a>7. 加权均值（Weighted Mean）</h3><h4 id="概述：-2"><a href="#概述：-2" class="headerlink" title="概述："></a>概述：</h4><p>加权均值考虑了每个数据点的权重，对不同的重要性进行加权。</p>
+<h4 id="公式："><a href="#公式：" class="headerlink" title="公式："></a>公式：</h4><p>对于一组数据 $x_1, x_2, \ldots, x_n$ 和相应的权重 $w_1, w_2, \ldots, w_n$，加权均值的公式为：</p>
+<p>$\text{Weighted Mean} &#x3D; \frac{\sum_{i&#x3D;1}^{n} w_i x_i}{\sum_{i&#x3D;1}^{n} w_i}$</p>
+<h4 id="特点：-2"><a href="#特点：-2" class="headerlink" title="特点："></a>特点：</h4><ul>
+<li>权重越高的数据点对均值的影响越大。</li>
+<li>适用于数据点具有不同重要性或频率的情况。</li>
+</ul>
+<h4 id="应用：-2"><a href="#应用：-2" class="headerlink" title="应用："></a>应用：</h4><p>经济学、统计学、决策分析等。</p>
+<h3 id="8-截断均值（Truncated-Mean）"><a href="#8-截断均值（Truncated-Mean）" class="headerlink" title="8. 截断均值（Truncated Mean）"></a>8. 截断均值（Truncated Mean）</h3><h4 id="概述：-3"><a href="#概述：-3" class="headerlink" title="概述："></a>概述：</h4><p>截断均值通过去除数据集中的极端值后计算算术均值。</p>
+<h4 id="计算方法：-1"><a href="#计算方法：-1" class="headerlink" title="计算方法："></a>计算方法：</h4><ul>
+<li>去掉数据集中最小和最大的某些百分比（如10%）。</li>
+<li>对剩下的数据计算算术均值。</li>
+</ul>
+<h4 id="特点：-3"><a href="#特点：-3" class="headerlink" title="特点："></a>特点：</h4><ul>
+<li>减少极端值对均值的影响。</li>
+<li>适用于包含噪声或离群值的数据。</li>
+</ul>
+<h4 id="应用：-3"><a href="#应用：-3" class="headerlink" title="应用："></a>应用：</h4><p>金融分析、质量控制等。</p>
+<h3 id="9-其他常见均值类型"><a href="#9-其他常见均值类型" class="headerlink" title="9. 其他常见均值类型"></a>9. 其他常见均值类型</h3><h4 id="四分位数均值（Quartile-Mean）"><a href="#四分位数均值（Quartile-Mean）" class="headerlink" title="四分位数均值（Quartile Mean）"></a>四分位数均值（Quartile Mean）</h4><p>计算数据集的第一和第三四分位数之间数据的均值。</p>
+<h4 id="三次方均值（Cubic-Mean）"><a href="#三次方均值（Cubic-Mean）" class="headerlink" title="三次方均值（Cubic Mean）"></a>三次方均值（Cubic Mean）</h4><p>对数据的三次方取均值后开三次方根。</p>
+<h4 id="平均绝对偏差（Mean-Absolute-Deviation-MAD）"><a href="#平均绝对偏差（Mean-Absolute-Deviation-MAD）" class="headerlink" title="平均绝对偏差（Mean Absolute Deviation, MAD）"></a>平均绝对偏差（Mean Absolute Deviation, MAD）</h4><p>计算每个数据点与均值的绝对差的平均值，用于描述数据的离散程度。</p>
+<h3 id="10-特殊均值类型"><a href="#10-特殊均值类型" class="headerlink" title="10. 特殊均值类型"></a>10. 特殊均值类型</h3><h4 id="伽玛均值（Gamma-Mean）"><a href="#伽玛均值（Gamma-Mean）" class="headerlink" title="伽玛均值（Gamma Mean）"></a>伽玛均值（Gamma Mean）</h4><p>使用伽玛函数定义的一种均值，应用于特定的统计分布。</p>
+<h4 id="贝塔均值（Beta-Mean）"><a href="#贝塔均值（Beta-Mean）" class="headerlink" title="贝塔均值（Beta Mean）"></a>贝塔均值（Beta Mean）</h4><p>使用贝塔函数定义的一种均值，应用于特定的统计分布。</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/362578100">均值不等式</a>引起的一些思考</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/20/average-and-mean/" data-id="cmd0rzke0000zjkrzcam2f6rm" data-title="average_and_mean" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/help/" rel="tag">help</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/10/20/build-system/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          build_system
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/10/16/distribution-in-statistic/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">distribution_in_statistic</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C-C/">C/C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/RM/">RM</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/daily/">daily</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/school/">school</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web/">web</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/web/blog/">blog</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chi/" rel="tag">chi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/config/" rel="tag">config</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/help/" rel="tag">help</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prose/" rel="tag">prose</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/waste/" rel="tag">waste</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C-C/" style="font-size: 16.67px;">C/C++</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/chi/" style="font-size: 10px;">chi</a> <a href="/tags/config/" style="font-size: 10px;">config</a> <a href="/tags/git/" style="font-size: 13.33px;">git</a> <a href="/tags/help/" style="font-size: 20px;">help</a> <a href="/tags/prose/" style="font-size: 16.67px;">prose</a> <a href="/tags/statistics/" style="font-size: 13.33px;">statistics</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/waste/" style="font-size: 13.33px;">waste</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">July 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/07/13/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/10/demand-aided-product-design/">demand aided product design</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/05/curiosity-project/">curiosity project</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/03/new-bank-card/">new bank card</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/07/start-vim/">start_vim</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 Like CAI<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

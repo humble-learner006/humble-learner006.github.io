@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>git_tutorial | Like&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="git 教程push操作流程确保这是一个仓库.git文件存在  git status 查看当前状态，记得查看branch git add * 添加所有要更改的文件到暂存区（stage） git commit -m &quot;&lt;message&gt;&quot; 提交暂存区到仓库区（commit） git push origin main把本地库的内容推送到远程你可以参考 cs61b lab">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git_tutorial">
+<meta property="og:url" content="https://humble-learner006.github.io/2024/10/10/git-tutorial/index.html">
+<meta property="og:site_name" content="Like&#39;s Blog">
+<meta property="og:description" content="git 教程push操作流程确保这是一个仓库.git文件存在  git status 查看当前状态，记得查看branch git add * 添加所有要更改的文件到暂存区（stage） git commit -m &quot;&lt;message&gt;&quot; 提交暂存区到仓库区（commit） git push origin main把本地库的内容推送到远程你可以参考 cs61b lab">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-10-10T04:32:38.000Z">
+<meta property="article:modified_time" content="2024-10-11T12:26:04.000Z">
+<meta property="article:author" content="Like CAI">
+<meta property="article:tag" content="git">
+<meta property="article:tag" content="help">
+<meta property="article:tag" content="unfinished">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Like's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Like&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://humble-learner006.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-git-tutorial" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/10/git-tutorial/" class="article-date">
+  <time class="dt-published" datetime="2024-10-10T04:32:38.000Z" itemprop="datePublished">2024-10-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/RM/">RM</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      git_tutorial
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="git-教程"><a href="#git-教程" class="headerlink" title="git 教程"></a>git 教程</h1><h2 id="push操作流程"><a href="#push操作流程" class="headerlink" title="push操作流程"></a>push操作流程</h2><p>确保这是一个仓库<code>.git</code>文件存在</p>
+<ul>
+<li><code>git status</code> 查看当前状态，记得查看branch</li>
+<li><code>git add *</code> 添加所有要更改的文件到暂存区（stage）</li>
+<li><code>git commit -m &quot;&lt;message&gt;&quot;</code> 提交暂存区到仓库区（commit）</li>
+<li><code>git push origin main</code>把本地库的内容推送到远程<br>你可以参考 <a target="_blank" rel="noopener" href="https://sp21.datastructur.es/materials/lab/lab1/lab1">cs61b lab1 section E</a> 十分好的 git 教程</li>
+</ul>
+<h2 id="fetch-pull操作流程"><a href="#fetch-pull操作流程" class="headerlink" title="fetch&#x2F;pull操作流程"></a>fetch&#x2F;pull操作流程</h2><p>如果你只是为了更新本地文件，可以使用 <code>git pull</code> 命令从远程仓库获取最新的更改并合并到你的本地分支。以下是步骤：<br><code>git checkout main</code><br>(checkout)切换到你想要更新的分支（通常是 main 或 master 分支）：<br><code>git pull origin main</code><br>拉取远程仓库的最新更改并合并到本地分支：</p>
+<ul>
+<li><code>git fetch origin main</code> 从远程获取最新版本到本地，不会自动merge</li>
+<li><code>git pull origin main</code> 把远程库(origin和远程库的URL等价)的内容拉下来，然后与本地的文件合并</li>
+</ul>
+<h3 id="merge（合并）"><a href="#merge（合并）" class="headerlink" title="merge（合并）"></a>merge（合并）</h3><ol>
+<li>本地分支合并：你可以在本地将一个分支合并到另一个分支。<br>feature-branch 是你要合并的分支，main 是目标分支。一般在freture branch开发新功能或修复bug.</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout main</span><br><span class="line">git merge feature-branch</span><br></pre></td></tr></table></figure>
+<ol>
+<li>解决冲突：如果在合并过程中发生冲突，你需要在本地解决这些冲突，然后提交解决后的文件。</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">give your resolved file to git</span><br><span class="line">git add &lt;resolved-files&gt;</span><br><span class="line">git commit -m &quot;Resolved merge conflicts&quot;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>推送到远程：合并完成并解决冲突后，你可以将合并后的分支推送到远程仓库。<br><code>git push origin main</code></li>
+</ol>
+<h2 id="分支branch"><a href="#分支branch" class="headerlink" title="分支branch"></a>分支branch</h2><p>并行开发必备</p>
+<ul>
+<li><code>git branch</code> 查看分支，确认当前的分支信息<br>step 1： <code>git branch &lt;branch-name&gt;</code> 创建分支<br>step 2: 在新分支上开发功能</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add *</span><br><span class="line">git commit -m &quot;My new feature&quot;</span><br></pre></td></tr></table></figure>
+<p>step 3: 推送新分支到远程仓库<code>git push origin &lt;feature-branch&gt;</code><br>step 4: 切换到主分支<code>git checkout main</code><br>step 5: 合并分支<code>git merge &lt;feature-branch&gt;</code><br>step 6: 删除分支<code>git branch -d &lt;feature-branch&gt;</code><br>step 7: 删除远程分支<code>git push origin --delete &lt;feature-branch&gt;</code></p>
+<span id="more"></span>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a><strong>Git</strong></h2><p>What is git?<br><strong>A system:</strong> Git is a distributed version control system.<br><strong>Version Control:</strong> We can go back to previous version if something screw up in VCS(version control system).<br>One of the most widely distributed VCS is <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Revision_Control_System">RCS</a> ,work by adding patches&#x2F; delta between file, develop from its predecessor – SCCS (Source Code Control system)<br><strong>Branching</strong> means you diverge from the main line of development and continue to do work without messing with that main line.<br>兴趣阅读：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/95179354">版本管理系统的发展历史</a><br><strong>Git</strong> work by taking snapshot, not difference.</p>
+<h2 id="3-status-of-your-file-Modified-–-staged（in-the-middle）–-committed-git"><a href="#3-status-of-your-file-Modified-–-staged（in-the-middle）–-committed-git" class="headerlink" title="3 status of your file: Modified – staged（in the middle）– committed(.git)"></a>3 status of your file: Modified – staged（in the middle）– committed(.git)</h2><p>潜在的unchange data可以比喻为在家里的人。<br>modified可以被比喻为所有在车站的人，有可能不会上车<br>staged 可以被比喻为在月台的人，是即将上车的人，但是也可能不上车（日程取消）<br>committed 可以被比喻为在火车上的人，被送到目的地云端</p>
+<h2 id="基本操作（按照常用程度排序）"><a href="#基本操作（按照常用程度排序）" class="headerlink" title="基本操作（按照常用程度排序）"></a>基本操作（按照常用程度排序）</h2><p><code>cd + &lt;location&gt;</code>（change derectory）<br><code>git branch</code> 查看分支<br><code>git log</code> 查看提交历史<br><code>git status</code> 查看当前状态<br><code>git diff</code> 查看修改内容<br><code>git add</code> 添加文件到暂存区<br><code>git add *</code> 添加所有文件到暂存区<br><code>git commit -m &quot;&lt;message&gt;&quot;</code> 提交暂存区到仓库区<br><code>git reset HEAD</code> 把暂存区的修改撤销掉（unstage），重新放回工作区<br><code>git remote -v</code> 查看远程库信息<br><code>git push origin main</code> 把本地库的内容推送到远程</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push origin main</span><br><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
+<p><code>git push -u origin main</code> 以后的推送或者拉取就可以简化命令<br><code>-u</code> stands for upstream<br>you can use <code>--set-upstream</code> set upstrea (same function as <code>-u</code>)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<h3 id="Configure-your-git"><a href="#Configure-your-git" class="headerlink" title="Configure your git"></a>Configure your git</h3><p>Git branch, first set up then we discuss how it should be used<br><code>git config –h</code>（get the help of config command, show in editor）<br><code>git help config</code> （show in browser）<br><code>git init</code> （change it into git respository）<br><code>git status</code> （know what inside the file&#x2F; git repository）<br><code>git add &lt;name&gt;</code><br><code>git add –A</code> （add all）<code>git add .</code>&#x2F;<code>git add --all</code><br><code>git rm –cached &lt;name&gt;</code><br><code>git rm –f &lt;name&gt;</code><br><code>git mv &lt;name&gt; &lt;name&gt;</code><br><code>git log -oneline</code> -</p>
+<h2 id="Package-manager-（Linux系统必要了解）"><a href="#Package-manager-（Linux系统必要了解）" class="headerlink" title="Package manager （Linux系统必要了解）"></a>Package manager （Linux系统必要了解）</h2><p>软件包管理器：一种计算机程序，负责安装、更新和配置其他软件，维护已安装程序的索引并解决它们之间的依赖关系。</p>
+<ul>
+<li>Knowing your system’s package manager is essential for managing software effectively. </li>
+<li>It ensures you <strong>use the correct commands</strong> and syntax to install, update, and remove packages successfully.</li>
+</ul>
+<h2 id="two-type-of-package-manager"><a href="#two-type-of-package-manager" class="headerlink" title="two type of package manager"></a>two type of package manager</h2><p>dnf: This is the default package manager for Fedora and other Red Hat-based systems.<br>apt-get: This is the default package manager for Debian, Ubuntu, and other Debian-based systems. </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/10/git-tutorial/" data-id="cmd0rzke6001rjkrzgaebcvv0" data-title="git_tutorial" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/help/" rel="tag">help</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/10/11/navigator/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          NAVIGATOR
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/10/10/pointer/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">pointer</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C-C/">C/C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/RM/">RM</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/daily/">daily</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/school/">school</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web/">web</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/web/blog/">blog</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chi/" rel="tag">chi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/config/" rel="tag">config</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/help/" rel="tag">help</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prose/" rel="tag">prose</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/waste/" rel="tag">waste</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C-C/" style="font-size: 16.67px;">C/C++</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/chi/" style="font-size: 10px;">chi</a> <a href="/tags/config/" style="font-size: 10px;">config</a> <a href="/tags/git/" style="font-size: 13.33px;">git</a> <a href="/tags/help/" style="font-size: 20px;">help</a> <a href="/tags/prose/" style="font-size: 16.67px;">prose</a> <a href="/tags/statistics/" style="font-size: 13.33px;">statistics</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/waste/" style="font-size: 13.33px;">waste</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">July 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/07/13/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/10/demand-aided-product-design/">demand aided product design</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/05/curiosity-project/">curiosity project</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/03/new-bank-card/">new bank card</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/07/start-vim/">start_vim</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 Like CAI<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

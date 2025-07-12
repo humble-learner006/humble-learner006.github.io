@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>delete_remaining_tags | Like&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="删除旧博客残留tags">
+<meta property="og:type" content="article">
+<meta property="og:title" content="delete_remaining_tags">
+<meta property="og:url" content="https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/index.html">
+<meta property="og:site_name" content="Like&#39;s Blog">
+<meta property="og:description" content="删除旧博客残留tags">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-10-09T01:33:52.000Z">
+<meta property="article:modified_time" content="2024-10-11T05:21:12.000Z">
+<meta property="article:author" content="Like CAI">
+<meta property="article:tag" content="help">
+<meta property="article:tag" content="waste">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Like's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Like&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://humble-learner006.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-delete_remaining_tags" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/09/delete_remaining_tags/" class="article-date">
+  <time class="dt-published" datetime="2024-10-09T01:33:52.000Z" itemprop="datePublished">2024-10-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/web/">web</a>►<a class="article-category-link" href="/categories/web/blog/">blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      delete_remaining_tags
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="删除旧博客残留tags"><a href="#删除旧博客残留tags" class="headerlink" title="删除旧博客残留tags"></a>删除旧博客残留tags</h1><span id="more"></span>
+<p>recently I start to write new blogs, due to the inspiration of Ruan Yifeng.<br>And I want to change my theme from butterfly to NexT. </p>
+<p>I start the work on the night of October 8th. What I did is </p>
+<ol>
+<li>download <code>NexT</code> from github</li>
+<li>change the <code>_config.yml</code> file in root path, from <code>butterfly</code> to <code>NexT</code><br> and it works after I use <code>hexo clean</code> and <code>hexo g</code></li>
+<li>copy the <code>_config.yml</code> file in <code>themes/NexT</code> to <code>_config.next.yml</code> in root path.</li>
+</ol>
+<p>However, I found that the old tags <strong>are still there</strong>. Tags are suppose to be deleted after the blog is deleted. But things are not that simple. </p>
+<p>I check all the customized setting in my folder.</p>
+<ol>
+<li>not every blog writter create a <code>_config.&lt;theme_name&gt;.yml</code> file in the root path.</li>
+<li>I change the theme, maybe it is relate to existing theme config in butterfly.</li>
+<li>If the remaining_tags have something to do with the source code, searching the tags name in the workspace is a good way.</li>
+</ol>
+<p>For first, it is irrelevant influencing factors. For second nothing changed after I switch back to butterfly<br>for third, I could not find the tags name in the workspace.</p>
+<p>So I think it maybe something relate to website cache.</p>
+<ol>
+<li>delete most of the post in <code>source/_posts</code></li>
+<li>delete folder <code>public</code></li>
+<li>delete all files on GitHub repository</li>
+<li>delete <code>db.json</code> as GPT suggested.</li>
+<li>delete <code>node_modules</code></li>
+<li>regenerate the tags and categories by <code>hexo new page tags</code> and <code>hexo new page categories</code></li>
+<li>delete all the tags and categories in <code>source/_posts</code></li>
+<li>create this post to test.</li>
+</ol>
+<p>日期：2024年10月10日16点33分更新，可能清除<code>public</code> folder and <code>.deploy</code>即可</p>
+<p>It occurred a problem that the tags and categories and tags change from 6 to 7 due to my new tag prose. And both categories and tags are unclicable button on the website.</p>
+<blockquote>
+<p>在 Hexo 博客的 Next 主题中，分类和标签按钮不可点击的可能原因有以下几种：<br><br>主题配置错误：检查 _config.yml 文件中的相关配置，确保分类和标签的设置正确。<br><br>数据源问题：确保你的文章确实有分类和标签。没有任何分类或标签的文章可能导致按钮无法显示。</p>
+</blockquote>
+<p>A rediculous mistake: all the <code>hexo clean</code> have been typed as <code>hexo clear</code> make it no use<br>After revice that I checked <code>hexo --config</code> as instruction it gave.<br>it gave me error message as follow</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">62589@DESKTOP-OQLQ1BU MINGW64 /d/Desktop/hexo_blog</span><br><span class="line">$ hexo --config</span><br><span class="line">ERROR configPaths.includes is not a function</span><br><span class="line">ERROR Local hexo loading failed in D:\Desktop\hexo_blog</span><br><span class="line">ERROR Try running: &#x27;rm -rf node_modules &amp;&amp; npm install --force&#x27;</span><br></pre></td></tr></table></figure>
+<p>So I tried to delete <code>node_modules</code> and <code>npm install --force</code><br>then the error message changed to some render mistake<br><code>$ npm uninstall hexo-renderer-swig</code> seems that swig is not supported anymore and as Copilot suggested I tried to change to nunjucks <code>npm install hexo-renderer-nunjucks --save</code><br>no use, then as terminal message said, I tried to run<br><code>npm audit fix --force</code><br>It worked to a certain degree. And the number of categories and tags are correct now. But it is still not clickable.<br>Then as Copilot suggested, I reinstall the theme NexT. And my website finally - broken. It have some problem with <code>_config.next.yml</code> because some costomized setting in various file.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.htm</span><br><span class="line">l</span><br><span class="line">TypeError: Cannot read properties of undefined (reading &#x27;enable&#x27;)</span><br><span class="line">    at D:\Desktop\my CSC\Hexo_blog\themes\next\scripts\filters\comment\gitalk.js:10:21</span><br><span class="line">    at Filter.execSync (D:\Desktop\my CSC\Hexo_blog\node_modules\hexo\dist\extend\filter.js:72:36)</span><br><span class="line">    at Hexo.execFilterSync (D:\Desktop\my CSC\Hexo_blog\node_modules\hexo\dist\hexo\index.js:397:35)</span><br><span class="line">    at module.exports (D:\Desktop\my CSC\Hexo_blog\themes\next\scripts\events\lib\injects.js:58:8)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (D:\Desktop\my CSC\Hexo_blog\themes\next\scripts\events\index.js:9:27)</span><br><span class="line">    at Hexo.emit (node:events:530:35)</span><br><span class="line">    at Hexo._generate (D:\Desktop\my CSC\Hexo_blog\node_modules\hexo\dist\hexo\index.js:374:14)</span><br><span class="line">    at D:\Desktop\my CSC\Hexo_blog\node_modules\hexo\dist\hexo\index.js:265:25</span><br><span class="line">    at tryCatcher (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\</span><br><span class="line">promise.js:547:31)</span><br><span class="line">    at Promise._settlePromise (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:</span><br><span class="line">604:18)</span><br><span class="line">    at Promise._settlePromise0 (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:649:10)</span><br><span class="line">    at Promise._settlePromises (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:729:18)</span><br><span class="line">    at Promise._fulfill (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:673:18</span><br><span class="line">)</span><br><span class="line">    at PromiseArray._resolve (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise_arra</span><br><span class="line">y.js:127:19)</span><br><span class="line">    at PromiseArray._promiseFulfilled (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\pro</span><br><span class="line">mise_array.js:145:14)</span><br><span class="line">    at Promise._settlePromise (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:</span><br><span class="line">609:26)</span><br><span class="line">    at Promise._settlePromise0 (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:649:10)</span><br><span class="line">    at Promise._settlePromises (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:729:18)</span><br><span class="line">    at Promise._fulfill (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:673:18</span><br><span class="line">)</span><br><span class="line">    at Promise._settlePromise (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:</span><br><span class="line">617:21)</span><br><span class="line">    at Promise._settlePromise0 (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:649:10)</span><br></pre></td></tr></table></figure>
+<p>What I learn is that never getting too deep into something you do not know.</p>
+<p>I reinstall Hexo to make sure the <code>_config.yml</code> is not polluted, and not planing to make any costomized setting if not neccessary.<br>After it is a blog, I will frist focus on the <strong>content</strong>.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/" data-id="cmd0rzke2001ajkrzgrjp432w" data-title="delete_remaining_tags" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/help/" rel="tag">help</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/waste/" rel="tag">waste</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/10/09/blog_building/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          blog_building
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/04/28/Record-around-the-final-for-second-term/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Around the final for second term</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C-C/">C/C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/RM/">RM</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/daily/">daily</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/school/">school</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/web/">web</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/web/blog/">blog</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chi/" rel="tag">chi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/config/" rel="tag">config</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/help/" rel="tag">help</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/prose/" rel="tag">prose</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/waste/" rel="tag">waste</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C-C/" style="font-size: 16.67px;">C/C++</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/chi/" style="font-size: 10px;">chi</a> <a href="/tags/config/" style="font-size: 10px;">config</a> <a href="/tags/git/" style="font-size: 13.33px;">git</a> <a href="/tags/help/" style="font-size: 20px;">help</a> <a href="/tags/prose/" style="font-size: 16.67px;">prose</a> <a href="/tags/statistics/" style="font-size: 13.33px;">statistics</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/waste/" style="font-size: 13.33px;">waste</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">July 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/07/13/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/10/demand-aided-product-design/">demand aided product design</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/05/curiosity-project/">curiosity project</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/03/new-bank-card/">new bank card</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/07/start-vim/">start_vim</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 Like CAI<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
