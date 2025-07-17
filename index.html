@@ -71,6 +71,55 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Notes-on-mechanical-structure-design-of-rotating-target" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/" class="article-date">
+  <time class="dt-published" datetime="2025-07-17T05:34:29.000Z" itemprop="datePublished">2025-07-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Mechanical-Design/">Mechanical Design</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/">旋转靶机械结构设计笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>2025年，过岗龙需要一个旋转靶子</p>
+        
+          <p class="article-more-link">
+            <a href="/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/" data-id="cmd77y77300009grzgnmq9lmh" data-title="旋转靶机械结构设计笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-navigator" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/07/17/navigator/" class="article-date">
@@ -123,7 +172,7 @@ graph TD
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/07/17/navigator/" data-id="cmd6um7nc0012zsrzhgyj4hus" data-title="NAVIGATOR" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/07/17/navigator/" data-id="cmd6vbvji001ia0rz3xui0qh5" data-title="NAVIGATOR" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -158,96 +207,67 @@ graph TD
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>也是当上学长了，在这写一篇机械设计的分享。</p>
-<p>我是从 Solidwork 开始学习机械建模的。但是真正深入是受cby影响，开始用fusion去设计模型。</p>
-<h2 id="为什么学建模"><a href="#为什么学建模" class="headerlink" title="为什么学建模"></a>为什么学建模</h2><ol>
-<li>我目前没有对于任何一个major特别感兴趣，以下是我的兴趣点<ol>
-<li>建筑设计，从土木结构到能源系统到室内装潢，我每个都想学</li>
-<li>飞行器设计，战斗机和火箭都很浪漫，而且我认为航空航天是会一直发展的，是一个很稳定的工程学科</li>
-<li>机器人设计，这个很适合做居家陪伴小玩具，对就是因为好玩具做的高级都有机器人属性。</li>
-</ol>
-</li>
-<li>建模确实能够改变生活<ol>
-<li>更加趁手：许多买不到标件的固定件，对于强度没有要求，直接建模打印，交付周期超级短</li>
-<li>赠礼玩具：AI建模已经达到做观赏雕塑的水平了，加上颜色便是不错的产品</li>
-<li>赚外快！目前一单大概50元，一小时内搞定的那种</li>
-</ol>
-</li>
-</ol>
-<p>我对于能摸得到的实物十分痴迷</p>
-<h2 id="我对于建模软件的见解"><a href="#我对于建模软件的见解" class="headerlink" title="我对于建模软件的见解"></a>我对于建模软件的见解</h2><p>目前有许多软件可以建模，建出来的模型的用途或异或同，我在这只说我有一定了解的。<br>我暂且画出如下的树状分类</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">建模软件</span><br><span class="line">|</span><br><span class="line">|-工业建模</span><br><span class="line">	|-机械设计</span><br><span class="line">	|	|-Solidwork</span><br><span class="line">	|	|-fusion360</span><br><span class="line">	|-结构设计</span><br><span class="line">		|-cero</span><br><span class="line">|-艺术建模</span><br><span class="line">	|-blender</span><br><span class="line">	|-Zbrush</span><br><span class="line">	|-Maya</span><br><span class="line">	|-3D Max</span><br></pre></td></tr></table></figure>
-<p>艺术建模（功能分类）是多面体建模（实现技术分类），是通过一个个三角形去“拼凑”出模型的外观，如stl就是典型的多面体模型格式。而机械设计一般每个软件会有自己的格式，因为要保留更多设计时的成形信息（如何从平面草图到立体？记录一串可复现的操作）。如<code>.SLDPRT</code>是SW (Solidwork) 零件格式，但是你可以导出<code>.STEP</code>格式，里面记录了你的成形过程。<br>如果你对於计算机美术有一定了解，可以这样打比方：PS的位图<code>png</code>&amp;<code>jpg</code>和AI的矢量图<code>.ai</code>&amp;<code>.svg</code>，前者放大后会失真的，而后者不会。而多面体建模产出的模型就类似于PS的位图格式，而函数建模（我忘了正式名称了）类似于AI的矢量图格式。</p>
-<p>在学习工业建模的之前，我了解过blender，一个开源的功能强大的软件，整合了制作3D动画的全工具链，适合个人开发者进行全流程开发。然后学习Solidwork的原因也忘了，大抵是当时提供的上交的模型是Solidwork打开的吧</p>
-<h2 id="为什么选择fusion360？"><a href="#为什么选择fusion360？" class="headerlink" title="为什么选择fusion360？"></a>为什么选择fusion360？</h2><p>后面转fusion360也是因为 </p>
-<ol>
-<li>对于后期队内协作建模的考量，fusion无疑是最省心的 <ol>
-<li>线上的文件系统让管理成本对于个人和组织而言大幅度降低<ol>
-<li>线上协作功能</li>
-<li>fusion360自带版本管理（我将会强迫所有人写commit message）</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>个人感觉fusion360的定位更符合个人全栈开发<ol>
-<li>感觉solidwork的草图比fusion好用，操作逻辑更好</li>
-<li>fusion许多内容图形化<ol>
-<li>Pro：让你在跟换语言界面的时候也能快速上手</li>
-<li>Con：进行了大量的下拉列表进行隐藏功能（这虽然更好看，但是单个页面展示的内容少了）</li>
-<li>Pro：可以自定义哪些功能常驻显示</li>
-</ol>
-</li>
-<li>fusion360为了兼容不同背景的操作者，可以在首选项设置不同的操作逻辑</li>
-<li>fusion360为学生提供免费教育版<br>无论fusion是否真的做的更好，但是他确实有把优势展现给我。他很杂，功能很多，但是对于我这种非专业人士反而是好事。这点的定位和blender有些许相似。</li>
-</ol>
-</li>
-</ol>
-<h2 id="以-RoboMaster-机器人竞赛为例，目前我认为应该这么学"><a href="#以-RoboMaster-机器人竞赛为例，目前我认为应该这么学" class="headerlink" title="以 RoboMaster 机器人竞赛为例，目前我认为应该这么学"></a>以 RoboMaster 机器人竞赛为例，目前我认为应该这么学</h2><p>一个机器人的机械结构，就是从零件到装配体，没有例外</p>
-<ol>
-<li>学习草图绘制<ol>
-<li>许多人轻视了这一部分的重要性。</li>
-<li>零件成形大致分为草图绘制和拉升旋转两个步骤，一个好的草图会让后期的修改十分方便。我认为单个零件的成形的优雅程度是评估一个设计师是否优秀的评估点之一，而这是建立在一个优秀的草图上的。<ol>
-<li>好的草图要优雅的做完全约束，让草图易于阅读。</li>
-<li>好的草图会考虑成形，选择合适的面画草图是十分重要的。</li>
-</ol>
-</li>
-<li>别用fusion360的自动添加尺寸和约束，除非你认为他添加的合理。</li>
-</ol>
-</li>
-<li>学习特征成形<ol>
-<li>有了草图后就是特征成形，你的零件就完成了</li>
-<li>此阶段就要开始考虑零件的可加工性，以及机械性能了</li>
-</ol>
-</li>
-<li>学习装配体<ol>
-<li>装配体是将零件以空间中的约束链接在一起</li>
-<li>典型的装配体：减速箱和麦克纳姆轮</li>
-</ol>
-</li>
-<li>装配体之后？<ol>
-<li>以上三部分（草图-零件-装配体）没有什么特别难上手的，<em><strong>需要多做</strong></em>。如何让自己不厌倦？建议不断的用3D打印去验证</li>
-<li>要开始踏入机械设计的深水了，此时建议都开始学，什么材料力学，加工工艺，机械设计都学。</li>
-<li>在熟悉某一个软件的同时（多探索，会让你更了解这个软件的设计思路，用户交互逻辑，这样触类旁通），去广泛了解其他软件，工程就是要吃百家饭</li>
-<li>了解一些实用的feature<ol>
-<li>截面分析</li>
-<li>爆炸视图&#x2F;视频的制作，方便演示你的安装逻辑</li>
-<li>运动学分析，方便展示你的机构是怎么运动的</li>
-<li>如何添加物理属性以及表面材质，渲染时好看一点</li>
-<li>有限元分析中的静力分析</li>
-<li>了解如何设置首选项，让软件更顺手</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h2 id="祝愿"><a href="#祝愿" class="headerlink" title="祝愿"></a>祝愿</h2><p>CUSZ的过岗龙是一支新的队伍，需要全面发展定离不开机械。但是我个人感觉或多或少存在<code>算法&gt;电控&gt;机械</code>的鄙视链，可能是因为本校的风气与环境便是如此。<br>我认为机械是最适合入门机器人学的一个部分，搭建一个机器人的路径是机械结构到电控，最后才是算法。<br>希望机械的伙伴们能够把机械设计当成个人爱好，在这所没有机械专业的学校做最特例独行的人。同时也希望过岗龙越来越好。</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2025/07/17/thought-on-3D-modeling/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/07/17/thought-on-3D-modeling/" data-id="cmd6um7ng001mzsrz5cj49g3o" data-title="thought on 3D modeling" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/07/17/thought-on-3D-modeling/" data-id="cmd6vbvjm0025a0rz8957crev" data-title="thought on 3D modeling" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hexo-mermaid-tutorial" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/07/17/hexo-mermaid-tutorial/" class="article-date">
+  <time class="dt-published" datetime="2025-07-16T16:00:00.000Z" itemprop="datePublished">2025-07-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Project/">Project</a>►<a class="article-category-link" href="/categories/Project/Web/">Web</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/07/17/hexo-mermaid-tutorial/">在 Hexo + Landscape 主题中配置 Mermaid 流程图教程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在撰写技术博客时，流程图是非常有用的工具，能够清晰地展示逻辑关系和流程步骤。Mermaid 是一个优秀的流程图渲染工具，本文将详细介绍如何在使用 Landscape 主题的 Hexo 博客中成功配置 Mermaid。</p>
+        
+          <p class="article-more-link">
+            <a href="/2025/07/17/hexo-mermaid-tutorial/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2025/07/17/hexo-mermaid-tutorial/" data-id="cmd6vbvjh001ca0rzgjau5gfj" data-title="在 Hexo + Landscape 主题中配置 Mermaid 流程图教程" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li></ul>
+
     </footer>
   </div>
   
@@ -279,66 +299,15 @@ graph TD
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/07/13/draft/hello-world/" data-id="cmd6um7nh001uzsrzhss40w8h" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-draft/demand-aided-product-design" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/07/10/draft/demand-aided-product-design/" class="article-date">
-  <time class="dt-published" datetime="2025-07-10T07:55:49.000Z" itemprop="datePublished">2025-07-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/07/10/draft/demand-aided-product-design/">demand aided product design</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="时间戳软件-小程序开发"><a href="#时间戳软件-小程序开发" class="headerlink" title="时间戳软件&#x2F;小程序开发"></a>时间戳软件&#x2F;小程序开发</h2><p>使用场景：我最近花费许多时间通勤，我想记录几个关键时间点：比如我是几点走出宿舍南区大门的，又是到达大运站的；几点出的罗湖站，又是几点过的海关。<br>如果时间能够轻松的被量化记录</p>
-<h2 id="会议拍照自动裁剪"><a href="#会议拍照自动裁剪" class="headerlink" title="会议拍照自动裁剪"></a>会议拍照自动裁剪</h2><p>已有产品，主要做无感和轻量化</p>
-<h2 id="多媒体平台自动推流"><a href="#多媒体平台自动推流" class="headerlink" title="多媒体平台自动推流"></a>多媒体平台自动推流</h2><p>AI辅助</p>
-<h2 id="简历自动投递"><a href="#简历自动投递" class="headerlink" title="简历自动投递"></a>简历自动投递</h2><p>做长自动化的工具链</p>
-<h2 id="爬虫-AI搜寻任务脉络信息"><a href="#爬虫-AI搜寻任务脉络信息" class="headerlink" title="爬虫+AI搜寻任务脉络信息"></a>爬虫+AI搜寻任务脉络信息</h2><h2 id="爬虫-AI-的学生信息平台"><a href="#爬虫-AI-的学生信息平台" class="headerlink" title="爬虫+AI 的学生信息平台"></a>爬虫+AI 的学生信息平台</h2><p>和优优在做</p>
-<h2 id="以上项目是否有一个通用的后端框架"><a href="#以上项目是否有一个通用的后端框架" class="headerlink" title="以上项目是否有一个通用的后端框架"></a>以上项目是否有一个通用的后端框架</h2>
+          <p class="article-more-link">
+            <a href="/2025/07/13/draft/hello-world/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/07/10/draft/demand-aided-product-design/" data-id="cmd6um7nh001pzsrz405mar43" data-title="demand aided product design" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/07/13/draft/hello-world/" data-id="cmd6vbvjn002ha0rz40mb9b7d" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -377,29 +346,15 @@ graph TD
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>在今天和好奇心计划的发起人之一 —— Jeremy 开了一个会，会议的目的是讨论我们的方案是否值得投资，但是我认为更有价值的收获是他作为一个投资者对于“什么是好的产品”的分享。</p>
-<h1 id="什么是好奇心计划"><a href="#什么是好奇心计划" class="headerlink" title="什么是好奇心计划"></a>什么是好奇心计划</h1><p>由2016年在CUHKSZ读书的校友创立。他们许多在本科阶段就有自己的创业项目。<br>创立计划的目的是鼓励、找寻合适的投资的人，像YC (Y coordinate)一样进行产业孵化。</p>
-<h1 id="Jeremy的分享"><a href="#Jeremy的分享" class="headerlink" title="Jeremy的分享"></a>Jeremy的分享</h1><p>他认为</p>
-<ol>
-<li>目前市场上缺乏竞品的产品是垂类的AI agent，完成一个具体的任务，能执行长链路、多步骤操作，替代掉一些对于人来说是繁琐、重复性的工作。</li>
-<li>技术人员应该勇于开启一个moonshot（大胆创新计划）,然后回推出一个解决方案</li>
-</ol>
-<p>Jeremy分享了他个人作为Notion用户的经历，作为讨论 “什么是good taste of product”<br>他16年入学时恰逢Notion上线，他也作为第一批用户一直使用Notion到现在。他在和朋友创业的时候，在前期就试用了当时的的多数效率软件，最终选择了Notion，是因为Notion解决了某个痛点。<br>可能有点类似与obsidian之于我。</p>
-<p>一个有good taste的产品，如何翻译这个taste？我的理解是解决市场痛点（有明确定位），解决方案优雅简介，交互设计注重细节。是三个从高层到底层的的层级。Jeremy在分享的时候提到了出处，但是我没记。</p>
-<h2 id="关于AI赋能的产品"><a href="#关于AI赋能的产品" class="headerlink" title="关于AI赋能的产品"></a>关于AI赋能的产品</h2><p>Jeremy目前在做AI+区块链，之前做过科技+软背景镀金的一个产品，个人感觉他对product with AI feature是比较了解的（参见上文）<br>他分享了 —— 红杉 AI 峰会的链接<br>Software as a Tool<br>    典型的Micosoft软件包，Vscode<br>Software as a Co-worker<br>    cursor，Copilot等，协同完成任务<br>Software as an Outcome<br>    帮你完成任务！</p>
-<p>以及几个好产品的例子<br>granola是一个AI辅助的会议纪要软件，使用场合特定，目标人群画像精确。<br>星黎智能体，是一个陪伴型的AI，没找到过多的相关内容，可能受众小或者的已经跨了。</p>
-<h1 id="我的感触"><a href="#我的感触" class="headerlink" title="我的感触"></a>我的感触</h1><p>做产品要靠独特的洞见，对于“优雅”的理解，做出最好的产品，在市场上获得一席之地，这很酷！<br>他提到要勇于提出问题：比如现在投简历很麻烦，你有不同的技能、项目经验，但是每一个岗位的侧重不一样，我应该如何让AI agent完成这一长条任务链。从信息整理，简历收集，到自动化简历投递。如果能让AI全线完成，将会是很好的市场。<br>我也在思考什么是好的产品：</p>
-<ol>
-<li>让AI接入教学平台作为学习秘书是好的项目吗？我觉得是的，虽然道听途说的说谷歌也在做让AI接入bb，canvas之类的平台，但是也未尝不可自己做一份。</li>
-<li>我之前思考过的多平台视频发布助手是一个好的项目，我很确定，如果可以很方便的接入每个平台的API进行内容分发管理，将会很抢手。</li>
-<li>Pixar台灯形状的互动机器人有搞头吗？我觉得一般，因为AI加硬件的项目很没有用武之地，交互的延时以及回答的质量还是太有问题，但是能不能让他做一些固定的任务，比如放在床头叫人起床、汇报天气之类</li>
-</ol>
-<p>但是有些产品面对的对象没有明确的用户画像，像1&amp;2我可以分别归到“使用这些平台的学生”和“经营多个平台的自媒体人”，但是3是没有明确的用户群体画像的，所以说不是一个能让我自信的产品。</p>
-<p>这是我第一次感觉在龙大不后悔，不是因为住的舒服，而是因为周边的人，他们的眼界，他们的生活方式让我知道了什么是下一个社会阶层，我渴望实现这个跃迁。</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2025/07/05/curiosity-project/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/07/05/curiosity-project/" data-id="cmd6um7n8000hzsrz1w52crhv" data-title="curiosity project" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/07/05/curiosity-project/" data-id="cmd6vbvje000va0rz1o8qhwby" data-title="curiosity project" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -440,7 +395,7 @@ graph TD
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/07/03/draft/new-bank-card/" data-id="cmd6um7ni001xzsrz7wteh1tr" data-title="new bank card" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/07/03/draft/new-bank-card/" data-id="cmd6vbvjo002la0rz8lz7hqsf" data-title="new bank card" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -452,16 +407,12 @@ graph TD
 
 
   
-    <article id="post-hexo-mermaid-tutorial" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-draft/demand-aided-product-design" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2025/01/17/hexo-mermaid-tutorial/" class="article-date">
-  <time class="dt-published" datetime="2025-01-16T16:00:00.000Z" itemprop="datePublished">2025-01-17</time>
+    <a href="/2025/06/10/draft/demand-aided-product-design/" class="article-date">
+  <time class="dt-published" datetime="2025-06-10T07:55:49.000Z" itemprop="datePublished">2025-06-10</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Project/">Project</a>►<a class="article-category-link" href="/categories/Project/Web/">Web</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -470,7 +421,7 @@ graph TD
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/01/17/hexo-mermaid-tutorial/">在 Hexo + Landscape 主题中配置 Mermaid 流程图教程</a>
+      <a class="p-name article-title" href="/2025/06/10/draft/demand-aided-product-design/">demand aided product design</a>
     </h1>
   
 
@@ -478,21 +429,19 @@ graph TD
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="在-Hexo-Landscape-主题中配置-Mermaid-流程图详细教程"><a href="#在-Hexo-Landscape-主题中配置-Mermaid-流程图详细教程" class="headerlink" title="在 Hexo + Landscape 主题中配置 Mermaid 流程图详细教程"></a>在 Hexo + Landscape 主题中配置 Mermaid 流程图详细教程</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在撰写技术博客时，流程图是非常有用的工具，能够清晰地展示逻辑关系和流程步骤。Mermaid 是一个优秀的流程图渲染工具，本文将详细介绍如何在使用 Landscape 主题的 Hexo 博客中成功配置 Mermaid。</p>
+        <p>未完成</p>
         
           <p class="article-more-link">
-            <a href="/2025/01/17/hexo-mermaid-tutorial/#more">Read More</a>
+            <a href="/2025/06/10/draft/demand-aided-product-design/#more">Read More</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/01/17/hexo-mermaid-tutorial/" data-id="cmd6um7na000vzsrz9upi2siq" data-title="在 Hexo + Landscape 主题中配置 Mermaid 流程图教程" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/06/10/draft/demand-aided-product-design/" data-id="cmd6vbvjn002da0rzajlr2etw" data-title="demand aided product design" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li></ul>
-
     </footer>
   </div>
   
@@ -528,61 +477,15 @@ graph TD
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>cop<strong>y</strong> and <strong>p</strong>aste from <a target="_blank" rel="noopener" href="https://missing.csail.mit.edu/2020/editors/">missing semester</a></p>
-<h1 id="how-to-learn-vim"><a href="#how-to-learn-vim" class="headerlink" title="how to learn vim"></a>how to learn vim</h1><p>Here’s how you learn a new editor:</p>
-<ul>
-<li>Start with a tutorial (i.e. this lecture, plus resources that we point out)  </li>
-<li>Stick with using the editor for all your text editing needs (even if it slows you down initially)  </li>
-<li>Look things up as you go: if it seems like there should be a better way to do something, there probably is</li>
-</ul>
-<h1 id="vim-modes"><a href="#vim-modes" class="headerlink" title="vim modes"></a>vim modes</h1><h2 id="i-for-insert-mode"><a href="#i-for-insert-mode" class="headerlink" title="i for insert mode"></a>i for insert mode</h2><p>from normal mode:</p>
-<ul>
-<li><code>i</code> to enter insert mode at the cursor</li>
-<li><code>o</code> to enter insert mode on the next line</li>
-</ul>
-<h2 id="esc-for-normal-mode-from-insert-mode"><a href="#esc-for-normal-mode-from-insert-mode" class="headerlink" title="esc for normal mode (from insert mode)"></a>esc for normal mode (from insert mode)</h2><ul>
-<li>normal mode is for <strong>viewing and editing</strong> text</li>
-</ul>
-<h3 id="moving-around"><a href="#moving-around" class="headerlink" title="moving around"></a>moving around</h3><ul>
-<li>moving my cursor around using <code>h</code>, <code>j</code>, <code>k</code>, <code>l</code> (left, down, up, right)</li>
-<li><code>w</code> to move forward by word, <code>b</code> to move back by word</li>
-<li><code>e</code> for end of word. </li>
-<li><code>0</code> to move to the beginning of the line, <code>$</code> to move to the end of the line</li>
-<li><code>gg</code> to move to the beginning of the file, <code>G</code> to move to the end of the file</li>
-<li>line moves</li>
-<li>absolute distance from beginning <code>:10</code> to move to line 10</li>
-<li>reletive distance from current line <code>10j</code> to move down 10 lines, <code>10k</code> to move up 10 lines</li>
-<li>page moves</li>
-<li><code>ctrl + d</code> to move down half a page, <code>ctrl + u</code> to move up half a page</li>
-<li><code>ctrl + f</code> to move down a page, <code>ctrl + b</code> to move up a page</li>
-<li>find moves</li>
-<li><code>f</code> to find a character on the line, <code>;</code> to find the next instance of that character</li>
-<li>e.g. <code>f</code> then <code>a</code> to find the next <code>a</code> on the line</li>
-<li><code>F</code> is for backwards find</li>
-<li><code>t</code> is for find up to a character</li>
-<li><code>T</code> is for backwards find up to a character</li>
-<li></li>
-</ul>
-<h3 id="editing"><a href="#editing" class="headerlink" title="editing"></a>editing</h3><ul>
-<li><code>x</code> to delete a character (making small changes in normal mode)</li>
-<li><code>dd</code> to delete a line</li>
-</ul>
-<h2 id="for-command-mode"><a href="#for-command-mode" class="headerlink" title=": for command mode"></a>: for command mode</h2><ul>
-<li><code>:q</code> to quit</li>
-</ul>
-<h2 id="v-for-visual-mode"><a href="#v-for-visual-mode" class="headerlink" title="v for visual mode"></a>v for visual mode</h2><ul>
-<li><code>v</code> to enter visual mode</li>
-<li>visual mode is for selecting text and then doing something (yp) with it</li>
-</ul>
-<h1 id="set-up-your-vimrc-file"><a href="#set-up-your-vimrc-file" class="headerlink" title="set up your vimrc file"></a>set up your vimrc file</h1><ul>
-<li><code>vim ~/.vimrc</code></li>
-<li><code>set number</code> to show line numbers</li>
-<li><code>set relativenumber</code> to show relative line numbers</li>
-</ul>
-
+        
+          <p class="article-more-link">
+            <a href="/2025/01/07/start-vim/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/01/07/start-vim/" data-id="cmd6um7nf001ezsrz9bac8gei" data-title="start_vim" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/01/07/start-vim/" data-id="cmd6vbvjl0022a0rz4i8wd54i" data-title="start_vim" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -623,137 +526,19 @@ graph TD
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h1 id="USB接口分类"><a href="#USB接口分类" class="headerlink" title="USB接口分类"></a>USB接口分类</h1><p>USB接口类别繁多，我时常搞不清USB接口，此处放超链接  </p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/447595295">表格图分类</a></li>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/141336123">思维导图树状分类</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.51cto.com/u_16099280/10306169">202404标准</a></li>
-</ul>
-<h1 id="USB-C-接口："><a href="#USB-C-接口：" class="headerlink" title="USB-C 接口："></a>USB-C 接口：</h1><ul>
-<li>6pin - 仅供电</li>
-<li>16pin - USB2.0</li>
-<li>24pin - USB3.0</li>
-</ul>
-
+        
+          <p class="article-more-link">
+            <a href="/2025/01/01/USB-ports/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/01/01/USB-ports/" data-id="cmd6um7n40006zsrz28nv3fsz" data-title="USB_ports" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/01/01/USB-ports/" data-id="cmd6vbvj7000ea0rzc9y67x6w" data-title="USB_ports" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-gardening-BOM" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/12/07/gardening-BOM/" class="article-date">
-  <time class="dt-published" datetime="2024-12-07T03:01:14.000Z" itemprop="datePublished">2024-12-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Daily/">Daily</a>►<a class="article-category-link" href="/categories/Daily/Gardening/">Gardening</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/12/07/gardening-BOM/">gardening_BOM</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <table>
-<thead>
-<tr>
-<th>物品名称</th>
-<th>价格</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>花盆垫片（防漏土）</td>
-<td>7</td>
-</tr>
-<tr>
-<td>红陶花盆*5</td>
-<td>22</td>
-</tr>
-<tr>
-<td>球型剪</td>
-<td>30</td>
-</tr>
-<tr>
-<td>碗莲种子</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>红枫种子</td>
-<td>2.7</td>
-</tr>
-<tr>
-<td>营养土5kg</td>
-<td>14</td>
-</tr>
-<tr>
-<td>火山石2.5kg</td>
-<td>13</td>
-</tr>
-<tr>
-<td>入门工具14套件</td>
-<td>18</td>
-</tr>
-<tr>
-<td>小叶榄仁</td>
-<td>6</td>
-</tr>
-<tr>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr>
-<td>木材标本15</td>
-<td>11.5</td>
-</tr>
-<tr>
-<td>pvc雪弗板</td>
-<td>18.5</td>
-</tr>
-<tr>
-<td>石塑粘土</td>
-<td>13.8</td>
-</tr>
-<tr>
-<td>景观苔藓</td>
-<td>6</td>
-</tr>
-<tr>
-<td>狼尾蕨</td>
-<td>8</td>
-</tr>
-</tbody></table>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/12/07/gardening-BOM/" data-id="cmd6um7n9000ozsrz11awdrp5" data-title="gardening_BOM" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gardening/" rel="tag">gardening</a></li></ul>
 
     </footer>
   </div>
@@ -778,7 +563,7 @@ graph TD
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/">Computer Science</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/Language/">Language</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/Operating-Systems/">Operating Systems</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Daily/">Daily</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Daily/Gardening/">Gardening</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Electric-Engineering/">Electric Engineering</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Electric-Engineering/Ports/">Ports</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Mathematics/">Mathematics</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Mathematics/Statistics/">Statistics</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/">Project</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Project/Game/">Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/Software/">Software</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/Web/">Web</a></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/">Computer Science</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/Language/">Language</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/Operating-Systems/">Operating Systems</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Daily/">Daily</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Daily/Gardening/">Gardening</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Electric-Engineering/">Electric Engineering</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Electric-Engineering/Ports/">Ports</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Mathematics/">Mathematics</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Mathematics/Statistics/">Statistics</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Mechanical-Design/">Mechanical Design</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/">Project</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Project/Game/">Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/Software/">Software</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/Web/">Web</a></li></ul></li></ul>
     </div>
   </div>
 
@@ -788,7 +573,7 @@ graph TD
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gardening/" rel="tag">gardening</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gardening/" rel="tag">gardening</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
     </div>
   </div>
 
@@ -798,7 +583,7 @@ graph TD
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 10px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 12.5px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/gardening/" style="font-size: 10px;">gardening</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 12.5px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/gardening/" style="font-size: 10px;">gardening</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -807,7 +592,7 @@ graph TD
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">July 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">July 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li></ul>
     </div>
   </div>
 
@@ -820,6 +605,10 @@ graph TD
       <ul>
         
           <li>
+            <a href="/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/">旋转靶机械结构设计笔记</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/17/navigator/">NAVIGATOR</a>
           </li>
         
@@ -828,15 +617,11 @@ graph TD
           </li>
         
           <li>
+            <a href="/2025/07/17/hexo-mermaid-tutorial/">在 Hexo + Landscape 主题中配置 Mermaid 流程图教程</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/13/draft/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/10/draft/demand-aided-product-design/">demand aided product design</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/05/curiosity-project/">curiosity project</a>
           </li>
         
       </ul>

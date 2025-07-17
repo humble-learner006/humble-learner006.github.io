@@ -71,6 +71,55 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-pointer" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/10/pointer/" class="article-date">
+  <time class="dt-published" datetime="2024-10-10T02:22:29.000Z" itemprop="datePublished">2024-10-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Computer-Science/">Computer Science</a>►<a class="article-category-link" href="/categories/Computer-Science/Language/">Language</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/10/pointer/">pointer</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="C-指针-和-的使用"><a href="#C-指针-和-的使用" class="headerlink" title="C++指针&amp;和*的使用"></a>C++指针<code>&amp;</code>和<code>*</code>的使用</h1><p>pointer is a variable that stores the address of another variable.</p>
+        
+          <p class="article-more-link">
+            <a href="/2024/10/10/pointer/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2024/10/10/pointer/" data-id="cmd6vbvjj001pa0rzgskabg4h" data-title="pointer" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Qt_tutorial" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/10/09/Qt_tutorial/" class="article-date">
@@ -97,114 +146,16 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="Qt版本：Qt-6-7-2-项目配置"><a href="#Qt版本：Qt-6-7-2-项目配置" class="headerlink" title="Qt版本：Qt 6.7.2 项目配置"></a>Qt版本：Qt 6.7.2 项目配置</h1><p>本教程参考哔哩哔哩系列<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1km4y1k7CW/?p=6&spm_id_from=pageDriver&vd_source=113cb04caaabeca910d6d5580d23d578">视频</a><br><code>help -&gt; about qt creater</code>查看版本<br><img src="https://s2.loli.net/2024/10/10/ujXJRtxQGUE9c2N.png"></p>
-<h2 id="在Qt中创建一个GUI项目"><a href="#在Qt中创建一个GUI项目" class="headerlink" title="在Qt中创建一个GUI项目"></a>在Qt中创建一个GUI项目</h2><h3 id="step-1-choose-a-template"><a href="#step-1-choose-a-template" class="headerlink" title="step 1: choose a template"></a>step 1: choose a template</h3><p><img src="https://s2.loli.net/2024/10/10/1cUm6pMF2vZCOys.png"></p>
-<p>选择一个模板，这里选择一个空的模板<br><code>Qt widgets application</code></p>
-<ul>
-<li>可以看到有图标，根据图标大概能知道这个模板是什么模板</li>
-<li>右边也会有对模板的描述</li>
-</ul>
-<h3 id="step-2-Project-location"><a href="#step-2-Project-location" class="headerlink" title="step 2: Project location"></a>step 2: Project location</h3><p><img src="https://s2.loli.net/2024/10/10/jBR2MHCDKpc8yYg.png"></p>
-<p>选择你的文件位置，命名的你文件名字</p>
-<h3 id="step-3-Define-Build-System"><a href="#step-3-Define-Build-System" class="headerlink" title="step 3: Define Build System"></a>step 3: Define Build System</h3><p><img src="https://s2.loli.net/2024/10/10/cXmviKfrLSExnpR.png"></p>
-<ul>
-<li>选择CMake，可以参考<a target="_blank" rel="noopener" href="https://slaptijack.com/programming/cmake-for-cpp.html">这里</a></li>
-<li>什么是[[CSC3002&#x2F;01_CSC3002_note&#x2F;Build system|Build system]]</li>
-<li>我跟教程走，选择qmake</li>
-<li>项目管理文件qmake -&gt; .pro文件; cmake -&gt; CMakeLists.txt文件</li>
-</ul>
-<h3 id="step-4-class-information"><a href="#step-4-class-information" class="headerlink" title="step 4: class information"></a>step 4: class information</h3><p><img src="https://s2.loli.net/2024/10/10/RT6dwcZ98DtyVSO.png"></p>
-<p>widget: used to refer to any small device that you do not know the name of（不知名的）小器物，小装置，小玩意儿( informal ) <em>from oxford</em></p>
-<ul>
-<li>widget空窗口（只有窗口标题）<ul>
-<li>mianWindow主窗口（菜单栏等）</li>
-<li>dialog对话框（有Yes or no的选项)</li>
-</ul>
-</li>
-<li>建议类名选择大写开头</li>
-<li>勾选后有widget.ui的文件，这个文件会有ui的信息<br>选择翻译后的语言，存储在zh_CN.qm文件中，我们用英文开发，有中文的语言包<br><img src="https://s2.loli.net/2024/10/10/EPra8uAYgikH7dS.png"></li>
-</ul>
-<h3 id="step-5-Kit-selection"><a href="#step-5-Kit-selection" class="headerlink" title="step 5: Kit selection"></a>step 5: Kit selection</h3><p>编译套件的选择，选择Qt自带的编译器 MinGW 64-bit<br><img src="https://s2.loli.net/2024/10/10/rEuBatbvcfyRWI5.png"></p>
-<h3 id="step-6-版本控制系统选择"><a href="#step-6-版本控制系统选择" class="headerlink" title="step 6: 版本控制系统选择"></a>step 6: 版本控制系统选择</h3><p>代码同步工具</p>
-<ul>
-<li>SVN</li>
-<li>GIT</li>
-</ul>
-<h3 id="finish"><a href="#finish" class="headerlink" title="finish"></a>finish</h3><p>完成！<br>如果高版本的Qt可能出现<strong>报错和警告</strong>，尝试：<code>help -- about plugins -- c++ -- ClangCodeModle</code>取消勾选，重启软件。<br><img src="https://s2.loli.net/2024/10/10/miBu3RPaWjdvzlS.png"></p>
-<p><img src="https://s2.loli.net/2024/10/10/gTeIA1pixdWRbNu.png"></p>
-<h2 id="效果展示：Hello-world-in-Window"><a href="#效果展示：Hello-world-in-Window" class="headerlink" title="效果展示：Hello world in Window"></a>效果展示：Hello world in Window</h2><p>in <code>widget.ui </code>design中的窗口设计, 选择一个<code>label</code>和一个<code>push button</code>(the advantage of qt is that you can drag and drop to design the window))<br><img src="https://s2.loli.net/2024/10/10/jUvFDIQn24WE8rx.png"></p>
-<h2 id="trouble-shooting"><a href="#trouble-shooting" class="headerlink" title="trouble shooting"></a>trouble shooting</h2><h3 id="点击-pro多数能打开项目，因为qmake是默认的构建系统"><a href="#点击-pro多数能打开项目，因为qmake是默认的构建系统" class="headerlink" title="点击.pro多数能打开项目，因为qmake是默认的构建系统"></a>点击<code>.pro</code>多数能打开项目，因为<code>qmake</code>是默认的构建系统</h3><h3 id="点击CMakeLists-txt无法正常打开项目"><a href="#点击CMakeLists-txt无法正常打开项目" class="headerlink" title="点击CMakeLists.txt无法正常打开项目"></a>点击<code>CMakeLists.txt</code>无法正常打开项目</h3><h4 id="确认cmake是否安装"><a href="#确认cmake是否安装" class="headerlink" title="确认cmake是否安装"></a>确认cmake是否安装</h4><ol>
-<li>type <code>cmake --version</code> in cmd， 你会得到cmake的版本号</li>
-<li>else安装cmake from <a target="_blank" rel="noopener" href="https://cmake.org/download/">here</a></li>
-</ol>
-<h4 id="确认环境变量是否配置正确"><a href="#确认环境变量是否配置正确" class="headerlink" title="确认环境变量是否配置正确"></a>确认环境变量是否配置正确</h4><ol start="2">
-<li>type <code>echo %PATH%</code> in cmd， 你会得到目前你所有的 PATH，检查qt是否在里面</li>
-<li><img src="https://s2.loli.net/2024/10/10/VT7t9nawDfiWXge.png"></li>
-<li><strong>注意</strong>：区分QtCreator 和 Qt，QtCreator是IDE，Qt是库</li>
-<li><strong>注意</strong>：Path在<em>用户变量</em>有时不会正常生效（Kimi的观点）设置在<em>系统变量</em></li>
-</ol>
-<h4 id="在issue查看configuration-fail的原因"><a href="#在issue查看configuration-fail的原因" class="headerlink" title="在issue查看configuration fail的原因"></a>在<code>issue</code>查看configuration fail的原因</h4><p>每个人的原因可能不一样<br><img src="https://s2.loli.net/2024/10/10/gHB8dAFYKXsZiDv.png"><br>我的是<code>build type</code>的问题，我选择了<code>debug</code>，但是我的<code>debug</code>没有配置</p>
-<ol>
-<li><strong>清理构建目录</strong><code>clear CMake configuration</code>：清理您的构建目录，以确保与构建缓存和配置无关的干净状态。您可以在 Qt Creator 中通过“构建”菜单中的“清理项目”选项清理构建目录。</li>
-<li><strong>重新配置项目</strong><code>run CMake</code>：重新配置项目</li>
-</ol>
-<h3 id="尝试Qt自带的案例examples，感受项目的效果"><a href="#尝试Qt自带的案例examples，感受项目的效果" class="headerlink" title="尝试Qt自带的案例examples，感受项目的效果"></a>尝试Qt自带的案例<code>examples</code>，感受项目的效果</h3><p><img src="https://s2.loli.net/2024/10/10/3fTwkE5tAyCJc7V.png"><br><em>p.s.</em></p>
-<ul>
-<li>in left sidebar <code>projects</code>you see the <code>calqlatre</code> is in bold font, that means it is the current <strong>active</strong> project</li>
-<li>you can see the compiling process in the <code>compile output</code> in the bottom</li>
-<li>you can see the <code>issues</code> in the bottom, if there is any error, you can see it here</li>
-<li>the calculator window will pop up after compiling</li>
-<li>先build （锤子）后 run （绿三角）</li>
-</ul>
-<h2 id="AI生成的回答（仅参考）"><a href="#AI生成的回答（仅参考）" class="headerlink" title="AI生成的回答（仅参考）"></a>AI生成的回答（仅参考）</h2><h3 id="build-debug-release-区别"><a href="#build-debug-release-区别" class="headerlink" title="build debug &#x2F;release 区别"></a>build debug &#x2F;release 区别</h3><h4 id="Debug-构建："><a href="#Debug-构建：" class="headerlink" title="Debug 构建："></a>Debug 构建：</h4><ol>
-<li><strong>编译优化</strong>：通常不进行优化或仅进行最小优化，以便于调试。</li>
-<li><strong>调试信息</strong>：包含完整的调试信息，如符号信息，这有助于调试器定位代码中的问题。</li>
-<li><strong>执行速度</strong>：由于没有优化，执行速度通常较慢。</li>
-<li><strong>错误检查</strong>：包含额外的错误检查和断言，有助于在开发过程中发现问题。</li>
-<li><strong>内存使用</strong>：可能会使用更多的内存，因为优化较少。</li>
-<li><strong>日志记录</strong>：可能会包含更详细的日志记录，以帮助追踪问题。</li>
-<li><strong>符号名称</strong>：变量和函数名称不会被优化掉，保持源代码中的名称，便于调试。</li>
-</ol>
-<h4 id="Release-构建："><a href="#Release-构建：" class="headerlink" title="Release 构建："></a>Release 构建：</h4><ol>
-<li><strong>编译优化</strong>：进行高度优化，以提高应用程序的性能。</li>
-<li><strong>调试信息</strong>：通常不包含调试信息，或只包含非常有限的调试信息。</li>
-<li><strong>执行速度</strong>：由于进行了优化，执行速度较快。</li>
-<li><strong>错误检查</strong>：错误检查和断言可能会被禁用或减少，以避免影响性能。</li>
-<li><strong>内存使用</strong>：优化内存使用，以减少应用程序的内存占用。</li>
-<li><strong>日志记录</strong>：日志记录可能会被禁用或减少，以避免影响性能。</li>
-<li><strong>符号名称</strong>：变量和函数名称可能会被缩短，以减少二进制文件的大小。</li>
-</ol>
-<h4 id="为什么需要不同的构建方式？"><a href="#为什么需要不同的构建方式？" class="headerlink" title="为什么需要不同的构建方式？"></a>为什么需要不同的构建方式？</h4><ul>
-<li><strong>开发和调试</strong>：Debug 构建提供了必要的调试信息和工具，帮助开发者在开发过程中发现和修复错误。</li>
-<li><strong>性能测试</strong>：Release 构建通过优化提供了应用程序的最佳性能，这对于性能测试和最终用户是非常重要的。</li>
-<li><strong>部署</strong>：最终用户通常使用 Release 构建，因为它提供了更好的性能和更小的二进制文件大小。</li>
-</ul>
-<p>在实际开发过程中，开发者可能会在 Debug 模式下编写和测试代码，然后切换到 Release 模式进行性能测试和部署。</p>
-<h3 id="build和compile的区别"><a href="#build和compile的区别" class="headerlink" title="build和compile的区别"></a>build和compile的区别</h3><h4 id="编译（Compile）："><a href="#编译（Compile）：" class="headerlink" title="编译（Compile）："></a>编译（Compile）：</h4><ol>
-<li><strong>定义</strong>：编译是将源代码（通常是单个文件，如 <code>.c</code>、<code>.cpp</code> 文件等）转换成机器码的过程，生成的目标文件通常具有 <code>.obj</code> 或 <code>.o</code> 扩展名。</li>
-<li><strong>编译器</strong>：编译过程通常由编译器完成，如 GCC、Clang、MSVC 等。</li>
-<li><strong>单个文件</strong>：编译通常针对单个源文件，将其从高级语言转换为低级语言。</li>
-<li><strong>语法检查</strong>：编译过程中，编译器会检查语法错误。</li>
-<li><strong>优化</strong>：编译器可能会对代码进行优化，以提高性能或减少生成的机器代码的大小。</li>
-</ol>
-<h4 id="构建（Build）："><a href="#构建（Build）：" class="headerlink" title="构建（Build）："></a>构建（Build）：</h4><ol>
-<li><strong>定义</strong>：构建是一个更广泛的过程，它包括编译、链接等多个步骤，将多个源文件和资源（如库文件、资源文件等）组合成一个可执行文件或库文件。</li>
-<li><strong>构建系统</strong>：构建过程通常由构建系统或构建工具管理，如 Make、CMake、MSBuild、Ant 等。</li>
-<li><strong>多个文件</strong>：构建过程涉及多个源文件和可能的库文件。</li>
-<li><strong>依赖管理</strong>：构建系统会管理文件之间的依赖关系，并确定编译的顺序。</li>
-<li><strong>链接</strong>：构建过程包括链接步骤，将编译后的目标文件与库文件链接在一起，生成最终的可执行文件或库文件。</li>
-<li><strong>自动化</strong>：构建过程可以自动化，通常通过编写构建脚本来定义构建的规则和步骤。</li>
-</ol>
-<h4 id="区别："><a href="#区别：" class="headerlink" title="区别："></a>区别：</h4><ul>
-<li><strong>范围</strong>：编译是构建过程中的一个步骤，构建是一个更全面的过程。</li>
-<li><strong>目标</strong>：编译的目标是生成目标文件，而构建的目标是生成可执行文件或库文件。</li>
-<li><strong>过程</strong>：编译过程关注单个源文件的转换，构建过程关注整个项目从源代码到可执行文件的完整流程。</li>
-</ul>
-
+        <h1 id="Qt版本：Qt-6-7-2-项目配置"><a href="#Qt版本：Qt-6-7-2-项目配置" class="headerlink" title="Qt版本：Qt 6.7.2 项目配置"></a>Qt版本：Qt 6.7.2 项目配置</h1><p>本教程参考哔哩哔哩系列<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1km4y1k7CW/?p=6&spm_id_from=pageDriver&vd_source=113cb04caaabeca910d6d5580d23d578">视频</a></p>
+        
+          <p class="article-more-link">
+            <a href="/2024/10/09/Qt_tutorial/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/10/09/Qt_tutorial/" data-id="cmd6um7n00001zsrzdinf4u16" data-title="Qt 教程" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2024/10/09/Qt_tutorial/" data-id="cmd6vbvja000na0rz7htjezrn" data-title="Qt 教程" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -244,7 +195,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="记录博客配置过程"><a href="#记录博客配置过程" class="headerlink" title="记录博客配置过程"></a>记录博客配置过程</h1>
+        <h1 id="记录博客配置过程"><a href="#记录博客配置过程" class="headerlink" title="记录博客配置过程"></a>记录博客配置过程</h1><p>philosophy: use the default theme and record the change, to make sure the change is controllable. - that’s the reason why I choose landscape theme. </p>
         
           <p class="article-more-link">
             <a href="/2024/10/09/blog-building/#more">Read More</a>
@@ -253,7 +204,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/10/09/blog-building/" data-id="cmd6um7n7000dzsrz4vpc1yr7" data-title="Blog Building" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2024/10/09/blog-building/" data-id="cmd6vbvjb000oa0rzh33g3r44" data-title="Blog Building" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -302,7 +253,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/" data-id="cmd6um7n8000izsrzdk66g56f" data-title="delete_remaining_tags" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/" data-id="cmd6vbvjf0010a0rzdmh93rvj" data-title="delete_remaining_tags" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -343,47 +294,15 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>这个国庆，我以以游戏主美和关卡策划的身份参加了ludum dare 56</p>
-<h1 id="什么是ludum-dare"><a href="#什么是ludum-dare" class="headerlink" title="什么是ludum dare"></a>什么是ludum dare</h1><p>国庆时候跟着大佬参加了ludum dare 56的game jam，这是一个72小时的游戏开发活动。本次的主题是tiny creatures。<br>我在 <a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/creatures-cory">https://ldjam.com/events/ludum-dare/56/creatures-cory</a> 这个游戏中当游戏美术和关卡设计。因为当时对Unity不熟悉，所以没有参与到代码的编写中。</p>
-<h1 id="赛程记录"><a href="#赛程记录" class="headerlink" title="赛程记录"></a>赛程记录</h1><p>在五六七三天每天画画。</p>
-<ul>
-<li>第一天<ul>
-<li>设计关卡</li>
-<li>提交了角色草稿，以及第一张案例图的草稿</li>
-<li>搞定了角色设定，角色走步五张图片</li>
-</ul>
-</li>
-<li>第二天<ul>
-<li>提交了开始界面的设计以及缩略图</li>
-<li>提交了第三关关卡贴图</li>
-<li>完成了开头故事板草稿</li>
-</ul>
-</li>
-<li>第三天<ul>
-<li>两小时完成在地上画画的JK</li>
-<li>接下来的三小时完成了漫画设计</li>
-</ul>
-</li>
-</ul>
-<p>总的来说用git去管理游戏的asset还是很方便的</p>
-<h1 id="游戏体验"><a href="#游戏体验" class="headerlink" title="游戏体验"></a>游戏体验</h1><p>国庆结束前抽空把我们学校所有组的游戏都体验了一下<br>以玩家的视角去看，操作手感不好和卡bug真的很扫兴，除了tiny-elevator是类似于日结算有一个自动触发的结尾，我只通关了tiny spiders adventure。第一次直观感受到引导的重要性：制作者认为显而易见的玩法，玩家get不到。但是从开发者视角去看，3天开发游戏真的很困难。</p>
-<ul>
-<li>附上链接，欢迎大家来体验和评论*</li>
-</ul>
-<ol>
-<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/luca">https://ldjam.com/events/ludum-dare/56/luca</a></li>
-<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/tiny-elevator">https://ldjam.com/events/ludum-dare/56/tiny-elevator</a></li>
-<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/night-at-the-8th-warehouse">https://ldjam.com/events/ludum-dare/56/night-at-the-8th-warehouse</a></li>
-<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/tiny-spiders-adventure">https://ldjam.com/events/ludum-dare/56/tiny-spiders-adventure</a></li>
-<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/creatures-cory">https://ldjam.com/events/ludum-dare/56/creatures-cory</a></li>
-<li><a target="_blank" rel="noopener" href="https://ldjam.com/events/ludum-dare/56/regenesis-bacteria-king">https://ldjam.com/events/ludum-dare/56/regenesis-bacteria-king</a> （半成品）</li>
-</ol>
-<p>luca是细胞演变类型的游戏，但是这个游戏缺少游戏内指引。<br>tiny elevator是电梯把员工送出去的模拟类游戏<br>night at the 8th warehouse是一个恐怖游戏，横板过关<br>tiny spiders adventure是一个横板过关游戏，玩家需要控制蜘蛛击败boss<br>creatures cory是一个类似画中世界+华容道的解谜类游戏</p>
-<p>ludum dare是一个游戏制作比赛，competition组别在48小时内制作一个游戏。gamejam组别在72小时内制作一个游戏。后面可以以修复bug的名义一直修改迭代。<br>RM+1这个队伍没有明显的策划来管控进度，导致任务推进没有保证，这就是松散的技术团队。<br>不过他们对于制作这个游戏的热情是远远高于我的，感觉我一直缺乏一些激情。游戏做出来了。</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2024/10/04/lundum-dare-56/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/10/04/lundum-dare-56/" data-id="cmd6um7nb000zzsrz1nxy3dic" data-title="lundum dare 56 记录" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2024/10/04/lundum-dare-56/" data-id="cmd6vbvjh001fa0rzbp5nds74" data-title="lundum dare 56 记录" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -423,29 +342,16 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近想学习ROS，整一个纯血Linux感受一下。虽然用wsl2也可以，但是有些时候我就是喜欢整一下可有可无的东西。做一个移动的Linux系统，插上就能用还是很有吸引力的</p>
-<h1 id="配置Linux-to-go"><a href="#配置Linux-to-go" class="headerlink" title="配置Linux to go"></a>配置Linux to go</h1><p>本人是Linux技术小白，参考了几篇帖子，在新买的WD-SN580固态硬盘上安装了可移动的Linux系统，即插即用很方便。<br>十月三号从早上九点到下午三点，一共6小时搞定了Linux to go, 测试了两台电脑均没有问题。算是大获成功。——15点08分<br><img src="https://s2.loli.net/2024/10/14/kTYN537mVqSovnW.png" alt="ubuntu logo"></p>
-<h2 id="问题记录"><a href="#问题记录" class="headerlink" title="问题记录"></a>问题记录</h2><p>我正在尝试在我的移动硬盘上安装Linux to go</p>
-<ol>
-<li>跟着教程走下来。Linux系统选完时区，弹出一个窗口，点击后自动重启，然后在重启还没有进入到系统的时候提示”remove the install media”,我拔掉U盘后就自动进入Windows系统了。（教程中是安装完成ubuntu后会停留在Ubuntu的桌面，手动重启安装。）</li>
-<li>接着我重启，进入BIOS，选择boot Ubuntu的时候电脑BIOS界面发出蜂鸣器的beep声音。貌似无法成功boot </li>
-<li>电脑的时间是错乱的</li>
-<li>安装时遇到的问题是显卡驱动安装失败。我从NVidia的官网上找到了驱动<code>.run</code>文件，但是安装失败。</li>
-<li><img src="https://s2.loli.net/2024/10/14/OVkHrTXu6lCegJq.png" alt="ru sure to install?"></li>
-<li><img src="https://s2.loli.net/2024/10/14/dURMlHhoyJV7IYv.png" alt="intallation fail"><br>吃饭时候跟着教程走，把图形化界面关掉了，回来看有点后怕。<br><img src="https://s2.loli.net/2024/10/14/4wHX61mvgOA9GlB.jpg" alt="no GUI"><br>午饭前后的阶段，一直是开机进入grub页面，BIOS也没有作用，只能通过插上硬盘，Linux启动界面选择Windows才能进入系统<br>出过蓝屏的问题，用recovery修复，界面还挺好看<img src="https://s2.loli.net/2024/10/14/zk9m5XI7CDn8drx.jpg" alt="紫色命令行"></li>
-</ol>
-<h2 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h2><p>硬盘扇区对齐，4k对齐是什么<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/u012052268/article/details/77145427">安装Ubuntu Linux系统时硬盘分区最合理的方法_Ubuntu 系统分区-CSDN博客</a><br><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/a07nx4z8/">PE系统</a>选择是什么<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/windson_f/article/details/124932523">how to type Chinese in Ubuntu</a><br><a target="_blank" rel="noopener" href="https://askubuntu.com/questions/1408873/ubuntu-22-04-chinese-simplified-pinyin-input-support/1408874">官方解答如何设置拼音</a><br><a target="_blank" rel="noopener" href="https://www.howtogeek.com/508993/how-to-check-which-gpu-is-installed-on-linux/">How to check my graphic card in Linux system</a><br><a target="_blank" rel="noopener" href="https://www.nvidia.cn/drivers/details/232742/">The driver from NVIDIA for Linux system</a><br>Drivers from Ubuntu official, and it is also recommended by NVIDIA official see <a target="_blank" rel="noopener" href="https://help.ubuntu.com/community/BinaryDriverHowto/Nvidia">link</a><br><a target="_blank" rel="noopener" href="https://askubuntu.com/questions/1261722/llvmpipe-llvm-10-0-0-256-bits-is-getting-detected-instead-of-nvidia">llvmpipe (LLVM 256 bits)</a> means all your graphic section not work, both integrated and dedicated graphic card  </p>
-<h1 id="再编"><a href="#再编" class="headerlink" title="再编"></a>再编</h1><h2 id="2025-07-17-08-57-05"><a href="#2025-07-17-08-57-05" class="headerlink" title="2025-07-17 08:57:05"></a>2025-07-17 08:57:05</h2><ol>
-<li>Linux to go没有想象中那么诱人，每次启动的时候都要进入BIOS选择启动项</li>
-<li>目前没有使用Linux系统的需求，暂时放弃了Linux to go的计划 </li>
-<li>过去的八个月没怎么用（笑死）</li>
-<li>反而是wsl2的体验更好，直接在Windows上就能使用Linux命令行</li>
-</ol>
-
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近想学习ROS，整一个纯血Linux感受一下。</p>
+        
+          <p class="article-more-link">
+            <a href="/2024/10/04/set-up-linux-to-go/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/10/04/set-up-linux-to-go/" data-id="cmd6um7nd0016zsrz0oytgd7l" data-title="set up linux to go" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2024/10/04/set-up-linux-to-go/" data-id="cmd6vbvjk001ua0rz4lkh5aor" data-title="set up linux to go" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -494,7 +400,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/04/28/Record-around-the-final-for-second-term/" data-id="cmd6um7n30004zsrz0bqa2z57" data-title="Around the final for second term" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2024/04/28/Record-around-the-final-for-second-term/" data-id="cmd6vbvj7000da0rz0v9x5222" data-title="Around the final for second term" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -534,82 +440,16 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="福建賽區RMUL比赛"><a href="#福建賽區RMUL比赛" class="headerlink" title="福建賽區RMUL比赛"></a>福建賽區RMUL比赛</h1><h1 id="时间线"><a href="#时间线" class="headerlink" title="时间线"></a>时间线</h1><h2 id="April-11th-Thr"><a href="#April-11th-Thr" class="headerlink" title="April 11th (Thr)"></a>April 11th (Thr)</h2><p>早上是六点二十分在乐天集合的，在那之前我们加急完成了三辆车的机械部分的任务，十号的安装我没有参与，有人是通宵的，任务是十分紧的</p>
-<font size = 1>
-p.s. 我是九号参与安装，熬到了凌晨一点多，然后同一天，这个hexo的博客诞生了———一个极端情况下的疯狂想法
-</font>
-
-<p>看着66*66*70的航空箱，校徽与过岗龙(dragopass)被装上了货拉拉的车，去往福建福州的RMUL比赛打响了</p>
-<p>早餐吃的肯德基，吃完后四辆网约车到坪山站。周边看到了云巴这种类轻轨的交通方式，坪山站可能在扩建。打印报销凭条后过完安检——睡觉。上了D388——睡觉，试图写turtle，不清醒，无果。</p>
-<p>一点半多准时到福州南。体验了类似于探鱼的那种店作为午餐，入住木兰澜苑（MLLY），名字莫名其妙的旅店，但是住的是舒服的。柔和的灯光布景，大面积，我喜欢。<br>晚上去福建理工大学报道，我们的车调了挺久才去裁判区进行检录，那时我们是最后一个队伍而且超时了，但是遇到一个很好的referee，耐心的检测我们的车辆是否符合规则。检录时候遇到许多问题，一一记下，熬夜修改，今天晚上xyf 13号五点才回MLLY，底盘ID改进，侧面反光修改，图传垫高拆装和理线，分类撞翻的螺丝。我赶完了02的hw9due。吃着塔斯汀两个辣的，吃东西时看着视频，时间就过去了。睡得时间还是太短了，第二天六点四十起的</p>
-<p>福州的天气和深圳还是有差异的，比较冷。短袖短裤的，吹得我发颤。</p>
-<h2 id="April-12th-Fri"><a href="#April-12th-Fri" class="headerlink" title="April 12th (Fri)"></a>April 12th (Fri)</h2><p>今天是第一天比赛日，我是六点四十五起的，然后我和mani和陈lp指导是第一批到的，尝试了学校的早餐，很接地气，MLLY2车第二，然后是zsh和coli一众人，我递给他们参赛牌子。核心五人看来是没怎么睡的。</p>
-<p>被裁判组催着做了适应赛的检录——我们知道最后一刻都在调车。打了3v3适应赛，结果很糟，爆出了一系列问题，卡弹是最严重的。哨兵直接过载自杀，步兵也是超限程序没发挥作用，射速也被判定过快，但是实际上是卡弹的，这样子3v3不可能进行。</p>
-<p>当然，糟糕的不知有我们</p>
-<p>下午要打步兵的1v1<em>还好没有3v3</em>，队长说优先把卡弹解决掉——确实，如果没有解决这个下午比赛照样不行<br>我们把车运到coli，然后在里面开始找为什么会卡弹</p>
-<ul>
-<li>两台步兵的弹舱不一样，一个有分层，一个没有，有分层的那个有些时候子弹的中心会在0.75D的位置，然后被分层零件卡住。</li>
-<li>有些时候是两颗子弹被拨弹轮抵住，和右侧面发生巨大的摩擦力（我们是右旋供弹）</li>
-<li>这是我们在当日中午的判定</li>
-</ul>
-<p>修了一中午，以为解决了，实际上没有<br>下午的1v1据说是对方步兵一直超限判罚致死，然后我们赢了（？ 我没看</p>
-<p>晚上吃了顿好的，在一个拥挤的购物广场，类似于绿茶。</p>
-<p>一小时后又回到了福建理工。我去等待调车步兵，他们在调试哨兵的过程中，<br>哨兵转转，失控了，鼠标，键盘，屏幕等连在NUC上的硬件被扯着旋转。wjb用手把1.2$\pi$rad&#x2F;s的哨兵停下来了，的手被划破了。鉴于生化楼晚上会关。<br>收拾好东西回coli继续调</p>
-<ul>
-<li>此处晚上排查问题到凌晨1点，鉴定为爪形导轨，3D打印的零件和发射集成件，由于打印件短了一点，导致形成“凹”字形的结构，弹丸卡进<br>然后用特氟龙胶带把三个零件平滑连接起来，有一台的效果变好了，我们就把这个运用到另外一台上面<br>凌晨两点多，如释重负的的回去睡了。</li>
-</ul>
-<h2 id="April-13th-Sat"><a href="#April-13th-Sat" class="headerlink" title="April 13th (Sat)"></a>April 13th (Sat)</h2><p>今天才是真正的3v3<br>9：50-10：10分对战深北莫（sbm），两场均负，<br>15：40-16：00对战闽江学院，11平<br>一个F小组，三个学校，取两个。遗憾的没有晋级</p>
-<p>卡弹，超功率与避免超是两个问题<br>中午wyx和zdy把哨兵机械结构修复<br>今天没早起，虽然群里说是7点在南校区北门集合，但是机械组由于在目前情况中能做出的贡献有限，于是自己被默许睡到九点</p>
-<p>今天状态不太行，由于熬夜失活<br>没怎么干事，出去接了潘潘，他到了北校区北门，于是多等15min，介绍着目前的情况，走到了赛场</p>
-<h3 id="1v1"><a href="#1v1" class="headerlink" title="1v1"></a>1v1</h3><p>11：50 - 12：00 对战浙江大学城市学院<br>14：30 - 14：40 对战厦门大学</p>
-<h3 id="3v3"><a href="#3v3" class="headerlink" title="3v3"></a>3v3</h3><ol>
-<li>过去刚好看第一场sbm的3v3。0&#x2F;2负于深北莫<br>见wjb的作文<br></li>
-</ol>
-<blockquote>
-<p>首场港中深 0:2憾负深北莫<br></p>
-<ul>
-<li>第一场<br>我们的哨兵机器人开局超功率阵亡，我方基地无敌以及护盾开局归零。<br><br>我们的 3号步兵出现卡弹问题，全场比赛无法射出一发子弹；4号步兵尽力防守，<em>卡弹步兵用尽三次冲撞机会</em>。将对方哨兵打残；可惜无法<br>逆转颓势，港中深0:1负于深北莫<blockquote>
-<ul>
-<li>第二场<br>我方哨兵开局超功率，及时自主降低<br>功率避免了过早阵亡，但仍然到了残<br>血(我们电控只有一个人，他让我们三部机器人正常运转就已经非常厉害了)；<em>缓缓地转</em> <br><br>3号步兵虽然经过场间调试，但仍然未能避免卡弹问题，整场比赛无法进行攻击，并且也会超功率扣血并阵亡，无法参与正面对抗；<br>4号步兵在以一敌二的情况下，打残对方步兵，哨兵；逼退对方英雄机器人；对方有精度优势，在中场吊射摧毁了基地，港中深0:2憾负深北莫。<br><br>我们出线的唯一途径，就是在下午<br>2:0闽江学院：这并不简单，但并不是不能做到。<br>3号步兵在赛后，通过机械组的抢救，已经可以顺畅攻击，哨兵功率的问题也在紧锣密鼓地进行调整。<br><br>深圳北理莫斯科大学 北极熊战队在<br>战场上极其凶狠，但是赛后仍然帮助我们调整机器人，解決了非常多的问题。<br>感谢他们。<br><br>每一把都当最后一把，然后也就不要怕输。希望我们能以全盛姿态，打好之后的每一场比费。</li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<ol start="2">
-<li>和闽江学院的，见wjb小作文<br></li>
-</ol>
-<blockquote>
-<p>时运不济 港中深1:1闽江学院<br></p>
-<ul>
-<li>第一局<br>发现闽江学院没有上英雄；我们分工，一人对峙对方步兵，一人打对面哨兵；起初我方优势，敌方步兵，哨兵相继被击杀；我们前往击打基地；可惜我们步兵相继再现卡弹问题，<em>站在对方基地面前一发子弹没打出去</em>，优势葬送，惜败闽江学<br>院<blockquote>
-<ul>
-<li>第二局<br>吸取教训，第二局我们双步兵利用人数优势集火对面步兵，先击杀步兵再打哨兵；并轮流封堵对方步兵走位空问，将其成功压制在泉水中。另一方占领中央增益区，并击杀对方哨兵。<br>对方基地护盾消失后，我方并无松懈，轮流封堵对方步兵走位，轮流击打对方基地。虽然在最后关头4<br>号步兵再次发生卡弹，但优势已经确立，顺利拿下3<br>v3队史首胜。<br><br>但是，我们的积分并不足够将我们送进16强，我们3v3的步伐到此为止了。<br><br>但是，我们1v1赛道，已经晋级16强，将于今晚或明天进行16进8比赛。<br><br>作为成立不满一年，视觉只有三人，电控只有一人，整队11人左右，初次参加该类赛事的新队伍来讲，走到这里已经非常不容易。我们在这里，向深北莫北极熊战队道谢，祝他们16进8好运；向仲恺农业工程学院道谢;以上两支队伍，以及我校许多研究生学长学姐给予了我们巨大的帮助，没有他们，我们甚至没办法站在这里。<br>感谢各位的关注和支持；也欢迎咨询加入香港中文大学（深圳）过岗龙战队；（视觉组和电控组的四位同学这三天没睡够八小时qwa)<br>*对方步兵精度并不足够对我们处于“小陀螺”状态的步兵造成任何伤害！</li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<p>晚上打完比赛，我们就聊天，看别人比赛</p>
-<p>在coli吃的豪华晚饭，1388吃的不保，味道一般般，亏亏的<br>然后回来慢慢码字</p>
-<h2 id="April-14th-Sun"><a href="#April-14th-Sun" class="headerlink" title="April 14th(Sun)"></a>April 14th(Sun)</h2><p>今天不必早起，七点半起后在MLLY S8不紧不慢的和教授一起吃完早餐，然后不紧不慢的打车去到北门，其间我和xyf和教授了解ECE是怎么样的东西，教授设计了ECE的课程。xyf展示了他想让人工智能和机器人结合在一起的想法，这种机器人记得特斯拉已经在做。他表达他想法时在发光呢，一个扎实的松弛沉稳有奇思的男大（bushi）</p>
-<font size = 1>
-沉稳是问题会想明白，松弛奇思是因为到今天他也没分清楚三种轮子，麦轮的工作原理，哨兵雷达长什么样，以及保持一定看手机的频率但是错过群里消息和PM，我有点看不清楚他的认知方式
-</font>
-
-<p>今天过去主要看深北莫对战3v3，可惜输了，也是因为技术故障。<br>然后强队之间的对战，哨兵功能都十分完整，可以开局单杀对面哨兵说明导航和自瞄识别，决策树都很强<br>然后是我们的1v1，晋级八强，晋级四强<br>在四强中遇到CSGO的s哥，开玩笑的，输了的原因是没有自瞄，手动在程序面前还是有大差距的<br>我们是殿军，就是季军后面那个（今天才知道这个词）<br>午餐的COTTI9.9，我们学校什么时候才能让学生喝得起咖啡。<br>下午两点，我们提前回去的一批人打车到了福州南站。动车上“写”完了物理，码完了字。回去休息了</p>
-<h1 id="观察与反思"><a href="#观察与反思" class="headerlink" title="观察与反思"></a>观察与反思</h1><h3 id="交流为主"><a href="#交流为主" class="headerlink" title="交流为主"></a>交流为主</h3><p>大家在技术上交流还是和平的，藏着掖着的可能也只是自己的核心机密。<br>* 赛前深北莫还来帮忙装车了<br>* 第一天第二天我们均有借入与借出工具。并不会因为是陌生，而见外<br>* 第一天比完赛，出问题，深北莫鼎立相助<br>* 最后一场与闽江的对抗，他们为我们喝彩，还是挺感动的。</p>
-<h3 id="能力决定责任"><a href="#能力决定责任" class="headerlink" title="能力决定责任"></a>能力决定责任</h3><p>几个会的最多的熬的最猛，单日预算完全用不完，因为一天只吃一顿，晚上也不怎么睡觉。。。<br>而我啥也不会，只能尽力打杂。这种感觉其实挺不好。但是确实见识到他们在做的是什么，以后应该去学一些什么<br>潘教授也是这么说的，现在是见习，以后才能成为主力</p>
-<h3 id="学习方向"><a href="#学习方向" class="headerlink" title="学习方向"></a>学习方向</h3><ul>
-<li>视觉的opencv自瞄真的很重要，哨兵的自瞄如果足够准，在战局中可以起到至关重要的作用</li>
-<li>电控组要求掌握ROS，如何去控制机器人的每部分也很重要</li>
-<li>唯有热情不灭才能前进</li>
-</ul>
-
+        <h1 id="福建賽區RMUL比赛记录"><a href="#福建賽區RMUL比赛记录" class="headerlink" title="福建賽區RMUL比赛记录"></a>福建賽區RMUL比赛记录</h1>
+        
+          <p class="article-more-link">
+            <a href="/2024/04/13/Record-reflection-on-RMUL/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/04/13/Record-reflection-on-RMUL/" data-id="cmd6um7n30005zsrzefcof9i8" data-title="reflection of RMUL" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2024/04/13/Record-reflection-on-RMUL/" data-id="cmd6vbvj9000ja0rz9srv7prg" data-title="reflection of RMUL" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -638,7 +478,7 @@ p.s. 我是九号参与安装，熬到了凌晨一点多，然后同一天，这
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/">Computer Science</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/Language/">Language</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/Operating-Systems/">Operating Systems</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Daily/">Daily</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Daily/Gardening/">Gardening</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Electric-Engineering/">Electric Engineering</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Electric-Engineering/Ports/">Ports</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Mathematics/">Mathematics</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Mathematics/Statistics/">Statistics</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/">Project</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Project/Game/">Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/Software/">Software</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/Web/">Web</a></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/">Computer Science</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/Language/">Language</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/Operating-Systems/">Operating Systems</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Daily/">Daily</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Daily/Gardening/">Gardening</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Electric-Engineering/">Electric Engineering</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Electric-Engineering/Ports/">Ports</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Mathematics/">Mathematics</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Mathematics/Statistics/">Statistics</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Mechanical-Design/">Mechanical Design</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/">Project</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Project/Game/">Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/Software/">Software</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/Web/">Web</a></li></ul></li></ul>
     </div>
   </div>
 
@@ -648,7 +488,7 @@ p.s. 我是九号参与安装，熬到了凌晨一点多，然后同一天，这
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gardening/" rel="tag">gardening</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gardening/" rel="tag">gardening</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
     </div>
   </div>
 
@@ -658,7 +498,7 @@ p.s. 我是九号参与安装，熬到了凌晨一点多，然后同一天，这
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 10px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 12.5px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/gardening/" style="font-size: 10px;">gardening</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 12.5px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/gardening/" style="font-size: 10px;">gardening</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -667,7 +507,7 @@ p.s. 我是九号参与安装，熬到了凌晨一点多，然后同一天，这
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">July 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">July 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li></ul>
     </div>
   </div>
 
@@ -680,6 +520,10 @@ p.s. 我是九号参与安装，熬到了凌晨一点多，然后同一天，这
       <ul>
         
           <li>
+            <a href="/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/">旋转靶机械结构设计笔记</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/17/navigator/">NAVIGATOR</a>
           </li>
         
@@ -688,15 +532,11 @@ p.s. 我是九号参与安装，熬到了凌晨一点多，然后同一天，这
           </li>
         
           <li>
+            <a href="/2025/07/17/hexo-mermaid-tutorial/">在 Hexo + Landscape 主题中配置 Mermaid 流程图教程</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/13/draft/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/10/draft/demand-aided-product-design/">demand aided product design</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/05/curiosity-project/">curiosity project</a>
           </li>
         
       </ul>
