@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Tag: C/C++ | Like&#39;s Blog</title>
+  <title>PEDF-Flexible-system | Like&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Like&#39;s Blog">
-<meta property="og:url" content="https://humble-learner006.github.io/tags/C-C/index.html">
+  <meta name="description" content="本文是笔者对于光储直柔中柔性”flexibility”系统的调研总结。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PEDF-Flexible-system">
+<meta property="og:url" content="https://humble-learner006.github.io/2025/07/18/PEDF-Flexible-system/index.html">
 <meta property="og:site_name" content="Like&#39;s Blog">
+<meta property="og:description" content="本文是笔者对于光储直柔中柔性”flexibility”系统的调研总结。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-07-18T07:14:34.000Z">
+<meta property="article:modified_time" content="2025-07-18T08:11:41.150Z">
 <meta property="article:author" content="Like CAI">
+<meta property="article:tag" content="flexible-system">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Like's Blog" type="application/atom+xml">
@@ -69,96 +74,141 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/10/20/build-system/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-10-20T03:41:24.000Z" itemprop="datePublished">Oct 20</time>
+        <section id="main"><article id="post-PEDF-Flexible-system" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/07/18/PEDF-Flexible-system/" class="article-date">
+  <time class="dt-published" datetime="2025-07-18T07:14:34.000Z" itemprop="datePublished">2025-07-18</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Electric-Engineering/">Electric Engineering</a>►<a class="article-category-link" href="/categories/Electric-Engineering/PEDF/">PEDF</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/10/20/build-system/">build_system</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      PEDF-Flexible-system
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/10/12/setup-SDL2-in-Qt/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-10-12T09:28:30.000Z" itemprop="datePublished">Oct 12</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/10/12/setup-SDL2-in-Qt/">setup SDL2 in Qt</a>
-    </h1>
-  
+        <p>本文是笔者对于光储直柔中柔性”flexibility”系统的调研总结。</p>
+<span id="more"></span>
+<p>PEDF是photoelectric direct flexible system的缩写，指的是光伏、储能、直流负载和柔性负载的组合系统，本文着重介绍柔性系统。</p>
+<h1 id="调研目标"><a href="#调研目标" class="headerlink" title="调研目标"></a>调研目标</h1><p>(a)学习文件《建筑光储直柔系统评价标准》- 建筑能源协会 20231201版，后文以《标准》代称。(b)查看其他相关文献以及报告<br>重点调研柔性调节中：</p>
+<ul>
+<li>技术实现</li>
+<li>相关指标</li>
+<li>当下研究重点<br>总结文档，要求能向外行人清晰明了的展示什么是“柔性控制策略”</li>
+</ul>
+<p>作为服务公司，我们怎么帮别人申报光储直柔项目，以获得政府的资金支持</p>
+<h1 id="技术实现"><a href="#技术实现" class="headerlink" title="技术实现"></a>技术实现</h1><p><strong>柔性控制策略</strong>（对当前功率的主动响应）来实现对电力的高效利用和调节。</p>
+<h2 id="相关指标"><a href="#相关指标" class="headerlink" title="相关指标"></a>相关指标</h2><p>系统的评价以定量评价（指标计算）为主：</p>
+<ol>
+<li>设计评价，在<strong>设计图完成</strong>后进行<ol>
+<li>评价标准：<ol>
+<li>以计算或模拟数据为主</li>
+</ol>
+</li>
+<li>所需文件：<ol>
+<li>见《标准》3.0.5</li>
+<li>着重摘出：设备选型的资料，柔性策略的说明，计算模拟报告</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>运行评价，建筑<strong>使用1年</strong>后进行<ol>
+<li>评价标准<ol>
+<li>以实际运行数据、典型工况测试数据为主</li>
+</ol>
+</li>
+<li>所需文件<ol>
+<li>见《标准》3.0.6</li>
+<li>着重摘出： 设备测试报告</li>
+<li>数据：<ol>
+<li>年总能耗</li>
+<li>光伏发电量</li>
+<li>四季典型工作日和典型节假日的24h负荷曲线</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>细则<ol>
+<li><p>光伏评价指标</p>
+<ol>
+<li>安装面积的比例</li>
+<li>不同情况的发电量和用电量的情况下，光伏发电自给率数值（避免高发低用）</li>
+</ol>
+</li>
+<li><p>储能方式：蓄电池等</p>
+</li>
+<li><p>直流配电用电指标</p>
+<ol>
+<li>《标准》4.3</li>
+</ol>
+</li>
+<li><p><strong>柔性效果评价指标</strong></p>
+<ol>
+<li><strong>单次调节能力</strong>和24小时<strong>连续调节能力</strong></li>
+</ol>
+</li>
+<li><p><strong>柔性过程评价指标</strong></p>
+<ol>
+<li>响应时间，响应速率，可持续调节时间</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="柔性效果评价指标"><a href="#柔性效果评价指标" class="headerlink" title="柔性效果评价指标"></a>柔性效果评价指标</h3><h4 id="如何计算单词调节能力"><a href="#如何计算单词调节能力" class="headerlink" title="如何计算单词调节能力"></a>如何计算单词调节能力</h4><h4 id="如何计算24小时连续调节能力"><a href="#如何计算24小时连续调节能力" class="headerlink" title="如何计算24小时连续调节能力"></a>如何计算24小时连续调节能力</h4><h3 id="柔性过程评价指标"><a href="#柔性过程评价指标" class="headerlink" title="柔性过程评价指标"></a>柔性过程评价指标</h3><h4 id="响应时间"><a href="#响应时间" class="headerlink" title="响应时间"></a>响应时间</h4><h4 id="响应速率"><a href="#响应速率" class="headerlink" title="响应速率"></a>响应速率</h4><h4 id="可持续调节时间"><a href="#可持续调节时间" class="headerlink" title="可持续调节时间"></a>可持续调节时间</h4><h2 id="当下研究重点"><a href="#当下研究重点" class="headerlink" title="当下研究重点"></a>当下研究重点</h2><h1 id="Appendix"><a href="#Appendix" class="headerlink" title="Appendix"></a>Appendix</h1><h2 id="重要指标的定义"><a href="#重要指标的定义" class="headerlink" title="重要指标的定义"></a>重要指标的定义</h2><p>多数指标都在《标准》里面有定义</p>
+<ol>
+<li>光伏发电自用率 &#x3D; 就地消纳光伏发电量：总发电量</li>
+</ol>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/10/12/GitHub_note/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-10-12T04:19:19.000Z" itemprop="datePublished">Oct 12</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/10/12/GitHub_note/">GitHub discovery</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/10/10/pointer/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-10-10T02:22:29.000Z" itemprop="datePublished">Oct 10</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2025/07/18/PEDF-Flexible-system/" data-id="cmd8kgcxi0000r4rzffvg5lq6" data-title="PEDF-Flexible-system" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/10/10/pointer/">pointer</a>
-    </h1>
-  
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2077/05/09/navigator/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          NAVIGATOR
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2025/07/18/chinese-bonsai/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">chinese-bonsai</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
