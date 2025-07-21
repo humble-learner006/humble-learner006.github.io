@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题 | Like&#39;s Blog</title>
+  <title>render latex in hexo blog | Like&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="从零开始配置Hexo博客的Latex渲染器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题">
-<meta property="og:url" content="https://humble-learner006.github.io/2025/07/21/hexo-pandoc-math-rendering-fix/index.html">
+<meta property="og:title" content="render latex in hexo blog">
+<meta property="og:url" content="https://humble-learner006.github.io/2025/07/21/render-latex-in-hexo-blog/index.html">
 <meta property="og:site_name" content="Like&#39;s Blog">
 <meta property="og:description" content="从零开始配置Hexo博客的Latex渲染器">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-07-21T08:00:00.000Z">
-<meta property="article:modified_time" content="2025-07-21T07:37:52.992Z">
+<meta property="article:published_time" content="2025-07-21T07:58:54.000Z">
+<meta property="article:modified_time" content="2025-07-21T08:00:08.458Z">
 <meta property="article:author" content="Like CAI">
 <meta property="article:tag" content="tutorial">
 <meta property="article:tag" content="blog">
@@ -40,7 +40,119 @@
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body>
   <div id="container">
@@ -78,10 +190,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-hexo-pandoc-math-rendering-fix" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-render-latex-in-hexo-blog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2025/07/21/hexo-pandoc-math-rendering-fix/" class="article-date">
-  <time class="dt-published" datetime="2025-07-21T08:00:00.000Z" itemprop="datePublished">2025-07-21</time>
+    <a href="/2025/07/21/render-latex-in-hexo-blog/" class="article-date">
+  <time class="dt-published" datetime="2025-07-21T07:58:54.000Z" itemprop="datePublished">2025-07-21</time>
 </a>
     
   <div class="article-category">
@@ -96,7 +208,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题
+      render latex in hexo blog
     </h1>
   
 
@@ -116,8 +228,7 @@
 </ul>
 <h2 id="前置条件安装pandoc">前置条件：安装Pandoc</h2>
 <h3 id="下载pandoc-msi安装包">1. 下载Pandoc MSI安装包</h3>
-<p>访问 <a
-target="_blank" rel="noopener" href="https://pandoc.org/installing.html">Pandoc官方下载页面</a>，下载Windows平台的MSI安装包：</p>
+<p>访问 <a target="_blank" rel="noopener" href="https://pandoc.org/installing.html">Pandoc官方下载页面</a>，下载Windows平台的MSI安装包：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/jgm/pandoc/releases/latest</span><br></pre></td></tr></table></figure>
 <p><strong>重要</strong>: 必须下载 <code>.msi</code>
 文件，不要使用其他安装方式（如zip包或chocolatey），MSI安装包会自动配置PATH环境变量。</p>
@@ -141,14 +252,12 @@ target="_blank" rel="noopener" href="https://pandoc.org/installing.html">Pandoc�
 <h3 id="验证渲染器配置">3. 验证渲染器配置</h3>
 <p>运行以下命令检查：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-<h2
-id="配置hexo-filter-mathjax以支持代码块渲染">配置hexo-filter-mathjax以支持代码块渲染</h2>
-<p>我没有申请转载，请跳转至<a
-target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/660317970">知乎页面</a>，或者mathjax官网教程完成这个设置
+<h2 id="配置hexo-filter-mathjax以支持代码块渲染">配置hexo-filter-mathjax以支持代码块渲染</h2>
+<p>我没有申请转载，请跳转至<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/660317970">知乎页面</a>，或者mathjax官网教程完成这个设置
 ## 遇到的问题</p>
 <p>在配置完pandoc渲染器后，运行 <code>hexo generate</code>
-时遇到了以下数学公式渲染警告： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[WARNING] Could not convert TeX math  \gamma_&#123;up&#125; = \frac&#123;Q_&#123;up&#125;&#125;&#123;\int_&#123;t_0&#125;^&#123;t_1&#125; P_&#123;0&#125;(t) dt&#125; , rendering as TeX</span><br></pre></td></tr></table></figure>
-这些警告表示pandoc无法正确转换LaTeX数学公式。 原因是 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$$\gamma_&#123;up&#125; = \frac&#123;Q_&#123;up&#125;&#125;&#123;\int_&#123;t_0&#125;^&#123;t_1&#125; P_&#123;0&#125;(t) dt&#125;$$</span><br><span class="line">\[ \gamma_&#123;up&#125; = \frac&#123;Q_&#123;up&#125;&#125;&#123;\int_&#123;t_0&#125;^&#123;t_1&#125; P_&#123;0&#125;(t) dt&#125; \]</span><br></pre></td></tr></table></figure>
+时遇到了以下数学公式渲染警告： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[WARNING] Could not convert TeX math  \gamma_{up} = \frac{Q_{up}}{\int_{t_0}^{t_1} P_{0}(t) dt} , rendering as TeX</span><br></pre></td></tr></table></figure>
+这些警告表示pandoc无法正确转换LaTeX数学公式。 原因是 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$$\gamma_{up} = \frac{Q_{up}}{\int_{t_0}^{t_1} P_{0}(t) dt}$$</span><br><span class="line">\[ \gamma_{up} = \frac{Q_{up}}{\int_{t_0}^{t_1} P_{0}(t) dt} \]</span><br></pre></td></tr></table></figure>
 是不一样的 但是这两个的区别不是出问题的根本原因，如果需要渲染公式块
 正确的做法是使用双美元符号 <code>$$</code> 包裹公式 + mathjax
 然后进一步在元数据（博客post模板最上面的定义配置）添加mathjax: true</p>
@@ -156,14 +265,12 @@ target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/660317970">知
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 0. 安装Pandoc MSI包</span></span><br><span class="line"><span class="comment"># 1. 验证pandoc安装</span></span><br><span class="line">pandoc <span class="literal">--version</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 安装pandoc渲染器</span></span><br><span class="line">npm install hexo<span class="literal">-renderer-pandoc</span> <span class="literal">--save</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 卸载默认渲染器</span></span><br><span class="line">npm uninstall hexo<span class="literal">-renderer-marked</span> <span class="literal">--save</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 清理并重新生成</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 5. 本地预览测试</span></span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 6. 根据需要，添加mathjax的配置</span></span><br></pre></td></tr></table></figure>
 <h2 id="演示">演示</h2>
 <h3 id="markdown代码示例">Markdown代码示例</h3>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">$E = mc^2$</span><br><span class="line"></span><br><span class="line">\(E = mc^3\)</span><br><span class="line"></span><br><span class="line">\[E = mc^4\]</span><br><span class="line"></span><br><span class="line">$$E = mc^5$$</span><br><span class="line"></span><br><span class="line">\begin&#123;equation&#125;</span><br><span class="line">E = mc^6</span><br><span class="line">\end&#123;equation&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;align&#125;</span><br><span class="line">E = mc^7 \\</span><br><span class="line">E = mc^8 \\</span><br><span class="line">E = mc^9</span><br><span class="line">\end&#123;align&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">$E = mc^2$</span><br><span class="line"></span><br><span class="line">\(E = mc^3\)</span><br><span class="line"></span><br><span class="line">\[E = mc^4\]</span><br><span class="line"></span><br><span class="line">$$E = mc^5$$</span><br><span class="line"></span><br><span class="line">\begin{equation}</span><br><span class="line">E = mc^6</span><br><span class="line">\end{equation}</span><br><span class="line"></span><br><span class="line">\begin{align}</span><br><span class="line">E = mc^7 \\</span><br><span class="line">E = mc^8 \\</span><br><span class="line">E = mc^9</span><br><span class="line">\end{align}</span><br></pre></td></tr></table></figure>
 <h3 id="渲染结果">渲染结果</h3>
-<p><span
-class="math inline"><em>E</em> = <em>m</em><em>c</em><sup>2</sup></span></p>
+<p><span class="math inline"><em>E</em> = <em>m</em><em>c</em><sup>2</sup></span></p>
 <p>(E = mc^3)</p>
 <p>[E = mc^4]</p>
-<p><span
-class="math display"><em>E</em> = <em>m</em><em>c</em><sup>5</sup></span></p>
+<p><span class="math display"><em>E</em> = <em>m</em><em>c</em><sup>5</sup></span></p>
 <p></p>
 <p></p>
 <p>你没有想错，最后两组压根没渲染出来</p>
@@ -173,7 +280,7 @@ class="math display"><em>E</em> = <em>m</em><em>c</em><sup>5</sup></span></p
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/07/21/hexo-pandoc-math-rendering-fix/" data-id="cmdcsnadq0019vorza9zggc4g" data-title="解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/07/21/render-latex-in-hexo-blog/" data-id="cmdctgg5f001k8wrz52kq0mn2" data-title="render latex in hexo blog" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -240,7 +347,7 @@ class="math display"><em>E</em> = <em>m</em><em>c</em><sup>5</sup></span></p
           </li>
         
           <li>
-            <a href="/2025/07/21/hexo-pandoc-math-rendering-fix/">解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题</a>
+            <a href="/2025/07/21/render-latex-in-hexo-blog/">render latex in hexo blog</a>
           </li>
         
           <li>
