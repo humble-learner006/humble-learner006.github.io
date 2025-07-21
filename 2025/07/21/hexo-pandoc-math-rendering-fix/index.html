@@ -4,14 +4,23 @@
   <meta charset="utf-8">
   
   
-  <title>Tag: git | Like&#39;s Blog</title>
+  <title>解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题 | Like&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Like&#39;s Blog">
-<meta property="og:url" content="https://humble-learner006.github.io/tags/git/index.html">
+  <meta name="description" content="从零开始配置Hexo博客的Latex渲染器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题">
+<meta property="og:url" content="https://humble-learner006.github.io/2025/07/21/hexo-pandoc-math-rendering-fix/index.html">
 <meta property="og:site_name" content="Like&#39;s Blog">
+<meta property="og:description" content="从零开始配置Hexo博客的Latex渲染器">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-07-21T08:00:00.000Z">
+<meta property="article:modified_time" content="2025-07-21T07:37:52.992Z">
 <meta property="article:author" content="Like CAI">
+<meta property="article:tag" content="tutorial">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="latex">
+<meta property="article:tag" content="math">
+<meta property="article:tag" content="problem-solving">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Like's Blog" type="application/atom+xml">
@@ -69,58 +78,132 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/10/12/GitHub_note/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-10-12T04:19:19.000Z" itemprop="datePublished">Oct 12</time>
+        <section id="main"><article id="post-hexo-pandoc-math-rendering-fix" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/07/21/hexo-pandoc-math-rendering-fix/" class="article-date">
+  <time class="dt-published" datetime="2025-07-21T08:00:00.000Z" itemprop="datePublished">2025-07-21</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Project/">Project</a>►<a class="article-category-link" href="/categories/Project/Web/">Web</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/10/12/GitHub_note/">GitHub discovery</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/10/10/git-tutorial/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-10-10T04:32:38.000Z" itemprop="datePublished">Oct 10</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/10/10/git-tutorial/">git_tutorial</a>
-    </h1>
-  
+        <p>从零开始配置Hexo博客的Latex渲染器 <span id="more"></span></p>
+<h2 id="环境信息">环境信息</h2>
+<ul>
+<li><strong>操作系统</strong>: Windows 11</li>
+<li><strong>博客框架</strong>: Hexo</li>
+<li><strong>主题</strong>: Landscape (默认主题)</li>
+<li><strong>渲染器</strong>: hexo-renderer-pandoc v0.5.0</li>
+<li><strong>Shell</strong>: PowerShell</li>
+<li><strong>Pandoc版本</strong>: 最新稳定版 (通过MSI安装)</li>
+</ul>
+<h2 id="前置条件安装pandoc">前置条件：安装Pandoc</h2>
+<h3 id="下载pandoc-msi安装包">1. 下载Pandoc MSI安装包</h3>
+<p>访问 <a
+target="_blank" rel="noopener" href="https://pandoc.org/installing.html">Pandoc官方下载页面</a>，下载Windows平台的MSI安装包：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/jgm/pandoc/releases/latest</span><br></pre></td></tr></table></figure>
+<p><strong>重要</strong>: 必须下载 <code>.msi</code>
+文件，不要使用其他安装方式（如zip包或chocolatey），MSI安装包会自动配置PATH环境变量。</p>
+<h3 id="安装pandoc">2. 安装Pandoc</h3>
+<ol type="1">
+<li>双击下载的 <code>.msi</code> 文件</li>
+<li>按照安装向导完成安装</li>
+<li>安装完成后重启PowerShell终端</li>
+</ol>
+<h3 id="验证pandoc安装">3. 验证Pandoc安装</h3>
+<p>在PowerShell中运行：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc <span class="literal">--version</span></span><br></pre></td></tr></table></figure>
+<p>应该看到类似输出： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pandoc 3.x.x</span><br><span class="line">Features: +server +lua</span><br><span class="line">Scripting engine: Lua 5.4</span><br></pre></td></tr></table></figure></p>
+<p>如果提示”命令未找到”，需要手动添加Pandoc到PATH环境变量。</p>
+<h2 id="配置hexo使用pandoc渲染器">配置Hexo使用Pandoc渲染器</h2>
+<h3 id="安装hexo-renderer-pandoc">1. 安装hexo-renderer-pandoc</h3>
+<p>在Hexo项目根目录下运行：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo<span class="literal">-renderer-pandoc</span> <span class="literal">--save</span></span><br></pre></td></tr></table></figure>
+<h3 id="卸载默认渲染器可选但推荐">2. 卸载默认渲染器（可选但推荐）</h3>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo<span class="literal">-renderer-marked</span> <span class="literal">--save</span></span><br></pre></td></tr></table></figure>
+<h3 id="验证渲染器配置">3. 验证渲染器配置</h3>
+<p>运行以下命令检查：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<h2
+id="配置hexo-filter-mathjax以支持代码块渲染">配置hexo-filter-mathjax以支持代码块渲染</h2>
+<p>我没有申请转载，请跳转至<a
+target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/660317970">知乎页面</a>，或者mathjax官网教程完成这个设置
+## 遇到的问题</p>
+<p>在配置完pandoc渲染器后，运行 <code>hexo generate</code>
+时遇到了以下数学公式渲染警告： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[WARNING] Could not convert TeX math  \gamma_&#123;up&#125; = \frac&#123;Q_&#123;up&#125;&#125;&#123;\int_&#123;t_0&#125;^&#123;t_1&#125; P_&#123;0&#125;(t) dt&#125; , rendering as TeX</span><br></pre></td></tr></table></figure>
+这些警告表示pandoc无法正确转换LaTeX数学公式。 原因是 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$$\gamma_&#123;up&#125; = \frac&#123;Q_&#123;up&#125;&#125;&#123;\int_&#123;t_0&#125;^&#123;t_1&#125; P_&#123;0&#125;(t) dt&#125;$$</span><br><span class="line">\[ \gamma_&#123;up&#125; = \frac&#123;Q_&#123;up&#125;&#125;&#123;\int_&#123;t_0&#125;^&#123;t_1&#125; P_&#123;0&#125;(t) dt&#125; \]</span><br></pre></td></tr></table></figure>
+是不一样的 但是这两个的区别不是出问题的根本原因，如果需要渲染公式块
+正确的做法是使用双美元符号 <code>$$</code> 包裹公式 + mathjax
+然后进一步在元数据（博客post模板最上面的定义配置）添加mathjax: true</p>
+<h2 id="所有命令行命令">所有命令行命令</h2>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 0. 安装Pandoc MSI包</span></span><br><span class="line"><span class="comment"># 1. 验证pandoc安装</span></span><br><span class="line">pandoc <span class="literal">--version</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 安装pandoc渲染器</span></span><br><span class="line">npm install hexo<span class="literal">-renderer-pandoc</span> <span class="literal">--save</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 卸载默认渲染器</span></span><br><span class="line">npm uninstall hexo<span class="literal">-renderer-marked</span> <span class="literal">--save</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 清理并重新生成</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 5. 本地预览测试</span></span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 6. 根据需要，添加mathjax的配置</span></span><br></pre></td></tr></table></figure>
+<h2 id="演示">演示</h2>
+<h3 id="markdown代码示例">Markdown代码示例</h3>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">$E = mc^2$</span><br><span class="line"></span><br><span class="line">\(E = mc^3\)</span><br><span class="line"></span><br><span class="line">\[E = mc^4\]</span><br><span class="line"></span><br><span class="line">$$E = mc^5$$</span><br><span class="line"></span><br><span class="line">\begin&#123;equation&#125;</span><br><span class="line">E = mc^6</span><br><span class="line">\end&#123;equation&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;align&#125;</span><br><span class="line">E = mc^7 \\</span><br><span class="line">E = mc^8 \\</span><br><span class="line">E = mc^9</span><br><span class="line">\end&#123;align&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="渲染结果">渲染结果</h3>
+<p><span
+class="math inline"><em>E</em> = <em>m</em><em>c</em><sup>2</sup></span></p>
+<p>(E = mc^3)</p>
+<p>[E = mc^4]</p>
+<p><span
+class="math display"><em>E</em> = <em>m</em><em>c</em><sup>5</sup></span></p>
+<p></p>
+<p></p>
+<p>你没有想错，最后两组压根没渲染出来</p>
+<h2 id="总结">总结</h2>
+<p>希望这个完整的技术栈配置指南能帮助到需要在Windows环境下配置Hexo+Pandoc数学渲染的朋友们！关键是要使用MSI安装包来安装Pandoc，并严格按照命令序列执行配置步骤。</p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2025/07/21/hexo-pandoc-math-rendering-fix/" data-id="cmdcsnadq0019vorza9zggc4g" data-title="解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/latex/" rel="tag">latex</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/math/" rel="tag">math</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/problem-solving/" rel="tag">problem-solving</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2077/05/09/navigator/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          NAVIGATOR
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2025/07/20/PEDF-introduction/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">PEDF introduction</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>

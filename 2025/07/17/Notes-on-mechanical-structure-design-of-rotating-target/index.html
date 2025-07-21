@@ -13,7 +13,6 @@
 <meta property="og:site_name" content="Like&#39;s Blog">
 <meta property="og:description" content="2025年，过岗龙需要一个旋转靶子">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://tc.z.wiki/autoupload/f/wSafM9E-riki2h6VXC5RJbZhwuM6ABTZJrGRmhmmFKWyl5f0KlZfm6UsKj-HyTuv/20250717/CaDr/1586X959/3508%E5%AE%89%E8%A3%85%E5%AD%94%E4%BD%8D.png">
 <meta property="og:image" content="https://z.wiki/u/NMavMq">
 <meta property="article:published_time" content="2025-07-17T05:34:29.000Z">
 <meta property="article:modified_time" content="2025-07-17T08:24:49.107Z">
@@ -21,7 +20,7 @@
 <meta property="article:tag" content="Robomaster">
 <meta property="article:tag" content="mechanical structure">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tc.z.wiki/autoupload/f/wSafM9E-riki2h6VXC5RJbZhwuM6ABTZJrGRmhmmFKWyl5f0KlZfm6UsKj-HyTuv/20250717/CaDr/1586X959/3508%E5%AE%89%E8%A3%85%E5%AD%94%E4%BD%8D.png">
+<meta name="twitter:image" content="https://z.wiki/u/NMavMq">
   
     <link rel="alternate" href="/atom.xml" title="Like's Blog" type="application/atom+xml">
   
@@ -104,35 +103,43 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>2025年，过岗龙需要一个旋转靶子</p>
-<span id="more"></span>
-<h1 id="设计需求"><a href="#设计需求" class="headerlink" title="设计需求"></a>设计需求</h1><ol>
-<li>转速达到3rps，也就是每分钟180转</li>
-<li>旋转靶子直径在60cm</li>
-<li>高度差分达到30cm</li>
-<li>由于惯性，滑轨结构尽量低趴</li>
-</ol>
-<h1 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h1><ol>
+        <p>2025年，过岗龙需要一个旋转靶子 <span id="more"></span> # 设计需求 1.
+转速达到3rps，也就是每分钟180转 2. 旋转靶子直径在60cm 3.
+高度差分达到30cm 4. 由于惯性，滑轨结构尽量低趴</p>
+<h1 id="设计目标">设计目标</h1>
+<ol type="1">
 <li>制作一个通用的旋转机构</li>
 <li>低成本（主要使用3D打印和玻璃纤维，只有必要零件使用金属</li>
 <li>对快拆的一次尝试</li>
 <li>对“成员在线合作”和“自研机械结构”的尝试</li>
 </ol>
-<h1 id="设计参数参考"><a href="#设计参数参考" class="headerlink" title="设计参数参考"></a>设计参数参考</h1><h2 id="3508电机"><a href="#3508电机" class="headerlink" title="3508电机"></a>3508电机</h2><p>参考<a target="_blank" rel="noopener" href="https://rm-static.djicdn.com/tem/17348/RoboMaster%20M3508%E7%9B%B4%E6%B5%81%E6%97%A0%E5%88%B7%E5%87%8F%E9%80%9F%E7%94%B5%E6%9C%BA%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8EV1.0%EF%BC%88%E4%B8%AD%E8%8B%B1%E6%97%A5%EF%BC%89.pdf">3508电机参数</a></p>
-<p><img src="https://tc.z.wiki/autoupload/f/wSafM9E-riki2h6VXC5RJbZhwuM6ABTZJrGRmhmmFKWyl5f0KlZfm6UsKj-HyTuv/20250717/CaDr/1586X959/3508%E5%AE%89%E8%A3%85%E5%AD%94%E4%BD%8D.png" alt="3508安装孔位.png"></p>
-<h3 id="参数计算"><a href="#参数计算" class="headerlink" title="参数计算"></a>参数计算</h3><p>此处要用3508电机小齿轮驱动云台的大齿轮达到3rps的转速<br>已知约束：</p>
-<ol>
-<li>轴距小于90mm</li>
-<li>云台大齿轮内径大于101mm</li>
-<li>3508端小齿轮额定转速469rpm</li>
-</ol>
-<p>开始计算齿比（传动比）：<br>3rps &#x3D; 180rpm<br>转速比 &#x3D; 469rpm &#x2F; 180rpm &#x3D; 2.6<br>齿数比 &#x3D; 大：小 &#x3D; 2.6<br>大疆3508内齿模数0.6，齿数17，中空孔径5mm。但是先不考虑直接连接的方案。</p>
-<h2 id="电池支架"><a href="#电池支架" class="headerlink" title="电池支架"></a>电池支架</h2><p>参考<a target="_blank" rel="noopener" href="https://rm-static.djicdn.com/tem/17348/RoboMaster%E7%94%B5%E6%B1%A0%E6%9E%B6%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf">电池支架参数</a><br><img src="https://z.wiki/u/NMavMq" alt="电池固定架参数"><br>注意：螺纹孔M3，深度6mm<br>我怀疑这个是假的，和我的模型对不上</p>
+<h1 id="设计参数参考">设计参数参考</h1>
+<h2 id="电机">3508电机</h2>
+<p>参考<a
+target="_blank" rel="noopener" href="https://rm-static.djicdn.com/tem/17348/RoboMaster%20M3508%E7%9B%B4%E6%B5%81%E6%97%A0%E5%88%B7%E5%87%8F%E9%80%9F%E7%94%B5%E6%9C%BA%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8EV1.0%EF%BC%88%E4%B8%AD%E8%8B%B1%E6%97%A5%EF%BC%89.pdf">3508电机参数</a></p>
+<figure>
+<img
+src="https://tc.z.wiki/autoupload/f/wSafM9E-riki2h6VXC5RJbZhwuM6ABTZJrGRmhmmFKWyl5f0KlZfm6UsKj-HyTuv/20250717/CaDr/1586X959/3508%E5%AE%89%E8%A3%85%E5%AD%94%E4%BD%8D.png"
+alt="3508安装孔位.png" />
+<figcaption aria-hidden="true">3508安装孔位.png</figcaption>
+</figure>
+<h3 id="参数计算">参数计算</h3>
+<p>此处要用3508电机小齿轮驱动云台的大齿轮达到3rps的转速 已知约束： 1.
+轴距小于90mm 2. 云台大齿轮内径大于101mm 3.
+3508端小齿轮额定转速469rpm</p>
+<p>开始计算齿比（传动比）： 3rps = 180rpm 转速比 = 469rpm / 180rpm = 2.6
+齿数比 = 大：小 = 2.6
+大疆3508内齿模数0.6，齿数17，中空孔径5mm。但是先不考虑直接连接的方案。</p>
+<h2 id="电池支架">电池支架</h2>
+<p>参考<a
+target="_blank" rel="noopener" href="https://rm-static.djicdn.com/tem/17348/RoboMaster%E7%94%B5%E6%B1%A0%E6%9E%B6%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf">电池支架参数</a>
+<img src="https://z.wiki/u/NMavMq" alt="电池固定架参数" />
+注意：螺纹孔M3，深度6mm 我怀疑这个是假的，和我的模型对不上</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/" data-id="cmdb5c2e500004grzfpe14tig" data-title="旋转靶机械结构设计笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/" data-id="cmdcsnad40001vorzdq7fd3pl" data-title="旋转靶机械结构设计笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -173,7 +180,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/blog/" style="font-size: 10px;">blog,</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/latex/" style="font-size: 10px;">latex</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem-solving</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -199,6 +206,10 @@
           </li>
         
           <li>
+            <a href="/2025/07/21/hexo-pandoc-math-rendering-fix/">解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/20/PEDF-introduction/">PEDF introduction</a>
           </li>
         
@@ -208,10 +219,6 @@
         
           <li>
             <a href="/2025/07/18/chinese-bonsai/">中式盆栽</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/">旋转靶机械结构设计笔记</a>
           </li>
         
       </ul>
@@ -233,7 +240,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog,</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/latex/" rel="tag">latex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/math/" rel="tag">math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem-solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
     </div>
   </div>
 

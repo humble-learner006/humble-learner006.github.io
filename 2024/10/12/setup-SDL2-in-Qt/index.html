@@ -13,7 +13,6 @@
 <meta property="og:site_name" content="Like&#39;s Blog">
 <meta property="og:description" content="教程">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://s2.loli.net/2024/10/12/LHwEiYXK2pksUT5.png">
 <meta property="og:image" content="https://s2.loli.net/2024/10/12/ozKtsdLMHuxNZhX.png">
 <meta property="article:published_time" content="2024-10-12T09:28:30.000Z">
 <meta property="article:modified_time" content="2025-07-17T04:06:08.150Z">
@@ -23,7 +22,7 @@
 <meta property="article:tag" content="Qt">
 <meta property="article:tag" content="SDL2">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s2.loli.net/2024/10/12/LHwEiYXK2pksUT5.png">
+<meta name="twitter:image" content="https://s2.loli.net/2024/10/12/ozKtsdLMHuxNZhX.png">
   
     <link rel="alternate" href="/atom.xml" title="Like's Blog" type="application/atom+xml">
   
@@ -106,34 +105,53 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><span id="more"></span>
-<h2 id="检查版本"><a href="#检查版本" class="headerlink" title="检查版本"></a>检查版本</h2><p>Qt use MINGW, so download SDL2 in correspond version<br><img src="https://s2.loli.net/2024/10/12/LHwEiYXK2pksUT5.png"><br>主要参考的<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_58311374/article/details/133410449">教程</a>是<br>次要参考的<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_46028171/article/details/134967027">教程</a>是<br>比较全面的<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_72157449/article/details/130490332">教程</a>是，不过介绍用的是VS，导出模板，CMake配置也教了<br>环境路径设置好，对库的链接在<code>pro</code>文件中配置好，主程序中<code>include</code>即可。</p>
-<h1 id="个人疑问和AI回答"><a href="#个人疑问和AI回答" class="headerlink" title="个人疑问和AI回答"></a>个人疑问和AI回答</h1><p>以下图片是下载下来的目录。<br>里面有<code>lib</code> ，mingw相关的有<code>i686...</code>和<code>x86_64-w64</code>他们之间有什么不同吗？<br><img src="https://s2.loli.net/2024/10/12/ozKtsdLMHuxNZhX.png"></p>
-<h4 id="动态库和静态库的使用场景"><a href="#动态库和静态库的使用场景" class="headerlink" title="动态库和静态库的使用场景"></a>动态库和静态库的使用场景</h4><p><code>lib</code>文件夹通常包含编译好的库文件，这些库文件是用于链接到你的应用程序中的，而不是直接用于运行时的。在Windows系统中，库文件通常是静态库（.lib）或动态库（.dll）<em><strong>dynamic link library</strong></em>，其中：</p>
+        <h1 id="教程">教程</h1>
+<span id="more"></span>
+<h2 id="检查版本">检查版本</h2>
+<p>Qt use MINGW, so download SDL2 in correspond version <img
+src="https://s2.loli.net/2024/10/12/LHwEiYXK2pksUT5.png" /> 主要参考的<a
+target="_blank" rel="noopener" href="https://blog.csdn.net/m0_58311374/article/details/133410449">教程</a>是
+次要参考的<a
+target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_46028171/article/details/134967027">教程</a>是
+比较全面的<a
+target="_blank" rel="noopener" href="https://blog.csdn.net/qq_72157449/article/details/130490332">教程</a>是，不过介绍用的是VS，导出模板，CMake配置也教了
+环境路径设置好，对库的链接在<code>pro</code>文件中配置好，主程序中<code>include</code>即可。</p>
+<h1 id="个人疑问和ai回答">个人疑问和AI回答</h1>
+<p>以下图片是下载下来的目录。<br />
+里面有<code>lib</code>
+，mingw相关的有<code>i686...</code>和<code>x86_64-w64</code>他们之间有什么不同吗？
+<img src="https://s2.loli.net/2024/10/12/ozKtsdLMHuxNZhX.png" /></p>
+<h4 id="动态库和静态库的使用场景">动态库和静态库的使用场景</h4>
+<p><code>lib</code>文件夹通常包含编译好的库文件，这些库文件是用于链接到你的应用程序中的，而不是直接用于运行时的。在Windows系统中，库文件通常是静态库（.lib）或动态库（.dll）<strong><em>dynamic
+link library</em></strong>，其中：</p>
 <ul>
 <li><code>.lib</code>文件是静态库文件，它们在编译时被链接到你的应用程序中，使得库的代码成为应用程序的一部分。</li>
 <li><code>.dll</code>文件是动态链接库文件，它们在运行时被应用程序加载，允许多个程序共享同一份库代码。</li>
 </ul>
-<p>对于SDL（Simple DirectMedia Layer）这样的库，如果你需要在运行时动态加载库（比如在不支持静态链接的环境中），你应该使用<code>.dll</code>文件。在<code>x86_64-w64-mingw32</code>这样的目录下，通常会提供编译好的<code>.dll</code>文件，用于64位的Windows系统。</p>
-<p>直接选择<code>lib</code>文件夹<strong>可能不会给你正确的文件类型或架构版本的库文件</strong>。你需要根据你的应用程序的需要（静态或动态链接）以及目标平台（32位或64位）来选择正确的文件。对于64位系统，确保选择的是64位的<code>.dll</code>文件，这样可以保证最佳的性能和兼容性。</p>
-<h4 id="两个mingw前缀的区别"><a href="#两个mingw前缀的区别" class="headerlink" title="两个mingw前缀的区别"></a>两个mingw前缀的区别</h4><p><code>i686</code>是一个指令集架构，它是Intel 80686微处理器的简称，属于x86架构的32位版本。在Linux系统中，<code>i686</code>通常用来表示32位的Intel或AMD处理器。这个架构的名称来源于最初的80686处理器，尽管现代的处理器已经远远超出了最初的686型号的性能。</p>
-<p>在编译软件或库时，如果你的目标是为32位的x86系统编译：</p>
-<ul>
-<li>在Linux发行版中，32位的库文件通常位于以<code>i686</code>命名的文件夹中。</li>
-<li>在Windows系统中，32位的库文件通常位于以<code>x86</code>命名的文件夹中。</li>
-</ul>
-<p>对于64位系统，你应该选择64位的库文件（例如<code>x86_64-w64-mingw32</code>中的文件）</p>
-<h4 id="在发行版中tar和gz是什么"><a href="#在发行版中tar和gz是什么" class="headerlink" title="在发行版中tar和gz是什么"></a>在发行版中tar和gz是什么</h4><p><code>mingw.tar.gz</code> 文件名中的 <code>tar</code> 和 <code>gz</code> 分别代表两种不同的压缩和归档技术：</p>
-<ol>
-<li><strong>tar</strong>：这是一个用于将多个文件和目录打包成一个单独文件的工具，通常用于在 Unix 和类 Unix 系统中。<code>tar</code> 本身并不压缩文件，它只将文件和目录归档。</li>
-<li><strong>gz</strong>：这是 Gzip（GNU Zip）的文件扩展名，表示该文件经过压缩以减少其大小。Gzip 是一种常见的压缩算法，通常用于压缩 <code>tar</code> 归档文件。</li>
-</ol>
-<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>跟着教程配置环境不难，但是相关的信息对我这种新手而言还是有许多不懂的。</p>
+<p>对于SDL（Simple DirectMedia
+Layer）这样的库，如果你需要在运行时动态加载库（比如在不支持静态链接的环境中），你应该使用<code>.dll</code>文件。在<code>x86_64-w64-mingw32</code>这样的目录下，通常会提供编译好的<code>.dll</code>文件，用于64位的Windows系统。</p>
+<p>直接选择<code>lib</code>文件夹<strong>可能不会给你正确的文件类型或架构版本的库文件</strong>。你需要根据你的应用程序的需要（静态或动态链接）以及目标平台（32位或64位）来选择正确的文件。对于64位系统，确保选择的是64位的<code>.dll</code>文件，这样可以保证最佳的性能和兼容性。
+#### 两个mingw前缀的区别 <code>i686</code>是一个指令集架构，它是Intel
+80686微处理器的简称，属于x86架构的32位版本。在Linux系统中，<code>i686</code>通常用来表示32位的Intel或AMD处理器。这个架构的名称来源于最初的80686处理器，尽管现代的处理器已经远远超出了最初的686型号的性能。</p>
+<p>在编译软件或库时，如果你的目标是为32位的x86系统编译： -
+在Linux发行版中，32位的库文件通常位于以<code>i686</code>命名的文件夹中。
+-
+在Windows系统中，32位的库文件通常位于以<code>x86</code>命名的文件夹中。</p>
+<p>对于64位系统，你应该选择64位的库文件（例如<code>x86_64-w64-mingw32</code>中的文件）
+#### 在发行版中tar和gz是什么 <code>mingw.tar.gz</code> 文件名中的
+<code>tar</code> 和 <code>gz</code> 分别代表两种不同的压缩和归档技术：
+1.
+<strong>tar</strong>：这是一个用于将多个文件和目录打包成一个单独文件的工具，通常用于在
+Unix 和类 Unix 系统中。<code>tar</code>
+本身并不压缩文件，它只将文件和目录归档。 2. <strong>gz</strong>：这是
+Gzip（GNU Zip）的文件扩展名，表示该文件经过压缩以减少其大小。Gzip
+是一种常见的压缩算法，通常用于压缩 <code>tar</code> 归档文件。 # 结语
+跟着教程配置环境不难，但是相关的信息对我这种新手而言还是有许多不懂的。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/10/12/setup-SDL2-in-Qt/" data-id="cmdb5c2ep001m4grzc8eta5lh" data-title="setup SDL2 in Qt" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2024/10/12/setup-SDL2-in-Qt/" data-id="cmdcsnadu001nvorz89fh7aan" data-title="setup SDL2 in Qt" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -174,7 +192,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/blog/" style="font-size: 10px;">blog,</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/latex/" style="font-size: 10px;">latex</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem-solving</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -200,6 +218,10 @@
           </li>
         
           <li>
+            <a href="/2025/07/21/hexo-pandoc-math-rendering-fix/">解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/20/PEDF-introduction/">PEDF introduction</a>
           </li>
         
@@ -209,10 +231,6 @@
         
           <li>
             <a href="/2025/07/18/chinese-bonsai/">中式盆栽</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/">旋转靶机械结构设计笔记</a>
           </li>
         
       </ul>
@@ -234,7 +252,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog,</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/latex/" rel="tag">latex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/math/" rel="tag">math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem-solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
     </div>
   </div>
 

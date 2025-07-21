@@ -6,12 +6,12 @@
   
   <title>delete_remaining_tags | Like&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Delete remaining tags in Hexo old blog">
+  <meta name="description" content="Delete remaining tags in Hexo old blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="delete_remaining_tags">
 <meta property="og:url" content="https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/index.html">
 <meta property="og:site_name" content="Like&#39;s Blog">
-<meta property="og:description" content="Delete remaining tags in Hexo old blog">
+<meta property="og:description" content="Delete remaining tags in Hexo old blog">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-10-09T01:33:52.000Z">
 <meta property="article:modified_time" content="2025-07-17T02:39:52.459Z">
@@ -100,49 +100,78 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="Delete-remaining-tags-in-Hexo-old-blog"><a href="#Delete-remaining-tags-in-Hexo-old-blog" class="headerlink" title="Delete remaining tags in Hexo old blog"></a>Delete remaining tags in Hexo old blog</h1><span id="more"></span>
-<p>recently I start to write new blogs, due to the inspiration of Ruan Yifeng.<br>And I want to change my theme from butterfly to NexT. </p>
-<p>I start the work on the night of October 8th. What I did is </p>
-<ol>
-<li>download <code>NexT</code> from github</li>
-<li>change the <code>_config.yml</code> file in root path, from <code>butterfly</code> to <code>NexT</code><br> and it works after I use <code>hexo clean</code> and <code>hexo g</code></li>
-<li>copy the <code>_config.yml</code> file in <code>themes/NexT</code> to <code>_config.next.yml</code> in root path.</li>
-</ol>
-<p>However, I found that the old tags <strong>are still there</strong>. Tags are suppose to be deleted after the blog is deleted. But things are not that simple. </p>
-<p>I check all the customized setting in my folder.</p>
-<ol>
-<li>not every blog writter create a <code>_config.&lt;theme_name&gt;.yml</code> file in the root path.</li>
-<li>I change the theme, maybe it is relate to existing theme config in butterfly.</li>
-<li>If the remaining_tags have something to do with the source code, searching the tags name in the workspace is a good way.</li>
-</ol>
-<p>For first, it is irrelevant influencing factors. For second nothing changed after I switch back to butterfly<br>for third, I could not find the tags name in the workspace.</p>
-<p>So I think it maybe something relate to website cache.</p>
-<ol>
-<li>delete most of the post in <code>source/_posts</code></li>
-<li>delete folder <code>public</code></li>
-<li>delete all files on GitHub repository</li>
-<li>delete <code>db.json</code> as GPT suggested.</li>
-<li>delete <code>node_modules</code></li>
-<li>regenerate the tags and categories by <code>hexo new page tags</code> and <code>hexo new page categories</code></li>
-<li>delete all the tags and categories in <code>source/_posts</code></li>
-<li>create this post to test.</li>
-</ol>
-<p>日期：2024年10月10日16点33分更新，可能清除<code>public</code> folder and <code>.deploy</code>即可</p>
-<p>It occurred a problem that the tags and categories and tags change from 6 to 7 due to my new tag prose. And both categories and tags are unclicable button on the website.</p>
+        <h1 id="delete-remaining-tags-in-hexo-old-blog">Delete remaining tags in
+Hexo old blog</h1>
+<span id="more"></span>
+<p>recently I start to write new blogs, due to the inspiration of Ruan
+Yifeng. And I want to change my theme from butterfly to NexT.</p>
+<p>I start the work on the night of October 8th. What I did is 1.
+download <code>NexT</code> from github 2. change the
+<code>_config.yml</code> file in root path, from <code>butterfly</code>
+to <code>NexT</code> and it works after I use <code>hexo clean</code>
+and <code>hexo g</code> 3. copy the <code>_config.yml</code> file in
+<code>themes/NexT</code> to <code>_config.next.yml</code> in root
+path.</p>
+<p>However, I found that the old tags <strong>are still there</strong>.
+Tags are suppose to be deleted after the blog is deleted. But things are
+not that simple.</p>
+<p>I check all the customized setting in my folder. 1. not every blog
+writter create a <code>_config.&lt;theme_name&gt;.yml</code> file in the
+root path. 2. I change the theme, maybe it is relate to existing theme
+config in butterfly. 3. If the remaining_tags have something to do with
+the source code, searching the tags name in the workspace is a good
+way.</p>
+<p>For first, it is irrelevant influencing factors. For second nothing
+changed after I switch back to butterfly for third, I could not find the
+tags name in the workspace.</p>
+<p>So I think it maybe something relate to website cache. 1. delete most
+of the post in <code>source/_posts</code> 2. delete folder
+<code>public</code> 3. delete all files on GitHub repository 4. delete
+<code>db.json</code> as GPT suggested. 5. delete
+<code>node_modules</code> 6. regenerate the tags and categories by
+<code>hexo new page tags</code> and
+<code>hexo new page categories</code> 7. delete all the tags and
+categories in <code>source/_posts</code> 8. create this post to
+test.</p>
+<p>日期：2024年10月10日16点33分更新，可能清除<code>public</code> folder
+and <code>.deploy</code>即可</p>
+<p>It occurred a problem that the tags and categories and tags change
+from 6 to 7 due to my new tag prose. And both categories and tags are
+unclicable button on the website.</p>
 <blockquote>
-<p>在 Hexo 博客的 Next 主题中，分类和标签按钮不可点击的可能原因有以下几种：<br><br>主题配置错误：检查 _config.yml 文件中的相关配置，确保分类和标签的设置正确。<br><br>数据源问题：确保你的文章确实有分类和标签。没有任何分类或标签的文章可能导致按钮无法显示。</p>
+<p>在 Hexo 博客的 Next
+主题中，分类和标签按钮不可点击的可能原因有以下几种：<br>
+主题配置错误：检查 _config.yml
+文件中的相关配置，确保分类和标签的设置正确。<br>
+数据源问题：确保你的文章确实有分类和标签。没有任何分类或标签的文章可能导致按钮无法显示。</p>
 </blockquote>
-<p>A rediculous mistake: all the <code>hexo clean</code> have been typed as <code>hexo clear</code> make it no use<br>After revice that I checked <code>hexo --config</code> as instruction it gave.<br>it gave me error message as follow</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">62589@DESKTOP-OQLQ1BU MINGW64 /d/Desktop/hexo_blog</span><br><span class="line">$ hexo --config</span><br><span class="line">ERROR configPaths.includes is not a function</span><br><span class="line">ERROR Local hexo loading failed in D:\Desktop\hexo_blog</span><br><span class="line">ERROR Try running: &#x27;rm -rf node_modules &amp;&amp; npm install --force&#x27;</span><br></pre></td></tr></table></figure>
-<p>So I tried to delete <code>node_modules</code> and <code>npm install --force</code><br>then the error message changed to some render mistake<br><code>$ npm uninstall hexo-renderer-swig</code> seems that swig is not supported anymore and as Copilot suggested I tried to change to nunjucks <code>npm install hexo-renderer-nunjucks --save</code><br>no use, then as terminal message said, I tried to run<br><code>npm audit fix --force</code><br>It worked to a certain degree. And the number of categories and tags are correct now. But it is still not clickable.<br>Then as Copilot suggested, I reinstall the theme NexT. And my website finally - broken. It have some problem with <code>_config.next.yml</code> because some costomized setting in various file.</p>
+<p>A rediculous mistake: all the <code>hexo clean</code> have been typed
+as <code>hexo clear</code> make it no use After revice that I checked
+<code>hexo --config</code> as instruction it gave. it gave me error
+message as follow <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">62589@DESKTOP-OQLQ1BU MINGW64 /d/Desktop/hexo_blog</span><br><span class="line">$ hexo --config</span><br><span class="line">ERROR configPaths.includes is not a function</span><br><span class="line">ERROR Local hexo loading failed in D:\Desktop\hexo_blog</span><br><span class="line">ERROR Try running: &#x27;rm -rf node_modules &amp;&amp; npm install --force&#x27;</span><br></pre></td></tr></table></figure> So I tried to delete
+<code>node_modules</code> and <code>npm install --force</code> then the
+error message changed to some render mistake
+<code>$ npm uninstall hexo-renderer-swig</code> seems that swig is not
+supported anymore and as Copilot suggested I tried to change to nunjucks
+<code>npm install hexo-renderer-nunjucks --save</code> no use, then as
+terminal message said, I tried to run <code>npm audit fix --force</code>
+It worked to a certain degree. And the number of categories and tags are
+correct now. But it is still not clickable. Then as Copilot suggested, I
+reinstall the theme NexT. And my website finally - broken. It have some
+problem with <code>_config.next.yml</code> because some costomized
+setting in various file.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.htm</span><br><span class="line">l</span><br><span class="line">TypeError: Cannot read properties of undefined (reading &#x27;enable&#x27;)</span><br><span class="line">    at D:\Desktop\my CSC\Hexo_blog\themes\next\scripts\filters\comment\gitalk.js:10:21</span><br><span class="line">    at Filter.execSync (D:\Desktop\my CSC\Hexo_blog\node_modules\hexo\dist\extend\filter.js:72:36)</span><br><span class="line">    at Hexo.execFilterSync (D:\Desktop\my CSC\Hexo_blog\node_modules\hexo\dist\hexo\index.js:397:35)</span><br><span class="line">    at module.exports (D:\Desktop\my CSC\Hexo_blog\themes\next\scripts\events\lib\injects.js:58:8)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (D:\Desktop\my CSC\Hexo_blog\themes\next\scripts\events\index.js:9:27)</span><br><span class="line">    at Hexo.emit (node:events:530:35)</span><br><span class="line">    at Hexo._generate (D:\Desktop\my CSC\Hexo_blog\node_modules\hexo\dist\hexo\index.js:374:14)</span><br><span class="line">    at D:\Desktop\my CSC\Hexo_blog\node_modules\hexo\dist\hexo\index.js:265:25</span><br><span class="line">    at tryCatcher (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\</span><br><span class="line">promise.js:547:31)</span><br><span class="line">    at Promise._settlePromise (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:</span><br><span class="line">604:18)</span><br><span class="line">    at Promise._settlePromise0 (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:649:10)</span><br><span class="line">    at Promise._settlePromises (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:729:18)</span><br><span class="line">    at Promise._fulfill (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:673:18</span><br><span class="line">)</span><br><span class="line">    at PromiseArray._resolve (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise_arra</span><br><span class="line">y.js:127:19)</span><br><span class="line">    at PromiseArray._promiseFulfilled (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\pro</span><br><span class="line">mise_array.js:145:14)</span><br><span class="line">    at Promise._settlePromise (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:</span><br><span class="line">609:26)</span><br><span class="line">    at Promise._settlePromise0 (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:649:10)</span><br><span class="line">    at Promise._settlePromises (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:729:18)</span><br><span class="line">    at Promise._fulfill (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:673:18</span><br><span class="line">)</span><br><span class="line">    at Promise._settlePromise (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js:</span><br><span class="line">617:21)</span><br><span class="line">    at Promise._settlePromise0 (D:\Desktop\my CSC\Hexo_blog\node_modules\bluebird\js\release\promise.js</span><br><span class="line">:649:10)</span><br></pre></td></tr></table></figure>
-<p>What I learn is that never getting too deep into something you do not know.</p>
-<p>I reinstall Hexo to make sure the <code>_config.yml</code> is not polluted, and not planing to make any costomized setting if not neccessary.<br>After it is a blog, I will frist focus on the <strong>content</strong>.</p>
+<p>What I learn is that never getting too deep into something you do not
+know.</p>
+<p>I reinstall Hexo to make sure the <code>_config.yml</code> is not
+polluted, and not planing to make any costomized setting if not
+neccessary. After it is a blog, I will frist focus on the
+<strong>content</strong>.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/" data-id="cmdb5c2ej000r4grzbonc8ayi" data-title="delete_remaining_tags" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2024/10/09/delete_remaining_tags/" data-id="cmdcsnadl000rvorzgqcwcz8a" data-title="delete_remaining_tags" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -183,7 +212,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/blog/" style="font-size: 10px;">blog,</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/latex/" style="font-size: 10px;">latex</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem-solving</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -209,6 +238,10 @@
           </li>
         
           <li>
+            <a href="/2025/07/21/hexo-pandoc-math-rendering-fix/">解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/20/PEDF-introduction/">PEDF introduction</a>
           </li>
         
@@ -218,10 +251,6 @@
         
           <li>
             <a href="/2025/07/18/chinese-bonsai/">中式盆栽</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/">旋转靶机械结构设计笔记</a>
           </li>
         
       </ul>
@@ -243,7 +272,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog,</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/latex/" rel="tag">latex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/math/" rel="tag">math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem-solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
     </div>
   </div>
 

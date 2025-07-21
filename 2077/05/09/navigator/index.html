@@ -6,15 +6,15 @@
   
   <title>NAVIGATOR | Like&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="本博客食用指南  graph TD     A[新文章] --&gt; B{文章性质判断}     B --&gt; C[Computer Science]     B --&gt; D[Mathematics]     B --&gt;|学科相关的项目| E[Project]     B --&gt;|生活记录| F[PersonalLogs]     B --&gt; G[Electric Engineering]     C">
+  <meta name="description" content="本博客食用指南  graph TD A[新文章] –&gt; B{文章性质判断} B –&gt; C[Computer Science] B –&gt; D[Mathematics] B –&gt;|学科相关的项目| E[Project] B –&gt;|生活记录| F[PersonalLogs] B –&gt; G[Electric Engineering] C –&gt; C1{细分">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NAVIGATOR">
 <meta property="og:url" content="https://humble-learner006.github.io/2077/05/09/navigator/index.html">
 <meta property="og:site_name" content="Like&#39;s Blog">
-<meta property="og:description" content="本博客食用指南  graph TD     A[新文章] --&gt; B{文章性质判断}     B --&gt; C[Computer Science]     B --&gt; D[Mathematics]     B --&gt;|学科相关的项目| E[Project]     B --&gt;|生活记录| F[PersonalLogs]     B --&gt; G[Electric Engineering]     C">
+<meta property="og:description" content="本博客食用指南  graph TD A[新文章] –&gt; B{文章性质判断} B –&gt; C[Computer Science] B –&gt; D[Mathematics] B –&gt;|学科相关的项目| E[Project] B –&gt;|生活记录| F[PersonalLogs] B –&gt; G[Electric Engineering] C –&gt; C1{细分">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2077-05-08T23:55:46.000Z">
-<meta property="article:modified_time" content="2025-07-20T03:25:39.075Z">
+<meta property="article:modified_time" content="2025-07-21T07:17:52.742Z">
 <meta property="article:author" content="Like CAI">
 <meta name="twitter:card" content="summary">
   
@@ -95,86 +95,92 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>本博客食用指南</p>
+        本博客食用指南
 <div class="mermaid">
-graph TD
-    A[新文章] --> B{文章性质判断}
-    B --> C[Computer Science]
-    B --> D[Mathematics]
-    B -->|学科相关的项目| E[Project]
-    B -->|生活记录| F[PersonalLogs]
-    B --> G[Electric Engineering]
-    C --> C1{细分领域}
-    C1 -->|编程语言| C11[Language]
-    C1 -->|系统配置| C12[Operating Systems]
-    D --> D1{数学分支}
-    D1 -->|统计学习| D11[Statistics]
-    E --> E1{项目类型}
-    E1 -->|网页相关| E11[Web]
-    E1 -->|游戏开发| E12[Game]
-    E1 -->|软件工程| E13[Software]
-    F --> F1{生活分类}
-    F1 -->|植物相关| F11[Gardening]
-    G --> G1{工程领域}
-    G1 -->|IO通讯| G11[Ports]
+<p>graph TD A[新文章] –&gt; B{文章性质判断} B –&gt; C[Computer Science]
+B –&gt; D[Mathematics] B –&gt;|学科相关的项目| E[Project] B
+–&gt;|生活记录| F[PersonalLogs] B –&gt; G[Electric Engineering] C –&gt;
+C1{细分领域} C1 –&gt;|编程语言| C11[Language] C1 –&gt;|系统配置|
+C12[Operating Systems] D –&gt; D1{数学分支} D1 –&gt;|统计学习|
+D11[Statistics] E –&gt; E1{项目类型} E1 –&gt;|网页相关| E11[Web] E1
+–&gt;|游戏开发| E12[Game] E1 –&gt;|软件工程| E13[Software] F –&gt;
+F1{生活分类} F1 –&gt;|植物相关| F11[Gardening] G –&gt; G1{工程领域} G1
+–&gt;|IO通讯| G11[Ports]</p>
 </div>
-
 <span id="more"></span>
-
-<h1 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h1><h2 id="Tips："><a href="#Tips：" class="headerlink" title="Tips："></a>Tips：</h2><ul>
+<h1 id="导航">导航</h1>
+<h2 id="tips">Tips：</h2>
+<ul>
 <li>Blog在手机和电脑端的显示效果不同，手机边栏的位置在下方，电脑端边栏的位置在右侧。</li>
 <li>在Home页面，所有的博客按照时间顺序排列，最新的文章在最上方。如果你想查看某个分类的文章，可以点击边栏的分类链接，或者在文章列表中点击分类标签。</li>
-<li>以<a target="_blank" rel="noopener" href="https://www.cai-like.com/tags/Robomaster/">Robomaster</a>相关的文章为例，在边栏找到Robomaster的tag，点击后会跳转RM相关的文章列表页面。常用的链接放到NAVIGATOR页面中，方便快速访问。</li>
+<li>以<a
+target="_blank" rel="noopener" href="https://www.cai-like.com/tags/Robomaster/">Robomaster</a>相关的文章为例，在边栏找到Robomaster的tag，点击后会跳转RM相关的文章列表页面。常用的链接放到NAVIGATOR页面中，方便快速访问。</li>
 <li>使用了Github的静态页面托管服务，国内访问速度较慢</li>
 </ul>
-<h2 id="管理思路"><a href="#管理思路" class="headerlink" title="管理思路"></a>管理思路</h2><p>本页面是导航页。博客的文章根据其所属类别被放入category中，根据其性质被放入tag中。让博客在只有两级分类的前提下，仍然可以有较好的分类效果。</p>
-<h1 id="分类-categories"><a href="#分类-categories" class="headerlink" title="分类(categories)"></a>分类(categories)</h1><ul>
-<li><p><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Computer-Science/">Computer Science</a></p>
+<h2 id="管理思路">管理思路</h2>
+<p>本页面是导航页。博客的文章根据其所属类别被放入category中，根据其性质被放入tag中。让博客在只有两级分类的前提下，仍然可以有较好的分类效果。</p>
+<h1 id="分类categories">分类(categories)</h1>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Computer-Science/Language/">Language</a> </li>
-<li><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Computer-Science/Operating-Systems/">Operating Systems</a></li>
-</ul>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Mathematics/">Mathematics</a></p>
+<li><a
+target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Computer-Science/">Computer
+Science</a>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Mathematics/Statistics/">Statistics</a></li>
-</ul>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Project/">Project</a></p>
+<li><a
+target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Computer-Science/Language/">Language</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Computer-Science/Operating-Systems/">Operating
+Systems</a></li>
+</ul></li>
+<li><a
+target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Mathematics/">Mathematics</a>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Project/Web/">Web</a> </li>
-<li><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Project/Game/">Game</a> </li>
-<li><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Project/Software/">Software</a></li>
-</ul>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/PersonalLogs/">PersonalLogs</a> </p>
+<li><a
+target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Mathematics/Statistics/">Statistics</a></li>
+</ul></li>
+<li><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Project/">Project</a>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/PersonalLogs/Gardening">Gardening</a></li>
-</ul>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Electric-Engineering/">Electric Engineering</a></p>
+<li><a
+target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Project/Web/">Web</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Project/Game/">Game</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Project/Software/">Software</a></li>
+</ul></li>
+<li><a
+target="_blank" rel="noopener" href="https://www.cai-like.com/categories/PersonalLogs/">PersonalLogs</a>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Electric-Engineering/Ports/">Ports</a></li>
-</ul>
-</li>
-</ul>
-<h1 id="标签-tags-介绍"><a href="#标签-tags-介绍" class="headerlink" title="标签(tags)介绍"></a>标签(tags)介绍</h1><p>用于补充分类的不足，以下是几个常用的标签</p>
+<li><a
+target="_blank" rel="noopener" href="https://www.cai-like.com/categories/PersonalLogs/Gardening">Gardening</a></li>
+</ul></li>
+<li><a
+target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Electric-Engineering/">Electric
+Engineering</a>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.cai-like.com/tags/Robomaster/">RoboMaster</a>比赛相关</li>
-<li><a target="_blank" rel="noopener" href="https://www.cai-like.com/tags/problem-solving/">problem solving</a> 解决问题的思路</li>
-<li>tutorial文档，也是解决问题，但是侧重于经验总结</li>
+<li><a
+target="_blank" rel="noopener" href="https://www.cai-like.com/categories/Electric-Engineering/Ports/">Ports</a></li>
+</ul></li>
 </ul>
-<h1 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h1><ul>
-<li>感谢<a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>提供的免费托管服务</li>
+<h1 id="标签tags介绍">标签(tags)介绍</h1>
+<p>用于补充分类的不足，以下是几个常用的标签 - <a
+target="_blank" rel="noopener" href="https://www.cai-like.com/tags/Robomaster/">RoboMaster</a>比赛相关
+- <a target="_blank" rel="noopener" href="https://www.cai-like.com/tags/problem-solving/">problem
+solving</a> 解决问题的思路 -
+tutorial文档，也是解决问题，但是侧重于经验总结</p>
+<h1 id="鸣谢">鸣谢</h1>
+<ul>
+<li>感谢<a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub
+Pages</a>提供的免费托管服务</li>
 <li>感谢<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>提供的博客框架</li>
-<li>感谢<a target="_blank" rel="noopener" href="https://playground.z.wiki/img-cloud/index.html">敖武的图床</a>提供的免费图床服务</li>
-<li>感谢<a target="_blank" rel="noopener" href="https://mermaid.js.org/">Mermaid</a>提供的图表绘制功能，使用起来非常方便。</li>
+<li>感谢<a
+target="_blank" rel="noopener" href="https://playground.z.wiki/img-cloud/index.html">敖武的图床</a>提供的免费图床服务</li>
+<li>感谢<a
+target="_blank" rel="noopener" href="https://mermaid.js.org/">Mermaid</a>提供的图表绘制功能，使用起来非常方便。</li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2077/05/09/navigator/" data-id="cmdb5c2em00174grzgsedhp3o" data-title="NAVIGATOR" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2077/05/09/navigator/" data-id="cmdcsnadr001evorz4jozarp3" data-title="NAVIGATOR" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -185,9 +191,9 @@ graph TD
 <nav id="article-nav">
   
   
-    <a href="/2025/07/20/PEDF-introduction/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2025/07/21/hexo-pandoc-math-rendering-fix/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">PEDF introduction</div>
+      <div class="article-nav-title">解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题</div>
     </a>
   
 </nav>
@@ -204,7 +210,7 @@ graph TD
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/blog/" style="font-size: 10px;">blog,</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/latex/" style="font-size: 10px;">latex</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem-solving</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -230,6 +236,10 @@ graph TD
           </li>
         
           <li>
+            <a href="/2025/07/21/hexo-pandoc-math-rendering-fix/">解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/20/PEDF-introduction/">PEDF introduction</a>
           </li>
         
@@ -239,10 +249,6 @@ graph TD
         
           <li>
             <a href="/2025/07/18/chinese-bonsai/">中式盆栽</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/">旋转靶机械结构设计笔记</a>
           </li>
         
       </ul>
@@ -264,7 +270,7 @@ graph TD
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog,</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/latex/" rel="tag">latex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/math/" rel="tag">math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem-solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
     </div>
   </div>
 

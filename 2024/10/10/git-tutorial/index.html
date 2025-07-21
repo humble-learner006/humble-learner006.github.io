@@ -6,12 +6,12 @@
   
   <title>git_tutorial | Like&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="About GitWhat is git?">
+  <meta name="description" content="About Git What is git?">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git_tutorial">
 <meta property="og:url" content="https://humble-learner006.github.io/2024/10/10/git-tutorial/index.html">
 <meta property="og:site_name" content="Like&#39;s Blog">
-<meta property="og:description" content="About GitWhat is git?">
+<meta property="og:description" content="About Git What is git?">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-10-10T04:32:38.000Z">
 <meta property="article:modified_time" content="2025-07-17T04:04:41.124Z">
@@ -102,58 +102,107 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="About-Git"><a href="#About-Git" class="headerlink" title="About Git"></a><strong>About Git</strong></h1><p>What is git?  </p>
+        <h1 id="about-git"><strong>About Git</strong></h1>
+<p>What is git?</p>
 <span id="more"></span>
-
-<p><strong>A system:</strong> Git is a distributed version control system.<br><strong>Version Control:</strong> We can go back to previous version if something screw up in VCS(version control system).<br>One of the most widely distributed VCS is <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Revision_Control_System">RCS</a> ,work by adding patches&#x2F; delta between file, develop from its predecessor – SCCS (Source Code Control system)<br><strong>Branching</strong> means you diverge from the main line of development and continue to do work without messing with that main line. </p>
-<p>兴趣阅读：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/95179354">版本管理系统的发展历史</a><br><strong>Git</strong> work by taking snapshot, not difference.</p>
-<h1 id="git-commands"><a href="#git-commands" class="headerlink" title="git commands"></a>git commands</h1><h2 id="push操作流程"><a href="#push操作流程" class="headerlink" title="push操作流程"></a>push操作流程</h2><p>确保这是一个仓库<code>.git</code>文件存在</p>
-<ul>
-<li><code>git status</code> 查看当前状态，记得查看branch</li>
-<li><code>git add *</code> 添加所有要更改的文件到暂存区（stage）</li>
-<li><code>git commit -m &quot;&lt;message&gt;&quot;</code> 提交暂存区到仓库区（commit）</li>
-<li><code>git push origin main</code>把本地库的内容推送到远程<br>你可以参考 <a target="_blank" rel="noopener" href="https://sp21.datastructur.es/materials/lab/lab1/lab1">cs61b lab1 section E</a> 十分好的 git 教程</li>
-</ul>
-<h2 id="fetch-pull操作流程"><a href="#fetch-pull操作流程" class="headerlink" title="fetch&#x2F;pull操作流程"></a>fetch&#x2F;pull操作流程</h2><p>如果你只是为了更新本地文件，可以使用 <code>git pull</code> 命令从远程仓库获取最新的更改并合并到你的本地分支。以下是步骤：<br><code>git checkout main</code><br>(checkout)切换到你想要更新的分支（通常是 main 或 master 分支）：<br><code>git pull origin main</code><br>拉取远程仓库的最新更改并合并到本地分支：</p>
-<ul>
-<li><code>git fetch origin main</code> 从远程获取最新版本到本地，不会自动merge</li>
-<li><code>git pull origin main</code> 把远程库(origin和远程库的URL等价)的内容拉下来，然后与本地的文件合并</li>
-</ul>
-<h3 id="merge（合并）"><a href="#merge（合并）" class="headerlink" title="merge（合并）"></a>merge（合并）</h3><ol>
-<li>本地分支合并：你可以在本地将一个分支合并到另一个分支。<br>feature-branch 是你要合并的分支，main 是目标分支。一般在freture branch开发新功能或修复bug.</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout main</span><br><span class="line">git merge feature-branch</span><br></pre></td></tr></table></figure>
-<ol>
-<li>解决冲突：如果在合并过程中发生冲突，你需要在本地解决这些冲突，然后提交解决后的文件。</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">give your resolved file to git</span><br><span class="line">git add &lt;resolved-files&gt;</span><br><span class="line">git commit -m &quot;Resolved merge conflicts&quot;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>推送到远程：合并完成并解决冲突后，你可以将合并后的分支推送到远程仓库。<br><code>git push origin main</code></li>
-</ol>
-<h2 id="分支branch"><a href="#分支branch" class="headerlink" title="分支branch"></a>分支branch</h2><p>并行开发必备</p>
-<ul>
-<li><code>git branch</code> 查看分支，确认当前的分支信息<br>step 1： <code>git branch &lt;branch-name&gt;</code> 创建分支<br>step 2: 在新分支上开发功能</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add *</span><br><span class="line">git commit -m &quot;My new feature&quot;</span><br></pre></td></tr></table></figure>
-<p>step 3: 推送新分支到远程仓库<code>git push origin &lt;feature-branch&gt;</code><br>step 4: 切换到主分支<code>git checkout main</code><br>step 5: 合并分支<code>git merge &lt;feature-branch&gt;</code><br>step 6: 删除分支<code>git branch -d &lt;feature-branch&gt;</code><br>step 7: 删除远程分支<code>git push origin --delete &lt;feature-branch&gt;</code></p>
-<h2 id="Configure-your-git"><a href="#Configure-your-git" class="headerlink" title="Configure your git"></a>Configure your git</h2><p>Git branch, first set up then we discuss how it should be used<br><code>git config –h</code>（get the help of config command, show in editor）<br><code>git help config</code> （show in browser）<br><code>git init</code> （change it into git respository）<br><code>git status</code> （know what inside the file&#x2F; git repository）<br><code>git add &lt;name&gt;</code><br><code>git add –A</code> （add all）<code>git add .</code>&#x2F;<code>git add --all</code><br><code>git rm –cached &lt;name&gt;</code><br><code>git rm –f &lt;name&gt;</code><br><code>git mv &lt;name&gt; &lt;name&gt;</code><br><code>git log -oneline</code> -</p>
-<h1 id="3-status-of-your-file"><a href="#3-status-of-your-file" class="headerlink" title="3 status of your file"></a>3 status of your file</h1><p><code>Modified – staged（in the middle）-- committed(.git) </code><br>潜在的unchange data可以比喻为在家里的人。<br>modified可以被比喻为所有在车站的人，有可能不会上车<br>staged 可以被比喻为在月台的人，是即将上车的人，但是也可能不上车（日程取消）<br>committed 可以被比喻为在火车上的人，被送到目的地云端</p>
-<h2 id="基本操作（按照常用程度排序）"><a href="#基本操作（按照常用程度排序）" class="headerlink" title="基本操作（按照常用程度排序）"></a>基本操作（按照常用程度排序）</h2><p><code>cd + &lt;location&gt;</code>（change derectory）<br><code>git branch</code> 查看分支<br><code>git log</code> 查看提交历史<br><code>git status</code> 查看当前状态<br><code>git diff</code> 查看修改内容<br><code>git add</code> 添加文件到暂存区<br><code>git add *</code> 添加所有文件到暂存区<br><code>git commit -m &quot;&lt;message&gt;&quot;</code> 提交暂存区到仓库区<br><code>git reset HEAD</code> 把暂存区的修改撤销掉（unstage），重新放回工作区<br><code>git remote -v</code> 查看远程库信息<br><code>git push origin main</code> 把本地库的内容推送到远程</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push origin main</span><br><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
-<p><code>git push -u origin main</code> 以后的推送或者拉取就可以简化命令<br><code>-u</code> stands for upstream<br>you can use <code>--set-upstream</code> set upstrea (same function as <code>-u</code>)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
-
-<h1 id="Package-manager-（Linux系统必要了解）"><a href="#Package-manager-（Linux系统必要了解）" class="headerlink" title="Package manager （Linux系统必要了解）"></a>Package manager （Linux系统必要了解）</h1><p>软件包管理器：一种计算机程序，负责安装、更新和配置其他软件，维护已安装程序的索引并解决它们之间的依赖关系。</p>
-<ul>
-<li>Knowing your system’s package manager is essential for managing software effectively. </li>
-<li>It ensures you <strong>use the correct commands</strong> and syntax to install, update, and remove packages successfully.</li>
-</ul>
-<h2 id="two-type-of-package-manager"><a href="#two-type-of-package-manager" class="headerlink" title="two type of package manager"></a>two type of package manager</h2><p>dnf: This is the default package manager for Fedora and other Red Hat-based systems.<br>apt-get: This is the default package manager for Debian, Ubuntu, and other Debian-based systems. </p>
+<p><strong>A system:</strong> Git is a distributed version control
+system.<br />
+<strong>Version Control:</strong> We can go back to previous version if
+something screw up in VCS(version control system).<br />
+One of the most widely distributed VCS is <a
+target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Revision_Control_System">RCS</a>
+,work by adding patches/ delta between file, develop from its
+predecessor – SCCS (Source Code Control system)<br />
+<strong>Branching</strong> means you diverge from the main line of
+development and continue to do work without messing with that main
+line.</p>
+<p>兴趣阅读：<a
+target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/95179354">版本管理系统的发展历史</a>
+<strong>Git</strong> work by taking snapshot, not difference.</p>
+<h1 id="git-commands">git commands</h1>
+<h2 id="push操作流程">push操作流程</h2>
+<p>确保这是一个仓库<code>.git</code>文件存在 - <code>git status</code>
+查看当前状态，记得查看branch - <code>git add *</code>
+添加所有要更改的文件到暂存区（stage） -
+<code>git commit -m "&lt;message&gt;"</code>
+提交暂存区到仓库区（commit） -
+<code>git push origin main</code>把本地库的内容推送到远程<br />
+你可以参考 <a
+target="_blank" rel="noopener" href="https://sp21.datastructur.es/materials/lab/lab1/lab1">cs61b lab1
+section E</a> 十分好的 git 教程</p>
+<h2 id="fetchpull操作流程">fetch/pull操作流程</h2>
+<p>如果你只是为了更新本地文件，可以使用 <code>git pull</code>
+命令从远程仓库获取最新的更改并合并到你的本地分支。以下是步骤：
+<code>git checkout main</code> (checkout)切换到你想要更新的分支（通常是
+main 或 master 分支）： <code>git pull origin main</code>
+拉取远程仓库的最新更改并合并到本地分支： -
+<code>git fetch origin main</code>
+从远程获取最新版本到本地，不会自动merge -
+<code>git pull origin main</code>
+把远程库(origin和远程库的URL等价)的内容拉下来，然后与本地的文件合并 ###
+merge（合并） 1. 本地分支合并：你可以在本地将一个分支合并到另一个分支。
+feature-branch 是你要合并的分支，main 是目标分支。一般在freture
+branch开发新功能或修复bug. <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout main</span><br><span class="line">git merge feature-branch</span><br></pre></td></tr></table></figure> 1.
+解决冲突：如果在合并过程中发生冲突，你需要在本地解决这些冲突，然后提交解决后的文件。
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">give your resolved file to git</span><br><span class="line">git add &lt;resolved-files&gt;</span><br><span class="line">git commit -m &quot;Resolved merge conflicts&quot;</span><br></pre></td></tr></table></figure> 1.
+推送到远程：合并完成并解决冲突后，你可以将合并后的分支推送到远程仓库。
+<code>git push origin main</code></p>
+<h2 id="分支branch">分支branch</h2>
+<p>并行开发必备 - <code>git branch</code> 查看分支，确认当前的分支信息
+step 1： <code>git branch &lt;branch-name&gt;</code> 创建分支 step 2:
+在新分支上开发功能 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add *</span><br><span class="line">git commit -m &quot;My new feature&quot;</span><br></pre></td></tr></table></figure> step 3:
+推送新分支到远程仓库<code>git push origin &lt;feature-branch&gt;</code>
+step 4: 切换到主分支<code>git checkout main</code> step 5:
+合并分支<code>git merge &lt;feature-branch&gt;</code> step 6:
+删除分支<code>git branch -d &lt;feature-branch&gt;</code> step 7:
+删除远程分支<code>git push origin --delete &lt;feature-branch&gt;</code></p>
+<h2 id="configure-your-git">Configure your git</h2>
+<p>Git branch, first set up then we discuss how it should be used
+<code>git config –h</code>（get the help of config command, show in
+editor） <code>git help config</code> （show in browser）
+<code>git init</code> （change it into git respository）
+<code>git status</code> （know what inside the file/ git repository）
+<code>git add &lt;name&gt;</code> <code>git add –A</code> （add
+all）<code>git add .</code>/<code>git add --all</code>
+<code>git rm –cached &lt;name&gt;</code>
+<code>git rm –f &lt;name&gt;</code>
+<code>git mv &lt;name&gt; &lt;name&gt;</code>
+<code>git log -oneline</code> -</p>
+<h1 id="status-of-your-file">3 status of your file</h1>
+<p><code>Modified – staged（in the middle）-- committed(.git)</code>
+潜在的unchange data可以比喻为在家里的人。
+modified可以被比喻为所有在车站的人，有可能不会上车 staged
+可以被比喻为在月台的人，是即将上车的人，但是也可能不上车（日程取消）
+committed 可以被比喻为在火车上的人，被送到目的地云端 ##
+基本操作（按照常用程度排序） <code>cd + &lt;location&gt;</code>（change
+derectory） <code>git branch</code> 查看分支 <code>git log</code>
+查看提交历史 <code>git status</code> 查看当前状态 <code>git diff</code>
+查看修改内容 <code>git add</code> 添加文件到暂存区
+<code>git add *</code> 添加所有文件到暂存区
+<code>git commit -m "&lt;message&gt;"</code> 提交暂存区到仓库区
+<code>git reset HEAD</code>
+把暂存区的修改撤销掉（unstage），重新放回工作区
+<code>git remote -v</code> 查看远程库信息
+<code>git push origin main</code> 把本地库的内容推送到远程 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push origin main</span><br><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
+<code>git push -u origin main</code> 以后的推送或者拉取就可以简化命令
+<code>-u</code> stands for upstream you can use
+<code>--set-upstream</code> set upstrea (same function as
+<code>-u</code>) <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></p>
+<h1 id="package-manager-linux系统必要了解">Package manager
+（Linux系统必要了解）</h1>
+<p>软件包管理器：一种计算机程序，负责安装、更新和配置其他软件，维护已安装程序的索引并解决它们之间的依赖关系。
+- Knowing your system’s package manager is essential for managing
+software effectively. - It ensures you <strong>use the correct
+commands</strong> and syntax to install, update, and remove packages
+successfully. ## two type of package manager dnf: This is the default
+package manager for Fedora and other Red Hat-based systems. apt-get:
+This is the default package manager for Debian, Ubuntu, and other
+Debian-based systems.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/10/10/git-tutorial/" data-id="cmdb5c2ek000y4grz4aycgbtr" data-title="git_tutorial" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2024/10/10/git-tutorial/" data-id="cmdcsnado0014vorzf66bcfoa" data-title="git_tutorial" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -194,7 +243,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/blog/" style="font-size: 10px;">blog,</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/latex/" style="font-size: 10px;">latex</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem-solving</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -220,6 +269,10 @@
           </li>
         
           <li>
+            <a href="/2025/07/21/hexo-pandoc-math-rendering-fix/">解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/20/PEDF-introduction/">PEDF introduction</a>
           </li>
         
@@ -229,10 +282,6 @@
         
           <li>
             <a href="/2025/07/18/chinese-bonsai/">中式盆栽</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/">旋转靶机械结构设计笔记</a>
           </li>
         
       </ul>
@@ -254,7 +303,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog,</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/latex/" rel="tag">latex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/math/" rel="tag">math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem-solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
     </div>
   </div>
 

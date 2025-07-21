@@ -103,135 +103,177 @@
       
         <p>这是统计学的<strong>分布部分</strong>的笔记，里面是常见分布汇总</p>
 <span id="more"></span>
-
 <ul>
-<li><a href="#l-7---distribution-1">L 7 - Distribution 1</a><ul>
-<li><a href="#bernoulli-distribution">Bernoulli Distribution</a><ul>
+<li><a href="#l-7---distribution-1">L 7 - Distribution 1</a>
+<ul>
+<li><a href="#bernoulli-distribution">Bernoulli Distribution</a>
+<ul>
 <li><a href="#definition">Definition:</a></li>
 <li><a href="#n-bernoulli-trials">n Bernoulli trials</a></li>
-</ul>
-</li>
-<li><a href="#binomial-distribution">Binomial Distribution</a><ul>
+</ul></li>
+<li><a href="#binomial-distribution">Binomial Distribution</a>
+<ul>
 <li><a href="#definition-1">Definition:</a></li>
 <li><a href="#deviation">deviation</a></li>
-</ul>
-</li>
-<li><a href="#hypergeometric-distribution">Hypergeometric Distribution</a><ul>
+</ul></li>
+<li><a href="#hypergeometric-distribution">Hypergeometric
+Distribution</a>
+<ul>
 <li><a href="#definition-2">Definition:</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#l-8---distribution-2">L 8 - Distribution 2</a><ul>
-<li><a href="#geometric-distribution">Geometric Distribution</a><ul>
+</ul></li>
+</ul></li>
+<li><a href="#l-8---distribution-2">L 8 - Distribution 2</a>
+<ul>
+<li><a href="#geometric-distribution">Geometric Distribution</a>
+<ul>
 <li><a href="#definition-3">Definition:</a></li>
-</ul>
-</li>
-<li><a href="#negative-binomial-distribution">Negative Binomial Distribution</a></li>
+</ul></li>
+<li><a href="#negative-binomial-distribution">Negative Binomial
+Distribution</a></li>
 <li><a href="#poisson-distribution">Poisson Distribution</a></li>
-</ul>
-</li>
-<li><a href="#l-9--10---continuous-random-variable-2">L 9 &amp; 10 - Continuous Random Variable 2</a><ul>
-<li><a href="#uniform-distribution">Uniform Distribution</a><ul>
+</ul></li>
+<li><a href="#l-9--10---continuous-random-variable-2">L 9 &amp; 10 -
+Continuous Random Variable 2</a>
+<ul>
+<li><a href="#uniform-distribution">Uniform Distribution</a>
+<ul>
 <li><a href="#definition-4">Definition:</a></li>
-</ul>
-</li>
-<li><a href="#exponential-distribution">Exponential Distribution</a><ul>
+</ul></li>
+<li><a href="#exponential-distribution">Exponential Distribution</a>
+<ul>
 <li><a href="#definition-5">Definition:</a></li>
-</ul>
-</li>
-<li><a href="#normal-distribution">Normal Distribution</a><ul>
+</ul></li>
+<li><a href="#normal-distribution">Normal Distribution</a>
+<ul>
 <li><a href="#definition-6">Definition:</a></li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="L-7-Distribution-1"><a href="#L-7-Distribution-1" class="headerlink" title="L 7 - Distribution 1"></a>L 7 - Distribution 1</h1><h2 id="Bernoulli-Distribution"><a href="#Bernoulli-Distribution" class="headerlink" title="Bernoulli Distribution"></a>Bernoulli Distribution</h2><h3 id="Definition"><a href="#Definition" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have a Bernoulli distribution with parameter p, where 0 ≤ p ≤ 1, if its probability mass function is given by </p>
-<ul>
-<li>pmf.: $f_{X}(x) &#x3D; p^x(1 − p)^{(1−x)}$ for x &#x3D; 0, 1</li>
-<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; p$</li>
-<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; p(1-p)$</li>
-<li>mgf: $M_{X}(t) &#x3D; E[e^{tX}] &#x3D; e^{t}p + (1 - p), t \in (-\infty ,\infty)$</li>
-</ul>
-<h3 id="n-Bernoulli-trials"><a href="#n-Bernoulli-trials" class="headerlink" title="n Bernoulli trials"></a>n Bernoulli trials</h3><p>Definition: a Bernoulli experiment performed n times:</p>
-<ul>
-<li>$X_{1}, X_{2}, \dots, X_{n}$ are independent Bernoulli random variables (all trials are independent)</li>
-<li>with same parameter p</li>
-</ul>
-<h2 id="Binomial-Distribution"><a href="#Binomial-Distribution" class="headerlink" title="Binomial Distribution"></a>Binomial Distribution</h2><h3 id="Definition-1"><a href="#Definition-1" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have a binomial distribution if its probability mass function is given by </p>
-<ul>
-<li>pmf: $f_{X}(x) &#x3D; \binom{n}{x}p^x(1 − p)^(n−x)$</li>
-<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; np$</li>
-<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; np(1-p)$</li>
-<li>mgf: $M_{X}(t) &#x3D; (pe^t + 1 - p)^n$</li>
-</ul>
-<h3 id="deviation"><a href="#deviation" class="headerlink" title="deviation"></a>deviation</h3><p>if random variables $X_{1}, X_{2}, \dots, X_{n}$ are independent, then </p>
-<p>$$<br>E[X_{1} + X_{2} + \dots + X_{n}] &#x3D; E[X_{1}] + E[X_{2}] + \dots + E[X_{n}]<br>$$</p>
-<p>$$<br>Var[X_{1} + X_{2} + \dots + X_{n}] &#x3D; Var[X_{1}] + Var[X_{2}] + \dots + Var[X_{n}]<br>$$</p>
-<p>$$<br> M’(t) &#x3D; n\left[(1-p) + p e^t\right]^{n-1} p e^t \Rightarrow M’(0) &#x3D; E[X] &#x3D; np<br>$$</p>
-<p>$$<br> M’’(t) &#x3D; n(n-1)\left[(1-p) + p e^t\right]^{n-2} p^2 e^{2t} + n\left[(1-p) + p e^t\right]^{n-1} p e^t<br>$$</p>
-<p>$$<br> M’’(0) &#x3D; E[X^2] &#x3D; n(n-1)p^2 + np<br>$$</p>
-<p>$$<br> \operatorname{Var}[X] &#x3D; E[X^2] - (E[X])^2 &#x3D; n^2 p^2 - n p^2 + n p - n^2 p^2 &#x3D; np(1-p)<br>$$</p>
-<h2 id="Hypergeometric-Distribution"><a href="#Hypergeometric-Distribution" class="headerlink" title="Hypergeometric Distribution"></a>Hypergeometric Distribution</h2><h3 id="Definition-2"><a href="#Definition-2" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have a hypergeometric distribution if its probability mass function is given by </p>
-<ul>
-<li>pmf: $f_{X}(x) &#x3D; \frac{\binom{K}{x}\binom{N-K}{n-x}}{\binom{N}{n}}$</li>
-<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; \frac{nK}{N}$</li>
-<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; n\frac{K}{N}\frac{N-K}{N}\frac{N-n}{N-1}$</li>
-<li>mgf: $M_{X}(t) &#x3D; \left(\frac{K}{N}e^t + 1 - \frac{K}{N}\right)^n$</li>
-</ul>
-<h1 id="L-8-Distribution-2"><a href="#L-8-Distribution-2" class="headerlink" title="L 8 - Distribution 2"></a>L 8 - Distribution 2</h1><h2 id="Geometric-Distribution"><a href="#Geometric-Distribution" class="headerlink" title="Geometric Distribution"></a>Geometric Distribution</h2><h3 id="Definition-3"><a href="#Definition-3" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have a geometric distribution if its probability mass function is given by </p>
-<ul>
-<li>pmf: $f_{X}(x) &#x3D; p(1-p)^{x-1}$</li>
-<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; \frac{1}{p}$</li>
-<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; \frac{1-p}{p^2}$</li>
-<li>mgf: $M_{X}(t) &#x3D; \frac{pe^t}{1-(1-p)e^t}$</li>
-</ul>
-<h2 id="Negative-Binomial-Distribution"><a href="#Negative-Binomial-Distribution" class="headerlink" title="Negative Binomial Distribution"></a>Negative Binomial Distribution</h2><p>Definition:<br>A random variable X is said to have a negative binomial distribution if its probability mass function is given by </p>
-<ul>
-<li>pmf: $f_{X}(x) &#x3D; \binom{x-1}{r-1}p^r(1-p)^{x-r}$</li>
-<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; \frac{r}{p}$</li>
-<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; \frac{r(1-p)}{p^2}$</li>
-<li>mgf: $M_{X}(t) &#x3D; \left(\frac{p}{1-(1-p)e^t}\right)^r$</li>
-<li>negative binomial distribution is a generalization of the geometric distribution</li>
-</ul>
-<h2 id="Poisson-Distribution"><a href="#Poisson-Distribution" class="headerlink" title="Poisson Distribution"></a>Poisson Distribution</h2><p>Definition:<br>A random variable X is said to have a Poisson distribution if its probability mass function is given by </p>
-<ul>
-<li>pmf: $f_{X}(x) &#x3D; \frac{e^{-\lambda}\lambda^x}{x!}$</li>
-<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; \lambda$</li>
-<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; \lambda$</li>
-<li>mgf: $M_{X}(t) &#x3D; e^{\lambda(e^t-1)}$</li>
-<li>Poisson distribution is a limiting case of the binomial distribution when n is large and p is small</li>
-</ul>
-<h1 id="L-9-10-Continuous-Random-Variable-2"><a href="#L-9-10-Continuous-Random-Variable-2" class="headerlink" title="L 9 &amp; 10 - Continuous Random Variable 2"></a>L 9 &amp; 10 - Continuous Random Variable 2</h1><p>第九讲引入了连续随机变量，接着介绍了连续随机变量的分布</p>
-<h2 id="Uniform-Distribution"><a href="#Uniform-Distribution" class="headerlink" title="Uniform Distribution"></a>Uniform Distribution</h2><h3 id="Definition-4"><a href="#Definition-4" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have a uniform distribution if its probability density function is given by </p>
-<ul>
-<li>pdf: $f_{X}(x) &#x3D; \frac{1}{b-a}$</li>
-<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; \frac{a+b}{2}$</li>
-<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; \frac{(b-a)^2}{12}$</li>
-<li>mgf: $M_{X}(t) &#x3D; \frac{e^{tb}-e^{ta}}{t(b-a)}$</li>
-<li>The uniform distribution is often used to model situations where all outcomes are equally likely</li>
-</ul>
-<h2 id="Exponential-Distribution"><a href="#Exponential-Distribution" class="headerlink" title="Exponential Distribution"></a>Exponential Distribution</h2><h3 id="Definition-5"><a href="#Definition-5" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have an exponential distribution if its probability density function is given by </p>
-<ul>
-<li>pdf: $f_{X}(x) &#x3D; \lambda e^{-\lambda x}$</li>
-<li>mean &amp; expectation: $\mu &#x3D; E[X] &#x3D; \frac{1}{\lambda}$</li>
-<li>variance: $\sigma^2 &#x3D; Var[X] &#x3D; \frac{1}{\lambda^2}$</li>
-<li>mgf: $M_{X}(t) &#x3D; \frac{\lambda}{\lambda - t}$</li>
-</ul>
-<h2 id="Normal-Distribution"><a href="#Normal-Distribution" class="headerlink" title="Normal Distribution"></a>Normal Distribution</h2><h3 id="Definition-6"><a href="#Definition-6" class="headerlink" title="Definition:"></a>Definition:</h3><p>A random variable X is said to have a normal distribution if its probability density function is given by </p>
-<ul>
-<li>pdf: $f_{X}(x) &#x3D; \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$</li>
-<li>mean &amp; expectation: $\mu &#x3D; E[X]$</li>
-<li>variance: $\sigma^2 &#x3D; Var[X]$</li>
-<li>mgf: $M_{X}(t) &#x3D; e^{\mu t + \frac{1}{2}\sigma^2 t^2}$</li>
-<li>The normal distribution is the most important continuous distribution in probability and statistics</li>
-</ul>
+<h1 id="l-7---distribution-1">L 7 - Distribution 1</h1>
+<h2 id="bernoulli-distribution">Bernoulli Distribution</h2>
+<h3 id="definition">Definition:</h3>
+<p>A random variable X is said to have a Bernoulli distribution with
+parameter p, where 0 ≤ p ≤ 1, if its probability mass function is given
+by - pmf.: <span
+class="math inline"><em>f</em><sub><em>X</em></sub>(<em>x</em>) = <em>p</em><sup><em>x</em></sup>(1 − <em>p</em>)<sup>(1 − <em>x</em>)</sup></span>
+for x = 0, 1 - mean &amp; expectation: <span
+class="math inline"><em>μ</em> = <em>E</em>[<em>X</em>] = <em>p</em></span>
+- variance: <span
+class="math inline"><em>σ</em><sup>2</sup> = <em>V</em><em>a</em><em>r</em>[<em>X</em>] = <em>p</em>(1 − <em>p</em>)</span>
+- mgf: <span
+class="math inline"><em>M</em><sub><em>X</em></sub>(<em>t</em>) = <em>E</em>[<em>e</em><sup><em>t</em><em>X</em></sup>] = <em>e</em><sup><em>t</em></sup><em>p</em> + (1 − <em>p</em>), <em>t</em> ∈ (−∞, ∞)</span>
+### n Bernoulli trials Definition: a Bernoulli experiment performed n
+times: - <span
+class="math inline"><em>X</em><sub>1</sub>, <em>X</em><sub>2</sub>, …, <em>X</em><sub><em>n</em></sub></span>
+are independent Bernoulli random variables (all trials are independent)
+- with same parameter p ## Binomial Distribution ### Definition: A
+random variable X is said to have a binomial distribution if its
+probability mass function is given by - pmf: <span
+class="math inline">$f_{X}(x) = \binom{n}{x}p^x(1 − p)^(n−x)$</span> -
+mean &amp; expectation: <span
+class="math inline"><em>μ</em> = <em>E</em>[<em>X</em>] = <em>n</em><em>p</em></span>
+- variance: <span
+class="math inline"><em>σ</em><sup>2</sup> = <em>V</em><em>a</em><em>r</em>[<em>X</em>] = <em>n</em><em>p</em>(1 − <em>p</em>)</span>
+- mgf: <span
+class="math inline"><em>M</em><sub><em>X</em></sub>(<em>t</em>) = (<em>p</em><em>e</em><sup><em>t</em></sup> + 1 − <em>p</em>)<sup><em>n</em></sup></span></p>
+<h3 id="deviation">deviation</h3>
+<p>if random variables <span
+class="math inline"><em>X</em><sub>1</sub>, <em>X</em><sub>2</sub>, …, <em>X</em><sub><em>n</em></sub></span>
+are independent, then</p>
+<p><span
+class="math display"><em>E</em>[<em>X</em><sub>1</sub> + <em>X</em><sub>2</sub> + … + <em>X</em><sub><em>n</em></sub>] = <em>E</em>[<em>X</em><sub>1</sub>] + <em>E</em>[<em>X</em><sub>2</sub>] + … + <em>E</em>[<em>X</em><sub><em>n</em></sub>]</span></p>
+<p><span
+class="math display"><em>V</em><em>a</em><em>r</em>[<em>X</em><sub>1</sub> + <em>X</em><sub>2</sub> + … + <em>X</em><sub><em>n</em></sub>] = <em>V</em><em>a</em><em>r</em>[<em>X</em><sub>1</sub>] + <em>V</em><em>a</em><em>r</em>[<em>X</em><sub>2</sub>] + … + <em>V</em><em>a</em><em>r</em>[<em>X</em><sub><em>n</em></sub>]</span></p>
+<p><span
+class="math display"><em>M</em><sup>′</sup>(<em>t</em>) = <em>n</em>[(1 − <em>p</em>) + <em>p</em><em>e</em><sup><em>t</em></sup>]<sup><em>n</em> − 1</sup><em>p</em><em>e</em><sup><em>t</em></sup> ⇒ <em>M</em><sup>′</sup>(0) = <em>E</em>[<em>X</em>] = <em>n</em><em>p</em></span></p>
+<p><span
+class="math display"><em>M</em><sup>″</sup>(<em>t</em>) = <em>n</em>(<em>n</em> − 1)[(1 − <em>p</em>) + <em>p</em><em>e</em><sup><em>t</em></sup>]<sup><em>n</em> − 2</sup><em>p</em><sup>2</sup><em>e</em><sup>2<em>t</em></sup> + <em>n</em>[(1 − <em>p</em>) + <em>p</em><em>e</em><sup><em>t</em></sup>]<sup><em>n</em> − 1</sup><em>p</em><em>e</em><sup><em>t</em></sup></span></p>
+<p><span
+class="math display"><em>M</em><sup>″</sup>(0) = <em>E</em>[<em>X</em><sup>2</sup>] = <em>n</em>(<em>n</em> − 1)<em>p</em><sup>2</sup> + <em>n</em><em>p</em></span></p>
+<p><span
+class="math display">Var [<em>X</em>] = <em>E</em>[<em>X</em><sup>2</sup>] − (<em>E</em>[<em>X</em>])<sup>2</sup> = <em>n</em><sup>2</sup><em>p</em><sup>2</sup> − <em>n</em><em>p</em><sup>2</sup> + <em>n</em><em>p</em> − <em>n</em><sup>2</sup><em>p</em><sup>2</sup> = <em>n</em><em>p</em>(1 − <em>p</em>)</span></p>
+<h2 id="hypergeometric-distribution">Hypergeometric Distribution</h2>
+<h3 id="definition-1">Definition:</h3>
+<p>A random variable X is said to have a hypergeometric distribution if
+its probability mass function is given by - pmf: <span
+class="math inline">$f_{X}(x) =
+\frac{\binom{K}{x}\binom{N-K}{n-x}}{\binom{N}{n}}$</span> - mean &amp;
+expectation: <span class="math inline">$\mu = E[X] =
+\frac{nK}{N}$</span> - variance: <span class="math inline">$\sigma^2 =
+Var[X] = n\frac{K}{N}\frac{N-K}{N}\frac{N-n}{N-1}$</span> - mgf: <span
+class="math inline">$M_{X}(t) = \left(\frac{K}{N}e^t + 1 -
+\frac{K}{N}\right)^n$</span></p>
+<h1 id="l-8---distribution-2">L 8 - Distribution 2</h1>
+<h2 id="geometric-distribution">Geometric Distribution</h2>
+<h3 id="definition-2">Definition:</h3>
+<p>A random variable X is said to have a geometric distribution if its
+probability mass function is given by - pmf: <span
+class="math inline"><em>f</em><sub><em>X</em></sub>(<em>x</em>) = <em>p</em>(1 − <em>p</em>)<sup><em>x</em> − 1</sup></span>
+- mean &amp; expectation: <span class="math inline">$\mu = E[X] =
+\frac{1}{p}$</span> - variance: <span class="math inline">$\sigma^2 =
+Var[X] = \frac{1-p}{p^2}$</span> - mgf: <span
+class="math inline">$M_{X}(t) = \frac{pe^t}{1-(1-p)e^t}$</span> ##
+Negative Binomial Distribution Definition: A random variable X is said
+to have a negative binomial distribution if its probability mass
+function is given by - pmf: <span class="math inline">$f_{X}(x) =
+\binom{x-1}{r-1}p^r(1-p)^{x-r}$</span> - mean &amp; expectation: <span
+class="math inline">$\mu = E[X] = \frac{r}{p}$</span> - variance: <span
+class="math inline">$\sigma^2 = Var[X] = \frac{r(1-p)}{p^2}$</span> -
+mgf: <span class="math inline">$M_{X}(t) =
+\left(\frac{p}{1-(1-p)e^t}\right)^r$</span> - negative binomial
+distribution is a generalization of the geometric distribution</p>
+<h2 id="poisson-distribution">Poisson Distribution</h2>
+<p>Definition: A random variable X is said to have a Poisson
+distribution if its probability mass function is given by - pmf: <span
+class="math inline">$f_{X}(x) = \frac{e^{-\lambda}\lambda^x}{x!}$</span>
+- mean &amp; expectation: <span
+class="math inline"><em>μ</em> = <em>E</em>[<em>X</em>] = <em>λ</em></span>
+- variance: <span
+class="math inline"><em>σ</em><sup>2</sup> = <em>V</em><em>a</em><em>r</em>[<em>X</em>] = <em>λ</em></span>
+- mgf: <span
+class="math inline"><em>M</em><sub><em>X</em></sub>(<em>t</em>) = <em>e</em><sup><em>λ</em>(<em>e</em><sup><em>t</em></sup> − 1)</sup></span>
+- Poisson distribution is a limiting case of the binomial distribution
+when n is large and p is small</p>
+<h1 id="l-9-10---continuous-random-variable-2">L 9 &amp; 10 - Continuous
+Random Variable 2</h1>
+<p>第九讲引入了连续随机变量，接着介绍了连续随机变量的分布 ## Uniform
+Distribution ### Definition: A random variable X is said to have a
+uniform distribution if its probability density function is given by -
+pdf: <span class="math inline">$f_{X}(x) = \frac{1}{b-a}$</span> - mean
+&amp; expectation: <span class="math inline">$\mu = E[X] =
+\frac{a+b}{2}$</span> - variance: <span class="math inline">$\sigma^2 =
+Var[X] = \frac{(b-a)^2}{12}$</span> - mgf: <span
+class="math inline">$M_{X}(t) = \frac{e^{tb}-e^{ta}}{t(b-a)}$</span> -
+The uniform distribution is often used to model situations where all
+outcomes are equally likely</p>
+<h2 id="exponential-distribution">Exponential Distribution</h2>
+<h3 id="definition-3">Definition:</h3>
+<p>A random variable X is said to have an exponential distribution if
+its probability density function is given by - pdf: <span
+class="math inline"><em>f</em><sub><em>X</em></sub>(<em>x</em>) = <em>λ</em><em>e</em><sup>−<em>λ</em><em>x</em></sup></span>
+- mean &amp; expectation: <span class="math inline">$\mu = E[X] =
+\frac{1}{\lambda}$</span> - variance: <span
+class="math inline">$\sigma^2 = Var[X] = \frac{1}{\lambda^2}$</span> -
+mgf: <span class="math inline">$M_{X}(t) = \frac{\lambda}{\lambda -
+t}$</span></p>
+<h2 id="normal-distribution">Normal Distribution</h2>
+<h3 id="definition-4">Definition:</h3>
+<p>A random variable X is said to have a normal distribution if its
+probability density function is given by - pdf: <span
+class="math inline">$f_{X}(x) =
+\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$</span> -
+mean &amp; expectation: <span
+class="math inline"><em>μ</em> = <em>E</em>[<em>X</em>]</span> -
+variance: <span
+class="math inline"><em>σ</em><sup>2</sup> = <em>V</em><em>a</em><em>r</em>[<em>X</em>]</span>
+- mgf: <span class="math inline">$M_{X}(t) = e^{\mu t +
+\frac{1}{2}\sigma^2 t^2}$</span> - The normal distribution is the most
+important continuous distribution in probability and statistics</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/10/16/distribution-in-statistic/" data-id="cmdb5c2ej000t4grz960b3fyb" data-title="distribution_in_statistic" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2024/10/16/distribution-in-statistic/" data-id="cmdcsnadm000uvorzfj072y94" data-title="distribution_in_statistic" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -272,7 +314,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/blog/" style="font-size: 10px;">blog,</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/latex/" style="font-size: 10px;">latex</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem-solving</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -298,6 +340,10 @@
           </li>
         
           <li>
+            <a href="/2025/07/21/hexo-pandoc-math-rendering-fix/">解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/20/PEDF-introduction/">PEDF introduction</a>
           </li>
         
@@ -307,10 +353,6 @@
         
           <li>
             <a href="/2025/07/18/chinese-bonsai/">中式盆栽</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/">旋转靶机械结构设计笔记</a>
           </li>
         
       </ul>
@@ -332,7 +374,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog,</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/latex/" rel="tag">latex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/math/" rel="tag">math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem-solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
     </div>
   </div>
 

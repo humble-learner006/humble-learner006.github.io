@@ -6,12 +6,12 @@
   
   <title>Blog Building | Like&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="记录博客配置过程philosophy: use the default theme and record the change, to make sure the change is controllable. - that’s the reason why I choose landscape theme.">
+  <meta name="description" content="记录博客配置过程 philosophy: use the default theme and record the change, to make sure the change is controllable. - that’s the reason why I choose landscape theme.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Blog Building">
 <meta property="og:url" content="https://humble-learner006.github.io/2024/10/09/blog-building/index.html">
 <meta property="og:site_name" content="Like&#39;s Blog">
-<meta property="og:description" content="记录博客配置过程philosophy: use the default theme and record the change, to make sure the change is controllable. - that’s the reason why I choose landscape theme.">
+<meta property="og:description" content="记录博客配置过程 philosophy: use the default theme and record the change, to make sure the change is controllable. - that’s the reason why I choose landscape theme.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-10-09T01:33:52.000Z">
 <meta property="article:modified_time" content="2025-07-18T07:13:12.537Z">
@@ -102,61 +102,104 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="记录博客配置过程"><a href="#记录博客配置过程" class="headerlink" title="记录博客配置过程"></a>记录博客配置过程</h1><p>philosophy: use the default theme and record the change, to make sure the change is controllable. - that’s the reason why I choose landscape theme. </p>
+        <h1 id="记录博客配置过程">记录博客配置过程</h1>
+<p>philosophy: use the default theme and record the change, to make sure
+the change is controllable. - that’s the reason why I choose landscape
+theme.</p>
 <span id="more"></span>
-
-<h1 id="基础信息设置"><a href="#基础信息设置" class="headerlink" title="基础信息设置"></a>基础信息设置</h1><p><strong>why can’t I find landscape folder in theme folder</strong><br>landscape 主题是通过 npm 安装的，在 package.json 中可以看到</p>
-<h2 id="站点配置文件的-config-yml-配置"><a href="#站点配置文件的-config-yml-配置" class="headerlink" title="站点配置文件的_config.yml 配置"></a>站点配置文件的<code>_config.yml</code> 配置</h2><p>站点配置文件在站点根目录下，是整个博客的配置文件，用来配置整个博客的站点信息，如网站标题、副标题、作者、语言、时区等。</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">LIke&#x27;s</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;Write down my thoughts&#x27;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;Knowledege is not free, you have to pay attention.&#x27;</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Like</span> <span class="string">Cai</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">&#x27;Asia/Shanghai&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="留意到改变description和keywords-网站的渲染效果没变化：作用是什么？"><a href="#留意到改变description和keywords-网站的渲染效果没变化：作用是什么？" class="headerlink" title="留意到改变description和keywords,网站的渲染效果没变化：作用是什么？"></a>留意到改变<code>description</code>和<code>keywords</code>,网站的渲染效果没变化：作用是什么？</h3><p>it is used for search engine optimization(SEO)</p>
-<ul>
-<li><strong>description</strong>: This field provides a brief summary of the site’s content. It is often used in the meta description tag in the HTML head section, which search engines use to display a snippet of the page in search results.<ul>
-<li>in <code>next</code> tutorial, description is used for display sentence you like</li>
-</ul>
-</li>
-<li><strong>keywords</strong>: This field lists relevant keywords for the site. These keywords can be used in the meta keywords tag in the HTML head section, which some search engines use to understand the content of the page. <ul>
-<li>However, note that many modern search engines <strong>do not</strong> heavily rely on the meta keywords tag anymore.</li>
-</ul>
-</li>
-</ul>
-<h3 id="url-setting"><a href="#url-setting" class="headerlink" title="url setting"></a>url setting</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://humble-learner006.github.io/</span></span><br></pre></td></tr></table></figure>
-<p>this makes the default share link become correct   </p>
-<h2 id="add-table-of-content-ToC-for-theme-landscape"><a href="#add-table-of-content-ToC-for-theme-landscape" class="headerlink" title="add table of content [ToC] for theme landscape"></a>add <em>table of content</em> [ToC] for theme landscape</h2><p>如何添加文章目录</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://fengzhenhua-vip.github.io/2021/05/20/%E5%BE%AE%E8%B0%83landscape%E4%B8%BB%E9%A2%98/">https://fengzhenhua-vip.github.io/2021/05/20/%E5%BE%AE%E8%B0%83landscape%E4%B8%BB%E9%A2%98/</a></li>
-<li><a target="_blank" rel="noopener" href="https://jnnjiang.github.io/2019/01/14/hexo/hexo+config.html">https://jnnjiang.github.io/2019/01/14/hexo/hexo+config.html</a></li>
-<li><a target="_blank" rel="noopener" href="https://mrcuijt.github.io/2019/06/04/hexo/hexo-customer/#%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95">https://mrcuijt.github.io/2019/06/04/hexo/hexo-customer/#%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95</a>  </li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_29304021/article/details/118232564">https://blog.csdn.net/weixin_29304021/article/details/118232564</a><br>I found that those who share landscape theme, they don’t use the theme now.</li>
-<li>The next 4 second header are my demand for the blog, landscape theme is <strong>too difficult</strong> to set up to meet my demand.<br>when I checking for this, I found that the landscape theme is just <strong>too basic</strong>, so I decide to change it to next theme.  </li>
-<li>The <a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/getting-started.html">previous tutorial</a> of NexT theme is too old, so I decide to use the <a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/getting-started/">new one.</a></li>
-<li>Don’t drink water from fire hose</li>
-<li><strong>一定要选择官方文档！</strong></li>
-</ul>
-<h1 id="next-主题设置"><a href="#next-主题设置" class="headerlink" title="next 主题设置"></a>next 主题设置</h1><h2 id="pin-rank-the-post-to-the-top-of-the-page"><a href="#pin-rank-the-post-to-the-top-of-the-page" class="headerlink" title="pin&#x2F;rank the post to the top of the page"></a>pin&#x2F;rank the post to the top of the page</h2><p><code>npm install hexo-generator-index-pin-top --save</code><br>在<a target="_blank" rel="noopener" href="https://blog.csdn.net/as480133937/article/details/100138838">这里</a>解决</p>
-<h2 id="add-search-function"><a href="#add-search-function" class="headerlink" title="add search function"></a>add search function</h2><p><code>npm install hexo-generator-searchdb --save</code><br>在<a target="_blank" rel="noopener" href="https://blog.csdn.net/as480133937/article/details/100138838">这里</a>解决<br>官网上也有，但是按照官网的写法，我部署后搜索还是有渲染问题。</p>
-<h2 id="add-comment-function"><a href="#add-comment-function" class="headerlink" title="add comment function"></a>add comment function</h2><p>暂时不加，没写有用的东西</p>
-<h2 id="add-RSS-function-to-the-theme-next"><a href="#add-RSS-function-to-the-theme-next" class="headerlink" title="add RSS function to the theme: next"></a>add RSS function to the theme: next</h2><p>掘金上看到<a target="_blank" rel="noopener" href="https://juejin.cn/post/7012255009593098254">一篇</a><br>在NexT主题文档官网看到<a target="_blank" rel="noopener" href="https://hexo-next.readthedocs.io/zh-cn/latest/next/advanced/RSS%E6%94%AF%E6%8C%81/">一篇</a><br>讨厌需要登陆复制的网站，我有可能只用你一次你还让我登录。还是记住老一点一定<strong>优先查看官网</strong></p>
-<h2 id="add-latex-renderer-function-to-the-theme-next"><a href="#add-latex-renderer-function-to-the-theme-next" class="headerlink" title="add latex renderer function to the theme: next"></a>add latex renderer function to the theme: next</h2><p>在<code>config.next.yml</code>主题配置文件中，你可以找到对应的设置方式以及能指导你配置的选项。官网就是好用啊。2024-10-20 11:23:29<br>而且在更新完渲染部分后，我的网页在部署后可以正常渲染。<br>这告诉我一个道理：如果这个东西只是膈应你，并不影响使用，那就不需要改，以后可能在升级的时候会自己解决。</p>
-<h2 id="至此，博客配置差不多完成了，以后学了前端再看看能玩出什么花样"><a href="#至此，博客配置差不多完成了，以后学了前端再看看能玩出什么花样" class="headerlink" title="至此，博客配置差不多完成了，以后学了前端再看看能玩出什么花样"></a>至此，博客配置差不多完成了，以后学了前端再看看能玩出什么花样</h2><h2 id="reference"><a href="#reference" class="headerlink" title="reference"></a>reference</h2><p>[from landscape to all](<a target="_blank" rel="noopener" href="https://www.codeleading.com/article/4478454305/">教你定制Hexo的landscape打造自己的主题 - 代码先锋网 (codeleading.com)</a>)<br>[sample of fluid theme](<a target="_blank" rel="noopener" href="https://zkqiang.cn/posts/5c980bc0/">认识 LLVM - zkqiang’s blog</a>)<br>[git tutorial from next builder](<a target="_blank" rel="noopener" href="https://iissnan.com/progit/">Pro Git 简体中文版 (iissnan.com)</a>)<br><a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2">it is same as the book from official website</a><br>[Next startup](<a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/getting-started.html">开始使用 - NexT 使用文档 (iissnan.com)</a>)<br>[Hexo + GitHub &#x3D; Blog](<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/60578464">使用 Hexo+GitHub 搭建个人免费博客教程（小白向） - 知乎 (zhihu.com)</a>)<br><a target="_blank" rel="noopener" href="https://www.qtmuniao.com/">依然在更新的next geminie主题的博客，有DDIA精读系列作品</a></p>
-<h1 id="小比样的，一直不更新"><a href="#小比样的，一直不更新" class="headerlink" title="小比样的，一直不更新"></a>小比样的，一直不更新</h1><h2 id="2025-07-14"><a href="#2025-07-14" class="headerlink" title="2025-07-14"></a>2025-07-14</h2><p>在去北京办面签的路上完成了</p>
-<ol>
-<li><a target="_blank" rel="noopener" href="https://www.cai-like.com/">https://www.cai-like.com</a> 的域名购买</li>
-<li>更新了hexo的主题，从next换为landscape</li>
-<li>折腾，把hexo重新部署到github上</li>
-</ol>
-<h2 id="2025-07-17-12-00-56"><a href="#2025-07-17-12-00-56" class="headerlink" title="2025-07-17 12:00:56"></a>2025-07-17 12:00:56</h2><p>完成mermaid设置<br>但是 latex 渲染有问题</p>
-<h2 id="2025-07-18-15-08-59"><a href="#2025-07-18-15-08-59" class="headerlink" title="2025-07-18 15:08:59"></a>2025-07-18 15:08:59</h2><p>今天部署的时候发现</p>
-<ol>
-<li>不用管理员权限的时候，回合OneDrive正在同步的进程冲突</li>
-<li>所有的categories要用一种标记方式，这样稳定性会好很多</li>
-<li>大小写的问题一定要注意。目前我的原则是categories使用大写字母开头，tags用小写字母</li>
-<li>如果需要修改widget的配置，要进入 <code>node_modules/hexo-theme-landscape/config.yml</code> 文件中修改</li>
-</ol>
+<h1 id="基础信息设置">基础信息设置</h1>
+<p><strong>why can’t I find landscape folder in theme folder</strong>
+landscape 主题是通过 npm 安装的，在 package.json 中可以看到 ##
+站点配置文件的<code>_config.yml</code> 配置
+站点配置文件在站点根目录下，是整个博客的配置文件，用来配置整个博客的站点信息，如网站标题、副标题、作者、语言、时区等。
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">LIke&#x27;s</span> <span class="string">blog</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;Write down my thoughts&#x27;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;Knowledege is not free, you have to pay attention.&#x27;</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Like</span> <span class="string">Cai</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">&#x27;Asia/Shanghai&#x27;</span></span><br></pre></td></tr></table></figure> ###
+留意到改变<code>description</code>和<code>keywords</code>,网站的渲染效果没变化：作用是什么？
+it is used for search engine optimization(SEO) -
+<strong>description</strong>: This field provides a brief summary of the
+site’s content. It is often used in the meta description tag in the HTML
+head section, which search engines use to display a snippet of the page
+in search results. - in <code>next</code> tutorial, description is used
+for display sentence you like - <strong>keywords</strong>: This field
+lists relevant keywords for the site. These keywords can be used in the
+meta keywords tag in the HTML head section, which some search engines
+use to understand the content of the page. - However, note that many
+modern search engines <strong>do not</strong> heavily rely on the meta
+keywords tag anymore. ### url setting <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://humble-learner006.github.io/</span></span><br></pre></td></tr></table></figure> this makes the
+default share link become correct<br />
+## add <em>table of content</em> [ToC] for theme landscape
+如何添加文章目录 -
+https://fengzhenhua-vip.github.io/2021/05/20/%E5%BE%AE%E8%B0%83landscape%E4%B8%BB%E9%A2%98/
+- https://jnnjiang.github.io/2019/01/14/hexo/hexo+config.html -
+https://mrcuijt.github.io/2019/06/04/hexo/hexo-customer/#%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95<br />
+- https://blog.csdn.net/weixin_29304021/article/details/118232564<br />
+I found that those who share landscape theme, they don’t use the theme
+now. - The next 4 second header are my demand for the blog, landscape
+theme is <strong>too difficult</strong> to set up to meet my
+demand.<br />
+when I checking for this, I found that the landscape theme is just
+<strong>too basic</strong>, so I decide to change it to next
+theme.<br />
+- The <a
+target="_blank" rel="noopener" href="https://theme-next.iissnan.com/getting-started.html">previous
+tutorial</a> of NexT theme is too old, so I decide to use the <a
+target="_blank" rel="noopener" href="https://theme-next.js.org/docs/getting-started/">new one.</a> -
+Don’t drink water from fire hose - <strong>一定要选择官方文档！</strong>
+# next 主题设置 ## pin/rank the post to the top of the page
+<code>npm install hexo-generator-index-pin-top --save</code> 在<a
+target="_blank" rel="noopener" href="https://blog.csdn.net/as480133937/article/details/100138838">这里</a>解决
+## add search function
+<code>npm install hexo-generator-searchdb --save</code> 在<a
+target="_blank" rel="noopener" href="https://blog.csdn.net/as480133937/article/details/100138838">这里</a>解决
+官网上也有，但是按照官网的写法，我部署后搜索还是有渲染问题。 ## add
+comment function 暂时不加，没写有用的东西 ## add RSS function to the
+theme: next 掘金上看到<a
+target="_blank" rel="noopener" href="https://juejin.cn/post/7012255009593098254">一篇</a>
+在NexT主题文档官网看到<a
+target="_blank" rel="noopener" href="https://hexo-next.readthedocs.io/zh-cn/latest/next/advanced/RSS%E6%94%AF%E6%8C%81/">一篇</a>
+讨厌需要登陆复制的网站，我有可能只用你一次你还让我登录。还是记住老一点一定<strong>优先查看官网</strong>
+## add latex renderer function to the theme: next
+在<code>config.next.yml</code>主题配置文件中，你可以找到对应的设置方式以及能指导你配置的选项。官网就是好用啊。2024-10-20
+11:23:29 而且在更新完渲染部分后，我的网页在部署后可以正常渲染。<br />
+这告诉我一个道理：如果这个东西只是膈应你，并不影响使用，那就不需要改，以后可能在升级的时候会自己解决。
+## 至此，博客配置差不多完成了，以后学了前端再看看能玩出什么花样 ##
+reference <a
+href="%5B教你定制Hexo的landscape打造自己的主题%20-%20代码先锋网%20(codeleading.com)%5D(https://www.codeleading.com/article/4478454305/)">from
+landscape to all</a><br />
+<a
+href="%5B认识%20LLVM%20-%20zkqiang&#39;s%20blog%5D(https://zkqiang.cn/posts/5c980bc0/)">sample
+of fluid theme</a><br />
+<a
+href="%5BPro%20Git%20简体中文版%20(iissnan.com)%5D(https://iissnan.com/progit/)">git
+tutorial from next builder</a><br />
+<a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2">it is same as the book from
+official website</a><br />
+<a
+href="%5B开始使用%20-%20NexT%20使用文档%20(iissnan.com)%5D(https://theme-next.iissnan.com/getting-started.html)">Next
+startup</a><br />
+<a
+href="%5B使用%20Hexo+GitHub%20搭建个人免费博客教程（小白向）%20-%20知乎%20(zhihu.com)%5D(https://zhuanlan.zhihu.com/p/60578464)">Hexo
++ GitHub = Blog</a><br />
+<a target="_blank" rel="noopener" href="https://www.qtmuniao.com/">依然在更新的next
+geminie主题的博客，有DDIA精读系列作品</a></p>
+<h1 id="小比样的一直不更新">小比样的，一直不更新</h1>
+<h2 id="section">2025-07-14</h2>
+<p>在去北京办面签的路上完成了 1. https://www.cai-like.com 的域名购买 2.
+更新了hexo的主题，从next换为landscape 3.
+折腾，把hexo重新部署到github上</p>
+<h2 id="section-1">2025-07-17 12:00:56</h2>
+<p>完成mermaid设置 但是 latex 渲染有问题</p>
+<h2 id="section-2">2025-07-18 15:08:59</h2>
+<p>今天部署的时候发现 1.
+不用管理员权限的时候，回合OneDrive正在同步的进程冲突 2.
+所有的categories要用一种标记方式，这样稳定性会好很多 3.
+大小写的问题一定要注意。目前我的原则是categories使用大写字母开头，tags用小写字母
+4. 如果需要修改widget的配置，要进入
+<code>node_modules/hexo-theme-landscape/config.yml</code> 文件中修改</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2024/10/09/blog-building/" data-id="cmdb5c2eh000k4grzbdhf9pga" data-title="Blog Building" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2024/10/09/blog-building/" data-id="cmdcsnadh000jvorz3rtibe0h" data-title="Blog Building" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -197,7 +240,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/blog/" style="font-size: 10px;">blog,</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/latex/" style="font-size: 10px;">latex</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem-solving</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 15px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -223,6 +266,10 @@
           </li>
         
           <li>
+            <a href="/2025/07/21/hexo-pandoc-math-rendering-fix/">解决Hexo+Pandoc渲染器中LaTeX数学公式警告的问题</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/20/PEDF-introduction/">PEDF introduction</a>
           </li>
         
@@ -232,10 +279,6 @@
         
           <li>
             <a href="/2025/07/18/chinese-bonsai/">中式盆栽</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/17/Notes-on-mechanical-structure-design-of-rotating-target/">旋转靶机械结构设计笔记</a>
           </li>
         
       </ul>
@@ -257,7 +300,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog,</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BOM/" rel="tag">BOM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-C/" rel="tag">C&#x2F;C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/" rel="tag">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Robomaster/" rel="tag">Robomaster</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SDL2/" rel="tag">SDL2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/USB/" rel="tag">USB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-system/" rel="tag">build system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer/" rel="tag">computer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/demand/" rel="tag">demand</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/editor/" rel="tag">editor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-development/" rel="tag">game development</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-jam/" rel="tag">game jam</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hobby/" rel="tag">hobby</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/investment/" rel="tag">investment</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jot/" rel="tag">jot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/latex/" rel="tag">latex</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ludum-dare/" rel="tag">ludum dare</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/math/" rel="tag">math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mechanical-structure/" rel="tag">mechanical structure</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem-solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem-solving/" rel="tag">problem_solving</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/product/" rel="tag">product</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reflection/" rel="tag">reflection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setup/" rel="tag">setup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/statistics/" rel="tag">statistics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unfinished/" rel="tag">unfinished</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
     </div>
   </div>
 
