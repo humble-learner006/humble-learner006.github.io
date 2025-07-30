@@ -206,6 +206,37 @@ mjx-container[display="true"] + br {
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>本博客食用指南</p>
+<style>
+/* 强制 Mermaid 容器背景为白色 */
+.mermaid {
+  background-color: white !important;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* 修复文字颜色 */
+.mermaid text, .mermaid .node text {
+  fill: black !important;
+  color: black !important;
+}
+
+/* 确保节点背景也是白色 */
+.mermaid .node rect, .mermaid .node circle, .mermaid .node polygon {
+  fill: white !important;
+  stroke: black !important;
+}
+
+/* 修复连接线颜色 */
+.mermaid .edge-pattern-solid {
+  stroke: black !important;
+}
+
+/* 修复箭头颜色 */
+.mermaid .arrowheadPath {
+  fill: black !important;
+  stroke: black !important;
+}
+</style>
 <pre class="mermaid">graph TD
     A[新文章] --> B{文章性质判断}
     B --> C[Computer Science]
@@ -225,7 +256,21 @@ mjx-container[display="true"] + br {
     F --> F1{生活分类}
     F1 -->|植物相关| F11[Gardening]
     G --> G1{工程领域}
-    G1 -->|IO通讯| G11[Ports]</pre>
+    G1 -->|IO通讯| G11[Ports]
+    
+    click C "https://www.cai-like.com/categories/Computer-Science/" "点击查看计算机科学相关文章"
+    click D "https://www.cai-like.com/categories/Mathematics/" "点击查看数学相关文章"
+    click E "https://www.cai-like.com/categories/Project/" "点击查看项目相关文章"
+    click F "https://www.cai-like.com/categories/PersonalLogs/" "点击查看个人日志"
+    click G "https://www.cai-like.com/categories/Electric-Engineering/" "点击查看电气工程相关文章"
+    click C11 "https://www.cai-like.com/categories/Computer-Science/Language/" "点击查看编程语言相关文章"
+    click C12 "https://www.cai-like.com/categories/Computer-Science/Operating-Systems/" "点击查看操作系统相关文章"
+    click D11 "https://www.cai-like.com/categories/Mathematics/Statistics/" "点击查看统计学相关文章"
+    click E11 "https://www.cai-like.com/categories/Project/Web/" "点击查看网页项目"
+    click E12 "https://www.cai-like.com/categories/Project/Game/" "点击查看游戏开发项目"
+    click E13 "https://www.cai-like.com/categories/Project/Software/" "点击查看软件工程项目"
+    click F11 "https://www.cai-like.com/categories/PersonalLogs/Gardening/" "点击查看园艺相关文章"
+    click G11 "https://www.cai-like.com/categories/Electric-Engineering/Ports/" "点击查看IO通讯相关文章"</pre>
         
           <p class="article-more-link">
             <a href="/2077/05/09/navigator/#more">Read More</a>
@@ -234,10 +279,90 @@ mjx-container[display="true"] + br {
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2077/05/09/navigator/" data-id="cmdfd6lcc001gvgrz1wb1ajkc" data-title="NAVIGATOR" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2077/05/09/navigator/" data-id="cmdpn8ew1001g4krzeqmm5zdx" data-title="NAVIGATOR" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-mermaid-draw-graph" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/07/30/mermaid-draw-graph/" class="article-date">
+  <time class="dt-published" datetime="2025-07-30T05:52:29.000Z" itemprop="datePublished">2025-07-30</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Project/">Project</a>►<a class="article-category-link" href="/categories/Project/Web/">Web</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/07/30/mermaid-draw-graph/">mermaid draw graph</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <style>
+/* 强制 Mermaid 容器背景为白色 */
+.mermaid {
+  background-color: white !important;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* 修复文字颜色 */
+.mermaid text, .mermaid .node text {
+  fill: black !important;
+  color: black !important;
+}
+
+/* 确保节点背景也是白色 */
+.mermaid .node rect, .mermaid .node circle, .mermaid .node polygon {
+  fill: white !important;
+  stroke: black !important;
+}
+
+/* 修复连接线颜色 */
+.mermaid .edge-pattern-solid {
+  stroke: black !important;
+}
+
+/* 修复箭头颜色 */
+.mermaid .arrowheadPath {
+  fill: black !important;
+  stroke: black !important;
+}
+</style>
+<p>mermaid图表速查
+        
+          <p class="article-more-link">
+            <a href="/2025/07/30/mermaid-draw-graph/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2025/07/30/mermaid-draw-graph/" data-id="cmdpn8ew0001c4krz2jml4g1a" data-title="mermaid draw graph" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li></ul>
+
     </footer>
   </div>
   
@@ -281,7 +406,7 @@ mjx-container[display="true"] + br {
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/07/21/render-latex-in-hexo-blog/" data-id="cmdfd6lce001ovgrzbfzr86zt" data-title="render latex in hexo blog" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/07/21/render-latex-in-hexo-blog/" data-id="cmdpn8ew5001s4krzf85d5opj" data-title="render latex in hexo blog" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -331,7 +456,7 @@ mjx-container[display="true"] + br {
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/07/20/PEDF-introduction/" data-id="cmdfd6lc20005vgrz0590fc2k" data-title="PEDF introduction" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/07/20/PEDF-introduction/" data-id="cmdpn8evk00054krz7uixedx6" data-title="PEDF introduction" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -380,60 +505,11 @@ mjx-container[display="true"] + br {
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/07/18/PEDF-Flexible-system/" data-id="cmdfd6lc20004vgrz4nmp7ux6" data-title="PEDF-Flexible-system" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2025/07/18/PEDF-Flexible-system/" data-id="cmdpn8evj00044krzcmb3f9yd" data-title="PEDF-Flexible-system" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flexible-system/" rel="tag">flexible-system</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-chinese-bonsai" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/07/18/chinese-bonsai/" class="article-date">
-  <time class="dt-published" datetime="2025-07-18T05:00:23.000Z" itemprop="datePublished">2025-07-18</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/PersonalLogs/">PersonalLogs</a>►<a class="article-category-link" href="/categories/PersonalLogs/Gardening/">Gardening</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/07/18/chinese-bonsai/">中式盆栽</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>计划长久的打理一盆中式盆栽
-        
-          <p class="article-more-link">
-            <a href="/2025/07/18/chinese-bonsai/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2025/07/18/chinese-bonsai/" data-id="cmdfd6lc8000ovgrz95qsb5hh" data-title="中式盆栽" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tutorial/" rel="tag">tutorial</a></li></ul>
 
     </footer>
   </div>
@@ -458,7 +534,7 @@ mjx-container[display="true"] + br {
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/latex/" style="font-size: 10px;">latex</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/note/" style="font-size: 10px;">note</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem-solving</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 10px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 17.5px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/latex/" style="font-size: 10px;">latex</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 12.5px;">mermaid</a> <a href="/tags/note/" style="font-size: 10px;">note</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem-solving</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 10px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -484,6 +560,10 @@ mjx-container[display="true"] + br {
           </li>
         
           <li>
+            <a href="/2025/07/30/mermaid-draw-graph/">mermaid draw graph</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/21/render-latex-in-hexo-blog/">render latex in hexo blog</a>
           </li>
         
@@ -493,10 +573,6 @@ mjx-container[display="true"] + br {
         
           <li>
             <a href="/2025/07/18/PEDF-Flexible-system/">PEDF-Flexible-system</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/18/chinese-bonsai/">中式盆栽</a>
           </li>
         
       </ul>

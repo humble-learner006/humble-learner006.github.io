@@ -6,15 +6,15 @@
   
   <title>NAVIGATOR | Like&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="本博客食用指南 graph TD     A[新文章] --&gt; B{文章性质判断}     B --&gt; C[Computer Science]     B --&gt; D[Mathematics]     B --&gt;|学科相关的项目| E[Project]     B --&gt;|生活记录| F[PersonalLogs]     B --&gt; G[Electric Engineering]">
+  <meta name="description" content="本博客食用指南  &#x2F;* 强制 Mermaid 容器背景为白色 *&#x2F; .mermaid {   background-color: white !important;   border-radius: 8px;   padding: 10px; }  &#x2F;* 修复文字颜色 *&#x2F; .mermaid text, .mermaid .node text {   fill: black">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NAVIGATOR">
 <meta property="og:url" content="https://humble-learner006.github.io/2077/05/09/navigator/index.html">
 <meta property="og:site_name" content="Like&#39;s Blog">
-<meta property="og:description" content="本博客食用指南 graph TD     A[新文章] --&gt; B{文章性质判断}     B --&gt; C[Computer Science]     B --&gt; D[Mathematics]     B --&gt;|学科相关的项目| E[Project]     B --&gt;|生活记录| F[PersonalLogs]     B --&gt; G[Electric Engineering]">
+<meta property="og:description" content="本博客食用指南  &#x2F;* 强制 Mermaid 容器背景为白色 *&#x2F; .mermaid {   background-color: white !important;   border-radius: 8px;   padding: 10px; }  &#x2F;* 修复文字颜色 *&#x2F; .mermaid text, .mermaid .node text {   fill: black">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2077-05-08T23:55:46.000Z">
-<meta property="article:modified_time" content="2025-07-23T02:40:27.116Z">
+<meta property="article:modified_time" content="2025-07-30T07:28:42.971Z">
 <meta property="article:author" content="Like CAI">
 <meta name="twitter:card" content="summary">
   
@@ -96,6 +96,37 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>本博客食用指南</p>
+<style>
+/* 强制 Mermaid 容器背景为白色 */
+.mermaid {
+  background-color: white !important;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* 修复文字颜色 */
+.mermaid text, .mermaid .node text {
+  fill: black !important;
+  color: black !important;
+}
+
+/* 确保节点背景也是白色 */
+.mermaid .node rect, .mermaid .node circle, .mermaid .node polygon {
+  fill: white !important;
+  stroke: black !important;
+}
+
+/* 修复连接线颜色 */
+.mermaid .edge-pattern-solid {
+  stroke: black !important;
+}
+
+/* 修复箭头颜色 */
+.mermaid .arrowheadPath {
+  fill: black !important;
+  stroke: black !important;
+}
+</style>
 <pre class="mermaid">graph TD
     A[新文章] --> B{文章性质判断}
     B --> C[Computer Science]
@@ -115,7 +146,21 @@
     F --> F1{生活分类}
     F1 -->|植物相关| F11[Gardening]
     G --> G1{工程领域}
-    G1 -->|IO通讯| G11[Ports]</pre>
+    G1 -->|IO通讯| G11[Ports]
+    
+    click C "https://www.cai-like.com/categories/Computer-Science/" "点击查看计算机科学相关文章"
+    click D "https://www.cai-like.com/categories/Mathematics/" "点击查看数学相关文章"
+    click E "https://www.cai-like.com/categories/Project/" "点击查看项目相关文章"
+    click F "https://www.cai-like.com/categories/PersonalLogs/" "点击查看个人日志"
+    click G "https://www.cai-like.com/categories/Electric-Engineering/" "点击查看电气工程相关文章"
+    click C11 "https://www.cai-like.com/categories/Computer-Science/Language/" "点击查看编程语言相关文章"
+    click C12 "https://www.cai-like.com/categories/Computer-Science/Operating-Systems/" "点击查看操作系统相关文章"
+    click D11 "https://www.cai-like.com/categories/Mathematics/Statistics/" "点击查看统计学相关文章"
+    click E11 "https://www.cai-like.com/categories/Project/Web/" "点击查看网页项目"
+    click E12 "https://www.cai-like.com/categories/Project/Game/" "点击查看游戏开发项目"
+    click E13 "https://www.cai-like.com/categories/Project/Software/" "点击查看软件工程项目"
+    click F11 "https://www.cai-like.com/categories/PersonalLogs/Gardening/" "点击查看园艺相关文章"
+    click G11 "https://www.cai-like.com/categories/Electric-Engineering/Ports/" "点击查看IO通讯相关文章"</pre>
 <span id="more"></span>
 <h1 id="导航">导航</h1>
 <h2 id="tips">Tips：</h2>
@@ -189,7 +234,7 @@ target="_blank" rel="noopener" href="https://mermaid.js.org/">Mermaid</a>提供�
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://humble-learner006.github.io/2077/05/09/navigator/" data-id="cmdfd6lcc001gvgrz1wb1ajkc" data-title="NAVIGATOR" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://humble-learner006.github.io/2077/05/09/navigator/" data-id="cmdpn8ew1001g4krzeqmm5zdx" data-title="NAVIGATOR" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -200,9 +245,9 @@ target="_blank" rel="noopener" href="https://mermaid.js.org/">Mermaid</a>提供�
 <nav id="article-nav">
   
   
-    <a href="/2025/07/21/render-latex-in-hexo-blog/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2025/07/30/mermaid-draw-graph/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">render latex in hexo blog</div>
+      <div class="article-nav-title">mermaid draw graph</div>
     </a>
   
 </nav>
@@ -219,7 +264,7 @@ target="_blank" rel="noopener" href="https://mermaid.js.org/">Mermaid</a>提供�
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/latex/" style="font-size: 10px;">latex</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 10px;">mermaid</a> <a href="/tags/note/" style="font-size: 10px;">note</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem-solving</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 10px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
+      <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/C-C/" style="font-size: 17.5px;">C/C++</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Qt/" style="font-size: 12.5px;">Qt</a> <a href="/tags/Robomaster/" style="font-size: 12.5px;">Robomaster</a> <a href="/tags/SDL2/" style="font-size: 10px;">SDL2</a> <a href="/tags/USB/" style="font-size: 10px;">USB</a> <a href="/tags/blog/" style="font-size: 17.5px;">blog</a> <a href="/tags/build-system/" style="font-size: 10px;">build system</a> <a href="/tags/computer/" style="font-size: 10px;">computer</a> <a href="/tags/demand/" style="font-size: 10px;">demand</a> <a href="/tags/editor/" style="font-size: 10px;">editor</a> <a href="/tags/flexible-system/" style="font-size: 10px;">flexible-system</a> <a href="/tags/game-development/" style="font-size: 10px;">game development</a> <a href="/tags/game-jam/" style="font-size: 10px;">game jam</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/hobby/" style="font-size: 10px;">hobby</a> <a href="/tags/investment/" style="font-size: 10px;">investment</a> <a href="/tags/jot/" style="font-size: 10px;">jot</a> <a href="/tags/latex/" style="font-size: 10px;">latex</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/ludum-dare/" style="font-size: 10px;">ludum dare</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/mechanical-structure/" style="font-size: 10px;">mechanical structure</a> <a href="/tags/mermaid/" style="font-size: 12.5px;">mermaid</a> <a href="/tags/note/" style="font-size: 10px;">note</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem-solving</a> <a href="/tags/problem-solving/" style="font-size: 10px;">problem_solving</a> <a href="/tags/product/" style="font-size: 10px;">product</a> <a href="/tags/reflection/" style="font-size: 12.5px;">reflection</a> <a href="/tags/setup/" style="font-size: 15px;">setup</a> <a href="/tags/statistics/" style="font-size: 10px;">statistics</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/tutorial/" style="font-size: 20px;">tutorial</a> <a href="/tags/unfinished/" style="font-size: 10px;">unfinished</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a>
     </div>
   </div>
 
@@ -245,6 +290,10 @@ target="_blank" rel="noopener" href="https://mermaid.js.org/">Mermaid</a>提供�
           </li>
         
           <li>
+            <a href="/2025/07/30/mermaid-draw-graph/">mermaid draw graph</a>
+          </li>
+        
+          <li>
             <a href="/2025/07/21/render-latex-in-hexo-blog/">render latex in hexo blog</a>
           </li>
         
@@ -254,10 +303,6 @@ target="_blank" rel="noopener" href="https://mermaid.js.org/">Mermaid</a>提供�
         
           <li>
             <a href="/2025/07/18/PEDF-Flexible-system/">PEDF-Flexible-system</a>
-          </li>
-        
-          <li>
-            <a href="/2025/07/18/chinese-bonsai/">中式盆栽</a>
           </li>
         
       </ul>

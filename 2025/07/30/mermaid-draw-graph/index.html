@@ -4,14 +4,20 @@
   <meta charset="utf-8">
   
   
-  <title>Tag: hexo | Like&#39;s Blog</title>
+  <title>mermaid draw graph | Like&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Like&#39;s Blog">
-<meta property="og:url" content="https://humble-learner006.github.io/tags/hexo/index.html">
+  <meta name="description" content="&#x2F;* 强制 Mermaid 容器背景为白色 *&#x2F; .mermaid {   background-color: white !important;   border-radius: 8px;   padding: 10px; }  &#x2F;* 修复文字颜色 *&#x2F; .mermaid text, .mermaid .node text {   fill: black !importan">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mermaid draw graph">
+<meta property="og:url" content="https://humble-learner006.github.io/2025/07/30/mermaid-draw-graph/index.html">
 <meta property="og:site_name" content="Like&#39;s Blog">
+<meta property="og:description" content="&#x2F;* 强制 Mermaid 容器背景为白色 *&#x2F; .mermaid {   background-color: white !important;   border-radius: 8px;   padding: 10px; }  &#x2F;* 修复文字颜色 *&#x2F; .mermaid text, .mermaid .node text {   fill: black !importan">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-07-30T05:52:29.000Z">
+<meta property="article:modified_time" content="2025-07-30T07:29:08.915Z">
 <meta property="article:author" content="Like CAI">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="mermaid">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Like's Blog" type="application/atom+xml">
@@ -69,68 +75,312 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2025" class="archive-year">2025</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2025/07/17/hexo-mermaid-tutorial/" class="archive-article-date">
-  <time class="dt-published" datetime="2025-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17</time>
+        <section id="main"><article id="post-mermaid-draw-graph" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/07/30/mermaid-draw-graph/" class="article-date">
+  <time class="dt-published" datetime="2025-07-30T05:52:29.000Z" itemprop="datePublished">2025-07-30</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Project/">Project</a>►<a class="article-category-link" href="/categories/Project/Web/">Web</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2025/07/17/hexo-mermaid-tutorial/">在 Hexo + Landscape 主题中配置 Mermaid 流程图教程</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      mermaid draw graph
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
+    <div class="e-content article-entry" itemprop="articleBody">
       
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2024/10/09/blog-building/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-10-09T01:33:52.000Z" itemprop="datePublished">Oct 9</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/10/09/blog-building/">Blog Building</a>
-    </h1>
-  
+        <style>
+/* 强制 Mermaid 容器背景为白色 */
+.mermaid {
+  background-color: white !important;
+  border-radius: 8px;
+  padding: 10px;
+}
 
-    </header>
+/* 修复文字颜色 */
+.mermaid text, .mermaid .node text {
+  fill: black !important;
+  color: black !important;
+}
+
+/* 确保节点背景也是白色 */
+.mermaid .node rect, .mermaid .node circle, .mermaid .node polygon {
+  fill: white !important;
+  stroke: black !important;
+}
+
+/* 修复连接线颜色 */
+.mermaid .edge-pattern-solid {
+  stroke: black !important;
+}
+
+/* 修复箭头颜色 */
+.mermaid .arrowheadPath {
+  fill: black !important;
+  stroke: black !important;
+}
+</style>
+<p>mermaid图表速查 <span id="more"></span> &gt;Mermaid is a JavaScript based
+diagramming and charting tool that uses Markdown-inspired text
+definitions and a renderer to create and modify complex diagrams.</p>
+<p>Mermaid 是一个基于 JavaScript 的图表绘制工具，可以在 Markdown
+中使用。它支持多种图表类型，包括流程图、序列图、甘特图等。而且支持了许多你曾经用过的软件，<a
+target="_blank" rel="noopener" href="https://mermaid.js.org/ecosystem/integrations-community.html">详见</a>
+# 我的使用场景 主要使用 flowchart 和 gantt 其他目前用不到 2025-07-30
+15:15:32 花了一个多小时看完了mermaid 官方所有的
+tutorial。以下是我的感受： 1. mermaid可以实现多数你知道的图表类型。 2.
+mermaid的目的是文本表示图表，相比于图片是一种更适合出现在说明文档里的展示形式。
+3. 只需要了解mermaid能实现什么，有个大致印象即可，用时在查看文档。</p>
+<h1 id="flowchart">flowchart</h1>
+<h2 id="node">node</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">flowchart RL</span><br><span class="line">    A@&#123; shape: manual-file, label: &quot;File Handling&quot;&#125;</span><br><span class="line">    B@&#123; shape: manual-input, label: &quot;User Input&quot;&#125;</span><br><span class="line">    markdown[&quot;`This **is** _Markdown_`&quot;]</span><br><span class="line">    newLines[&quot;`Line1</span><br><span class="line">    Line 2</span><br><span class="line">    Line 3`&quot;]</span><br><span class="line">    markdown --&gt; newLines</span><br><span class="line">A --&gt; C</span><br><span class="line">B --&gt; A</span><br></pre></td></tr></table></figure>
+<p>从以上的例子，观察到有两种声明节点的方式： 1. 使用
+<code>&lt;node_id&gt;@&#123;shape_def:shape; label_def:content&#125;</code>
+语法来声明节点的形状和content。 2. 使用
+<code>&lt;node_id&gt;["</code>content<code>"]</code>
+语法来声明节点的content。
+然后再批量用箭头链接节点的<code>&lt;id&gt;</code>。</p>
+<h2 id="edge">edge</h2>
+<table>
+<thead>
+<tr>
+<th>样式</th>
+<th>语法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>箭头实线</td>
+<td><code>--&gt;</code></td>
+</tr>
+<tr>
+<td>加粗箭头实线</td>
+<td><code>==&gt;</code></td>
+</tr>
+<tr>
+<td>箭头虚线</td>
+<td><code>-.-&gt;</code></td>
+</tr>
+<tr>
+<td>双向箭头</td>
+<td><code>&lt;-&gt;</code></td>
+</tr>
+<tr>
+<td>双向虚线</td>
+<td><code>&lt;-.-&gt;</code></td>
+</tr>
+<tr>
+<td>带有文字箭头</td>
+<td><code>-- text --&gt;</code></td>
+</tr>
+<tr>
+<td>隐藏箭头（用于约束位置）</td>
+<td>~~~</td>
+</tr>
+</tbody>
+</table>
+<h3 id="用边id批量定义边样式">用边ID批量定义边样式</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">  A &lt;edge_id&gt;@--&gt; B</span><br></pre></td></tr></table></figure>
+利用边id开启批量样式定义 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">  A e1@==&gt; B</span><br><span class="line">  e1@&#123; animate: true &#125;</span><br></pre></td></tr></table></figure>
+<pre class="mermaid">flowchart LR
+    N1@{shape: circ, lable: "Animation"}
+    N2@{shape: circ, lable: "true"}
+    N3@{shape: circ, lable: "fast"}
+    N4@{shape: circ, lable: "slow"}
+    N1 e1@--> N2
+    N1 e2@--> N3
+    N1 e3@--> N4
+    e1@{animate: true, speed: true}
+    e2@{animate: true, speed: fast}
+    e3@{animate: true, speed: slow}</pre>
+<p>block的构建是 Node定义 + 连接方式 + 边定义</p>
+<h2 id="subgraph">subgraph</h2>
+<p>实现如下线框图</p>
+<pre class="mermaid">flowchart LR
+  subgraph TOP
+    direction TB
+    subgraph B1
+        direction RL
+        i1 -->f1
+    end
+    subgraph B2
+        direction BT
+        i2 -->f2
+    end
+  end
+  A --> TOP --> B
+  B1 --> B2</pre>
+<p>子图和母图的方向可以不同</p>
+<h2 id="实现链接跳转">实现链接跳转</h2>
+<pre class="mermaid">flowchart LR
+    A-->B
+    B-->C
+    C-->D
+    click A callback "Tooltip for a callback"
+    click B "https://www.github.com" "This is a tooltip for a link"
+    click C call callback() "Tooltip for a callback"
+    click D href "https://www.github.com" "This is a tooltip for a link"</pre>
+<h1 id="gantt">gantt</h1>
+<p>https://mermaid.js.org/syntax/gantt.html</p>
+<pre class="mermaid">---
+displayMode: compact
+---
+gantt
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :a2, 2014-01-20, 25d
+    Another one      :a3, 2014-02-10, 20d</pre>
+<h1 id="pie-chart">pie chart</h1>
+<pre class="mermaid">pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15</pre>
+<h1 id="git-graph">git graph</h1>
+<pre class="mermaid">---
+config:
+  logLevel: 'debug'
+  theme: 'base'
+  gitGraph:
+    showBranches: false
+---
+      gitGraph
+        commit
+        branch hotfix
+        checkout hotfix
+        commit
+        branch develop
+        checkout develop
+        commit id:"ash" tag:"abc"
+        branch featureB
+        checkout featureB
+        commit type:HIGHLIGHT
+        checkout main
+        checkout hotfix
+        commit type:NORMAL
+        checkout develop
+        commit type:REVERSE
+        checkout featureB
+        commit
+        checkout main
+        merge hotfix
+        checkout featureB
+        commit
+        checkout develop
+        branch featureA
+        commit
+        checkout develop
+        merge hotfix
+        checkout featureA
+        commit
+        checkout featureB
+        commit
+        checkout develop
+        merge featureA
+        branch release
+        checkout release
+        commit
+        checkout main
+        commit
+        checkout release
+        merge main
+        checkout develop
+        merge release</pre>
+<h1 id="sankey">sankey</h1>
+<pre class="mermaid">sankey-beta
+
+%% source,target,value
+Electricity grid,Over generation / exports,104.453
+Electricity grid,Heating and cooling - homes,113.726
+Electricity grid,H2 conversion,27.14</pre>
+<h1 id="packed-diagram">packed diagram</h1>
+<p>演示数据包的结构，很适合展示bit的内容
+貌似是beta版本的，目前我的渲染器不支持</p>
+<pre class="mermaid">---
+title: "TCP Packet"
+---
+packet
+0-15: "Source Port"
+16-31: "Destination Port"
+32-63: "Sequence Number"
+64-95: "Acknowledgment Number"
+96-99: "Data Offset"
+100-105: "Reserved"
+106: "URG"
+107: "ACK"
+108: "PSH"
+109: "RST"
+110: "SYN"
+111: "FIN"
+112-127: "Window"
+128-143: "Checksum"
+144-159: "Urgent Pointer"
+160-191: "(Options and Padding)"
+192-255: "Data (variable length)"</pre>
+<h1 id="sequencediagram">sequenceDiagram</h1>
+<pre class="mermaid">sequenceDiagram
+    Alice->>Bob: Hello Bob, how are you ?
+    Bob->>Alice: Fine, thank you. And you?
+    create participant Carl
+    Alice->>Carl: Hi Carl!
+    create actor D as Donald
+    Carl->>D: Hi!
+    destroy Carl
+    Alice-xCarl: We are too many
+    destroy Bob
+    Bob->>Alice: I agree</pre>
+<p>用于演示交互 比如函数的传参</p>
+<h1 id="classdiagram">classDiagram</h1>
+<p>演示类的设计</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://humble-learner006.github.io/2025/07/30/mermaid-draw-graph/" data-id="cmdpn8ew0001c4krz2jml4g1a" data-title="mermaid draw graph" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mermaid/" rel="tag">mermaid</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2077/05/09/navigator/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          NAVIGATOR
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2025/07/21/render-latex-in-hexo-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">render latex in hexo blog</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
