@@ -15,7 +15,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://z.wiki/u/NMavMq">
 <meta property="article:published_time" content="2025-07-17T05:34:29.000Z">
-<meta property="article:modified_time" content="2025-07-23T06:01:29.760Z">
+<meta property="article:modified_time" content="2025-07-31T02:01:34.224Z">
 <meta property="article:author" content="Like CAI">
 <meta property="article:tag" content="Robomaster">
 <meta property="article:tag" content="mechanical structure">
@@ -103,31 +103,66 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>2025年，过岗龙需要一个旋转靶子 <span id="more"></span> # 设计需求 1.
+        <p>2025年，过岗龙需要一个旋转靶子 <span id="more"></span> # 机构设计需求 1.
 转速达到3rps，也就是每分钟180转 2. 旋转靶子直径在60cm 3.
 高度差分达到30cm 4. 由于惯性，滑轨结构尽量低趴</p>
-<h1 id="设计目标">设计目标</h1>
+<h1 id="我的设计目标">我的设计目标</h1>
 <ol type="1">
 <li>制作一个通用的旋转机构</li>
 <li>低成本（主要使用3D打印和玻璃纤维，只有必要零件使用金属</li>
 <li>对快拆的一次尝试</li>
 <li>对“成员在线合作”和“自研机械结构”的尝试</li>
 </ol>
-<h1 id="设计参数参考">设计参数参考</h1>
-<h2 id="云台轴承">云台轴承</h2>
+<h1 id="电气拓扑-2025-07-31">电气拓扑 2025-07-31</h1>
+<pre class="mermaid">graph TD
+A[电池]
+B[分电板]
+C[3508平动2]
+D[3508平动1]
+E[3508旋转]
+F[C board]
+G[主控]
+H[电管]
+I{导电滑环
+12 pin}
+J[装甲板串联环路]
+
+subgraph 定子部分
+A --> H
+    H -->|急停开关| B
+    B --> C
+    B --> D
+    B --> E
+    B --> F
+    G --> H
+    F --> C
+    F --> D
+    F --> E
+end
+H -->|6 pin|I
+C ~~~ I
+D ~~~ I
+E ~~~ I
+subgraph 转子部分
+I --> |6 in|J
+J --> |6 out|I
+I --> |6 pin|H
+end</pre>
+<h1 id="各模块机械设计">各模块机械设计</h1>
+<h2 id="云台部分-2025-07-17">云台部分 2025-07-17</h2>
+<h3 id="旋转连接部孔位分布">旋转连接部孔位分布</h3>
+<figure>
+<img
+src="https://tc.z.wiki/autoupload/f/naBXvlxu6UGLbeKisI39YyfNcKcqEnRmcljopnyJoMs/20250723/uNll/1710X1355/%E5%AD%94%E4%BD%8D%E5%88%86%E5%B8%83%E7%A4%BA%E6%84%8F%E5%9B%BE.png"
+alt="1710X1355/孔位分布示意图.png" />
+<figcaption aria-hidden="true">1710X1355/孔位分布示意图.png</figcaption>
+</figure>
 <h3 id="齿轮啮合示意图">齿轮啮合示意图</h3>
-<figure>
-<img
+<p><img
 src="https://tc.z.wiki/autoupload/f/naBXvlxu6UGLbeKisI39YyfNcKcqEnRmcljopnyJoMs/20250723/okf5/1719X591/%E8%BD%B4%E6%89%BF%E9%83%A8%E5%88%86.png"
-alt="1719X591/轴承部分.png" />
-<figcaption aria-hidden="true">1719X591/轴承部分.png</figcaption>
-</figure>
-<figure>
-<img
+alt="1719X591/轴承部分.png" /> <img
 src="https://tc.z.wiki/autoupload/f/naBXvlxu6UGLbeKisI39YyfNcKcqEnRmcljopnyJoMs/20250723/57Ts/1709X855/%E8%BD%B4%E6%89%BF%E7%BB%84.png"
-alt="1709X855/轴承组.png" />
-<figcaption aria-hidden="true">1709X855/轴承组.png</figcaption>
-</figure>
+alt="1709X855/轴承组.png" /></p>
 <p>大齿轮参数表</p>
 <table>
 <thead>
@@ -208,23 +243,13 @@ alt="1709X855/轴承组.png" />
 </table>
 <p>注意： 1. 以后齿轮生成一定要记录参数！！<br />
 2. 使用涨紧套z21 10<em>20</em>13 固定小齿轮和3508电机出力轴</p>
-<h3 id="孔位分布">孔位分布</h3>
-<figure>
-<img
-src="https://tc.z.wiki/autoupload/f/naBXvlxu6UGLbeKisI39YyfNcKcqEnRmcljopnyJoMs/20250723/uNll/1710X1355/%E5%AD%94%E4%BD%8D%E5%88%86%E5%B8%83%E7%A4%BA%E6%84%8F%E5%9B%BE.png"
-alt="1710X1355/孔位分布示意图.png" />
-<figcaption aria-hidden="true">1710X1355/孔位分布示意图.png</figcaption>
-</figure>
-<h2 id="电机">3508电机</h2>
+<h3 id="云台动力3508电机">云台动力3508电机</h3>
 <p>参考<a
-target="_blank" rel="noopener" href="https://rm-static.djicdn.com/tem/17348/RoboMaster%20M3508%E7%9B%B4%E6%B5%81%E6%97%A0%E5%88%B7%E5%87%8F%E9%80%9F%E7%94%B5%E6%9C%BA%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8EV1.0%EF%BC%88%E4%B8%AD%E8%8B%B1%E6%97%A5%EF%BC%89.pdf">3508电机参数</a></p>
-<figure>
+target="_blank" rel="noopener" href="https://rm-static.djicdn.com/tem/17348/RoboMaster%20M3508%E7%9B%B4%E6%B5%81%E6%97%A0%E5%88%B7%E5%87%8F%E9%80%9F%E7%94%B5%E6%9C%BA%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8EV1.0%EF%BC%88%E4%B8%AD%E8%8B%B1%E6%97%A5%EF%BC%89.pdf">3508电机参数</a>
 <img
 src="https://tc.z.wiki/autoupload/f/wSafM9E-riki2h6VXC5RJbZhwuM6ABTZJrGRmhmmFKWyl5f0KlZfm6UsKj-HyTuv/20250717/CaDr/1586X959/3508%E5%AE%89%E8%A3%85%E5%AD%94%E4%BD%8D.png"
-alt="3508安装孔位.png" />
-<figcaption aria-hidden="true">3508安装孔位.png</figcaption>
-</figure>
-<h3 id="参数计算">参数计算</h3>
+alt="3508安装孔位.png" /></p>
+<h4 id="参数计算">参数计算</h4>
 <p>此处要用3508电机小齿轮驱动云台的大齿轮达到3rps的转速 已知约束： 1.
 轴距小于90mm 2. 云台大齿轮内径大于101mm 3.
 3508端小齿轮额定转速469rpm</p>
@@ -236,6 +261,25 @@ alt="3508安装孔位.png" />
 target="_blank" rel="noopener" href="https://rm-static.djicdn.com/tem/17348/RoboMaster%E7%94%B5%E6%B1%A0%E6%9E%B6%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.pdf">电池支架参数</a>
 <img src="https://z.wiki/u/NMavMq" alt="电池固定架参数" />
 注意：螺纹孔M3，深度6mm 我怀疑这个是假的，和我的模型对不上</p>
+<h1 id="同步带轮-2025-07-30">同步带轮 2025-07-30</h1>
+<p>2025-07-30 15:39:41 待确认<br />
+- [x] 同步带设计<br />
+- [x] 同步带<br />
+- [x] 选型【宽度，规格】 - [x] 凯夫拉 8.9 RMB/M 广发传动<br />
+- [x] 15mm<br />
+- [x] <em>HTD-H5M 齿形</em> –&gt; FW THT<br />
+- [x] 路径规划<br />
+- [x] 铝方管开孔 40%<br />
+- [x] 同步带轮选型【规格匹配】 - [x] 动力轮<br />
+- [x] 定滑轮-换向轮<br />
+- [x] 张紧轮直径选定<br />
+- [x] 固定方案<br />
+- [x] 同步带轮电源固定方案 – 供电一体<br />
+- [x] 同步带控制方案<br />
+- [x] 电气拓扑<br />
+- [x] 画出图片 见上<br />
+- [ ] 导电滑环<br />
+- [ ] demo验证</p>
 
       
     </div>
@@ -307,7 +351,7 @@ target="_blank" rel="noopener" href="https://rm-static.djicdn.com/tem/17348/Robo
           </li>
         
           <li>
-            <a href="/2025/07/30/mermaid-draw-graph/">mermaid draw graph</a>
+            <a href="/2025/07/30/mermaid-draw-graph/">我常用的mermaid图表</a>
           </li>
         
           <li>
