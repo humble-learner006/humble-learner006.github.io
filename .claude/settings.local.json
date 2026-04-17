@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Like CAI/Desktop/**)",
+      "Bash(npm --version)",
+      "Bash(git --version)",
+      "Bash(where node:*)",
+      "Bash(where npm:*)",
+      "Bash(where git:*)",
+      "Bash(cmd.exe /c \"node --version\")",
+      "Bash(cmd.exe /c \"npm --version\")",
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "Bash(cmd.exe /c \"python --version\")",
+      "Bash(python migrate.py)",
+      "Bash(cmd.exe:*)",
+      "Bash(cp -r MyNewBlog/* MyBlog/)",
+      "Bash(cp -r MyNewBlog/.github MyBlog/)",
+      "Bash(cp MyNewBlog/.gitignore MyBlog/)",
+      "Bash(cp MyNewBlog/.prettierrc MyBlog/)",
+      "Bash(cp MyNewBlog/.npmrc MyBlog/)"
+    ]
+  }
+}
