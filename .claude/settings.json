@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod +x \"c:/Users/Like CAI/Desktop/MyBlog/publish.sh\")",
+      "Bash(node quartz/bootstrap-cli.mjs build -d MyBlog)",
+      "Bash(bash publish.sh \"Configure Quartz to build from MyBlog \\(Obsidian vault\\) + add publish.sh\")"
+    ]
+  }
+}
